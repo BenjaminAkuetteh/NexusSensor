@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 56028440}
   - component: {fileID: 56028439}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TextSentence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -338,7 +338,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 158601332}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 699929728}
+        m_TargetAssemblyTypeName: CoreAACController, Assembly-CSharp
+        m_MethodName: OnWordPressed
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: yes
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &158601332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -778,7 +790,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 388968800}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 699929728}
+        m_TargetAssemblyTypeName: CoreAACController, Assembly-CSharp
+        m_MethodName: OnWordPressed
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: want
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &388968800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1163,7 +1187,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 667352440}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 699929728}
+        m_TargetAssemblyTypeName: CoreAACController, Assembly-CSharp
+        m_MethodName: OnWordPressed
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: no
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &667352440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1202,6 +1238,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 667352437}
   m_CullTransparentMesh: 1
+--- !u!1 &699929727
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 699929729}
+  - component: {fileID: 699929728}
+  m_Layer: 0
+  m_Name: CoreAACController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &699929728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699929727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ee3d37ba4578b94da75cc745f3d983a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CoreAACController
+  sentenceText: {fileID: 56028439}
+--- !u!4 &699929729
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699929727}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1485.6139, y: 981.6452, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &799739737
 GameObject:
   m_ObjectHideFlags: 0
@@ -1470,7 +1551,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 835443760}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 699929728}
+        m_TargetAssemblyTypeName: CoreAACController, Assembly-CSharp
+        m_MethodName: OnWordPressed
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: water
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &835443760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2323,7 +2416,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1253870363}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 699929728}
+        m_TargetAssemblyTypeName: CoreAACController, Assembly-CSharp
+        m_MethodName: OnWordPressed
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: go
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1253870363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2375,7 +2480,7 @@ GameObject:
   - component: {fileID: 1373454446}
   - component: {fileID: 1373454445}
   m_Layer: 5
-  m_Name: SpeakButton (1)
+  m_Name: ClearButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2444,7 +2549,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1373454446}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 699929728}
+        m_TargetAssemblyTypeName: CoreAACController, Assembly-CSharp
+        m_MethodName: OnClearPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1373454446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2565,7 +2682,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1620457565}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 699929728}
+        m_TargetAssemblyTypeName: CoreAACController, Assembly-CSharp
+        m_MethodName: OnWordPressed
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: outside
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1620457565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3038,7 +3167,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1800657788}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 699929728}
+        m_TargetAssemblyTypeName: CoreAACController, Assembly-CSharp
+        m_MethodName: OnWordPressed
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: help
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1800657788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3159,7 +3300,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1822520007}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 699929728}
+        m_TargetAssemblyTypeName: CoreAACController, Assembly-CSharp
+        m_MethodName: OnWordPressed
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: I
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1822520007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3417,7 +3570,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1953559816}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 699929728}
+        m_TargetAssemblyTypeName: CoreAACController, Assembly-CSharp
+        m_MethodName: OnSpeakPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1953559816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3602,3 +3767,4 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 273390461}
   - {fileID: 280909392}
+  - {fileID: 699929729}
