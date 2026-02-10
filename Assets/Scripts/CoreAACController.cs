@@ -28,8 +28,8 @@ public class CoreAACController : MonoBehaviour
 
     public void OnSpeakPressed()
     {
-        // Later: TTS output + logging.
-        Debug.Log($"SPEAK: {_state.GetSentence()}");
+        var sentence = _state.GetSentence();
+        TTSService.Speak(sentence);
     }
 
     private void RefreshSentenceUI()
