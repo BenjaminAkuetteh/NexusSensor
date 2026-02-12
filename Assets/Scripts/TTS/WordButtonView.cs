@@ -9,9 +9,14 @@ public class WordButtonView : MonoBehaviour
     [SerializeField] private TMP_Text labelText;
     [SerializeField] private Button button;
 
-    public void Set(string emoji, string label, Action onClick)
+    public void Set(string spriteName, string label, Action onClick)
     {
-        emojiText.text = emoji;
+        // Make sure Rich Text is enabled (it is by default, but keep safe)
+        emojiText.richText = true;
+
+        // Use TMP sprite tag
+        emojiText.text = $"<sprite name=\"{spriteName}\">";
+
         labelText.text = label;
 
         button.onClick.RemoveAllListeners();

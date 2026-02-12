@@ -40,28 +40,36 @@ public class AAC_UIControllerV2 : MonoBehaviour
         new Dictionary<Category, List<(string, string)>>()
     {
         { Category.Home, new() {
-            ("👋","Hello"),("🙏","Please"),("❤️","Thank you"),
-            ("✅","Yes"),("❌","No"),("🆘","Help me"),("👆","I want"),("💭","I need"),("👋","Goodbye")
-        }},
+    ("EmojiSheet 1_0","Hello"),
+    ("EmojiSheet 1_3","Please"),
+    ("EmojiSheet 1_4","Thank you"),
+    ("EmojiSheet 1_5","Yes"),
+    ("EmojiSheet 1_6","No"),
+    ("EmojiSheet 1_7","Help me"),
+    ("EmojiSheet 1_8","I want"),
+    ("EmojiSheet 1_33","I need"),
+    ("EmojiSheet 1_0","Goodbye"),
+}},
+
         { Category.Needs, new() {
-            ("🚻","Bathroom"),("💧","Water"),("🍎","Food"),("⏸️","Break"),
-            ("🤫","Quiet"),("🙋","Help"),("⏰","More time"),("🛑","Stop")
+            ("EmojiSheet 1_11","Bathroom"),("EmojiSheet 1_12","Water"),("EmojiSheet 1_13","Food"),("EmojiSheet 1_14","Break"),
+            ("EmojiSheet 1_15","Quiet"),("EmojiSheet 1_14","Help"),("EmojiSheet 1_16","More time"),("EmojiSheet 1_17","Stop")
         }},
         { Category.Feelings, new() {
-            ("😊","Happy"),("😢","Sad"),("😠","Angry"),("😴","Tired"),
-            ("😨","Scared"),("🤩","Excited"),("😕","Confused"),("😌","Calm")
+            ("EmojiSheet 1_18","Happy"),("EmojiSheet 1_19","Sad"),("EmojiSheet 1_20","Angry"),("EmojiSheet 1_21","Tired"),
+            ("EmojiSheet 1_22","Scared"),("EmojiSheet 1_24","Excited"),("EmojiSheet 1_43","Confused"),("EmojiSheet 1_25","Calm")
         }},
         { Category.Activities, new() {
-            ("🎮","Play"),("📖","Read"),("🎨","Draw"),("🎵","Music"),
-            ("🌳","Outside"),("💻","Computer"),("📺","Watch"),("💬","Talk")
+            ("EmojiSheet 1_26","Play"),("EmojiSheet 1_27","Read"),("EmojiSheet 1_29","Draw"),("EmojiSheet 1_24","Music"),
+            ("EmojiSheet 1_30","Outside"),("EmojiSheet 1_31","Computer"),("EmojiSheet 1_32","Watch"),("EmojiSheet 1_33","Talk")
         }},
         { Category.People, new() {
-            ("👨‍🏫","Teacher"),("👩","Mom"),("👨","Dad"),("👦","Friend"),
-            ("👨‍⚕️","Doctor"),("👥","Everyone")
+            ("EmojiSheet 1_35","Teacher"),("EmojiSheet 1_39","Mom"),("EmojiSheet 1_38","Dad"),("EmojiSheet 1_41","Friend"),
+            ("EmojiSheet 1_40","Doctor"),("EmojiSheet 1_41","Everyone")
         }},
         { Category.Questions, new() {
-            ("❓","What?"),("🗺️","Where?"),("🕐","When?"),("👤","Who?"),
-            ("🤔","Why?"),("⚙️","How?"),("🙏","Can I?")
+            ("EmojiSheet 1_0","What?"),("EmojiSheet 1_30","Where?"),("EmojiSheet 1_42","When?"),("EmojiSheet 1_38","Who?"),
+            ("EmojiSheet 1_43","Why?"),("EmojiSheet 1_22","How?"),("EmojiSheet 1_8","Can I?")
         }},
     };
 
