@@ -1,0 +1,86 @@
+{
+  "words": [
+    { "id": "hello", "label": "Hello", "sprite": "wave", "category": "Home" },
+    { "id": "hey", "label": "Hey", "sprite": "wave", "category": "Home" },
+
+    { "id": "please", "label": "Please", "sprite": "pray", "category": "Home" },
+    { "id": "thanks", "label": "Thanks", "sprite": "heart", "category": "Home" },
+    { "id": "thank_you", "label": "Thank you", "sprite": "heart", "category": "Home" },
+
+    { "id": "yes", "label": "Yes", "sprite": "yes", "category": "Home" },
+    { "id": "no", "label": "No", "sprite": "no", "category": "Home" },
+
+    { "id": "i_want", "label": "I want", "sprite": "point_up", "category": "Home" },
+    { "id": "i_need", "label": "I need", "sprite": "thought", "category": "Home" },
+
+    { "id": "i_would_like", "label": "I would like", "sprite": "point_up", "category": "Home" },
+    { "id": "could_i_have", "label": "Could I have", "sprite": "thought", "category": "Home" },
+    { "id": "may_i", "label": "May I", "sprite": "thought", "category": "Questions" },
+
+    { "id": "water", "label": "Water", "sprite": "water", "category": "Needs" },
+    { "id": "food", "label": "Food", "sprite": "apple", "category": "Needs" },
+    { "id": "bathroom", "label": "Bathroom", "sprite": "toilet", "category": "Needs" },
+    { "id": "help", "label": "Help", "sprite": "help", "category": "Needs" },
+    { "id": "break", "label": "Break", "sprite": "pause", "category": "Needs" },
+
+    { "id": "can_i_get", "label": "Can I get", "sprite": "point_up", "category": "Home" },
+    { "id": "need_a_sec", "label": "Need a sec", "sprite": "pause", "category": "Needs" },
+
+    { "id": "what", "label": "What?", "sprite": "question", "category": "Questions" },
+    { "id": "where", "label": "Where?", "sprite": "question", "category": "Questions" }
+  ],
+
+  "packs": [
+    {
+      "id": "cafeteria_lunch_formal",
+      "displayName": "Cafeteria (Lunch) — Formal",
+      "tags": ["cafeteria", "lunch", "formal"],
+      "wordIds": [
+        "hello",
+        "i_would_like",
+        "could_i_have",
+        "please",
+        "thank_you",
+        "food",
+        "water",
+        "bathroom",
+        "help",
+        "break",
+        "yes",
+        "no"
+      ]
+    },
+    {
+      "id": "cafeteria_lunch_casual",
+      "displayName": "Cafeteria (Lunch) — Casual",
+      "tags": ["cafeteria", "lunch", "casual"],
+      "wordIds": [
+        "hey",
+        "can_i_get",
+        "i_want",
+        "thanks",
+        "food",
+        "water",
+        "bathroom",
+        "help",
+        "need_a_sec",
+        "break",
+        "yes",
+        "no"
+      ]
+    },
+
+    {
+      "id": "home_morning_formal",
+      "displayName": "Home (Morning) — Formal",
+      "tags": ["home", "morning", "formal"],
+      "wordIds": ["hello", "i_need", "please", "thank_you", "water", "food", "help", "break", "yes", "no"]
+    },
+    {
+      "id": "home_morning_casual",
+      "displayName": "Home (Morning) — Casual",
+      "tags": ["home", "morning", "casual"],
+      "wordIds": ["hey", "i_need", "thanks", "water", "food", "help", "break", "yes", "no"]
+    }
+  ]
+}

@@ -99,17 +99,17 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 3
     m_Scale: 1
-    m_Name: EmojiSheet 1_0
+    m_Name: wave
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 4
     m_Scale: 1
-    m_Name: EmojiSheet 1_4
+    m_Name: heart
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 5
     m_Scale: 1
-    m_Name: EmojiSheet 1_3
+    m_Name: pray
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 6
@@ -119,12 +119,12 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 7
     m_Scale: 1
-    m_Name: EmojiSheet 1_5
+    m_Name: yes
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 8
     m_Scale: 1
-    m_Name: EmojiSheet 1_6
+    m_Name: no
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 9
@@ -139,7 +139,7 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 11
     m_Scale: 1
-    m_Name: EmojiSheet 1_13
+    m_Name: apple
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 12
@@ -149,7 +149,7 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 13
     m_Scale: 1
-    m_Name: EmojiSheet 1_17
+    m_Name: pause
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 14
@@ -159,17 +159,17 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 15
     m_Scale: 1
-    m_Name: EmojiSheet 1_11
+    m_Name: toilet
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 16
     m_Scale: 1
-    m_Name: EmojiSheet 1_12
+    m_Name: water
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 17
     m_Scale: 1
-    m_Name: EmojiSheet 1_14
+    m_Name: help
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 18
@@ -234,7 +234,7 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 30
     m_Scale: 1
-    m_Name: EmojiSheet 1_33
+    m_Name: thought
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 31

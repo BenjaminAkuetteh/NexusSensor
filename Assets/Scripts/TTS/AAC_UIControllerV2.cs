@@ -1,4 +1,6 @@
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -33,71 +35,118 @@ public class AAC_UIControllerV2 : MonoBehaviour
     [SerializeField] private Button qpBreak;
     [SerializeField] private Button qpThankYou;
 
+    [Header("Vocab Loading (Resources JSON)")]
+    [SerializeField] private string vocabResourcePath = "Vocab/vocab_db";
+    [SerializeField] private string activePackId = "cafeteria_lunch";
+
+    [Header("Dynamic Zone (Suggestions)")]
+    [SerializeField] private Transform suggestionsContent;
+    [SerializeField] private WordButtonView suggestionButtonPrefab; // Use your smaller suggestion prefab
+    [SerializeField] private int suggestionSlots = 6;
+    [SerializeField] private float suggestionsCooldownSec = 1.2f;
+    [SerializeField] private float suggestionsFadeInSec = 0.5f;
+
+    [Header("Vibe Toggle (Doc required)")]
+    [SerializeField] private Toggle vibeToggle;     // ON = Formal, OFF = Casual
+    [SerializeField] private TMP_Text vibeLabel;    // displays "Formal"/"Casual"
+
+    private VibeMode _vibe = VibeMode.Formal;
+
     private ConversationState _state;
     private Category _currentCategory;
 
-    private readonly Dictionary<Category, List<(string emoji, string text)>> _words =
-        new Dictionary<Category, List<(string, string)>>()
-    {
-        { Category.Home, new() {
-    ("EmojiSheet 1_0","Hello"),
-    ("EmojiSheet 1_3","Please"),
-    ("EmojiSheet 1_4","Thank you"),
-    ("EmojiSheet 1_5","Yes"),
-    ("EmojiSheet 1_6","No"),
-    ("EmojiSheet 1_7","Help me"),
-    ("EmojiSheet 1_8","I want"),
-    ("EmojiSheet 1_33","I need"),
-    ("EmojiSheet 1_0","Goodbye"),
-}},
+    private VocabRuntime _vocab;
+    private List<WordItem> _activePackWords;
 
-        { Category.Needs, new() {
-            ("EmojiSheet 1_11","Bathroom"),("EmojiSheet 1_12","Water"),("EmojiSheet 1_13","Food"),("EmojiSheet 1_14","Break"),
-            ("EmojiSheet 1_15","Quiet"),("EmojiSheet 1_14","Help"),("EmojiSheet 1_16","More time"),("EmojiSheet 1_17","Stop")
-        }},
-        { Category.Feelings, new() {
-            ("EmojiSheet 1_18","Happy"),("EmojiSheet 1_19","Sad"),("EmojiSheet 1_20","Angry"),("EmojiSheet 1_21","Tired"),
-            ("EmojiSheet 1_22","Scared"),("EmojiSheet 1_24","Excited"),("EmojiSheet 1_43","Confused"),("EmojiSheet 1_25","Calm")
-        }},
-        { Category.Activities, new() {
-            ("EmojiSheet 1_26","Play"),("EmojiSheet 1_27","Read"),("EmojiSheet 1_29","Draw"),("EmojiSheet 1_24","Music"),
-            ("EmojiSheet 1_30","Outside"),("EmojiSheet 1_31","Computer"),("EmojiSheet 1_32","Watch"),("EmojiSheet 1_33","Talk")
-        }},
-        { Category.People, new() {
-            ("EmojiSheet 1_35","Teacher"),("EmojiSheet 1_39","Mom"),("EmojiSheet 1_38","Dad"),("EmojiSheet 1_41","Friend"),
-            ("EmojiSheet 1_40","Doctor"),("EmojiSheet 1_41","Everyone")
-        }},
-        { Category.Questions, new() {
-            ("EmojiSheet 1_0","What?"),("EmojiSheet 1_30","Where?"),("EmojiSheet 1_42","When?"),("EmojiSheet 1_38","Who?"),
-            ("EmojiSheet 1_43","Why?"),("EmojiSheet 1_22","How?"),("EmojiSheet 1_8","Can I?")
-        }},
-    };
+    // Exposed for ContextDropdownController if needed
+    public VocabRuntime Vocab => _vocab;
+
+    // Personalization
+    private readonly Dictionary<string, int> _usageCounts = new();
+
+    // Dynamic Zone fixed slots
+    private readonly List<WordButtonView> _suggestionViews = new();
+    private readonly List<CanvasGroup> _suggestionCanvasGroups = new();
+    private readonly List<string> _lastSuggestionIds = new();
+    private bool _canRefreshSuggestions = true;
+    private Coroutine _suggestionCooldownRoutine;
+    private string _baseContextId = "cafeteria_lunch";  // base context without vibe suffix
+
 
     private void Awake()
     {
         _state = new ConversationState();
 
+        // Load JSON
+        var db = VocabLoader.LoadFromResources(vocabResourcePath);
+        _vocab = new VocabRuntime(db);
+        _activePackWords = _vocab.GetWordsForPack(activePackId);
+
         // Actions
-        btnUndo.onClick.AddListener(RemoveLast);
-        btnClear.onClick.AddListener(ClearSentence);
-        btnSpeak.onClick.AddListener(Speak);
+        if (btnUndo) btnUndo.onClick.AddListener(RemoveLast);
+        if (btnClear) btnClear.onClick.AddListener(ClearSentence);
+        if (btnSpeak) btnSpeak.onClick.AddListener(Speak);
 
         // Categories
-        catHome.onClick.AddListener(() => SetCategory(Category.Home));
-        catNeeds.onClick.AddListener(() => SetCategory(Category.Needs));
-        catFeelings.onClick.AddListener(() => SetCategory(Category.Feelings));
-        catActivities.onClick.AddListener(() => SetCategory(Category.Activities));
-        catPeople.onClick.AddListener(() => SetCategory(Category.People));
-        catQuestions.onClick.AddListener(() => SetCategory(Category.Questions));
+        if (catHome) catHome.onClick.AddListener(() => SetCategory(Category.Home));
+        if (catNeeds) catNeeds.onClick.AddListener(() => SetCategory(Category.Needs));
+        if (catFeelings) catFeelings.onClick.AddListener(() => SetCategory(Category.Feelings));
+        if (catActivities) catActivities.onClick.AddListener(() => SetCategory(Category.Activities));
+        if (catPeople) catPeople.onClick.AddListener(() => SetCategory(Category.People));
+        if (catQuestions) catQuestions.onClick.AddListener(() => SetCategory(Category.Questions));
 
         // Quick phrases
-        qpHelp.onClick.AddListener(() => SetSentence(new[] { "I", "need", "help" }));
-        qpBathroom.onClick.AddListener(() => SetSentence(new[] { "I", "want", "bathroom" }));
-        qpBreak.onClick.AddListener(() => SetSentence(new[] { "I", "need", "break" }));
-        qpThankYou.onClick.AddListener(() => SetSentence(new[] { "Thank", "you" }));
+        if (qpHelp) qpHelp.onClick.AddListener(() => SetSentence(new[] { "I", "need", "help" }, forceSuggestions: true));
+        if (qpBathroom) qpBathroom.onClick.AddListener(() => SetSentence(new[] { "I", "want", "bathroom" }, forceSuggestions: true));
+        if (qpBreak) qpBreak.onClick.AddListener(() => SetSentence(new[] { "I", "need", "break" }, forceSuggestions: true));
+        if (qpThankYou) qpThankYou.onClick.AddListener(() => SetSentence(new[] { "Thank", "you" }, forceSuggestions: true));
+
+        // Vibe toggle
+        if (vibeToggle)
+        {
+            vibeToggle.onValueChanged.RemoveAllListeners();
+            vibeToggle.onValueChanged.AddListener(OnVibeChanged);
+            OnVibeChanged(vibeToggle.isOn); // init
+        }
+        else
+        {
+            // Default label if toggle not wired yet
+            if (vibeLabel) vibeLabel.text = "Formal";
+            _vibe = VibeMode.Formal;
+        }
+
+        BuildSuggestionSlots();
 
         SetCategory(Category.Home);
-        RefreshAll();
+        RefreshAll(forceSuggestions: true);
+    }
+
+    // ===== Step 2.5 Doc: Global Undo Gesture entry point =====
+    public void HardReset()
+    {
+        _state.Clear();
+        _usageCounts.Clear();
+        RefreshAll(forceSuggestions: true);
+    }
+
+    // ===== Step 2.3/2.2: Context Engine entry point =====
+    public void SetActivePack(string baseContextId)
+    {
+        if (_vocab == null) return;
+
+    _baseContextId = baseContextId;
+    LoadContextWithVibe(force: true);
+    }
+
+    private void OnVibeChanged(bool isFormal)
+    {
+        _vibe = isFormal ? VibeMode.Formal : VibeMode.Casual;
+        if (vibeLabel) vibeLabel.text = isFormal ? "Formal" : "Casual";
+
+        // Major state change -> force refresh
+        RefreshAll(forceSuggestions: true);
+
+        LoadContextWithVibe(force: true);
     }
 
     private void SetCategory(Category category)
@@ -105,31 +154,76 @@ public class AAC_UIControllerV2 : MonoBehaviour
         _currentCategory = category;
         RebuildWordGrid();
         UpdateCategoryStyles();
+        RefreshSuggestions(force: true);
     }
 
     private void RebuildWordGrid()
     {
-        // Clear existing
         for (int i = wordGridContent.childCount - 1; i >= 0; i--)
             Destroy(wordGridContent.GetChild(i).gameObject);
 
-        var list = _words[_currentCategory];
-        foreach (var (emoji, text) in list)
+        if (_vocab == null) return;
+
+        string cat = CategoryToString(_currentCategory);
+
+        // 1) Active pack filtered by category
+        var filtered = (_activePackWords ?? new List<WordItem>())
+            .Where(w => w.category == cat)
+            .ToList();
+
+        // 2) Never blank: fallback to global category words
+        if (filtered.Count == 0)
+            filtered = GetGlobalWordsByCategory(cat);
+
+        // Stable order (prevents perceived reshuffling)
+        filtered = filtered.OrderBy(w => w.label).ToList();
+
+        foreach (var w in filtered)
         {
             var btn = Instantiate(wordButtonPrefab, wordGridContent);
-            btn.Set(emoji, text, () => AddWord(text));
+            btn.Set(w.sprite, w.label, () => AddWordFromWordItem(w));
         }
     }
 
-    private void AddWord(string word)
+    private List<WordItem> GetGlobalWordsByCategory(string category)
     {
-        _state.AddToken(word);
-        RefreshAll();
+        var list = new List<WordItem>();
+        if (_vocab == null) return list;
+
+        foreach (var w in _vocab.WordsById.Values)
+            if (w.category == category)
+                list.Add(w);
+
+        return list;
+    }
+
+    private static string CategoryToString(Category c)
+    {
+        return c switch
+        {
+            Category.Home => "Home",
+            Category.Needs => "Needs",
+            Category.Feelings => "Feelings",
+            Category.Activities => "Activities",
+            Category.People => "People",
+            Category.Questions => "Questions",
+            _ => "Home"
+        };
+    }
+
+    private void AddWordFromWordItem(WordItem item)
+    {
+        if (item == null) return;
+
+        if (_usageCounts.ContainsKey(item.id)) _usageCounts[item.id]++;
+        else _usageCounts[item.id] = 1;
+
+        _state.AddToken(item.label);
+        RefreshAll(forceSuggestions: false);
     }
 
     private void RemoveLast()
     {
-        // ConversationState doesn't expose RemoveLast yet; easiest: rebuild list
         var tokens = new List<string>(_state.Tokens);
         if (tokens.Count == 0) return;
         tokens.RemoveAt(tokens.Count - 1);
@@ -137,20 +231,20 @@ public class AAC_UIControllerV2 : MonoBehaviour
         _state.Clear();
         foreach (var t in tokens) _state.AddToken(t);
 
-        RefreshAll();
+        RefreshAll(forceSuggestions: false);
     }
 
     private void ClearSentence()
     {
         _state.Clear();
-        RefreshAll();
+        RefreshAll(forceSuggestions: true);
     }
 
-    private void SetSentence(string[] words)
+    private void SetSentence(string[] words, bool forceSuggestions)
     {
         _state.Clear();
         foreach (var w in words) _state.AddToken(w);
-        RefreshAll();
+        RefreshAll(forceSuggestions: forceSuggestions);
     }
 
     private void Speak()
@@ -159,20 +253,133 @@ public class AAC_UIControllerV2 : MonoBehaviour
         TTSService.Speak(s);
     }
 
-    private void RefreshAll()
+    private void RefreshAll(bool forceSuggestions)
     {
         var s = _state.GetSentence();
-        sentenceText.text = string.IsNullOrEmpty(s) ? "Tap buttons to build your message..." : s;
+        if (sentenceText)
+            sentenceText.text = string.IsNullOrEmpty(s) ? "Tap buttons to build your message..." : s;
 
         bool hasText = !string.IsNullOrEmpty(s);
-        btnUndo.interactable = hasText;
-        btnClear.interactable = hasText;
-        btnSpeak.interactable = hasText;
+        if (btnUndo) btnUndo.interactable = hasText;
+        if (btnClear) btnClear.interactable = hasText;
+        if (btnSpeak) btnSpeak.interactable = hasText;
+
+        RefreshSuggestions(forceSuggestions);
+    }
+
+    // ===========================
+    // Doc-compliant Dynamic Zone
+    // ===========================
+
+    private void BuildSuggestionSlots()
+    {
+        if (suggestionsContent == null) return;
+
+        var prefab = suggestionButtonPrefab != null ? suggestionButtonPrefab : wordButtonPrefab;
+        if (prefab == null) return;
+
+        for (int i = suggestionsContent.childCount - 1; i >= 0; i--)
+            Destroy(suggestionsContent.GetChild(i).gameObject);
+
+        _suggestionViews.Clear();
+        _suggestionCanvasGroups.Clear();
+        _lastSuggestionIds.Clear();
+
+        for (int i = 0; i < suggestionSlots; i++)
+        {
+            var view = Instantiate(prefab, suggestionsContent);
+
+            var cg = view.GetComponent<CanvasGroup>();
+            if (cg == null) cg = view.gameObject.AddComponent<CanvasGroup>();
+
+            cg.alpha = 0f;
+            view.gameObject.SetActive(false);
+
+            _suggestionViews.Add(view);
+            _suggestionCanvasGroups.Add(cg);
+            _lastSuggestionIds.Add("");
+        }
+    }
+
+    private void RefreshSuggestions(bool force)
+    {
+        if (suggestionsContent == null) return;
+        if (!force && !_canRefreshSuggestions) return;
+
+        var suggestions = SuggestionsEngine.GetTop(
+            _activePackWords ?? new List<WordItem>(),
+            _state.Tokens,
+            _usageCounts,
+            suggestionSlots,
+            _vibe
+        );
+
+        for (int i = 0; i < _suggestionViews.Count; i++)
+        {
+            var view = _suggestionViews[i];
+            var cg = _suggestionCanvasGroups[i];
+
+            if (i >= suggestions.Count)
+            {
+                view.gameObject.SetActive(false);
+                cg.alpha = 0f;
+                _lastSuggestionIds[i] = "";
+                continue;
+            }
+
+            var item = suggestions[i];
+
+            view.gameObject.SetActive(true);
+            view.Set(item.sprite, item.label, () => AddWordFromWordItem(item));
+
+            bool changed = _lastSuggestionIds[i] != item.id;
+            _lastSuggestionIds[i] = item.id;
+
+            if (changed)
+            {
+                cg.alpha = 0f;
+                StartCoroutine(FadeInSlot(cg, suggestionsFadeInSec));
+            }
+            else
+            {
+                cg.alpha = 1f;
+            }
+        }
+
+        if (!force)
+            StartSuggestionsCooldown();
+    }
+
+    private void StartSuggestionsCooldown()
+    {
+        if (_suggestionCooldownRoutine != null) StopCoroutine(_suggestionCooldownRoutine);
+        _suggestionCooldownRoutine = StartCoroutine(SuggestionsCooldownRoutine());
+    }
+
+    private IEnumerator SuggestionsCooldownRoutine()
+    {
+        _canRefreshSuggestions = false;
+        yield return new WaitForSeconds(suggestionsCooldownSec);
+        _canRefreshSuggestions = true;
+    }
+
+    private IEnumerator FadeInSlot(CanvasGroup cg, float sec)
+    {
+        float d = Mathf.Max(0.5f, sec); // doc minimum
+        float t = 0f;
+
+        while (t < d)
+        {
+            t += Time.unscaledDeltaTime;
+            cg.alpha = Mathf.Clamp01(t / d);
+            yield return null;
+        }
+
+        cg.alpha = 1f;
     }
 
     private void UpdateCategoryStyles()
     {
-        // Minimal “selected” effect: scale selected button slightly
         SetSelected(catHome, _currentCategory == Category.Home);
         SetSelected(catNeeds, _currentCategory == Category.Needs);
         SetSelected(catFeelings, _currentCategory == Category.Feelings);
@@ -186,4 +393,23 @@ public class AAC_UIControllerV2 : MonoBehaviour
         if (b == null) return;
         b.transform.localScale = selected ? new Vector3(1.05f, 1.05f, 1f) : Vector3.one;
     }
+
+
+    private void LoadContextWithVibe(bool force)
+{
+    if (_vocab == null) return;
+
+    string vibeSuffix = (_vibe == VibeMode.Formal) ? "_formal" : "_casual";
+    string candidate = _baseContextId + vibeSuffix;
+
+    // Prefer vibe-specific pack if it exists, otherwise fall back to base id
+    string finalId = _vocab.PacksById.ContainsKey(candidate) ? candidate : _baseContextId;
+
+    activePackId = finalId;
+    _activePackWords = _vocab.GetWordsForPack(activePackId);
+
+    RebuildWordGrid();
+    RefreshAll(forceSuggestions: force);
+}
+
 }

@@ -1062,6 +1062,10 @@ UnityEngine.RectOffset::get_vertical_Injected
 UnityEngine.RectOffset::InternalCreate
 UnityEngine.RectOffset::InternalDestroy
 UnityEngine.RectOffset::Remove_Injected
+UnityEngine.RectOffset::set_bottom_Injected
+UnityEngine.RectOffset::set_left_Injected
+UnityEngine.RectOffset::set_right_Injected
+UnityEngine.RectOffset::set_top_Injected
 UnityEngine.RectTransform::get_anchorMax_Injected
 UnityEngine.RectTransform::get_anchorMin_Injected
 UnityEngine.RectTransform::get_anchoredPosition_Injected

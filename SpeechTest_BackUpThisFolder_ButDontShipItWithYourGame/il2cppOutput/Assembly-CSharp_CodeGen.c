@@ -51,6 +51,12 @@ extern void WordButtonView_Set_mE6FABEEA504C674EBCB953CCCB7BF1E4A3E7E702 (void);
 extern void WordButtonView__ctor_mEBA81CA5E3825AA395E5272224878730A6048277 (void);
 extern void U3CU3Ec__DisplayClass3_0__ctor_m440276FE388F52AE389B927DC3386A0FD79C3B6B (void);
 extern void U3CU3Ec__DisplayClass3_0_U3CSetU3Eb__0_mB8013EC753395C53050BC33DADC83428C44F2F7A (void);
+extern void GridAutoSizer_Reset_m4A5497992FE76B8C3F1B8F5C13147205384A773D (void);
+extern void GridAutoSizer_OnEnable_m7D46AB866BF56F145F2CEACBBC9C7EE05EA3C6CF (void);
+extern void GridAutoSizer_OnRectTransformDimensionsChange_mBC4DA824277DE8C657C35B0955A26E4A26E5B457 (void);
+extern void GridAutoSizer_Update_m7EE559DCD56BEC7C28F21E513F2BB28E80A0F8B8 (void);
+extern void GridAutoSizer_Apply_m13ACAEB67D0ADB7FBFB195B674D061BB97298F6B (void);
+extern void GridAutoSizer__ctor_m05BF18F862912A3678895AA59D984CA996B34795 (void);
 extern void SafeAreaFitter_Awake_m62887BFB5463D892F0AED173D326493D6BECA730 (void);
 extern void SafeAreaFitter_Update_mD962D30ABC16D5B3F90CC9DAB5ADAE7B99D0A820 (void);
 extern void SafeAreaFitter_Apply_mF142B7724E980BFBB8C4AFB6441E256D926D4423 (void);
@@ -324,7 +330,7 @@ extern void U3CWarpTextU3Ed__8_MoveNext_mCE7A826C5E4854C2C509C77BD18F5A9B6D691B0
 extern void U3CWarpTextU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD80368E9B7E259311C03E406B75161ED6F7618E3 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19 (void);
-static Il2CppMethodPointer s_methodPointers[317] = 
+static Il2CppMethodPointer s_methodPointers[323] = 
 {
 	ConversationState_get_Tokens_m38666748ACFD5A58B7EAE45B2748D559920608D6,
 	ConversationState_AddToken_m14F2ABB00739FEF38FB5F3E48A23C3D3E2E7F002,
@@ -370,6 +376,12 @@ static Il2CppMethodPointer s_methodPointers[317] =
 	WordButtonView__ctor_mEBA81CA5E3825AA395E5272224878730A6048277,
 	U3CU3Ec__DisplayClass3_0__ctor_m440276FE388F52AE389B927DC3386A0FD79C3B6B,
 	U3CU3Ec__DisplayClass3_0_U3CSetU3Eb__0_mB8013EC753395C53050BC33DADC83428C44F2F7A,
+	GridAutoSizer_Reset_m4A5497992FE76B8C3F1B8F5C13147205384A773D,
+	GridAutoSizer_OnEnable_m7D46AB866BF56F145F2CEACBBC9C7EE05EA3C6CF,
+	GridAutoSizer_OnRectTransformDimensionsChange_mBC4DA824277DE8C657C35B0955A26E4A26E5B457,
+	GridAutoSizer_Update_m7EE559DCD56BEC7C28F21E513F2BB28E80A0F8B8,
+	GridAutoSizer_Apply_m13ACAEB67D0ADB7FBFB195B674D061BB97298F6B,
+	GridAutoSizer__ctor_m05BF18F862912A3678895AA59D984CA996B34795,
 	SafeAreaFitter_Awake_m62887BFB5463D892F0AED173D326493D6BECA730,
 	SafeAreaFitter_Update_mD962D30ABC16D5B3F90CC9DAB5ADAE7B99D0A820,
 	SafeAreaFitter_Apply_mF142B7724E980BFBB8C4AFB6441E256D926D4423,
@@ -644,7 +656,7 @@ static Il2CppMethodPointer s_methodPointers[317] =
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42,
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19,
 };
-static const int32_t s_InvokerIndices[317] = 
+static const int32_t s_InvokerIndices[323] = 
 {
 	13737,
 	10545,
@@ -687,6 +699,12 @@ static const int32_t s_InvokerIndices[317] =
 	10482,
 	22996,
 	2279,
+	13944,
+	13944,
+	13944,
+	13944,
+	13944,
+	13944,
 	13944,
 	13944,
 	13944,
@@ -968,7 +986,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	317,
+	323,
 	s_methodPointers,
 	0,
 	NULL,
