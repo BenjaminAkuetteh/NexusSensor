@@ -1,19 +1,23 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
 public class ContextDropdownController : MonoBehaviour
 {
     [SerializeField] private TMP_Dropdown dropdown;
-    [SerializeField] private AAC_UIControllerV2 aacUi;
+    [SerializeField] private AAC_UIControllerV2 aac;
 
-    // These should match your pack ids in JSON
-    [SerializeField] private string fallbackPackId = "cafeteria_lunch"; // or "home_default" if you add it
-
-    private VocabRuntime _vocab;
-
-    public void Init(VocabRuntime vocab)
+    // Dropdown text -> base context id (NO vibe suffix here)
+    private readonly Dictionary<string, string> _map = new Dictionary<string, string>
     {
-        _vocab = vocab;
+        { "Home (Morning)", "home_morning" },
+        { "Cafeteria (Lunch)", "cafeteria_lunch" },
+        { "Classroom", "classroom_morning" },
+        { "Clinic", "clinic_any" }
+    };
+
+    private void Awake()
+    {
         if (dropdown != null)
         {
             dropdown.onValueChanged.RemoveAllListeners();
@@ -21,14 +25,26 @@ public class ContextDropdownController : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        // Apply initial selection on start (so it loads immediately)
+        if (dropdown != null) OnChanged(dropdown.value);
+    }
+
     private void OnChanged(int idx)
     {
-        if (_vocab == null || dropdown == null || aacUi == null) return;
+        if (dropdown == null || aac == null) return;
 
-        var option = dropdown.options[idx].text;
-        var ctx = ContextEngine.FromDropdown(option);
+        string label = dropdown.options[idx].text;
 
-        var chosen = ContextEngine.ChoosePackId(_vocab, ctx, fallbackPackId);
-        aacUi.SetActivePack(chosen);
+        // If the label isn't in the mapping, do nothing (prevents bad ids)
+        if (!_map.TryGetValue(label, out var baseContextId))
+        {
+            Debug.LogWarning($"ContextDropdownController: No mapping for dropdown option '{label}'.");
+            return;
+        }
+
+        // This MUST exist on AAC_UIControllerV2 (base id, vibe handled inside)
+        aac.SetActivePack(baseContextId);
     }
 }

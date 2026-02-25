@@ -80,6 +80,7 @@ Unity.IO.LowLevel.Unsafe.ReadHandle::ReleaseReadHandle_Injected
 Unity.IO.LowLevel.Unsafe.ReadHandle::GetReadStatus_Injected
 Unity.Jobs.JobHandle::ScheduleBatchedJobsAndIsCompleted
 Unity.Jobs.JobHandle::CombineDependenciesInternal2_Injected
+Unity.Jobs.JobHandle::CombineDependenciesInternal3_Injected
 Unity.Jobs.JobHandle::CombineDependenciesInternalPtr_Injected
 Unity.Jobs.JobHandle::ScheduleBatchedJobs
 Unity.Jobs.JobHandle::ScheduleBatchedJobsAndComplete
@@ -113,6 +114,8 @@ Unity.Profiling.ProfilerRecorder::GetLastValue_Injected
 Unity.Profiling.ProfilerRecorder::Control_Injected
 Unity.Profiling.ProfilerRecorder::Create_Injected
 Unity.Profiling.ProfilerRecorder::GetSampleInternal_Injected
+UnityEngine.Android.AndroidApplication::get_CurrentActivityRaw
+UnityEngine.Android.AndroidApplication::get_CurrentContextRaw
 UnityEngine.Android.AndroidApplication::get_UnityPlayerRaw
 UnityEngine.Android.AndroidGame::StopLoading
 UnityEngine.AndroidJNI::CallBooleanMethodUnsafe
@@ -310,9 +313,11 @@ UnityEngine.Application::get_runInBackground
 UnityEngine.Application::get_unityVersionMaj
 UnityEngine.Application::get_unityVersionVer
 UnityEngine.Application::OpenURL_Injected
+UnityEngine.Application::SetStackTraceLogType
 UnityEngine.Application::get_streamingAssetsPath_Injected
 UnityEngine.Application::set_targetFrameRate
 UnityEngine.Application::get_platform
+UnityEngine.Application::GetStackTraceLogType
 UnityEngine.AssetBundle::LoadAsset_Internal_Injected
 UnityEngine.Audio.ScriptableProcessorBindings::CheckProcessorExistsInternal_Injected
 UnityEngine.AudioSettings::StartAudioOutput
@@ -467,6 +472,8 @@ UnityEngine.ComputeShader::SetConstantComputeBuffer_Injected
 UnityEngine.ComputeShader::SetIntArray_Injected
 UnityEngine.ComputeShader::SetInt_Injected
 UnityEngine.ComputeShader::SetShaderKeywords_Injected
+UnityEngine.ComputeShader::SetTexture_Injected
+UnityEngine.ComputeShader::SetVector_Injected
 UnityEngine.ComputeShader::get_keywordSpace_Injected
 UnityEngine.ContactFilter2D::CheckConsistency
 UnityEngine.Coroutine::ReleaseCoroutine
@@ -618,11 +625,13 @@ UnityEngine.Gradient::get_colorSpace_Injected
 UnityEngine.Gradient::get_mode_Injected
 UnityEngine.Graphics::GetPreserveFramebufferAlpha
 UnityEngine.Graphics::Internal_GetMaxDrawMeshInstanceCount
+UnityEngine.Graphics::Blit2_Injected
 UnityEngine.Graphics::Blit4_Injected
 UnityEngine.Graphics::ClearRandomWriteTargets
 UnityEngine.Graphics::CopyTexture_Region_Injected
 UnityEngine.Graphics::CopyTexture_Slice_Injected
 UnityEngine.Graphics::ExecuteCommandBuffer_Injected
+UnityEngine.Graphics::Internal_BlitMaterial5_Injected
 UnityEngine.Graphics::Internal_DrawMeshInstanced_Injected
 UnityEngine.Graphics::Internal_DrawMesh_Injected
 UnityEngine.Graphics::Internal_SetNullRT
@@ -871,6 +880,7 @@ UnityEngine.Material::DisableLocalKeyword_Injected
 UnityEngine.Material::EnableKeyword_Injected
 UnityEngine.Material::EnableLocalKeyword_Injected
 UnityEngine.Material::GetColorImpl_Injected
+UnityEngine.Material::SetBufferImpl_Injected
 UnityEngine.Material::SetColorImpl_Injected
 UnityEngine.Material::SetConstantBufferImpl_Injected
 UnityEngine.Material::SetEnabledKeywords_Injected
@@ -878,6 +888,7 @@ UnityEngine.Material::SetFloatArrayImpl_Injected
 UnityEngine.Material::SetFloatImpl_Injected
 UnityEngine.Material::SetGraphicsBufferImpl_Injected
 UnityEngine.Material::SetIntImpl_Injected
+UnityEngine.Material::SetLocalKeyword_Injected
 UnityEngine.Material::SetMatrixArrayImpl_Injected
 UnityEngine.Material::SetMatrixImpl_Injected
 UnityEngine.Material::SetShaderKeywords_Injected
@@ -1101,6 +1112,8 @@ UnityEngine.Renderer::set_shadowCastingMode_Injected
 UnityEngine.Renderer::set_smallMeshCulling_Injected
 UnityEngine.Renderer::set_sortingLayerID_Injected
 UnityEngine.Renderer::set_sortingOrder_Injected
+UnityEngine.Rendering.AsyncGPUReadback::Request_Internal_ComputeBuffer_1_Injected
+UnityEngine.Rendering.AsyncGPUReadback::Request_Internal_ComputeBuffer_2_Injected
 UnityEngine.Rendering.AsyncGPUReadback::Request_Internal_GraphicsBuffer_1_Injected
 UnityEngine.Rendering.AsyncGPUReadback::Request_Internal_GraphicsBuffer_2_Injected
 UnityEngine.Rendering.AsyncGPUReadbackRequest::HasError
@@ -1162,6 +1175,7 @@ UnityEngine.Rendering.CommandBuffer::Internal_BuildRayTracingAccelerationStructu
 UnityEngine.Rendering.CommandBuffer::Internal_DispatchComputeIndirectGraphicsBuffer_Injected
 UnityEngine.Rendering.CommandBuffer::Internal_DispatchComputeIndirect_Injected
 UnityEngine.Rendering.CommandBuffer::Internal_DispatchCompute_Injected
+UnityEngine.Rendering.CommandBuffer::Internal_DispatchMachineLearningOperator_Injected
 UnityEngine.Rendering.CommandBuffer::Internal_DispatchRaysIndirect_Injected
 UnityEngine.Rendering.CommandBuffer::Internal_DispatchRays_Injected
 UnityEngine.Rendering.CommandBuffer::Internal_DrawMeshInstancedIndirectGraphicsBuffer_Injected
@@ -1199,6 +1213,7 @@ UnityEngine.Rendering.CommandBuffer::Internal_SetComputeInts_Injected
 UnityEngine.Rendering.CommandBuffer::Internal_SetComputeParamsFromMaterial_Injected
 UnityEngine.Rendering.CommandBuffer::Internal_SetComputeRayTracingAccelerationStructure_Injected
 UnityEngine.Rendering.CommandBuffer::Internal_SetComputeTextureParam_Injected
+UnityEngine.Rendering.CommandBuffer::Internal_SetMachineLearningOperatorTensors_Injected
 UnityEngine.Rendering.CommandBuffer::Internal_SetRayTracingAccelerationStructure_Injected
 UnityEngine.Rendering.CommandBuffer::Internal_SetRayTracingComputeBufferParam_Injected
 UnityEngine.Rendering.CommandBuffer::Internal_SetRayTracingConstantComputeBufferParam_Injected
@@ -1314,6 +1329,16 @@ UnityEngine.Rendering.LocalKeyword::GetComputeShaderKeywordIndex_Injected
 UnityEngine.Rendering.LocalKeyword::GetShaderKeywordCount_Injected
 UnityEngine.Rendering.LocalKeyword::GetShaderKeywordIndex_Injected
 UnityEngine.Rendering.LocalKeywordSpace::GetKeywordCount
+UnityEngine.Rendering.MachineLearningContext::CreateContext
+UnityEngine.Rendering.MachineLearningContext::BuildConv_Internal_Injected
+UnityEngine.Rendering.MachineLearningContext::BuildGemm_Internal_Injected
+UnityEngine.Rendering.MachineLearningContext::BuildReduce_Internal_Injected
+UnityEngine.Rendering.MachineLearningContext::DestroyContext
+UnityEngine.Rendering.MachineLearningOperator::AddInputTensor_Internal
+UnityEngine.Rendering.MachineLearningOperator::AddOutputTensor_Internal
+UnityEngine.Rendering.MachineLearningOperator::Dispatch_Internal
+UnityEngine.Rendering.MachineLearningOperator::ResetInputTensors_Internal
+UnityEngine.Rendering.MachineLearningOperator::ResetOutputTensors_Internal
 UnityEngine.Rendering.RayTracingAccelerationStructure::AddMeshInstance_Injected
 UnityEngine.Rendering.RayTracingAccelerationStructure::Create_Injected
 UnityEngine.Rendering.RayTracingAccelerationStructure::ClearInstances_Injected
@@ -1372,7 +1397,9 @@ UnityEngine.RenderSettings::get_ambientProbe_Injected
 UnityEngine.RenderSettings::get_ambientSkyColor_Injected
 UnityEngine.RenderSettings::get_subtractiveShadowColor_Injected
 UnityEngine.RenderTexture::Create_Injected
+UnityEngine.RenderTexture::IsCreated_Injected
 UnityEngine.RenderTexture::get_bindTextureMS_Injected
+UnityEngine.RenderTexture::get_enableRandomWrite_Injected
 UnityEngine.RenderTexture::get_enableShadingRate_Injected
 UnityEngine.RenderTexture::get_sRGB_Injected
 UnityEngine.RenderTexture::get_useDynamicScaleExplicit_Injected
@@ -1475,6 +1502,7 @@ UnityEngine.SystemInfo::SupportsComputeShaders
 UnityEngine.SystemInfo::SupportsGPUFence
 UnityEngine.SystemInfo::SupportsIndirectArgumentsBuffer
 UnityEngine.SystemInfo::SupportsInstancing
+UnityEngine.SystemInfo::SupportsMachineLearning
 UnityEngine.SystemInfo::SupportsMemorylessTextures
 UnityEngine.SystemInfo::SupportsMultisampleAutoResolve
 UnityEngine.SystemInfo::SupportsMultisampleResolveDepth
@@ -1654,6 +1682,7 @@ UnityEngine.Texture2D::get_whiteTexture_Injected
 UnityEngine.Texture2D::GetImageDataSize_Injected
 UnityEngine.Texture2D::ApplyImpl_Injected
 UnityEngine.Texture2D::GetPixelBilinearImpl_Injected
+UnityEngine.Texture2D::ReadPixelsImpl_Injected
 UnityEngine.Texture2D::SetAllPixels32_Injected
 UnityEngine.Texture2D::SetPixelImpl_Injected
 UnityEngine.Texture2D::SetPixelsImpl_Injected
@@ -1783,6 +1812,11 @@ UnityEngine.VFX.VFXManager::SetCameraBuffer_Injected
 UnityEngine.VFX.VFXManager::IsCameraBufferNeeded_Injected
 UnityEngine.VFX.VFXSpawnerState::Internal_Destroy
 UnityEngine.VFX.VisualEffect::get_visualEffectAsset_Injected
+UnityEngine.WebCamTexture::get_isPlaying_Injected
+UnityEngine.WebCamTexture::Internal_CreateWebCamTexture_Injected
+UnityEngine.WebCamTexture::Play_Injected
+UnityEngine.WebCamTexture::Stop_Injected
+UnityEngine.WebCamTexture::get_devices
 UnityEngine.XR.XRDisplaySubsystem::AddGraphicsThreadMirrorViewBlit_Injected
 UnityEngine.XR.XRDisplaySubsystem::GetMirrorViewBlitDesc_Injected
 UnityEngine.XR.XRDisplaySubsystem::Internal_TryBeginRecordingIfLateLatched_Injected

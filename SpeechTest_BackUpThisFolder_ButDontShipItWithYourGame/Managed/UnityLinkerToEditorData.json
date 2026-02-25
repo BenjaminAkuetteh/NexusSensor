@@ -83,9 +83,21 @@
             "icon": null
           },
           {
+            "name": "BaseVideoTexture",
+            "scenes": [],
+            "dependencyType": 1,
+            "icon": null
+          },
+          {
             "name": "SampleClip",
             "scenes": [],
             "dependencyType": 1,
+            "icon": null
+          },
+          {
+            "name": "WebCamTexture",
+            "scenes": [],
+            "dependencyType": 0,
             "icon": null
           }
         ]
@@ -121,7 +133,9 @@
           },
           {
             "name": "ComputeShader",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/SampleScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },

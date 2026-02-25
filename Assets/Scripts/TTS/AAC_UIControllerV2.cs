@@ -5,7 +5,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AAC_UIControllerV2 : MonoBehaviour
+// Implements IVisionSuggestionSink so VisionPipeline can call SetVisionSuggestions(...)
+public class AAC_UIControllerV2 : MonoBehaviour, IVisionSuggestionSink
 {
     public enum Category { Home, Needs, Feelings, Activities, People, Questions }
 
@@ -50,6 +51,13 @@ public class AAC_UIControllerV2 : MonoBehaviour
     [SerializeField] private Toggle vibeToggle;     // ON = Formal, OFF = Casual
     [SerializeField] private TMP_Text vibeLabel;    // displays "Formal"/"Casual"
 
+    [Header("Vision Suggestions (YOLO)")]
+    [Tooltip("How long vision suggestions remain 'active' after the last update.")]
+    [SerializeField] private float visionHoldSeconds = 2.0f;
+
+    [Tooltip("Max number of vision items to reserve at the front of the Dynamic Zone.")]
+    [SerializeField] private int maxVisionSlots = 3;
+
     private VibeMode _vibe = VibeMode.Formal;
 
     private ConversationState _state;
@@ -70,8 +78,14 @@ public class AAC_UIControllerV2 : MonoBehaviour
     private readonly List<string> _lastSuggestionIds = new();
     private bool _canRefreshSuggestions = true;
     private Coroutine _suggestionCooldownRoutine;
+
+    // Vibe-aware pack switching
     private string _baseContextId = "cafeteria_lunch";  // base context without vibe suffix
 
+    // ===== Vision override state (wired to YOLO pipeline) =====
+    private float _visionLastUpdate = -999f;
+    private readonly Dictionary<string, float> _visionConfById = new(); // wordId -> confidence
+    private readonly List<string> _visionOrderedIds = new();            // stable order (sorted by conf desc)
 
     private void Awake()
     {
@@ -110,7 +124,6 @@ public class AAC_UIControllerV2 : MonoBehaviour
         }
         else
         {
-            // Default label if toggle not wired yet
             if (vibeLabel) vibeLabel.text = "Formal";
             _vibe = VibeMode.Formal;
         }
@@ -126,6 +139,12 @@ public class AAC_UIControllerV2 : MonoBehaviour
     {
         _state.Clear();
         _usageCounts.Clear();
+
+        // also reset vision memory (doc "Last Intent memory to zero" equivalent for vision)
+        _visionConfById.Clear();
+        _visionOrderedIds.Clear();
+        _visionLastUpdate = -999f;
+
         RefreshAll(forceSuggestions: true);
     }
 
@@ -134,17 +153,14 @@ public class AAC_UIControllerV2 : MonoBehaviour
     {
         if (_vocab == null) return;
 
-    _baseContextId = baseContextId;
-    LoadContextWithVibe(force: true);
+        _baseContextId = baseContextId;
+        LoadContextWithVibe(force: true);
     }
 
     private void OnVibeChanged(bool isFormal)
     {
         _vibe = isFormal ? VibeMode.Formal : VibeMode.Casual;
         if (vibeLabel) vibeLabel.text = isFormal ? "Formal" : "Casual";
-
-        // Major state change -> force refresh
-        RefreshAll(forceSuggestions: true);
 
         LoadContextWithVibe(force: true);
     }
@@ -306,7 +322,8 @@ public class AAC_UIControllerV2 : MonoBehaviour
         if (suggestionsContent == null) return;
         if (!force && !_canRefreshSuggestions) return;
 
-        var suggestions = SuggestionsEngine.GetTop(
+        // 1) Base suggestions (context + vibe)
+        var baseSuggestions = SuggestionsEngine.GetTop(
             _activePackWords ?? new List<WordItem>(),
             _state.Tokens,
             _usageCounts,
@@ -314,12 +331,15 @@ public class AAC_UIControllerV2 : MonoBehaviour
             _vibe
         );
 
+        // 2) Vision override (top of the Dynamic Zone), merged deterministically
+        var merged = MergeVisionWithBase(baseSuggestions);
+
         for (int i = 0; i < _suggestionViews.Count; i++)
         {
             var view = _suggestionViews[i];
             var cg = _suggestionCanvasGroups[i];
 
-            if (i >= suggestions.Count)
+            if (i >= merged.Count)
             {
                 view.gameObject.SetActive(false);
                 cg.alpha = 0f;
@@ -327,7 +347,7 @@ public class AAC_UIControllerV2 : MonoBehaviour
                 continue;
             }
 
-            var item = suggestions[i];
+            var item = merged[i];
 
             view.gameObject.SetActive(true);
             view.Set(item.sprite, item.label, () => AddWordFromWordItem(item));
@@ -348,6 +368,50 @@ public class AAC_UIControllerV2 : MonoBehaviour
 
         if (!force)
             StartSuggestionsCooldown();
+    }
+
+    private List<WordItem> MergeVisionWithBase(List<WordItem> baseSuggestions)
+    {
+        var result = new List<WordItem>(suggestionSlots);
+        var used = new HashSet<string>();
+
+        // Vision active?
+        bool visionActive = (Time.unscaledTime - _visionLastUpdate) <= visionHoldSeconds;
+
+        if (visionActive && _vocab != null && _visionOrderedIds.Count > 0)
+        {
+            int take = Mathf.Clamp(maxVisionSlots, 0, suggestionSlots);
+
+            for (int i = 0; i < _visionOrderedIds.Count && result.Count < take; i++)
+            {
+                string id = _visionOrderedIds[i];
+                if (string.IsNullOrWhiteSpace(id)) continue;
+
+                if (_vocab.WordsById.TryGetValue(id, out var w) && w != null)
+                {
+                    if (used.Add(w.id))
+                        result.Add(w);
+                }
+            }
+        }
+
+        // Fill remaining from base engine (excluding vision duplicates)
+        if (baseSuggestions != null)
+        {
+            foreach (var w in baseSuggestions)
+            {
+                if (w == null) continue;
+                if (used.Add(w.id))
+                    result.Add(w);
+                if (result.Count >= suggestionSlots) break;
+            }
+        }
+
+        // In case baseSuggestions was empty, still ensure we don't exceed slots.
+        if (result.Count > suggestionSlots)
+            result = result.Take(suggestionSlots).ToList();
+
+        return result;
     }
 
     private void StartSuggestionsCooldown()
@@ -394,22 +458,60 @@ public class AAC_UIControllerV2 : MonoBehaviour
         b.transform.localScale = selected ? new Vector3(1.05f, 1.05f, 1f) : Vector3.one;
     }
 
-
     private void LoadContextWithVibe(bool force)
-{
-    if (_vocab == null) return;
+    {
+        if (_vocab == null) return;
 
-    string vibeSuffix = (_vibe == VibeMode.Formal) ? "_formal" : "_casual";
-    string candidate = _baseContextId + vibeSuffix;
+        string vibeSuffix = (_vibe == VibeMode.Formal) ? "_formal" : "_casual";
+        string candidate = _baseContextId + vibeSuffix;
 
-    // Prefer vibe-specific pack if it exists, otherwise fall back to base id
-    string finalId = _vocab.PacksById.ContainsKey(candidate) ? candidate : _baseContextId;
+        // Prefer vibe-specific pack if it exists, otherwise fall back to base id
+        string finalId = _vocab.PacksById.ContainsKey(candidate) ? candidate : _baseContextId;
 
-    activePackId = finalId;
-    _activePackWords = _vocab.GetWordsForPack(activePackId);
+        activePackId = finalId;
+        _activePackWords = _vocab.GetWordsForPack(activePackId);
 
-    RebuildWordGrid();
-    RefreshAll(forceSuggestions: force);
-}
+        RebuildWordGrid();
+        RefreshAll(forceSuggestions: force);
+    }
 
+    // =========================================================
+    // YOLO → UI hook (VisionPipeline calls this)
+    // =========================================================
+    public void SetVisionSuggestions(List<string> wordIds, List<float> confidences)
+    {
+        // Defensive: pipeline may send nulls
+        if (wordIds == null) wordIds = new List<string>();
+        if (confidences == null) confidences = new List<float>();
+
+        _visionConfById.Clear();
+        _visionOrderedIds.Clear();
+
+        // Keep best confidence per id
+        for (int i = 0; i < wordIds.Count; i++)
+        {
+            var id = wordIds[i];
+            if (string.IsNullOrWhiteSpace(id)) continue;
+
+            float conf = (i < confidences.Count) ? confidences[i] : 0f;
+
+            if (_visionConfById.TryGetValue(id, out var cur))
+            {
+                if (conf > cur) _visionConfById[id] = conf;
+            }
+            else
+            {
+                _visionConfById[id] = conf;
+            }
+        }
+
+        // Sort deterministically: confidence desc then id
+        foreach (var kv in _visionConfById.OrderByDescending(k => k.Value).ThenBy(k => k.Key))
+            _visionOrderedIds.Add(kv.Key);
+
+        _visionLastUpdate = Time.unscaledTime;
+
+        // Force-refresh dynamic zone to show it immediately
+        RefreshAll(forceSuggestions: true);
+    }
 }
