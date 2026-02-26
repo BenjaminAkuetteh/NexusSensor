@@ -1995,7 +1995,7 @@ inline void List_1_AddWithResize_m9BCCFC42410E3658B520A1A9C69CC8C952D87073 (List
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31121
+// Method Definition Index: 31213
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* DequantizeUint8_InferPartial_m17029B706497274356AC4730B33553D67A6663E7 (PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___0_input, float ___1_scale, uint8_t ___2_zeroPoint, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2006,18 +2006,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Quantization.cs:18>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Quantization.cs:18>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_0 = ___0_input;
 		NullCheck(L_0);
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_1;
 		L_1 = PartialTensor_get_shape_m49066131BB4F93BFB14B8A2BF39D4809C188A758_inline(L_0, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Quantization.cs:19>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Quantization.cs:19>
 		PartialTensor_1_t55E6F010A18DC42EA062373BD5AC0FB3F3835A42* L_2 = (PartialTensor_1_t55E6F010A18DC42EA062373BD5AC0FB3F3835A42*)il2cpp_codegen_object_new(PartialTensor_1_t55E6F010A18DC42EA062373BD5AC0FB3F3835A42_il2cpp_TypeInfo_var);
 		PartialTensor_1__ctor_m5847012FD9720D1F6F5212457F7BE335EDB22CD6(L_2, L_1, PartialTensor_1__ctor_m5847012FD9720D1F6F5212457F7BE335EDB22CD6_RuntimeMethod_var);
 		return L_2;
 	}
 }
-// Method Definition Index: 31122
+// Method Definition Index: 31214
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DequantizeUint8_Execute_mBCE782575070B8044CC176C0485DFA20F6593DF4 (DequantizeUint8_t7A3B32DA24FACF82C2158EEBB57EB9F56D9FAE21* __this, ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2034,7 +2034,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DequantizeUint8_Execute_mBCE782575070B80
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_2;
 	memset((&V_2), 0, sizeof(V_2));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Quantization.cs:24>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Quantization.cs:24>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_0 = ___0_ctx;
 		RuntimeObject* L_1 = L_0.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -2045,7 +2045,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DequantizeUint8_Execute_mBCE782575070B80
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_5;
 		L_5 = InterfaceFuncInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t >::Invoke(2, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_1, L_4);
 		V_0 = ((Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF*)IsInstClass((RuntimeObject*)L_5, Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Quantization.cs:25>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Quantization.cs:25>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_6 = ___0_ctx;
 		RuntimeObject* L_7 = L_6.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_8 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -2060,12 +2060,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DequantizeUint8_Execute_mBCE782575070B80
 		RuntimeObject* L_14 = L_13.___backend;
 		NullCheck(L_14);
 		int32_t L_15;
-		L_15 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_14);
+		L_15 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_14);
 		NullCheck(L_7);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_16;
 		L_16 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_7, L_10, L_12, 0, L_15);
 		V_1 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_16, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Quantization.cs:26>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Quantization.cs:26>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_17 = V_1;
 		NullCheck(L_17);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_18;
@@ -2079,13 +2079,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DequantizeUint8_Execute_mBCE782575070B80
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Quantization.cs:27>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Quantization.cs:27>
 		return;
 	}
 
 IL_0055:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Quantization.cs:28>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Quantization.cs:28>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_20 = ___0_ctx;
 		RuntimeObject* L_21 = L_20.___backend;
 		Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* L_22 = V_0;
@@ -2093,12 +2093,12 @@ IL_0055:
 		float L_24 = __this->___scale;
 		uint8_t L_25 = __this->___zeroPoint;
 		NullCheck(L_21);
-		InterfaceActionInvoker4< Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, float, uint8_t >::Invoke(189, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_21, L_22, L_23, L_24, L_25);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Quantization.cs:29>
+		InterfaceActionInvoker4< Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, float, uint8_t >::Invoke(191, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_21, L_22, L_23, L_24, L_25);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Quantization.cs:29>
 		return;
 	}
 }
-// Method Definition Index: 31123
+// Method Definition Index: 31215
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DequantizeUint8__ctor_mC9C0CBB957CF770E598EDC0E41CC799F25D885CD (DequantizeUint8_t7A3B32DA24FACF82C2158EEBB57EB9F56D9FAE21* __this, float ___0_scale, uint8_t ___1_zeroPoint, const RuntimeMethod* method) 
 {
 	{
@@ -2110,7 +2110,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DequantizeUint8__ctor_mC9C0CBB957CF770E5
 		return;
 	}
 }
-// Method Definition Index: 31124
+// Method Definition Index: 31216
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DequantizeUint8_InferPartial_mC7F7956D2C4FBF3D893C3FA05CD12F46935680A2 (DequantizeUint8_t7A3B32DA24FACF82C2158EEBB57EB9F56D9FAE21* __this, PartialInferenceContext_t87A97CDA80604F25B18FC9A140939F6DFB2F92AE* ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2146,7 +2146,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DequantizeUint8_InferPartial_mC7F7956D2C
 		return;
 	}
 }
-// Method Definition Index: 31125
+// Method Definition Index: 31217
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* DequantizeUint8_GetInputNames_m4DAB8732A137305F5D6A51412D21AEF62AC622A7 (DequantizeUint8_t7A3B32DA24FACF82C2158EEBB57EB9F56D9FAE21* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2161,7 +2161,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31126
+// Method Definition Index: 31218
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DequantizeUint8_t7A3B32DA24FACF82C2158EEBB57EB9F56D9FAE21* DequantizeUint8_SetInputs_m01E8E92D1472FA810B991F6BCC17B3DC2340217F (DequantizeUint8_t7A3B32DA24FACF82C2158EEBB57EB9F56D9FAE21* __this, int32_t ___0_input, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2181,7 +2181,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DequantizeUint8_t7A3B32DA24FACF82C2158EEBB57E
 		return __this;
 	}
 }
-// Method Definition Index: 31127
+// Method Definition Index: 31219
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* DequantizeUint8_GetOutputNames_mAA88D51CEF7C949143A93A22CA2386A98A27E076 (DequantizeUint8_t7A3B32DA24FACF82C2158EEBB57EB9F56D9FAE21* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2196,7 +2196,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31128
+// Method Definition Index: 31220
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DequantizeUint8_t7A3B32DA24FACF82C2158EEBB57EB9F56D9FAE21* DequantizeUint8_SetOutputs_mD6A95C080441C12BE05DEC9E9C2BFBA29479C6C5 (DequantizeUint8_t7A3B32DA24FACF82C2158EEBB57EB9F56D9FAE21* __this, int32_t ___0_output, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2216,7 +2216,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DequantizeUint8_t7A3B32DA24FACF82C2158EEBB57E
 		return __this;
 	}
 }
-// Method Definition Index: 31129
+// Method Definition Index: 31221
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DequantizeUint8_get_opName_m309D71DDEEE97ED051492305DD63073F405E6093 (DequantizeUint8_t7A3B32DA24FACF82C2158EEBB57EB9F56D9FAE21* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2229,7 +2229,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DequantizeUint8_get_opName_m309D71D
 		return _stringLiteral6B0A67036ACD73E50047CA7C4B8CA3B1A410F5C4;
 	}
 }
-// Method Definition Index: 31130
+// Method Definition Index: 31222
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DequantizeUint8_get_category_m4B679F89437B365AF844B76C60AA84138D7D31C5 (DequantizeUint8_t7A3B32DA24FACF82C2158EEBB57EB9F56D9FAE21* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2242,7 +2242,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DequantizeUint8_get_category_m4B679
 		return _stringLiteral6D67D46D8F7E8AB4B53362CD21641E5954564CC2;
 	}
 }
-// Method Definition Index: 31131
+// Method Definition Index: 31223
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD DequantizeUint8_get_profilerMarker_m0A0BE9E216D5368F4C1E8BFB061A0F8372374A1A (DequantizeUint8_t7A3B32DA24FACF82C2158EEBB57EB9F56D9FAE21* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2257,7 +2257,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C
 		return L_0;
 	}
 }
-// Method Definition Index: 31132
+// Method Definition Index: 31224
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DequantizeUint8_ToString_m0268143B23C16B52B0168EA902B7A9D0AF95AC88 (DequantizeUint8_t7A3B32DA24FACF82C2158EEBB57EB9F56D9FAE21* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2310,7 +2310,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DequantizeUint8_ToString_m0268143B2
 		return L_17;
 	}
 }
-// Method Definition Index: 31133
+// Method Definition Index: 31225
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DequantizeUint8_SerializeFields_mF832047F77C2638F31247EBF2BD9D153A7C8159B (DequantizeUint8_t7A3B32DA24FACF82C2158EEBB57EB9F56D9FAE21* __this, FlatBufferBuilder_t72116669EC849BCB6543BD426C0F6A9E825BB2FB* ___0_builder, List_1_tAFC4DAF15C03810FE08B8E9742E14A65E4EF9D70* ___1_values, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2345,7 +2345,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DequantizeUint8_SerializeFields_mF832047
 		return;
 	}
 }
-// Method Definition Index: 31134
+// Method Definition Index: 31226
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039* DequantizeUint8_DeserializeLayer_m422DBF34D6CDE7720EB04646B016E30BE52EEAFC (Chain_tA7420781D03CE0268AA17EB04D33ED70711681D9 ___0_chain, ExecutionPlan_tDB179066AB651AA7AE8CF463F21CDFA7E06B6A36 ___1_executionPlan, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2426,7 +2426,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C0
 		return L_17;
 	}
 }
-// Method Definition Index: 31135
+// Method Definition Index: 31227
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DequantizeUint8__cctor_m2C7C59C2FFED4F5F891791C2E20AE5862AD4EA73 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2467,11 +2467,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DequantizeUint8__cctor_m2C7C59C2FFED4F5F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31136
+// Method Definition Index: 31228
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RandomLayer_get_NextSeed_m9F42D99F1966E55F536F140200C92F4155B0EE59 (RandomLayer_tAEAA94CE6C06600F822FE70455B3B36F20D9B537* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:15>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:15>
 		Random_tD11C8C5E6C9FF3476E04E2B7717A874BA0FDC62E* L_0 = __this->___m_Random;
 		NullCheck(L_0);
 		int32_t L_1;
@@ -2479,7 +2479,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RandomLayer_get_NextSeed_m9F42D99F196
 		return L_1;
 	}
 }
-// Method Definition Index: 31137
+// Method Definition Index: 31229
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomLayer_ResetSeed_m7C2A44C5BDECD5E5D4661E5183F409CAD7A79D90 (RandomLayer_tAEAA94CE6C06600F822FE70455B3B36F20D9B537* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2493,7 +2493,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomLayer_ResetSeed_m7C2A44C5BDECD5E5D
 	Random_tD11C8C5E6C9FF3476E04E2B7717A874BA0FDC62E* G_B3_0 = NULL;
 	RandomLayer_tAEAA94CE6C06600F822FE70455B3B36F20D9B537* G_B3_1 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:19>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:19>
 		bool L_0 = __this->___hasSeed;
 		if (L_0)
 		{
@@ -2524,11 +2524,11 @@ IL_001b:
 		NullCheck(G_B3_1);
 		G_B3_1->___m_Random = G_B3_0;
 		Il2CppCodeGenWriteBarrier((void**)(&G_B3_1->___m_Random), (void*)G_B3_0);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:20>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:20>
 		return;
 	}
 }
-// Method Definition Index: 31138
+// Method Definition Index: 31230
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomLayer__ctor_m0599AA8D4CA4FC966E69A2297E894E62BD7B8B7C (RandomLayer_tAEAA94CE6C06600F822FE70455B3B36F20D9B537* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2544,7 +2544,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomLayer__ctor_m0599AA8D4CA4FC966E69A
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31139
+// Method Definition Index: 31231
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* RandomNormal_InferPartial_mFC3C8963F0B5C5FFC379A96564A9C25670A9F820 (float ___0_mean, float ___1_scale, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___2_shape, bool ___3_hasSeed, int32_t ___4_seed, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2556,7 +2556,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:36>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:36>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_0 = ___2_shape;
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_1;
 		L_1 = ReadOnlySpan_1_op_Implicit_mAA9659DD7F5904F510BD9CC8AF18C21D0C3E51E3(L_0, ReadOnlySpan_1_op_Implicit_mAA9659DD7F5904F510BD9CC8AF18C21D0C3E51E3_RuntimeMethod_var);
@@ -2571,7 +2571,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		return L_4;
 	}
 }
-// Method Definition Index: 31140
+// Method Definition Index: 31232
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomNormal_Execute_mA4F47C95BDE4C92AC0E628F9C0D80EF5323262C6 (RandomNormal_t8A093BA104A7E861517E05330B8741CBC5ABC0AC* __this, ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2588,7 +2588,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomNormal_Execute_mA4F47C95BDE4C92AC0
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_1;
 	memset((&V_1), 0, sizeof(V_1));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:41>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:41>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_0 = ___0_ctx;
 		RuntimeObject* L_1 = L_0.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -2605,12 +2605,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomNormal_Execute_mA4F47C95BDE4C92AC0
 		RuntimeObject* L_9 = L_8.___backend;
 		NullCheck(L_9);
 		int32_t L_10;
-		L_10 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_9);
+		L_10 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_9);
 		NullCheck(L_1);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_11;
 		L_11 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_1, L_4, L_7, 0, L_10);
 		V_0 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_11, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:42>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_12 = V_0;
 		NullCheck(L_12);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_13;
@@ -2624,13 +2624,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomNormal_Execute_mA4F47C95BDE4C92AC0
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:43>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:43>
 		return;
 	}
 
 IL_0046:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:44>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:44>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_15 = ___0_ctx;
 		RuntimeObject* L_16 = L_15.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_17 = V_0;
@@ -2642,12 +2642,12 @@ IL_0046:
 		memset((&L_21), 0, sizeof(L_21));
 		Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703((&L_21), L_20, Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
 		NullCheck(L_16);
-		InterfaceActionInvoker4< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, float, float, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 >::Invoke(24, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_16, L_17, L_18, L_19, L_21);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:45>
+		InterfaceActionInvoker4< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, float, float, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 >::Invoke(25, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_16, L_17, L_18, L_19, L_21);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:45>
 		return;
 	}
 }
-// Method Definition Index: 31141
+// Method Definition Index: 31233
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomNormal__ctor_m35591FBA04160115C4E87BF87BDFC5DAD311FD79 (RandomNormal_t8A093BA104A7E861517E05330B8741CBC5ABC0AC* __this, float ___0_mean, float ___1_scale, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___2_shape, bool ___3_hasSeed, int32_t ___4_seed, const RuntimeMethod* method) 
 {
 	{
@@ -2667,7 +2667,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomNormal__ctor_m35591FBA04160115C4E8
 		return;
 	}
 }
-// Method Definition Index: 31142
+// Method Definition Index: 31234
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomNormal_InferPartial_m623B6248E5B073A6864292D6517751B3857D01A2 (RandomNormal_t8A093BA104A7E861517E05330B8741CBC5ABC0AC* __this, PartialInferenceContext_t87A97CDA80604F25B18FC9A140939F6DFB2F92AE* ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2698,7 +2698,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomNormal_InferPartial_m623B6248E5B07
 		return;
 	}
 }
-// Method Definition Index: 31143
+// Method Definition Index: 31235
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* RandomNormal_GetInputNames_m3C49D873CA9DE8DD92FB042BDD70A62912962081 (RandomNormal_t8A093BA104A7E861517E05330B8741CBC5ABC0AC* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2713,7 +2713,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31144
+// Method Definition Index: 31236
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RandomNormal_t8A093BA104A7E861517E05330B8741CBC5ABC0AC* RandomNormal_SetInputs_mEB86A344217384AF93F1731C89A90706A5B20ADF (RandomNormal_t8A093BA104A7E861517E05330B8741CBC5ABC0AC* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2729,7 +2729,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RandomNormal_t8A093BA104A7E861517E05330B8741C
 		return __this;
 	}
 }
-// Method Definition Index: 31145
+// Method Definition Index: 31237
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* RandomNormal_GetOutputNames_mE2958416A814112DE118B46701CEA197D3E24F7C (RandomNormal_t8A093BA104A7E861517E05330B8741CBC5ABC0AC* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2744,7 +2744,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31146
+// Method Definition Index: 31238
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RandomNormal_t8A093BA104A7E861517E05330B8741CBC5ABC0AC* RandomNormal_SetOutputs_mAC25DDD8ED61078DF080FF18F9B7FFAA9720DD87 (RandomNormal_t8A093BA104A7E861517E05330B8741CBC5ABC0AC* __this, int32_t ___0_output, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2764,7 +2764,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RandomNormal_t8A093BA104A7E861517E05330B8741C
 		return __this;
 	}
 }
-// Method Definition Index: 31147
+// Method Definition Index: 31239
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RandomNormal_get_opName_mC268E67564F3DFC8E54761F5ECA58FEB9D8B13C7 (RandomNormal_t8A093BA104A7E861517E05330B8741CBC5ABC0AC* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2777,7 +2777,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RandomNormal_get_opName_mC268E67564
 		return _stringLiteral14844CD98F7D1437A78A0F259E1DB324D9CDBF19;
 	}
 }
-// Method Definition Index: 31148
+// Method Definition Index: 31240
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RandomNormal_get_category_m1F0C5B6A037ABBEB2C815D3264D678716BE480CD (RandomNormal_t8A093BA104A7E861517E05330B8741CBC5ABC0AC* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2790,7 +2790,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RandomNormal_get_category_m1F0C5B6A
 		return _stringLiteral0EB3ABCEBF8AD992C5504A03E22528C469F4F111;
 	}
 }
-// Method Definition Index: 31149
+// Method Definition Index: 31241
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD RandomNormal_get_profilerMarker_mDD08270FD09534D9691879BAE026A38C32970788 (RandomNormal_t8A093BA104A7E861517E05330B8741CBC5ABC0AC* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2805,7 +2805,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C
 		return L_0;
 	}
 }
-// Method Definition Index: 31150
+// Method Definition Index: 31242
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RandomNormal_ToString_m109AC5201496CC9B462DC2B12908126FE70AFE12 (RandomNormal_t8A093BA104A7E861517E05330B8741CBC5ABC0AC* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2927,7 +2927,7 @@ IL_0077:
 		return L_29;
 	}
 }
-// Method Definition Index: 31151
+// Method Definition Index: 31243
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomNormal_SerializeFields_m89717C6821C7F1A6E3B849989AB33ECE0F175DAE (RandomNormal_t8A093BA104A7E861517E05330B8741CBC5ABC0AC* __this, FlatBufferBuilder_t72116669EC849BCB6543BD426C0F6A9E825BB2FB* ___0_builder, List_1_tAFC4DAF15C03810FE08B8E9742E14A65E4EF9D70* ___1_values, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3028,7 +3028,7 @@ IL_006d:
 		return;
 	}
 }
-// Method Definition Index: 31152
+// Method Definition Index: 31244
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039* RandomNormal_DeserializeLayer_m647E7873D5FD044D9FBC4D35372365AA56108B12 (Chain_tA7420781D03CE0268AA17EB04D33ED70711681D9 ___0_chain, ExecutionPlan_tDB179066AB651AA7AE8CF463F21CDFA7E06B6A36 ___1_executionPlan, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3201,7 +3201,7 @@ IL_00af:
 		return L_38;
 	}
 }
-// Method Definition Index: 31153
+// Method Definition Index: 31245
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomNormal__cctor_m3080A5E4CCF535C6EF084CB0804BC1058270A80C (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3240,7 +3240,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomNormal__cctor_m3080A5E4CCF535C6EF0
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31154
+// Method Definition Index: 31246
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* RandomNormalLike_InferPartial_mAEE0363171F73064D8B38AEE2ECDA8464CDBAFA8 (PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___0_input, float ___1_mean, float ___2_scale, bool ___3_hasSeed, int32_t ___4_seed, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3251,7 +3251,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:60>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:60>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_0 = ___0_input;
 		NullCheck(L_0);
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_1;
@@ -3261,7 +3261,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		return L_2;
 	}
 }
-// Method Definition Index: 31155
+// Method Definition Index: 31247
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomNormalLike_Execute_m39D8F5406912C79F9A910871BD1E7150FE8515F5 (RandomNormalLike_t538477357D59B3C4B2A092D379E4A11B9489F94D* __this, ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3279,7 +3279,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomNormalLike_Execute_m39D8F5406912C7
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_2;
 	memset((&V_2), 0, sizeof(V_2));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:65>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:65>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_0 = ___0_ctx;
 		RuntimeObject* L_1 = L_0.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -3290,7 +3290,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomNormalLike_Execute_m39D8F5406912C7
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_5;
 		L_5 = InterfaceFuncInvoker1< TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t >::Invoke(3, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_1, L_4);
 		V_0 = L_5;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:66>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:66>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_6 = ___0_ctx;
 		RuntimeObject* L_7 = L_6.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_8 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -3302,12 +3302,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomNormalLike_Execute_m39D8F5406912C7
 		RuntimeObject* L_13 = L_12.___backend;
 		NullCheck(L_13);
 		int32_t L_14;
-		L_14 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_13);
+		L_14 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_13);
 		NullCheck(L_7);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_15;
 		L_15 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_7, L_10, L_11, 0, L_14);
 		V_1 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_15, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:67>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_16 = V_1;
 		NullCheck(L_16);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_17;
@@ -3321,13 +3321,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomNormalLike_Execute_m39D8F5406912C7
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:68>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:68>
 		return;
 	}
 
 IL_004b:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:69>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:69>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_19 = ___0_ctx;
 		RuntimeObject* L_20 = L_19.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_21 = V_1;
@@ -3339,12 +3339,12 @@ IL_004b:
 		memset((&L_25), 0, sizeof(L_25));
 		Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703((&L_25), L_24, Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
 		NullCheck(L_20);
-		InterfaceActionInvoker4< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, float, float, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 >::Invoke(24, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_20, L_21, L_22, L_23, L_25);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:70>
+		InterfaceActionInvoker4< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, float, float, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 >::Invoke(25, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_20, L_21, L_22, L_23, L_25);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:70>
 		return;
 	}
 }
-// Method Definition Index: 31156
+// Method Definition Index: 31248
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomNormalLike__ctor_mCC80F30904246F58E7EA4416EEFBB1CD5A6FE4D5 (RandomNormalLike_t538477357D59B3C4B2A092D379E4A11B9489F94D* __this, float ___0_mean, float ___1_scale, bool ___2_hasSeed, int32_t ___3_seed, const RuntimeMethod* method) 
 {
 	{
@@ -3361,7 +3361,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomNormalLike__ctor_mCC80F30904246F58
 		return;
 	}
 }
-// Method Definition Index: 31157
+// Method Definition Index: 31249
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomNormalLike_InferPartial_m69F14E5381E09DB36DA356130F13AFF31506E125 (RandomNormalLike_t538477357D59B3C4B2A092D379E4A11B9489F94D* __this, PartialInferenceContext_t87A97CDA80604F25B18FC9A140939F6DFB2F92AE* ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3399,7 +3399,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomNormalLike_InferPartial_m69F14E538
 		return;
 	}
 }
-// Method Definition Index: 31158
+// Method Definition Index: 31250
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* RandomNormalLike_GetInputNames_mC64B67789C1536A76F97B66276C31406F4262087 (RandomNormalLike_t538477357D59B3C4B2A092D379E4A11B9489F94D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3414,7 +3414,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31159
+// Method Definition Index: 31251
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RandomNormalLike_t538477357D59B3C4B2A092D379E4A11B9489F94D* RandomNormalLike_SetInputs_m1C81C81F64CF81AC0310E936FEF02F1EF9C16CFC (RandomNormalLike_t538477357D59B3C4B2A092D379E4A11B9489F94D* __this, int32_t ___0_input, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3434,7 +3434,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RandomNormalLike_t538477357D59B3C4B2A092D379E
 		return __this;
 	}
 }
-// Method Definition Index: 31160
+// Method Definition Index: 31252
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RandomNormalLike_IsInputNoDataDependency_m3F708199BA55A37C63191EC519E6370C06E18420 (RandomNormalLike_t538477357D59B3C4B2A092D379E4A11B9489F94D* __this, int32_t ___0_i, const RuntimeMethod* method) 
 {
 	{
@@ -3442,7 +3442,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RandomNormalLike_IsInputNoDataDependency
 		return (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
 	}
 }
-// Method Definition Index: 31161
+// Method Definition Index: 31253
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* RandomNormalLike_GetOutputNames_m01D458BA9944B9CDF783A59838BC1A0BDFB7D8F7 (RandomNormalLike_t538477357D59B3C4B2A092D379E4A11B9489F94D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3457,7 +3457,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31162
+// Method Definition Index: 31254
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RandomNormalLike_t538477357D59B3C4B2A092D379E4A11B9489F94D* RandomNormalLike_SetOutputs_m0EBEBE6C9F71DBD112BD2F9AB7A6608EA6086B80 (RandomNormalLike_t538477357D59B3C4B2A092D379E4A11B9489F94D* __this, int32_t ___0_output, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3477,7 +3477,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RandomNormalLike_t538477357D59B3C4B2A092D379E
 		return __this;
 	}
 }
-// Method Definition Index: 31163
+// Method Definition Index: 31255
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RandomNormalLike_get_opName_mB599391DE10DAF986A99F0B16CA959330BA2353B (RandomNormalLike_t538477357D59B3C4B2A092D379E4A11B9489F94D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3490,7 +3490,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RandomNormalLike_get_opName_mB59939
 		return _stringLiteral2A54F2845BDB40C59B3634CFEC0474A5C05F088C;
 	}
 }
-// Method Definition Index: 31164
+// Method Definition Index: 31256
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RandomNormalLike_get_category_m0CF66D8BE2D97ACF0C0BD5B2BE5D1B46EB63CB45 (RandomNormalLike_t538477357D59B3C4B2A092D379E4A11B9489F94D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3503,7 +3503,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RandomNormalLike_get_category_m0CF6
 		return _stringLiteral0EB3ABCEBF8AD992C5504A03E22528C469F4F111;
 	}
 }
-// Method Definition Index: 31165
+// Method Definition Index: 31257
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD RandomNormalLike_get_profilerMarker_m9CC0EC11E931184C02106552132F4D998064D18D (RandomNormalLike_t538477357D59B3C4B2A092D379E4A11B9489F94D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3518,7 +3518,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C
 		return L_0;
 	}
 }
-// Method Definition Index: 31166
+// Method Definition Index: 31258
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RandomNormalLike_ToString_m08410F9605D6D3488E0294047727ACEDD335B708 (RandomNormalLike_t538477357D59B3C4B2A092D379E4A11B9489F94D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3585,7 +3585,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RandomNormalLike_ToString_m08410F96
 		return L_25;
 	}
 }
-// Method Definition Index: 31167
+// Method Definition Index: 31259
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomNormalLike_SerializeFields_mBC3F37B53777906FFEAE3308954FEAB80E7081AA (RandomNormalLike_t538477357D59B3C4B2A092D379E4A11B9489F94D* __this, FlatBufferBuilder_t72116669EC849BCB6543BD426C0F6A9E825BB2FB* ___0_builder, List_1_tAFC4DAF15C03810FE08B8E9742E14A65E4EF9D70* ___1_values, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3642,7 +3642,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomNormalLike_SerializeFields_mBC3F37
 		return;
 	}
 }
-// Method Definition Index: 31168
+// Method Definition Index: 31260
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039* RandomNormalLike_DeserializeLayer_mFDCD647E5938561D302FDC720C6FF24F634A6769 (Chain_tA7420781D03CE0268AA17EB04D33ED70711681D9 ___0_chain, ExecutionPlan_tDB179066AB651AA7AE8CF463F21CDFA7E06B6A36 ___1_executionPlan, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3757,7 +3757,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C0
 		return L_29;
 	}
 }
-// Method Definition Index: 31169
+// Method Definition Index: 31261
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomNormalLike__cctor_m74BFE17FA55F8192866456D9A03D0609FD803BA1 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3798,7 +3798,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomNormalLike__cctor_m74BFE17FA55F819
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31170
+// Method Definition Index: 31262
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* RandomUniform_InferPartial_mD7D9793CA1D534936DFCD4A03C83B3F5C030613E (float ___0_low, float ___1_high, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___2_shape, bool ___3_hasSeed, int32_t ___4_seed, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3810,7 +3810,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:86>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:86>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_0 = ___2_shape;
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_1;
 		L_1 = ReadOnlySpan_1_op_Implicit_mAA9659DD7F5904F510BD9CC8AF18C21D0C3E51E3(L_0, ReadOnlySpan_1_op_Implicit_mAA9659DD7F5904F510BD9CC8AF18C21D0C3E51E3_RuntimeMethod_var);
@@ -3825,7 +3825,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		return L_4;
 	}
 }
-// Method Definition Index: 31171
+// Method Definition Index: 31263
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomUniform_Execute_mCF093F6E4D0BC0A5F400D35F3BF0E1FD0BDD9FDE (RandomUniform_t6263486686747684A7E6CB8F25942E86835113F4* __this, ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3842,7 +3842,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomUniform_Execute_mCF093F6E4D0BC0A5F
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_1;
 	memset((&V_1), 0, sizeof(V_1));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:91>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:91>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_0 = ___0_ctx;
 		RuntimeObject* L_1 = L_0.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -3859,12 +3859,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomUniform_Execute_mCF093F6E4D0BC0A5F
 		RuntimeObject* L_9 = L_8.___backend;
 		NullCheck(L_9);
 		int32_t L_10;
-		L_10 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_9);
+		L_10 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_9);
 		NullCheck(L_1);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_11;
 		L_11 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_1, L_4, L_7, 0, L_10);
 		V_0 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_11, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:92>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:92>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_12 = V_0;
 		NullCheck(L_12);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_13;
@@ -3878,13 +3878,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomUniform_Execute_mCF093F6E4D0BC0A5F
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:93>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:93>
 		return;
 	}
 
 IL_0046:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:94>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:94>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_15 = ___0_ctx;
 		RuntimeObject* L_16 = L_15.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_17 = V_0;
@@ -3896,12 +3896,12 @@ IL_0046:
 		memset((&L_21), 0, sizeof(L_21));
 		Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703((&L_21), L_20, Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
 		NullCheck(L_16);
-		InterfaceActionInvoker4< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, float, float, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 >::Invoke(25, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_16, L_17, L_18, L_19, L_21);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:95>
+		InterfaceActionInvoker4< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, float, float, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 >::Invoke(26, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_16, L_17, L_18, L_19, L_21);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:95>
 		return;
 	}
 }
-// Method Definition Index: 31172
+// Method Definition Index: 31264
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomUniform__ctor_m666CC71946BDBEF365058B43CB10BBFC4A46E5BD (RandomUniform_t6263486686747684A7E6CB8F25942E86835113F4* __this, float ___0_low, float ___1_high, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___2_shape, bool ___3_hasSeed, int32_t ___4_seed, const RuntimeMethod* method) 
 {
 	{
@@ -3921,7 +3921,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomUniform__ctor_m666CC71946BDBEF3650
 		return;
 	}
 }
-// Method Definition Index: 31173
+// Method Definition Index: 31265
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomUniform_InferPartial_mF48AA6725889BC2F6B465C45C787DD8CDAD7B0E2 (RandomUniform_t6263486686747684A7E6CB8F25942E86835113F4* __this, PartialInferenceContext_t87A97CDA80604F25B18FC9A140939F6DFB2F92AE* ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3952,7 +3952,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomUniform_InferPartial_mF48AA6725889
 		return;
 	}
 }
-// Method Definition Index: 31174
+// Method Definition Index: 31266
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* RandomUniform_GetInputNames_mA6BC2611F6526003137268098FF80942544C2E6E (RandomUniform_t6263486686747684A7E6CB8F25942E86835113F4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3967,7 +3967,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31175
+// Method Definition Index: 31267
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RandomUniform_t6263486686747684A7E6CB8F25942E86835113F4* RandomUniform_SetInputs_m142A9F38E8852AEA73C4F19493690B3050943CD1 (RandomUniform_t6263486686747684A7E6CB8F25942E86835113F4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3983,7 +3983,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RandomUniform_t6263486686747684A7E6CB8F25942E
 		return __this;
 	}
 }
-// Method Definition Index: 31176
+// Method Definition Index: 31268
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* RandomUniform_GetOutputNames_m9FB3C6867641DF70FBCC746FA324AC9ADFBA1EAE (RandomUniform_t6263486686747684A7E6CB8F25942E86835113F4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3998,7 +3998,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31177
+// Method Definition Index: 31269
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RandomUniform_t6263486686747684A7E6CB8F25942E86835113F4* RandomUniform_SetOutputs_m3C151F8EDF1A1B1FED6BFF8600933FECBA2E0E02 (RandomUniform_t6263486686747684A7E6CB8F25942E86835113F4* __this, int32_t ___0_output, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4018,7 +4018,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RandomUniform_t6263486686747684A7E6CB8F25942E
 		return __this;
 	}
 }
-// Method Definition Index: 31178
+// Method Definition Index: 31270
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RandomUniform_get_opName_m8C4277309FC62F82FF32FF88DC9458C2BEA5DCBB (RandomUniform_t6263486686747684A7E6CB8F25942E86835113F4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4031,7 +4031,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RandomUniform_get_opName_m8C4277309
 		return _stringLiteral0080061E528CFD83F3ADA3B629C4F11341C75FDB;
 	}
 }
-// Method Definition Index: 31179
+// Method Definition Index: 31271
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RandomUniform_get_category_m85A03A142AEAC8E990E9F016EF14B7C7347357F1 (RandomUniform_t6263486686747684A7E6CB8F25942E86835113F4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4044,7 +4044,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RandomUniform_get_category_m85A03A1
 		return _stringLiteral0EB3ABCEBF8AD992C5504A03E22528C469F4F111;
 	}
 }
-// Method Definition Index: 31180
+// Method Definition Index: 31272
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD RandomUniform_get_profilerMarker_m30B5AA3F34F9E0B9BA56F1795ED3A2FDF1CDDCD8 (RandomUniform_t6263486686747684A7E6CB8F25942E86835113F4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4059,7 +4059,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C
 		return L_0;
 	}
 }
-// Method Definition Index: 31181
+// Method Definition Index: 31273
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RandomUniform_ToString_m85D6262A6DD4D1159CA40E06EF7678956784F6B4 (RandomUniform_t6263486686747684A7E6CB8F25942E86835113F4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4181,7 +4181,7 @@ IL_0077:
 		return L_29;
 	}
 }
-// Method Definition Index: 31182
+// Method Definition Index: 31274
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomUniform_SerializeFields_m63FBC6FCC263D2D1443A4A3C3518BE39182BD398 (RandomUniform_t6263486686747684A7E6CB8F25942E86835113F4* __this, FlatBufferBuilder_t72116669EC849BCB6543BD426C0F6A9E825BB2FB* ___0_builder, List_1_tAFC4DAF15C03810FE08B8E9742E14A65E4EF9D70* ___1_values, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4282,7 +4282,7 @@ IL_006d:
 		return;
 	}
 }
-// Method Definition Index: 31183
+// Method Definition Index: 31275
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039* RandomUniform_DeserializeLayer_mEB54E34408082EF36B951369DA44A16DE49430B5 (Chain_tA7420781D03CE0268AA17EB04D33ED70711681D9 ___0_chain, ExecutionPlan_tDB179066AB651AA7AE8CF463F21CDFA7E06B6A36 ___1_executionPlan, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4455,7 +4455,7 @@ IL_00af:
 		return L_38;
 	}
 }
-// Method Definition Index: 31184
+// Method Definition Index: 31276
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomUniform__cctor_m1AB99D29EE9285694B070B834E75ACC5E65DE6D7 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4494,7 +4494,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomUniform__cctor_m1AB99D29EE9285694B
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31185
+// Method Definition Index: 31277
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* RandomUniformLike_InferPartial_mBDFAF43EADD53D2310111A52458DB4B66C0CE0FB (PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___0_input, float ___1_low, float ___2_high, bool ___3_hasSeed, int32_t ___4_seed, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4505,7 +4505,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:110>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:110>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_0 = ___0_input;
 		NullCheck(L_0);
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_1;
@@ -4515,7 +4515,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		return L_2;
 	}
 }
-// Method Definition Index: 31186
+// Method Definition Index: 31278
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomUniformLike_Execute_mD3DF04FDCC698FDF5C06DA61FDD1C4FA2678BB5C (RandomUniformLike_t296449A74DC1BE6E52CAA3A9B53F936841898502* __this, ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4533,7 +4533,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomUniformLike_Execute_mD3DF04FDCC698
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_2;
 	memset((&V_2), 0, sizeof(V_2));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:115>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:115>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_0 = ___0_ctx;
 		RuntimeObject* L_1 = L_0.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -4544,7 +4544,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomUniformLike_Execute_mD3DF04FDCC698
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_5;
 		L_5 = InterfaceFuncInvoker1< TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t >::Invoke(3, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_1, L_4);
 		V_0 = L_5;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:116>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:116>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_6 = ___0_ctx;
 		RuntimeObject* L_7 = L_6.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_8 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -4556,12 +4556,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomUniformLike_Execute_mD3DF04FDCC698
 		RuntimeObject* L_13 = L_12.___backend;
 		NullCheck(L_13);
 		int32_t L_14;
-		L_14 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_13);
+		L_14 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_13);
 		NullCheck(L_7);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_15;
 		L_15 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_7, L_10, L_11, 0, L_14);
 		V_1 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_15, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:117>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:117>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_16 = V_1;
 		NullCheck(L_16);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_17;
@@ -4575,13 +4575,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomUniformLike_Execute_mD3DF04FDCC698
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:118>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:118>
 		return;
 	}
 
 IL_004b:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:119>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:119>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_19 = ___0_ctx;
 		RuntimeObject* L_20 = L_19.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_21 = V_1;
@@ -4593,12 +4593,12 @@ IL_004b:
 		memset((&L_25), 0, sizeof(L_25));
 		Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703((&L_25), L_24, Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
 		NullCheck(L_20);
-		InterfaceActionInvoker4< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, float, float, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 >::Invoke(25, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_20, L_21, L_22, L_23, L_25);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:120>
+		InterfaceActionInvoker4< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, float, float, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 >::Invoke(26, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_20, L_21, L_22, L_23, L_25);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:120>
 		return;
 	}
 }
-// Method Definition Index: 31187
+// Method Definition Index: 31279
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomUniformLike__ctor_mF58D2183D6338E869AA906B590085993BB68679A (RandomUniformLike_t296449A74DC1BE6E52CAA3A9B53F936841898502* __this, float ___0_low, float ___1_high, bool ___2_hasSeed, int32_t ___3_seed, const RuntimeMethod* method) 
 {
 	{
@@ -4615,7 +4615,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomUniformLike__ctor_mF58D2183D6338E8
 		return;
 	}
 }
-// Method Definition Index: 31188
+// Method Definition Index: 31280
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomUniformLike_InferPartial_m6BB30581C07074BF3DAC169EDE162AE073E5C4DD (RandomUniformLike_t296449A74DC1BE6E52CAA3A9B53F936841898502* __this, PartialInferenceContext_t87A97CDA80604F25B18FC9A140939F6DFB2F92AE* ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4653,7 +4653,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomUniformLike_InferPartial_m6BB30581
 		return;
 	}
 }
-// Method Definition Index: 31189
+// Method Definition Index: 31281
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* RandomUniformLike_GetInputNames_mBDAEC4F76271FD1913BAD41A1D8823232817942A (RandomUniformLike_t296449A74DC1BE6E52CAA3A9B53F936841898502* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4668,7 +4668,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31190
+// Method Definition Index: 31282
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RandomUniformLike_t296449A74DC1BE6E52CAA3A9B53F936841898502* RandomUniformLike_SetInputs_mFCE1AADE6E8B71DAFE76363213307DC57C86010D (RandomUniformLike_t296449A74DC1BE6E52CAA3A9B53F936841898502* __this, int32_t ___0_input, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4688,7 +4688,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RandomUniformLike_t296449A74DC1BE6E52CAA3A9B5
 		return __this;
 	}
 }
-// Method Definition Index: 31191
+// Method Definition Index: 31283
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RandomUniformLike_IsInputNoDataDependency_mD2C9CDCE061956D52750D5389B2BED991CF71FBE (RandomUniformLike_t296449A74DC1BE6E52CAA3A9B53F936841898502* __this, int32_t ___0_i, const RuntimeMethod* method) 
 {
 	{
@@ -4696,7 +4696,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RandomUniformLike_IsInputNoDataDependenc
 		return (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
 	}
 }
-// Method Definition Index: 31192
+// Method Definition Index: 31284
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* RandomUniformLike_GetOutputNames_m6C3344E95D1B6F3290700AA396F18E62026EEF68 (RandomUniformLike_t296449A74DC1BE6E52CAA3A9B53F936841898502* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4711,7 +4711,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31193
+// Method Definition Index: 31285
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RandomUniformLike_t296449A74DC1BE6E52CAA3A9B53F936841898502* RandomUniformLike_SetOutputs_mBA1F360DD9B4F5E6118F272A36CCCD06ACB4BAC7 (RandomUniformLike_t296449A74DC1BE6E52CAA3A9B53F936841898502* __this, int32_t ___0_output, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4731,7 +4731,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RandomUniformLike_t296449A74DC1BE6E52CAA3A9B5
 		return __this;
 	}
 }
-// Method Definition Index: 31194
+// Method Definition Index: 31286
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RandomUniformLike_get_opName_m01BBBB75610796827A1D76C3617D1B28C668E84C (RandomUniformLike_t296449A74DC1BE6E52CAA3A9B53F936841898502* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4744,7 +4744,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RandomUniformLike_get_opName_m01BBB
 		return _stringLiteral4088B3EF64796FAEFC9A6D41F993D22DC906A0BA;
 	}
 }
-// Method Definition Index: 31195
+// Method Definition Index: 31287
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RandomUniformLike_get_category_m7D0336B1A403CF39538CE6060FCCCE35EA060001 (RandomUniformLike_t296449A74DC1BE6E52CAA3A9B53F936841898502* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4757,7 +4757,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RandomUniformLike_get_category_m7D0
 		return _stringLiteral0EB3ABCEBF8AD992C5504A03E22528C469F4F111;
 	}
 }
-// Method Definition Index: 31196
+// Method Definition Index: 31288
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD RandomUniformLike_get_profilerMarker_m08E64A6B76C50F0CC4FF6A6F754CBB255763D7D6 (RandomUniformLike_t296449A74DC1BE6E52CAA3A9B53F936841898502* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4772,7 +4772,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C
 		return L_0;
 	}
 }
-// Method Definition Index: 31197
+// Method Definition Index: 31289
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RandomUniformLike_ToString_mF60BAA4C787CEDBFDA176DA2770662737600F113 (RandomUniformLike_t296449A74DC1BE6E52CAA3A9B53F936841898502* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4839,7 +4839,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RandomUniformLike_ToString_mF60BAA4
 		return L_25;
 	}
 }
-// Method Definition Index: 31198
+// Method Definition Index: 31290
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomUniformLike_SerializeFields_mE5AFC77126C72704DEB3E7297762BF1AEB2811F1 (RandomUniformLike_t296449A74DC1BE6E52CAA3A9B53F936841898502* __this, FlatBufferBuilder_t72116669EC849BCB6543BD426C0F6A9E825BB2FB* ___0_builder, List_1_tAFC4DAF15C03810FE08B8E9742E14A65E4EF9D70* ___1_values, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4896,7 +4896,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomUniformLike_SerializeFields_mE5AFC
 		return;
 	}
 }
-// Method Definition Index: 31199
+// Method Definition Index: 31291
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039* RandomUniformLike_DeserializeLayer_m297BE551A8A87C7C9805BE62F1183C62FC665D70 (Chain_tA7420781D03CE0268AA17EB04D33ED70711681D9 ___0_chain, ExecutionPlan_tDB179066AB651AA7AE8CF463F21CDFA7E06B6A36 ___1_executionPlan, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5011,7 +5011,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C0
 		return L_29;
 	}
 }
-// Method Definition Index: 31200
+// Method Definition Index: 31292
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomUniformLike__cctor_mD20F2BBEC4425374A103876C57CE935BCDB3048F (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5052,11 +5052,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RandomUniformLike__cctor_mD20F2BBEC44253
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31201
+// Method Definition Index: 31293
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* Bernoulli_InferPartial_mE311DAE789E71579C17E00D70023DF7B4F024563 (PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___0_input, int32_t ___1_dataType, bool ___2_hasSeed, int32_t ___3_seed, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:134>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:134>
 		int32_t L_0 = ___1_dataType;
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_1 = ___0_input;
 		NullCheck(L_1);
@@ -5067,7 +5067,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		return L_3;
 	}
 }
-// Method Definition Index: 31202
+// Method Definition Index: 31294
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Bernoulli_Execute_mA0A5AAD5130584CB5D3470372A70010E18ED2D72 (Bernoulli_t5EE25DF2DF633F97612AF83E7D193B6A0DE3E209* __this, ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5084,7 +5084,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Bernoulli_Execute_mA0A5AAD5130584CB5D347
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_2;
 	memset((&V_2), 0, sizeof(V_2));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:139>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:139>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_0 = ___0_ctx;
 		RuntimeObject* L_1 = L_0.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -5095,7 +5095,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Bernoulli_Execute_mA0A5AAD5130584CB5D347
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_5;
 		L_5 = InterfaceFuncInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t >::Invoke(2, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_1, L_4);
 		V_0 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_5, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:140>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:140>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_6 = ___0_ctx;
 		RuntimeObject* L_7 = L_6.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_8 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -5111,12 +5111,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Bernoulli_Execute_mA0A5AAD5130584CB5D347
 		RuntimeObject* L_15 = L_14.___backend;
 		NullCheck(L_15);
 		int32_t L_16;
-		L_16 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_15);
+		L_16 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_15);
 		NullCheck(L_7);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_17;
 		L_17 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_7, L_10, L_12, L_13, L_16);
 		V_1 = L_17;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:141>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:141>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_18 = V_1;
 		NullCheck(L_18);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_19;
@@ -5130,13 +5130,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Bernoulli_Execute_mA0A5AAD5130584CB5D347
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:142>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:142>
 		return;
 	}
 
 IL_0055:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:143>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:143>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_21 = ___0_ctx;
 		RuntimeObject* L_22 = L_21.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_23 = V_0;
@@ -5147,12 +5147,12 @@ IL_0055:
 		memset((&L_26), 0, sizeof(L_26));
 		Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703((&L_26), L_25, Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
 		NullCheck(L_22);
-		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 >::Invoke(31, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_22, L_23, L_24, L_26);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:144>
+		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 >::Invoke(32, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_22, L_23, L_24, L_26);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:144>
 		return;
 	}
 }
-// Method Definition Index: 31203
+// Method Definition Index: 31295
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Bernoulli__ctor_mEEB5CF0D94F313373913003438FC0AE6C57AB7AC (Bernoulli_t5EE25DF2DF633F97612AF83E7D193B6A0DE3E209* __this, int32_t ___0_dataType, bool ___1_hasSeed, int32_t ___2_seed, const RuntimeMethod* method) 
 {
 	{
@@ -5167,7 +5167,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Bernoulli__ctor_mEEB5CF0D94F313373913003
 		return;
 	}
 }
-// Method Definition Index: 31204
+// Method Definition Index: 31296
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Bernoulli_InferPartial_m4BD398088B555F6C53C740314836A72B764AE6F5 (Bernoulli_t5EE25DF2DF633F97612AF83E7D193B6A0DE3E209* __this, PartialInferenceContext_t87A97CDA80604F25B18FC9A140939F6DFB2F92AE* ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5204,7 +5204,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Bernoulli_InferPartial_m4BD398088B555F6C
 		return;
 	}
 }
-// Method Definition Index: 31205
+// Method Definition Index: 31297
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* Bernoulli_GetInputNames_m9330E3013EEA1EC81E463EDC01D2396140DFAAF4 (Bernoulli_t5EE25DF2DF633F97612AF83E7D193B6A0DE3E209* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5219,7 +5219,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31206
+// Method Definition Index: 31298
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Bernoulli_t5EE25DF2DF633F97612AF83E7D193B6A0DE3E209* Bernoulli_SetInputs_m99BE0BBE9E449812A5D206FF1791CAA13E32A8BE (Bernoulli_t5EE25DF2DF633F97612AF83E7D193B6A0DE3E209* __this, int32_t ___0_input, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5239,7 +5239,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Bernoulli_t5EE25DF2DF633F97612AF83E7D193B6A0D
 		return __this;
 	}
 }
-// Method Definition Index: 31207
+// Method Definition Index: 31299
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* Bernoulli_GetOutputNames_mF7FF69CC403BFA94F66BFF8C14CCB18F4AFCF081 (Bernoulli_t5EE25DF2DF633F97612AF83E7D193B6A0DE3E209* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5254,7 +5254,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31208
+// Method Definition Index: 31300
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Bernoulli_t5EE25DF2DF633F97612AF83E7D193B6A0DE3E209* Bernoulli_SetOutputs_m29250D348E7F209B0964FF654797CC44600FEE7E (Bernoulli_t5EE25DF2DF633F97612AF83E7D193B6A0DE3E209* __this, int32_t ___0_output, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5274,7 +5274,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Bernoulli_t5EE25DF2DF633F97612AF83E7D193B6A0D
 		return __this;
 	}
 }
-// Method Definition Index: 31209
+// Method Definition Index: 31301
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Bernoulli_get_opName_mF608EC59046C9C68847B0905696815C3131444CF (Bernoulli_t5EE25DF2DF633F97612AF83E7D193B6A0DE3E209* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5287,7 +5287,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Bernoulli_get_opName_mF608EC59046C9
 		return _stringLiteral6FED1C4224F8F9D4885B095C5B60ACBE9FC142B7;
 	}
 }
-// Method Definition Index: 31210
+// Method Definition Index: 31302
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Bernoulli_get_category_m3B86D9A692599AADC369CDFBB3545521B627A679 (Bernoulli_t5EE25DF2DF633F97612AF83E7D193B6A0DE3E209* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5300,7 +5300,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Bernoulli_get_category_m3B86D9A6925
 		return _stringLiteral0EB3ABCEBF8AD992C5504A03E22528C469F4F111;
 	}
 }
-// Method Definition Index: 31211
+// Method Definition Index: 31303
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD Bernoulli_get_profilerMarker_m5A77E186C163FD76DFF3D0016BF9E0EBBE16062C (Bernoulli_t5EE25DF2DF633F97612AF83E7D193B6A0DE3E209* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5315,7 +5315,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C
 		return L_0;
 	}
 }
-// Method Definition Index: 31212
+// Method Definition Index: 31304
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Bernoulli_ToString_mAD77DE41CE8700923DACFF1DA0F0936E2786C272 (Bernoulli_t5EE25DF2DF633F97612AF83E7D193B6A0DE3E209* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5376,7 +5376,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Bernoulli_ToString_mAD77DE41CE87009
 		return L_21;
 	}
 }
-// Method Definition Index: 31213
+// Method Definition Index: 31305
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Bernoulli_SerializeFields_mCF7369D59BE6AE2DD687DA0A78BB4F09A89FA0DA (Bernoulli_t5EE25DF2DF633F97612AF83E7D193B6A0DE3E209* __this, FlatBufferBuilder_t72116669EC849BCB6543BD426C0F6A9E825BB2FB* ___0_builder, List_1_tAFC4DAF15C03810FE08B8E9742E14A65E4EF9D70* ___1_values, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5422,7 +5422,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Bernoulli_SerializeFields_mCF7369D59BE6A
 		return;
 	}
 }
-// Method Definition Index: 31214
+// Method Definition Index: 31306
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039* Bernoulli_DeserializeLayer_m6BF36AF51F4002AB4147BBBFB497E8822921CBFE (Chain_tA7420781D03CE0268AA17EB04D33ED70711681D9 ___0_chain, ExecutionPlan_tDB179066AB651AA7AE8CF463F21CDFA7E06B6A36 ___1_executionPlan, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5519,7 +5519,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C0
 		return L_23;
 	}
 }
-// Method Definition Index: 31215
+// Method Definition Index: 31307
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Bernoulli__cctor_m4D9D417E88F4D9EC7AE9DC4775B294F88F28875E (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5560,7 +5560,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Bernoulli__cctor_m4D9D417E88F4D9EC7AE9DC
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31216
+// Method Definition Index: 31308
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* Multinomial_InferPartial_mEB0F94990AA78CEC83E8695046F2F9FE79F92BEE (PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___0_input, int32_t ___1_count, bool ___2_hasSeed, int32_t ___3_seed, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5573,13 +5573,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 	DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:158>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:158>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_0 = ___0_input;
 		NullCheck(L_0);
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_1;
 		L_1 = PartialTensor_get_shape_m49066131BB4F93BFB14B8A2BF39D4809C188A758_inline(L_0, NULL);
 		V_0 = L_1;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:159>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:159>
 		DynamicTensorDim_t004A3B1D3635966B50480F2366C3665C29269023 L_2;
 		L_2 = DynamicTensorShape_get_Item_mFDD73EB2CF136F25D54BD21BB2E53D0D8E09FAA8((&V_0), 0, NULL);
 		int32_t L_3 = ___1_count;
@@ -5593,7 +5593,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		return L_6;
 	}
 }
-// Method Definition Index: 31217
+// Method Definition Index: 31309
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Multinomial_Execute_mA5930587159D335E04643227123718711836830C (Multinomial_t77A4432CEE328726640FB0E5B5652353997E9250* __this, ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5613,7 +5613,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Multinomial_Execute_mA5930587159D335E046
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_4;
 	memset((&V_4), 0, sizeof(V_4));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:164>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:164>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_0 = ___0_ctx;
 		RuntimeObject* L_1 = L_0.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -5624,7 +5624,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Multinomial_Execute_mA5930587159D335E046
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_5;
 		L_5 = InterfaceFuncInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t >::Invoke(2, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_1, L_4);
 		V_0 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_5, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:165>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:165>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_6 = ___0_ctx;
 		RuntimeObject* L_7 = L_6.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_8 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -5646,12 +5646,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Multinomial_Execute_mA5930587159D335E046
 		RuntimeObject* L_17 = L_16.___backend;
 		NullCheck(L_17);
 		int32_t L_18;
-		L_18 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_17);
+		L_18 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_17);
 		NullCheck(L_7);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_19;
 		L_19 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_7, L_10, L_15, 1, L_18);
 		V_1 = ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_19, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:167>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:167>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_20 = ___0_ctx;
 		RuntimeObject* L_21 = L_20.___storage;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_22 = V_0;
@@ -5662,12 +5662,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Multinomial_Execute_mA5930587159D335E046
 		RuntimeObject* L_25 = L_24.___backend;
 		NullCheck(L_25);
 		int32_t L_26;
-		L_26 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_25);
+		L_26 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_25);
 		NullCheck(L_21);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_27;
 		L_27 = InterfaceFuncInvoker3< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(10, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_21, L_23, 0, L_26);
 		V_2 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_27, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:168>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:168>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_28 = ___0_ctx;
 		RuntimeObject* L_29 = L_28.___storage;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_30 = V_0;
@@ -5685,12 +5685,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Multinomial_Execute_mA5930587159D335E046
 		RuntimeObject* L_36 = L_35.___backend;
 		NullCheck(L_36);
 		int32_t L_37;
-		L_37 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_36);
+		L_37 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_36);
 		NullCheck(L_29);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_38;
 		L_38 = InterfaceFuncInvoker3< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(10, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_29, L_34, 0, L_37);
 		V_3 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_38, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:170>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:170>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_39 = ___0_ctx;
 		RuntimeObject* L_40 = L_39.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_41 = V_3;
@@ -5700,39 +5700,39 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Multinomial_Execute_mA5930587159D335E046
 		memset((&L_43), 0, sizeof(L_43));
 		Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703((&L_43), L_42, Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
 		NullCheck(L_40);
-		InterfaceActionInvoker4< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, float, float, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 >::Invoke(25, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_40, L_41, (0.0f), (1.0f), L_43);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:171>
+		InterfaceActionInvoker4< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, float, float, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 >::Invoke(26, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_40, L_41, (0.0f), (1.0f), L_43);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:171>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_44 = ___0_ctx;
 		RuntimeObject* L_45 = L_44.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_46 = V_0;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_47 = V_2;
 		NullCheck(L_45);
-		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, int32_t >::Invoke(33, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_45, L_46, L_47, (-1));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:172>
+		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, int32_t >::Invoke(34, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_45, L_46, L_47, (-1));
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:172>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_48 = ___0_ctx;
 		RuntimeObject* L_49 = L_48.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_50 = V_2;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_51 = V_3;
 		Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* L_52 = V_1;
 		NullCheck(L_49);
-		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* >::Invoke(23, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_49, L_50, L_51, L_52);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:174>
+		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* >::Invoke(24, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_49, L_50, L_51, L_52);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:174>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_53 = ___0_ctx;
 		RuntimeObject* L_54 = L_53.___storage;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_55 = V_2;
 		NullCheck(L_54);
 		InterfaceActionInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(13, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_54, L_55);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:175>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:175>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_56 = ___0_ctx;
 		RuntimeObject* L_57 = L_56.___storage;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_58 = V_3;
 		NullCheck(L_57);
 		InterfaceActionInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(13, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_57, L_58);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Random.cs:176>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Random.cs:176>
 		return;
 	}
 }
-// Method Definition Index: 31218
+// Method Definition Index: 31310
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Multinomial__ctor_mB51E4DD41D624B067A9D5F38A3C407259EDBA6BB (Multinomial_t77A4432CEE328726640FB0E5B5652353997E9250* __this, int32_t ___0_count, bool ___1_hasSeed, int32_t ___2_seed, const RuntimeMethod* method) 
 {
 	{
@@ -5747,7 +5747,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Multinomial__ctor_mB51E4DD41D624B067A9D5
 		return;
 	}
 }
-// Method Definition Index: 31219
+// Method Definition Index: 31311
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Multinomial_InferPartial_m49F64793710FD0348E0C3FF7AE079996887EC6E1 (Multinomial_t77A4432CEE328726640FB0E5B5652353997E9250* __this, PartialInferenceContext_t87A97CDA80604F25B18FC9A140939F6DFB2F92AE* ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5784,7 +5784,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Multinomial_InferPartial_m49F64793710FD0
 		return;
 	}
 }
-// Method Definition Index: 31220
+// Method Definition Index: 31312
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* Multinomial_GetInputNames_mCA47009BFF3EBD2E8EC398287D5C9A31B28E7B70 (Multinomial_t77A4432CEE328726640FB0E5B5652353997E9250* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5799,7 +5799,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31221
+// Method Definition Index: 31313
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Multinomial_t77A4432CEE328726640FB0E5B5652353997E9250* Multinomial_SetInputs_m69D4D44BF161035ED15C5F7003C930A7D70E5F0C (Multinomial_t77A4432CEE328726640FB0E5B5652353997E9250* __this, int32_t ___0_input, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5819,7 +5819,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Multinomial_t77A4432CEE328726640FB0E5B5652353
 		return __this;
 	}
 }
-// Method Definition Index: 31222
+// Method Definition Index: 31314
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* Multinomial_GetOutputNames_m78E7EF3A2F469A1346E55A25A8A0A0A46F0524A5 (Multinomial_t77A4432CEE328726640FB0E5B5652353997E9250* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5834,7 +5834,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31223
+// Method Definition Index: 31315
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Multinomial_t77A4432CEE328726640FB0E5B5652353997E9250* Multinomial_SetOutputs_mA6701EF779B994B2FA398FBCD6C5E077E0A1AF88 (Multinomial_t77A4432CEE328726640FB0E5B5652353997E9250* __this, int32_t ___0_output, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5854,7 +5854,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Multinomial_t77A4432CEE328726640FB0E5B5652353
 		return __this;
 	}
 }
-// Method Definition Index: 31224
+// Method Definition Index: 31316
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Multinomial_get_opName_m86F59FC882B8F2B68B9C7CA2A38B77F17B9CC48A (Multinomial_t77A4432CEE328726640FB0E5B5652353997E9250* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5867,7 +5867,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Multinomial_get_opName_m86F59FC882B
 		return _stringLiteralB4FBB7B1EDE1A297A67C14D1AC07BDD6337C02BB;
 	}
 }
-// Method Definition Index: 31225
+// Method Definition Index: 31317
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Multinomial_get_category_m583FB6F255E9C48E88107D93560316783C822305 (Multinomial_t77A4432CEE328726640FB0E5B5652353997E9250* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5880,7 +5880,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Multinomial_get_category_m583FB6F25
 		return _stringLiteral0EB3ABCEBF8AD992C5504A03E22528C469F4F111;
 	}
 }
-// Method Definition Index: 31226
+// Method Definition Index: 31318
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD Multinomial_get_profilerMarker_m84E11D9E281B2AC9BD5D6935D07FA9AEDF2A5FEF (Multinomial_t77A4432CEE328726640FB0E5B5652353997E9250* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5895,7 +5895,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C
 		return L_0;
 	}
 }
-// Method Definition Index: 31227
+// Method Definition Index: 31319
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Multinomial_ToString_m31BAFEC97368BE5DA544F956B7B299A9D40F0296 (Multinomial_t77A4432CEE328726640FB0E5B5652353997E9250* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5955,7 +5955,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Multinomial_ToString_m31BAFEC97368B
 		return L_21;
 	}
 }
-// Method Definition Index: 31228
+// Method Definition Index: 31320
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Multinomial_SerializeFields_mF410851929E9EC268E6C99A83BFBCD373A409FEC (Multinomial_t77A4432CEE328726640FB0E5B5652353997E9250* __this, FlatBufferBuilder_t72116669EC849BCB6543BD426C0F6A9E825BB2FB* ___0_builder, List_1_tAFC4DAF15C03810FE08B8E9742E14A65E4EF9D70* ___1_values, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6001,7 +6001,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Multinomial_SerializeFields_mF410851929E
 		return;
 	}
 }
-// Method Definition Index: 31229
+// Method Definition Index: 31321
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039* Multinomial_DeserializeLayer_m2CB61933F17410781C9808F0466610B5641F4FC1 (Chain_tA7420781D03CE0268AA17EB04D33ED70711681D9 ___0_chain, ExecutionPlan_tDB179066AB651AA7AE8CF463F21CDFA7E06B6A36 ___1_executionPlan, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6098,7 +6098,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C0
 		return L_23;
 	}
 }
-// Method Definition Index: 31230
+// Method Definition Index: 31322
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Multinomial__cctor_m9FC89E28A07FEFA3F73C394D5D58CC0A91CAD917 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6163,15 +6163,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Multinomial__cctor_m9FC89E28A07FEFA3F73C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31231
+// Method Definition Index: 31323
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LSTM_get_OutputCount_m523778A8F00B7D8AA23D1E35CB09B1F03E255911 (LSTM_t20434C71C7511720578EFE421F5A91D9A08A00B4* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:107>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:107>
 		return 3;
 	}
 }
-// Method Definition Index: 31232
+// Method Definition Index: 31324
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensorU5BU5D_tC9020CC8ECFB9556EDF76D87B07CEE5BA06580FA* LSTM_InferPartial_m6EDE7804017EDC215B11F674A6E74D3EAEDBE0DE (PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___0_X, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___1_W, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___2_R, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___3_B, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___4_sequenceLens, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___5_initialH, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___6_initialC, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___7_P, int32_t ___8_hiddenSize, int32_t ___9_direction, RnnActivationU5BU5D_t0CF122D90D5F2241FD2C9AA7AF8435FFC039F5BC* ___10_activations, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___11_activationAlpha, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___12_activationBeta, float ___13_clip, bool ___14_inputForget, int32_t ___15_layout, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6238,39 +6238,39 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensorU5BU5D_tC9020CC8ECFB9556EDF76D87
 	memset((&G_B19_1), 0, sizeof(G_B19_1));
 	int32_t G_B25_0 = 0;
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:111>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:111>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_0 = ___0_X;
 		NullCheck(L_0);
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_1;
 		L_1 = PartialTensor_get_shape_m49066131BB4F93BFB14B8A2BF39D4809C188A758_inline(L_0, NULL);
 		V_0 = L_1;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:112>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:112>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_2 = ___1_W;
 		NullCheck(L_2);
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_3;
 		L_3 = PartialTensor_get_shape_m49066131BB4F93BFB14B8A2BF39D4809C188A758_inline(L_2, NULL);
 		V_1 = L_3;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:113>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:113>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_4 = ___2_R;
 		NullCheck(L_4);
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_5;
 		L_5 = PartialTensor_get_shape_m49066131BB4F93BFB14B8A2BF39D4809C188A758_inline(L_4, NULL);
 		V_2 = L_5;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:115>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:115>
 		DynamicTensorDim_t004A3B1D3635966B50480F2366C3665C29269023 L_6;
 		L_6 = DynamicTensorDim_get_Unknown_m038F63A4BD24C5AD356329087D7D6B7ACD3335C7(NULL);
 		V_3 = L_6;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:116>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:116>
 		DynamicTensorDim_t004A3B1D3635966B50480F2366C3665C29269023 L_7;
 		L_7 = DynamicTensorDim_get_Unknown_m038F63A4BD24C5AD356329087D7D6B7ACD3335C7(NULL);
 		V_4 = L_7;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:118>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:118>
 		DynamicTensorShape_DeclareRank_mAA1123D9F4396E5F185819A87E8B3DE582106331((&V_0), 3, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:119>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:119>
 		DynamicTensorShape_DeclareRank_mAA1123D9F4396E5F185819A87E8B3DE582106331((&V_1), 3, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:120>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:120>
 		DynamicTensorShape_DeclareRank_mAA1123D9F4396E5F185819A87E8B3DE582106331((&V_2), 3, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:122>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:122>
 		DynamicTensorDim_t004A3B1D3635966B50480F2366C3665C29269023 L_8 = V_3;
 		int32_t L_9 = ___15_layout;
 		if (!L_9)
@@ -6301,7 +6301,7 @@ IL_0051:
 		DynamicTensorDim_t004A3B1D3635966B50480F2366C3665C29269023 L_12;
 		L_12 = DynamicTensorDim_MaxDefinedDim_mB88621E3862FF93A79E7A55E90F9AA9CE28509D1(G_B3_1, G_B3_0, NULL);
 		V_3 = L_12;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:123>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:123>
 		DynamicTensorDim_t004A3B1D3635966B50480F2366C3665C29269023 L_13 = V_4;
 		int32_t L_14 = ___15_layout;
 		if (!L_14)
@@ -6332,7 +6332,7 @@ IL_006f:
 		DynamicTensorDim_t004A3B1D3635966B50480F2366C3665C29269023 L_17;
 		L_17 = DynamicTensorDim_MaxDefinedDim_mB88621E3862FF93A79E7A55E90F9AA9CE28509D1(G_B6_1, G_B6_0, NULL);
 		V_4 = L_17;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:125>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:125>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_18 = ___3_B;
 		if (!L_18)
 		{
@@ -6350,7 +6350,7 @@ IL_006f:
 
 IL_0089:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:127>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:127>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_21 = ___4_sequenceLens;
 		if (!L_21)
 		{
@@ -6363,9 +6363,9 @@ IL_0089:
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_23;
 		L_23 = PartialTensor_get_shape_m49066131BB4F93BFB14B8A2BF39D4809C188A758_inline(L_22, NULL);
 		V_5 = L_23;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:129>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:129>
 		DynamicTensorShape_DeclareRank_mAA1123D9F4396E5F185819A87E8B3DE582106331((&V_5), 1, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:130>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:130>
 		DynamicTensorDim_t004A3B1D3635966B50480F2366C3665C29269023 L_24 = V_4;
 		DynamicTensorDim_t004A3B1D3635966B50480F2366C3665C29269023 L_25;
 		L_25 = DynamicTensorShape_get_Item_mFDD73EB2CF136F25D54BD21BB2E53D0D8E09FAA8((&V_5), 0, NULL);
@@ -6376,7 +6376,7 @@ IL_0089:
 
 IL_00af:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:133>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_27 = ___5_initialH;
 		if (!L_27)
 		{
@@ -6389,9 +6389,9 @@ IL_00af:
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_29;
 		L_29 = PartialTensor_get_shape_m49066131BB4F93BFB14B8A2BF39D4809C188A758_inline(L_28, NULL);
 		V_6 = L_29;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:135>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:135>
 		DynamicTensorShape_DeclareRank_mAA1123D9F4396E5F185819A87E8B3DE582106331((&V_6), 3, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:136>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:136>
 		DynamicTensorDim_t004A3B1D3635966B50480F2366C3665C29269023 L_30 = V_4;
 		int32_t L_31 = ___15_layout;
 		if (!L_31)
@@ -6426,7 +6426,7 @@ IL_00dc:
 
 IL_00e3:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:139>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:139>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_35 = ___6_initialC;
 		if (!L_35)
 		{
@@ -6439,9 +6439,9 @@ IL_00e3:
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_37;
 		L_37 = PartialTensor_get_shape_m49066131BB4F93BFB14B8A2BF39D4809C188A758_inline(L_36, NULL);
 		V_7 = L_37;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:141>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:141>
 		DynamicTensorShape_DeclareRank_mAA1123D9F4396E5F185819A87E8B3DE582106331((&V_7), 3, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:142>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:142>
 		DynamicTensorDim_t004A3B1D3635966B50480F2366C3665C29269023 L_38 = V_4;
 		int32_t L_39 = ___15_layout;
 		if (!L_39)
@@ -6476,7 +6476,7 @@ IL_0110:
 
 IL_0117:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:145>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:145>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_43 = ___7_P;
 		if (!L_43)
 		{
@@ -6494,7 +6494,7 @@ IL_0117:
 
 IL_012c:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:147>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:147>
 		int32_t L_46 = ___9_direction;
 		if ((((int32_t)L_46) == ((int32_t)2)))
 		{
@@ -6516,12 +6516,12 @@ IL_0135:
 		DynamicTensorDim_t004A3B1D3635966B50480F2366C3665C29269023 L_47;
 		L_47 = DynamicTensorDim_Int_m8D0D1FB9A0FF5DC58BC5A5DF755D3E08DDFE7FF7(G_B25_0, NULL);
 		V_8 = L_47;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:148>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:148>
 		int32_t L_48 = ___8_hiddenSize;
 		DynamicTensorDim_t004A3B1D3635966B50480F2366C3665C29269023 L_49;
 		L_49 = DynamicTensorDim_Int_m8D0D1FB9A0FF5DC58BC5A5DF755D3E08DDFE7FF7(L_48, NULL);
 		V_9 = L_49;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:150>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:150>
 		int32_t L_50 = ___15_layout;
 		if (L_50)
 		{
@@ -6529,12 +6529,12 @@ IL_0135:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:152>
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:153>
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:154>
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:155>
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:156>
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:157>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:152>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:153>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:154>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:155>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:156>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:157>
 		PartialTensorU5BU5D_tC9020CC8ECFB9556EDF76D87B07CEE5BA06580FA* L_51 = (PartialTensorU5BU5D_tC9020CC8ECFB9556EDF76D87B07CEE5BA06580FA*)(PartialTensorU5BU5D_tC9020CC8ECFB9556EDF76D87B07CEE5BA06580FA*)SZArrayNew(PartialTensorU5BU5D_tC9020CC8ECFB9556EDF76D87B07CEE5BA06580FA_il2cpp_TypeInfo_var, (uint32_t)3);
 		PartialTensorU5BU5D_tC9020CC8ECFB9556EDF76D87B07CEE5BA06580FA* L_52 = L_51;
 		DynamicTensorDim_t004A3B1D3635966B50480F2366C3665C29269023 L_53 = V_3;
@@ -6578,12 +6578,12 @@ IL_0135:
 
 IL_018a:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:161>
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:162>
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:163>
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:164>
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:165>
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:166>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:161>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:162>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:163>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:164>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:165>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:166>
 		PartialTensorU5BU5D_tC9020CC8ECFB9556EDF76D87B07CEE5BA06580FA* L_71 = (PartialTensorU5BU5D_tC9020CC8ECFB9556EDF76D87B07CEE5BA06580FA*)(PartialTensorU5BU5D_tC9020CC8ECFB9556EDF76D87B07CEE5BA06580FA*)SZArrayNew(PartialTensorU5BU5D_tC9020CC8ECFB9556EDF76D87B07CEE5BA06580FA_il2cpp_TypeInfo_var, (uint32_t)3);
 		PartialTensorU5BU5D_tC9020CC8ECFB9556EDF76D87B07CEE5BA06580FA* L_72 = L_71;
 		DynamicTensorDim_t004A3B1D3635966B50480F2366C3665C29269023 L_73 = V_4;
@@ -6625,7 +6625,7 @@ IL_018a:
 		return L_85;
 	}
 }
-// Method Definition Index: 31233
+// Method Definition Index: 31325
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LSTM_Execute_mC10DF47F807B34F85828D34F9D92C3F1130C746E (LSTM_t20434C71C7511720578EFE421F5A91D9A08A00B4* __this, ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6657,7 +6657,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LSTM_Execute_mC10DF47F807B34F85828D34F9D
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_14;
 	memset((&V_14), 0, sizeof(V_14));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:172>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:172>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_0 = ___0_ctx;
 		RuntimeObject* L_1 = L_0.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -6668,7 +6668,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LSTM_Execute_mC10DF47F807B34F85828D34F9D
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_5;
 		L_5 = InterfaceFuncInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t >::Invoke(2, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_1, L_4);
 		V_0 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_5, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:173>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:173>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_6 = ___0_ctx;
 		RuntimeObject* L_7 = L_6.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_8 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -6679,7 +6679,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LSTM_Execute_mC10DF47F807B34F85828D34F9D
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_11;
 		L_11 = InterfaceFuncInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t >::Invoke(2, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_7, L_10);
 		V_1 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_11, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:174>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:174>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_12 = ___0_ctx;
 		RuntimeObject* L_13 = L_12.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_14 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -6690,7 +6690,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LSTM_Execute_mC10DF47F807B34F85828D34F9D
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_17;
 		L_17 = InterfaceFuncInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t >::Invoke(2, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_13, L_16);
 		V_2 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_17, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:175>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:175>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_18 = ___0_ctx;
 		RuntimeObject* L_19 = L_18.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_20 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -6701,7 +6701,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LSTM_Execute_mC10DF47F807B34F85828D34F9D
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_23;
 		L_23 = InterfaceFuncInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t >::Invoke(2, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_19, L_22);
 		V_3 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_23, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:176>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:176>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_24 = ___0_ctx;
 		RuntimeObject* L_25 = L_24.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_26 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -6712,7 +6712,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LSTM_Execute_mC10DF47F807B34F85828D34F9D
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_29;
 		L_29 = InterfaceFuncInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t >::Invoke(2, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_25, L_28);
 		V_4 = ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_29, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:177>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:177>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_30 = ___0_ctx;
 		RuntimeObject* L_31 = L_30.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_32 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -6723,7 +6723,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LSTM_Execute_mC10DF47F807B34F85828D34F9D
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_35;
 		L_35 = InterfaceFuncInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t >::Invoke(2, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_31, L_34);
 		V_5 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_35, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:178>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:178>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_36 = ___0_ctx;
 		RuntimeObject* L_37 = L_36.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_38 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -6734,7 +6734,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LSTM_Execute_mC10DF47F807B34F85828D34F9D
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_41;
 		L_41 = InterfaceFuncInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t >::Invoke(2, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_37, L_40);
 		V_6 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_41, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:179>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:179>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_42 = ___0_ctx;
 		RuntimeObject* L_43 = L_42.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_44 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -6745,7 +6745,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LSTM_Execute_mC10DF47F807B34F85828D34F9D
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_47;
 		L_47 = InterfaceFuncInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t >::Invoke(2, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_43, L_46);
 		V_7 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_47, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:181>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:181>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_48 = V_0;
 		NullCheck(L_48);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_49;
@@ -6760,7 +6760,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LSTM_Execute_mC10DF47F807B34F85828D34F9D
 		L_53 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline(L_52, NULL);
 		int32_t L_54 = __this->___layout;
 		ShapeInference_LSTM_mBA29241547D20C3915061446E39A3F3C32FB2B93(L_49, L_51, L_53, L_54, (&V_8), (&V_9), (&V_10), NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:182>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:182>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_55 = ___0_ctx;
 		RuntimeObject* L_56 = L_55.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_57 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -6772,12 +6772,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LSTM_Execute_mC10DF47F807B34F85828D34F9D
 		RuntimeObject* L_62 = L_61.___backend;
 		NullCheck(L_62);
 		int32_t L_63;
-		L_63 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_62);
+		L_63 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_62);
 		NullCheck(L_56);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_64;
 		L_64 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_56, L_59, L_60, 0, L_63);
 		V_11 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_64, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:183>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:183>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_65 = ___0_ctx;
 		RuntimeObject* L_66 = L_65.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_67 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -6789,12 +6789,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LSTM_Execute_mC10DF47F807B34F85828D34F9D
 		RuntimeObject* L_72 = L_71.___backend;
 		NullCheck(L_72);
 		int32_t L_73;
-		L_73 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_72);
+		L_73 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_72);
 		NullCheck(L_66);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_74;
 		L_74 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_66, L_69, L_70, 0, L_73);
 		V_12 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_74, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:184>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:184>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_75 = ___0_ctx;
 		RuntimeObject* L_76 = L_75.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_77 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -6806,12 +6806,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LSTM_Execute_mC10DF47F807B34F85828D34F9D
 		RuntimeObject* L_82 = L_81.___backend;
 		NullCheck(L_82);
 		int32_t L_83;
-		L_83 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_82);
+		L_83 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_82);
 		NullCheck(L_76);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_84;
 		L_84 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_76, L_79, L_80, 0, L_83);
 		V_13 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_84, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:185>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:185>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_85 = V_11;
 		NullCheck(L_85);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_86;
@@ -6825,13 +6825,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LSTM_Execute_mC10DF47F807B34F85828D34F9D
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:186>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:186>
 		return;
 	}
 
 IL_017a:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:188>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:188>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_88 = ___0_ctx;
 		RuntimeObject* L_89 = L_88.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_90 = V_0;
@@ -6853,12 +6853,12 @@ IL_017a:
 		float L_106 = __this->___clip;
 		int32_t L_107 = __this->___layout;
 		NullCheck(L_89);
-		InterfaceActionInvoker18< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, int32_t, RnnActivationU5BU5D_t0CF122D90D5F2241FD2C9AA7AF8435FFC039F5BC*, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*, bool, float, int32_t >::Invoke(176, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_89, L_90, L_91, L_92, L_93, L_94, L_95, L_96, L_97, L_98, L_99, L_100, L_101, L_102, L_103, L_104, L_105, L_106, L_107);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Recurrent.cs:189>
+		InterfaceActionInvoker18< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, int32_t, RnnActivationU5BU5D_t0CF122D90D5F2241FD2C9AA7AF8435FFC039F5BC*, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*, bool, float, int32_t >::Invoke(178, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_89, L_90, L_91, L_92, L_93, L_94, L_95, L_96, L_97, L_98, L_99, L_100, L_101, L_102, L_103, L_104, L_105, L_106, L_107);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Recurrent.cs:189>
 		return;
 	}
 }
-// Method Definition Index: 31234
+// Method Definition Index: 31326
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LSTM__ctor_m51B0717F98E4899ED3A19B4A7DEF497205824B3D (LSTM_t20434C71C7511720578EFE421F5A91D9A08A00B4* __this, int32_t ___0_hiddenSize, int32_t ___1_direction, RnnActivationU5BU5D_t0CF122D90D5F2241FD2C9AA7AF8435FFC039F5BC* ___2_activations, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___3_activationAlpha, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___4_activationBeta, float ___5_clip, bool ___6_inputForget, int32_t ___7_layout, const RuntimeMethod* method) 
 {
 	{
@@ -6885,7 +6885,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LSTM__ctor_m51B0717F98E4899ED3A19B4A7DEF
 		return;
 	}
 }
-// Method Definition Index: 31235
+// Method Definition Index: 31327
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LSTM_InferPartial_mB81A342177AD81B6E9D3C9045A92C9B4DBAB31E7 (LSTM_t20434C71C7511720578EFE421F5A91D9A08A00B4* __this, PartialInferenceContext_t87A97CDA80604F25B18FC9A140939F6DFB2F92AE* ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7031,7 +7031,7 @@ IL_00da:
 		return;
 	}
 }
-// Method Definition Index: 31236
+// Method Definition Index: 31328
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* LSTM_GetInputNames_m3C23866D3007431BC8B129C22704FE8E92436935 (LSTM_t20434C71C7511720578EFE421F5A91D9A08A00B4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7046,7 +7046,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31237
+// Method Definition Index: 31329
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LSTM_t20434C71C7511720578EFE421F5A91D9A08A00B4* LSTM_SetInputs_mAE615C4BC6CA3458B5DEB02F3273215F4DC978BE (LSTM_t20434C71C7511720578EFE421F5A91D9A08A00B4* __this, int32_t ___0_X, int32_t ___1_W, int32_t ___2_R, int32_t ___3_B, int32_t ___4_sequenceLens, int32_t ___5_initialH, int32_t ___6_initialC, int32_t ___7_P, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7094,7 +7094,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LSTM_t20434C71C7511720578EFE421F5A91D9A08A00B
 		return __this;
 	}
 }
-// Method Definition Index: 31238
+// Method Definition Index: 31330
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* LSTM_GetOutputNames_mDAFCA69BC3CB0ACFC3B61BB26356DF82FAC997DC (LSTM_t20434C71C7511720578EFE421F5A91D9A08A00B4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7109,7 +7109,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31239
+// Method Definition Index: 31331
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LSTM_t20434C71C7511720578EFE421F5A91D9A08A00B4* LSTM_SetOutputs_m6A3F4A8C4FAC0CD0FCB97906C62D94F1D261E6CF (LSTM_t20434C71C7511720578EFE421F5A91D9A08A00B4* __this, int32_t ___0_Y, int32_t ___1_Y_h, int32_t ___2_Y_c, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7137,14 +7137,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LSTM_t20434C71C7511720578EFE421F5A91D9A08A00B
 		return __this;
 	}
 }
-// Method Definition Index: 31240
+// Method Definition Index: 31332
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LSTM_get_IsOutputList_m045BF95CBAB080139F3892C933DC9A8122153BF0 (LSTM_t20434C71C7511720578EFE421F5A91D9A08A00B4* __this, const RuntimeMethod* method) 
 {
 	{
 		return (bool)1;
 	}
 }
-// Method Definition Index: 31241
+// Method Definition Index: 31333
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* LSTM_get_opName_m650B8643F63A05270610DFC7B51E35D64F5FBDEA (LSTM_t20434C71C7511720578EFE421F5A91D9A08A00B4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7157,7 +7157,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* LSTM_get_opName_m650B8643F63A052706
 		return _stringLiteral96D4BB4A51668A040C87040155CDB47E23F39DF8;
 	}
 }
-// Method Definition Index: 31242
+// Method Definition Index: 31334
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* LSTM_get_category_mB9D54276132FD7DD0EAFE4FC296B699EA01567AB (LSTM_t20434C71C7511720578EFE421F5A91D9A08A00B4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7170,7 +7170,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* LSTM_get_category_mB9D54276132FD7DD
 		return _stringLiteralF6AF644B426520812ADCE38D4005C4ACC93794F9;
 	}
 }
-// Method Definition Index: 31243
+// Method Definition Index: 31335
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD LSTM_get_profilerMarker_m600C26B3A53193F82D1D362BAE2D5A62AC51C999 (LSTM_t20434C71C7511720578EFE421F5A91D9A08A00B4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7185,7 +7185,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C
 		return L_0;
 	}
 }
-// Method Definition Index: 31244
+// Method Definition Index: 31336
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* LSTM_ToString_m45D92584FCEC5F46F9CB12B48B9AAA172703D0FD (LSTM_t20434C71C7511720578EFE421F5A91D9A08A00B4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7426,7 +7426,7 @@ IL_00bc:
 		return L_41;
 	}
 }
-// Method Definition Index: 31245
+// Method Definition Index: 31337
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LSTM_SerializeFields_mF237DE5FF96FBA49F9893B577F4A24A98B2B047B (LSTM_t20434C71C7511720578EFE421F5A91D9A08A00B4* __this, FlatBufferBuilder_t72116669EC849BCB6543BD426C0F6A9E825BB2FB* ___0_builder, List_1_tAFC4DAF15C03810FE08B8E9742E14A65E4EF9D70* ___1_values, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7687,7 +7687,7 @@ IL_00ff:
 		return;
 	}
 }
-// Method Definition Index: 31246
+// Method Definition Index: 31338
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039* LSTM_DeserializeLayer_m14F68158077FE344EF0401C82F3317B0A5ED3497 (Chain_tA7420781D03CE0268AA17EB04D33ED70711681D9 ___0_chain, ExecutionPlan_tDB179066AB651AA7AE8CF463F21CDFA7E06B6A36 ___1_executionPlan, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8026,7 +8026,7 @@ IL_0153:
 		return L_68;
 	}
 }
-// Method Definition Index: 31247
+// Method Definition Index: 31339
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LSTM__cctor_m07C6529EC14CA4E2AA49164623F59783D069643B (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8103,7 +8103,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LSTM__cctor_m07C6529EC14CA4E2AA49164623F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31248
+// Method Definition Index: 31340
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_mA377DF875C12CF2986023E332D1AA29909EA341E (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8120,7 +8120,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_mA377DF875C12CF2986023E33
 		return;
 	}
 }
-// Method Definition Index: 31249
+// Method Definition Index: 31341
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_mBBAD1D51DA2689C9AD49E76738A008476DC304E6 (U3CU3Ec_t1DBBEEECF28C1393F76680EF2A7DE171EC382CB1* __this, const RuntimeMethod* method) 
 {
 	{
@@ -8128,7 +8128,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_mBBAD1D51DA2689C9AD49E7673
 		return;
 	}
 }
-// Method Definition Index: 31250
+// Method Definition Index: 31342
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t U3CU3Ec_U3CSerializeFieldsU3Eb__30_0_mF8D9F47650825E1FE37FC4375C7EFE09B8019AC5 (U3CU3Ec_t1DBBEEECF28C1393F76680EF2A7DE171EC382CB1* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -8136,7 +8136,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t U3CU3Ec_U3CSerializeFieldsU3Eb__30_0_
 		return L_0;
 	}
 }
-// Method Definition Index: 31251
+// Method Definition Index: 31343
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t U3CU3Ec_U3CDeserializeLayerU3Eb__31_0_m802FFDA100BB6E16C66A2040E66302B2F3DF75CC (U3CU3Ec_t1DBBEEECF28C1393F76680EF2A7DE171EC382CB1* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -8152,11 +8152,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t U3CU3Ec_U3CDeserializeLayerU3Eb__31_0
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31252
+// Method Definition Index: 31344
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ReduceL1_InferPartial_m9DF5165EFE77374FE1019B99C2CB8A738892DFB9 (PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___0_data, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___1_axes, bool ___2_keepdims, bool ___3_noopWithEmptyAxes, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:17>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:17>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_0 = ___0_data;
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_1 = ___1_axes;
 		bool L_2 = ___2_keepdims;
@@ -8166,7 +8166,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		return L_4;
 	}
 }
-// Method Definition Index: 31253
+// Method Definition Index: 31345
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceL1_Execute_mE2C6362BD588AA799DFB4F8AD8139222E42C2DDC (ReduceL1_tB9E31F8B40EB0E1ED4EECFAE67C950A4A4A52731* __this, ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8189,7 +8189,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceL1_Execute_mE2C6362BD588AA799DFB4F
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_4;
 	memset((&V_4), 0, sizeof(V_4));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:22>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:22>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_0 = ___0_ctx;
 		RuntimeObject* L_1 = L_0.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -8200,7 +8200,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceL1_Execute_mE2C6362BD588AA799DFB4F
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_5;
 		L_5 = InterfaceFuncInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t >::Invoke(2, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_1, L_4);
 		V_0 = L_5;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:23>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:23>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_6 = ___0_ctx;
 		RuntimeObject* L_7 = L_6.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_8 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -8213,7 +8213,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceL1_Execute_mE2C6362BD588AA799DFB4F
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_12;
 		L_12 = InterfaceFuncInvoker2< ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282, int32_t, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(7, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_7, L_10, L_11);
 		V_1 = L_12;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:24>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:24>
 		bool L_13 = __this->___noopWithEmptyAxes;
 		if (!L_13)
 		{
@@ -8242,7 +8242,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceL1_Execute_mE2C6362BD588AA799DFB4F
 
 IL_004d:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:26>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:26>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_18 = ___0_ctx;
 		RuntimeObject* L_19 = L_18.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_20 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -8261,25 +8261,25 @@ IL_004d:
 		RuntimeObject* L_28 = L_27.___backend;
 		NullCheck(L_28);
 		int32_t L_29;
-		L_29 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_28);
+		L_29 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_28);
 		NullCheck(L_19);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_30;
 		L_30 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_19, L_22, L_24, L_26, L_29);
 		V_3 = L_30;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:27>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:27>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_31 = ___0_ctx;
 		RuntimeObject* L_32 = L_31.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_33 = V_0;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_34 = V_3;
 		NullCheck(L_32);
-		InterfaceActionInvoker2< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(183, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_32, L_33, L_34);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:28>
+		InterfaceActionInvoker2< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(185, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_32, L_33, L_34);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:28>
 		return;
 	}
 
 IL_0086:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:30>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:30>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_35 = ___0_ctx;
 		RuntimeObject* L_36 = L_35.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_37 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -8303,12 +8303,12 @@ IL_0086:
 		RuntimeObject* L_48 = L_47.___backend;
 		NullCheck(L_48);
 		int32_t L_49;
-		L_49 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_48);
+		L_49 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_48);
 		NullCheck(L_36);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_50;
 		L_50 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_36, L_39, L_44, L_46, L_49);
 		V_2 = L_50;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:31>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:31>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_51 = V_2;
 		NullCheck(L_51);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_52;
@@ -8322,13 +8322,13 @@ IL_0086:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:32>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:32>
 		return;
 	}
 
 IL_00d3:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:33>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:33>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_54 = V_0;
 		NullCheck(L_54);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_55;
@@ -8342,19 +8342,19 @@ IL_00d3:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:35>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:35>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_57 = ___0_ctx;
 		RuntimeObject* L_58 = L_57.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_59 = V_2;
 		NullCheck(L_58);
-		InterfaceActionInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(180, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_58, L_59);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:36>
+		InterfaceActionInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(182, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_58, L_59);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:36>
 		return;
 	}
 
 IL_00f1:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:38>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:38>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_60 = V_0;
 		if (!((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_60, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)))
 		{
@@ -8362,32 +8362,32 @@ IL_00f1:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:39>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:39>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_61 = ___0_ctx;
 		RuntimeObject* L_62 = L_61.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_63 = V_0;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_64 = V_2;
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_65 = V_1;
 		NullCheck(L_62);
-		InterfaceActionInvoker3< Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(127, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_62, ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_63, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_64, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), L_65);
+		InterfaceActionInvoker3< Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(129, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_62, ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_63, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_64, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), L_65);
 		return;
 	}
 
 IL_0112:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:41>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:41>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_66 = ___0_ctx;
 		RuntimeObject* L_67 = L_66.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_68 = V_0;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_69 = V_2;
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_70 = V_1;
 		NullCheck(L_67);
-		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(126, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_67, ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_68, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_69, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), L_70);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:42>
+		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(128, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_67, ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_68, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_69, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), L_70);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:42>
 		return;
 	}
 }
-// Method Definition Index: 31254
+// Method Definition Index: 31346
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceL1__ctor_m10C15BE1B493FF4DFE68264BB18F28A6C75A1354 (ReduceL1_tB9E31F8B40EB0E1ED4EECFAE67C950A4A4A52731* __this, bool ___0_keepdims, bool ___1_noopWithEmptyAxes, const RuntimeMethod* method) 
 {
 	{
@@ -8399,7 +8399,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceL1__ctor_m10C15BE1B493FF4DFE68264B
 		return;
 	}
 }
-// Method Definition Index: 31255
+// Method Definition Index: 31347
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceL1_InferPartial_m795EC60F5404226060CE4FBB0CE681224EC81A9E (ReduceL1_tB9E31F8B40EB0E1ED4EECFAE67C950A4A4A52731* __this, PartialInferenceContext_t87A97CDA80604F25B18FC9A140939F6DFB2F92AE* ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8446,7 +8446,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceL1_InferPartial_m795EC60F540422606
 		return;
 	}
 }
-// Method Definition Index: 31256
+// Method Definition Index: 31348
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ReduceL1_GetInputNames_m664A8FEB2BE461DD1D9728BDF769562725E55970 (ReduceL1_tB9E31F8B40EB0E1ED4EECFAE67C950A4A4A52731* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8461,7 +8461,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31257
+// Method Definition Index: 31349
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceL1_tB9E31F8B40EB0E1ED4EECFAE67C950A4A4A52731* ReduceL1_SetInputs_m0553E2B65C177D801CA438E53B87CDAD9A761CE3 (ReduceL1_tB9E31F8B40EB0E1ED4EECFAE67C950A4A4A52731* __this, int32_t ___0_data, int32_t ___1_axes, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8485,7 +8485,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceL1_tB9E31F8B40EB0E1ED4EECFAE67C950A4A4A
 		return __this;
 	}
 }
-// Method Definition Index: 31258
+// Method Definition Index: 31350
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReduceL1_IsInputCPURead_m95A3372C679BCFEA4B16274DB12FADE04C6837A9 (ReduceL1_tB9E31F8B40EB0E1ED4EECFAE67C950A4A4A52731* __this, int32_t ___0_i, const RuntimeMethod* method) 
 {
 	{
@@ -8493,7 +8493,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReduceL1_IsInputCPURead_m95A3372C679BCFE
 		return (bool)((((int32_t)L_0) == ((int32_t)1))? 1 : 0);
 	}
 }
-// Method Definition Index: 31259
+// Method Definition Index: 31351
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ReduceL1_GetOutputNames_mC06A4A561F6B14D010EE336266C24CD4F8EBBBAB (ReduceL1_tB9E31F8B40EB0E1ED4EECFAE67C950A4A4A52731* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8508,7 +8508,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31260
+// Method Definition Index: 31352
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceL1_tB9E31F8B40EB0E1ED4EECFAE67C950A4A4A52731* ReduceL1_SetOutputs_mCEC91D10B4356A8E0CE6635ADACAC6CF2C92A203 (ReduceL1_tB9E31F8B40EB0E1ED4EECFAE67C950A4A4A52731* __this, int32_t ___0_output, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8528,7 +8528,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceL1_tB9E31F8B40EB0E1ED4EECFAE67C950A4A4A
 		return __this;
 	}
 }
-// Method Definition Index: 31261
+// Method Definition Index: 31353
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceL1_get_opName_m5137A4F5889DB92A8C3D0A6A67754B13B193FE73 (ReduceL1_tB9E31F8B40EB0E1ED4EECFAE67C950A4A4A52731* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8541,7 +8541,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceL1_get_opName_m5137A4F5889DB9
 		return _stringLiteral823FEF53B986DAE8A8C95AB43239BAA913772EA3;
 	}
 }
-// Method Definition Index: 31262
+// Method Definition Index: 31354
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceL1_get_category_m056D712F1935631C247B8D4A4A17BD62AFCC2DEC (ReduceL1_tB9E31F8B40EB0E1ED4EECFAE67C950A4A4A52731* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8554,7 +8554,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceL1_get_category_m056D712F1935
 		return _stringLiteral95F0D1884364F10823E01ABFCD9D2EA3C0D9F389;
 	}
 }
-// Method Definition Index: 31263
+// Method Definition Index: 31355
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ReduceL1_get_profilerMarker_m80A28DEAE79EB483DB6A736C8C34B1C8633957AD (ReduceL1_tB9E31F8B40EB0E1ED4EECFAE67C950A4A4A52731* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8569,7 +8569,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C
 		return L_0;
 	}
 }
-// Method Definition Index: 31264
+// Method Definition Index: 31356
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceL1_ToString_mE01502D9CCB91D4BA5D32B19E040673620A973BF (ReduceL1_tB9E31F8B40EB0E1ED4EECFAE67C950A4A4A52731* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8622,7 +8622,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceL1_ToString_mE01502D9CCB91D4B
 		return L_17;
 	}
 }
-// Method Definition Index: 31265
+// Method Definition Index: 31357
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceL1_SerializeFields_m819681D682013831801113E95E2B6D77B98B13BD (ReduceL1_tB9E31F8B40EB0E1ED4EECFAE67C950A4A4A52731* __this, FlatBufferBuilder_t72116669EC849BCB6543BD426C0F6A9E825BB2FB* ___0_builder, List_1_tAFC4DAF15C03810FE08B8E9742E14A65E4EF9D70* ___1_values, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8657,7 +8657,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceL1_SerializeFields_m819681D6820138
 		return;
 	}
 }
-// Method Definition Index: 31266
+// Method Definition Index: 31358
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039* ReduceL1_DeserializeLayer_m2F4496C8B38B2A0589E07FBC8881FAE447580A85 (Chain_tA7420781D03CE0268AA17EB04D33ED70711681D9 ___0_chain, ExecutionPlan_tDB179066AB651AA7AE8CF463F21CDFA7E06B6A36 ___1_executionPlan, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8736,7 +8736,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C0
 		return L_17;
 	}
 }
-// Method Definition Index: 31267
+// Method Definition Index: 31359
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceL1__cctor_m567CEFB5F134A46C572FD9466EC08BFCA2218592 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8781,11 +8781,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceL1__cctor_m567CEFB5F134A46C572FD94
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31268
+// Method Definition Index: 31360
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ReduceL2_InferPartial_mB98B9F5FFAD1DF6D22B8783DE6663F012C2E7523 (PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___0_data, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___1_axes, bool ___2_keepdims, bool ___3_noopWithEmptyAxes, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:57>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:57>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_0 = ___0_data;
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_1 = ___1_axes;
 		bool L_2 = ___2_keepdims;
@@ -8795,7 +8795,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		return L_4;
 	}
 }
-// Method Definition Index: 31269
+// Method Definition Index: 31361
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceL2_Execute_m5F50BB8074D575EFF5478EDE84543DBDA6F379ED (ReduceL2_t2E5152B37BB34BC809AB92CA5FD5F715A0829C32* __this, ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8817,7 +8817,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceL2_Execute_m5F50BB8074D575EFF5478E
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_4;
 	memset((&V_4), 0, sizeof(V_4));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:62>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:62>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_0 = ___0_ctx;
 		RuntimeObject* L_1 = L_0.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -8828,7 +8828,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceL2_Execute_m5F50BB8074D575EFF5478E
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_5;
 		L_5 = InterfaceFuncInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t >::Invoke(2, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_1, L_4);
 		V_0 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_5, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:63>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_6 = ___0_ctx;
 		RuntimeObject* L_7 = L_6.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_8 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -8841,7 +8841,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceL2_Execute_m5F50BB8074D575EFF5478E
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_12;
 		L_12 = InterfaceFuncInvoker2< ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282, int32_t, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(7, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_7, L_10, L_11);
 		V_1 = L_12;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:64>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:64>
 		bool L_13 = __this->___noopWithEmptyAxes;
 		if (!L_13)
 		{
@@ -8870,7 +8870,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceL2_Execute_m5F50BB8074D575EFF5478E
 
 IL_0052:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:66>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:66>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_18 = ___0_ctx;
 		RuntimeObject* L_19 = L_18.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_20 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -8885,25 +8885,25 @@ IL_0052:
 		RuntimeObject* L_26 = L_25.___backend;
 		NullCheck(L_26);
 		int32_t L_27;
-		L_27 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_26);
+		L_27 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_26);
 		NullCheck(L_19);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_28;
 		L_28 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_19, L_22, L_24, 0, L_27);
 		V_3 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_28, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:67>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_29 = ___0_ctx;
 		RuntimeObject* L_30 = L_29.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_31 = V_0;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_32 = V_3;
 		NullCheck(L_30);
-		InterfaceActionInvoker2< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(183, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_30, L_31, L_32);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:68>
+		InterfaceActionInvoker2< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(185, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_30, L_31, L_32);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:68>
 		return;
 	}
 
 IL_008b:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:70>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:70>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_33 = ___0_ctx;
 		RuntimeObject* L_34 = L_33.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_35 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -8923,12 +8923,12 @@ IL_008b:
 		RuntimeObject* L_44 = L_43.___backend;
 		NullCheck(L_44);
 		int32_t L_45;
-		L_45 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_44);
+		L_45 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_44);
 		NullCheck(L_34);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_46;
 		L_46 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_34, L_37, L_42, 0, L_45);
 		V_2 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_46, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:71>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:71>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_47 = V_2;
 		NullCheck(L_47);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_48;
@@ -8942,13 +8942,13 @@ IL_008b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:72>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:72>
 		return;
 	}
 
 IL_00d8:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:73>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:73>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_50 = V_0;
 		NullCheck(L_50);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_51;
@@ -8962,30 +8962,30 @@ IL_00d8:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:74>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_53 = ___0_ctx;
 		RuntimeObject* L_54 = L_53.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_55 = V_2;
 		NullCheck(L_54);
-		InterfaceActionInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(180, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_54, L_55);
+		InterfaceActionInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(182, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_54, L_55);
 		return;
 	}
 
 IL_00f6:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:76>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:76>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_56 = ___0_ctx;
 		RuntimeObject* L_57 = L_56.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_58 = V_0;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_59 = V_2;
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_60 = V_1;
 		NullCheck(L_57);
-		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(128, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_57, L_58, L_59, L_60);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:77>
+		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(130, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_57, L_58, L_59, L_60);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:77>
 		return;
 	}
 }
-// Method Definition Index: 31270
+// Method Definition Index: 31362
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceL2__ctor_mE44AAF5147CD65CB03A2805D77010B344C1EBCFB (ReduceL2_t2E5152B37BB34BC809AB92CA5FD5F715A0829C32* __this, bool ___0_keepdims, bool ___1_noopWithEmptyAxes, const RuntimeMethod* method) 
 {
 	{
@@ -8997,7 +8997,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceL2__ctor_mE44AAF5147CD65CB03A2805D
 		return;
 	}
 }
-// Method Definition Index: 31271
+// Method Definition Index: 31363
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceL2_InferPartial_m4877C4C0F4C25C948A30B1160DD2E80ADC6FAE89 (ReduceL2_t2E5152B37BB34BC809AB92CA5FD5F715A0829C32* __this, PartialInferenceContext_t87A97CDA80604F25B18FC9A140939F6DFB2F92AE* ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9044,7 +9044,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceL2_InferPartial_m4877C4C0F4C25C948
 		return;
 	}
 }
-// Method Definition Index: 31272
+// Method Definition Index: 31364
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ReduceL2_GetInputNames_m7FAEE7284A070BAD275DD9AC1146CE58A8CF97F5 (ReduceL2_t2E5152B37BB34BC809AB92CA5FD5F715A0829C32* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9059,7 +9059,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31273
+// Method Definition Index: 31365
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceL2_t2E5152B37BB34BC809AB92CA5FD5F715A0829C32* ReduceL2_SetInputs_mBA52FCA60C7ED0B5934107AF45DC90F8D6739B1E (ReduceL2_t2E5152B37BB34BC809AB92CA5FD5F715A0829C32* __this, int32_t ___0_data, int32_t ___1_axes, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9083,7 +9083,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceL2_t2E5152B37BB34BC809AB92CA5FD5F715A08
 		return __this;
 	}
 }
-// Method Definition Index: 31274
+// Method Definition Index: 31366
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReduceL2_IsInputCPURead_m739087B41C5454B0A318583A7D50C3B9B5A53467 (ReduceL2_t2E5152B37BB34BC809AB92CA5FD5F715A0829C32* __this, int32_t ___0_i, const RuntimeMethod* method) 
 {
 	{
@@ -9091,7 +9091,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReduceL2_IsInputCPURead_m739087B41C5454B
 		return (bool)((((int32_t)L_0) == ((int32_t)1))? 1 : 0);
 	}
 }
-// Method Definition Index: 31275
+// Method Definition Index: 31367
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ReduceL2_GetOutputNames_m085AACE336D76396C7F3C42DEFB9DA830C2C695E (ReduceL2_t2E5152B37BB34BC809AB92CA5FD5F715A0829C32* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9106,7 +9106,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31276
+// Method Definition Index: 31368
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceL2_t2E5152B37BB34BC809AB92CA5FD5F715A0829C32* ReduceL2_SetOutputs_m017A4B757F3D3B4C3F80895DF2D1D1FA21052C29 (ReduceL2_t2E5152B37BB34BC809AB92CA5FD5F715A0829C32* __this, int32_t ___0_output, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9126,7 +9126,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceL2_t2E5152B37BB34BC809AB92CA5FD5F715A08
 		return __this;
 	}
 }
-// Method Definition Index: 31277
+// Method Definition Index: 31369
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceL2_get_opName_mB475A55731A1C7B107B6BCD2E1503953065F0111 (ReduceL2_t2E5152B37BB34BC809AB92CA5FD5F715A0829C32* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9139,7 +9139,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceL2_get_opName_mB475A55731A1C7
 		return _stringLiteral527DF5729A3880D401CCC00CEBA352A898696DC4;
 	}
 }
-// Method Definition Index: 31278
+// Method Definition Index: 31370
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceL2_get_category_m172F615F98086D9D6B8AE7D813145A07DD16D454 (ReduceL2_t2E5152B37BB34BC809AB92CA5FD5F715A0829C32* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9152,7 +9152,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceL2_get_category_m172F615F9808
 		return _stringLiteral95F0D1884364F10823E01ABFCD9D2EA3C0D9F389;
 	}
 }
-// Method Definition Index: 31279
+// Method Definition Index: 31371
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ReduceL2_get_profilerMarker_m7F64E68B138BFB8702687A6108AB997CB2A1DB8B (ReduceL2_t2E5152B37BB34BC809AB92CA5FD5F715A0829C32* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9167,7 +9167,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C
 		return L_0;
 	}
 }
-// Method Definition Index: 31280
+// Method Definition Index: 31372
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceL2_ToString_m711E433E5DA1359B0CE07B31C26622DC6F6FC616 (ReduceL2_t2E5152B37BB34BC809AB92CA5FD5F715A0829C32* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9220,7 +9220,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceL2_ToString_m711E433E5DA1359B
 		return L_17;
 	}
 }
-// Method Definition Index: 31281
+// Method Definition Index: 31373
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceL2_SerializeFields_m0A714C90453511C2D69814C4895CA25C0083FCFE (ReduceL2_t2E5152B37BB34BC809AB92CA5FD5F715A0829C32* __this, FlatBufferBuilder_t72116669EC849BCB6543BD426C0F6A9E825BB2FB* ___0_builder, List_1_tAFC4DAF15C03810FE08B8E9742E14A65E4EF9D70* ___1_values, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9255,7 +9255,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceL2_SerializeFields_m0A714C90453511
 		return;
 	}
 }
-// Method Definition Index: 31282
+// Method Definition Index: 31374
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039* ReduceL2_DeserializeLayer_mD876DA4BA6C410720280055CFAE5559FA4B19C10 (Chain_tA7420781D03CE0268AA17EB04D33ED70711681D9 ___0_chain, ExecutionPlan_tDB179066AB651AA7AE8CF463F21CDFA7E06B6A36 ___1_executionPlan, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9334,7 +9334,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C0
 		return L_17;
 	}
 }
-// Method Definition Index: 31283
+// Method Definition Index: 31375
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceL2__cctor_mB53363F10C9EFA409D017B1D9CDB0AB01418753D (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9379,11 +9379,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceL2__cctor_mB53363F10C9EFA409D017B1
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31284
+// Method Definition Index: 31376
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ReduceLogSum_InferPartial_m3749EF645BA4FB3009B34E010523E36EC5789618 (PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___0_data, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___1_axes, bool ___2_keepdims, bool ___3_noopWithEmptyAxes, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:92>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:92>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_0 = ___0_data;
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_1 = ___1_axes;
 		bool L_2 = ___2_keepdims;
@@ -9393,7 +9393,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		return L_4;
 	}
 }
-// Method Definition Index: 31285
+// Method Definition Index: 31377
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceLogSum_Execute_m66333AF75E1E0229F9BC9960CC69F82635B2B42A (ReduceLogSum_t80EAFDF13133BEA393AE53231AA53DD20E375164* __this, ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9415,7 +9415,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceLogSum_Execute_m66333AF75E1E0229F9
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_4;
 	memset((&V_4), 0, sizeof(V_4));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:97>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:97>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_0 = ___0_ctx;
 		RuntimeObject* L_1 = L_0.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -9426,7 +9426,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceLogSum_Execute_m66333AF75E1E0229F9
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_5;
 		L_5 = InterfaceFuncInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t >::Invoke(2, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_1, L_4);
 		V_0 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_5, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:98>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:98>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_6 = ___0_ctx;
 		RuntimeObject* L_7 = L_6.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_8 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -9439,7 +9439,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceLogSum_Execute_m66333AF75E1E0229F9
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_12;
 		L_12 = InterfaceFuncInvoker2< ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282, int32_t, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(7, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_7, L_10, L_11);
 		V_1 = L_12;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:99>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:99>
 		bool L_13 = __this->___noopWithEmptyAxes;
 		if (!L_13)
 		{
@@ -9468,7 +9468,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceLogSum_Execute_m66333AF75E1E0229F9
 
 IL_0052:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:101>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:101>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_18 = ___0_ctx;
 		RuntimeObject* L_19 = L_18.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_20 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -9483,25 +9483,25 @@ IL_0052:
 		RuntimeObject* L_26 = L_25.___backend;
 		NullCheck(L_26);
 		int32_t L_27;
-		L_27 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_26);
+		L_27 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_26);
 		NullCheck(L_19);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_28;
 		L_28 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_19, L_22, L_24, 0, L_27);
 		V_3 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_28, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:102>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:102>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_29 = ___0_ctx;
 		RuntimeObject* L_30 = L_29.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_31 = V_0;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_32 = V_3;
 		NullCheck(L_30);
-		InterfaceActionInvoker2< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(183, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_30, L_31, L_32);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:103>
+		InterfaceActionInvoker2< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(185, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_30, L_31, L_32);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:103>
 		return;
 	}
 
 IL_008b:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:105>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:105>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_33 = ___0_ctx;
 		RuntimeObject* L_34 = L_33.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_35 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -9521,12 +9521,12 @@ IL_008b:
 		RuntimeObject* L_44 = L_43.___backend;
 		NullCheck(L_44);
 		int32_t L_45;
-		L_45 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_44);
+		L_45 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_44);
 		NullCheck(L_34);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_46;
 		L_46 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_34, L_37, L_42, 0, L_45);
 		V_2 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_46, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:106>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:106>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_47 = V_2;
 		NullCheck(L_47);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_48;
@@ -9540,13 +9540,13 @@ IL_008b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:107>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:107>
 		return;
 	}
 
 IL_00d8:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:108>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:108>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_50 = V_0;
 		NullCheck(L_50);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_51;
@@ -9560,30 +9560,30 @@ IL_00d8:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:109>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:109>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_53 = ___0_ctx;
 		RuntimeObject* L_54 = L_53.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_55 = V_2;
 		NullCheck(L_54);
-		InterfaceActionInvoker2< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, float >::Invoke(181, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_54, L_55, (-std::numeric_limits<float>::infinity()));
+		InterfaceActionInvoker2< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, float >::Invoke(183, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_54, L_55, (-std::numeric_limits<float>::infinity()));
 		return;
 	}
 
 IL_00fb:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:111>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:111>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_56 = ___0_ctx;
 		RuntimeObject* L_57 = L_56.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_58 = V_0;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_59 = V_2;
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_60 = V_1;
 		NullCheck(L_57);
-		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(129, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_57, L_58, L_59, L_60);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:112>
+		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(131, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_57, L_58, L_59, L_60);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:112>
 		return;
 	}
 }
-// Method Definition Index: 31286
+// Method Definition Index: 31378
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceLogSum__ctor_mBEAE9FCC96B82D0CC33C08DE2A68002E19557EED (ReduceLogSum_t80EAFDF13133BEA393AE53231AA53DD20E375164* __this, bool ___0_keepdims, bool ___1_noopWithEmptyAxes, const RuntimeMethod* method) 
 {
 	{
@@ -9595,7 +9595,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceLogSum__ctor_mBEAE9FCC96B82D0CC33C
 		return;
 	}
 }
-// Method Definition Index: 31287
+// Method Definition Index: 31379
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceLogSum_InferPartial_m6F935C6437E461323FCEE7845A39C9B0D2851340 (ReduceLogSum_t80EAFDF13133BEA393AE53231AA53DD20E375164* __this, PartialInferenceContext_t87A97CDA80604F25B18FC9A140939F6DFB2F92AE* ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9642,7 +9642,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceLogSum_InferPartial_m6F935C6437E46
 		return;
 	}
 }
-// Method Definition Index: 31288
+// Method Definition Index: 31380
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ReduceLogSum_GetInputNames_m1046EF6A46963B768EAF94C331A847B561F6CB71 (ReduceLogSum_t80EAFDF13133BEA393AE53231AA53DD20E375164* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9657,7 +9657,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31289
+// Method Definition Index: 31381
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceLogSum_t80EAFDF13133BEA393AE53231AA53DD20E375164* ReduceLogSum_SetInputs_mC114DB095D338EB361EDDC1CA0970085273DA468 (ReduceLogSum_t80EAFDF13133BEA393AE53231AA53DD20E375164* __this, int32_t ___0_data, int32_t ___1_axes, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9681,7 +9681,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceLogSum_t80EAFDF13133BEA393AE53231AA53DD
 		return __this;
 	}
 }
-// Method Definition Index: 31290
+// Method Definition Index: 31382
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReduceLogSum_IsInputCPURead_m16EC2D7900F35C24836C87442A8B1A62B50A8B1D (ReduceLogSum_t80EAFDF13133BEA393AE53231AA53DD20E375164* __this, int32_t ___0_i, const RuntimeMethod* method) 
 {
 	{
@@ -9689,7 +9689,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReduceLogSum_IsInputCPURead_m16EC2D7900F
 		return (bool)((((int32_t)L_0) == ((int32_t)1))? 1 : 0);
 	}
 }
-// Method Definition Index: 31291
+// Method Definition Index: 31383
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ReduceLogSum_GetOutputNames_m460C398224576E12CEA74C84D03BFA2C06F411A1 (ReduceLogSum_t80EAFDF13133BEA393AE53231AA53DD20E375164* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9704,7 +9704,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31292
+// Method Definition Index: 31384
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceLogSum_t80EAFDF13133BEA393AE53231AA53DD20E375164* ReduceLogSum_SetOutputs_m1C8D6BEBC907E42434049080EC86172D1200C20C (ReduceLogSum_t80EAFDF13133BEA393AE53231AA53DD20E375164* __this, int32_t ___0_output, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9724,7 +9724,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceLogSum_t80EAFDF13133BEA393AE53231AA53DD
 		return __this;
 	}
 }
-// Method Definition Index: 31293
+// Method Definition Index: 31385
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceLogSum_get_opName_m66BFC77414E51E693B75C347D27BBD36FB20CEB6 (ReduceLogSum_t80EAFDF13133BEA393AE53231AA53DD20E375164* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9737,7 +9737,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceLogSum_get_opName_m66BFC77414
 		return _stringLiteral08ABE224DADA568510F9F910CAE1EE5AF91E2B5A;
 	}
 }
-// Method Definition Index: 31294
+// Method Definition Index: 31386
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceLogSum_get_category_m2E68D376368706F518BF38285E02A3ABFE146C82 (ReduceLogSum_t80EAFDF13133BEA393AE53231AA53DD20E375164* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9750,7 +9750,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceLogSum_get_category_m2E68D376
 		return _stringLiteral95F0D1884364F10823E01ABFCD9D2EA3C0D9F389;
 	}
 }
-// Method Definition Index: 31295
+// Method Definition Index: 31387
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ReduceLogSum_get_profilerMarker_mA39832E265E7778937DDDDF71C714A5FD63A5266 (ReduceLogSum_t80EAFDF13133BEA393AE53231AA53DD20E375164* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9765,7 +9765,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C
 		return L_0;
 	}
 }
-// Method Definition Index: 31296
+// Method Definition Index: 31388
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceLogSum_ToString_mFF4AD37AFBC83AB68D28C10ECE200F5BE5FEFC93 (ReduceLogSum_t80EAFDF13133BEA393AE53231AA53DD20E375164* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9818,7 +9818,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceLogSum_ToString_mFF4AD37AFBC8
 		return L_17;
 	}
 }
-// Method Definition Index: 31297
+// Method Definition Index: 31389
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceLogSum_SerializeFields_m716FCD399987C272E77E1F18273D1ED2259E8715 (ReduceLogSum_t80EAFDF13133BEA393AE53231AA53DD20E375164* __this, FlatBufferBuilder_t72116669EC849BCB6543BD426C0F6A9E825BB2FB* ___0_builder, List_1_tAFC4DAF15C03810FE08B8E9742E14A65E4EF9D70* ___1_values, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9853,7 +9853,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceLogSum_SerializeFields_m716FCD3999
 		return;
 	}
 }
-// Method Definition Index: 31298
+// Method Definition Index: 31390
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039* ReduceLogSum_DeserializeLayer_mF488B1A4A17247F33170DD3F956A69FDC64251CF (Chain_tA7420781D03CE0268AA17EB04D33ED70711681D9 ___0_chain, ExecutionPlan_tDB179066AB651AA7AE8CF463F21CDFA7E06B6A36 ___1_executionPlan, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9932,7 +9932,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C0
 		return L_17;
 	}
 }
-// Method Definition Index: 31299
+// Method Definition Index: 31391
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceLogSum__cctor_m4EE4A2186926962295ED5FA692083A956F3B0DF7 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9977,11 +9977,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceLogSum__cctor_m4EE4A2186926962295E
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31300
+// Method Definition Index: 31392
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ReduceLogSumExp_InferPartial_mB8CE9B66A980B7CA18FF1CC8E1CBFAC86C3C9FA4 (PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___0_data, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___1_axes, bool ___2_keepdims, bool ___3_noopWithEmptyAxes, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:127>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:127>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_0 = ___0_data;
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_1 = ___1_axes;
 		bool L_2 = ___2_keepdims;
@@ -9991,7 +9991,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		return L_4;
 	}
 }
-// Method Definition Index: 31301
+// Method Definition Index: 31393
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceLogSumExp_Execute_mEB202B99999B1AA589D23F14FD65CBD42844CDC5 (ReduceLogSumExp_t8ACE493B26A3E321A9A6581E7FA67432BE8ED662* __this, ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10013,7 +10013,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceLogSumExp_Execute_mEB202B99999B1AA
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_4;
 	memset((&V_4), 0, sizeof(V_4));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:132>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:132>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_0 = ___0_ctx;
 		RuntimeObject* L_1 = L_0.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -10024,7 +10024,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceLogSumExp_Execute_mEB202B99999B1AA
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_5;
 		L_5 = InterfaceFuncInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t >::Invoke(2, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_1, L_4);
 		V_0 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_5, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:133>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_6 = ___0_ctx;
 		RuntimeObject* L_7 = L_6.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_8 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -10037,7 +10037,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceLogSumExp_Execute_mEB202B99999B1AA
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_12;
 		L_12 = InterfaceFuncInvoker2< ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282, int32_t, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(7, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_7, L_10, L_11);
 		V_1 = L_12;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:134>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:134>
 		bool L_13 = __this->___noopWithEmptyAxes;
 		if (!L_13)
 		{
@@ -10066,7 +10066,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceLogSumExp_Execute_mEB202B99999B1AA
 
 IL_0052:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:136>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:136>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_18 = ___0_ctx;
 		RuntimeObject* L_19 = L_18.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_20 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -10081,25 +10081,25 @@ IL_0052:
 		RuntimeObject* L_26 = L_25.___backend;
 		NullCheck(L_26);
 		int32_t L_27;
-		L_27 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_26);
+		L_27 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_26);
 		NullCheck(L_19);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_28;
 		L_28 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_19, L_22, L_24, 0, L_27);
 		V_3 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_28, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:137>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:137>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_29 = ___0_ctx;
 		RuntimeObject* L_30 = L_29.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_31 = V_0;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_32 = V_3;
 		NullCheck(L_30);
-		InterfaceActionInvoker2< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(183, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_30, L_31, L_32);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:138>
+		InterfaceActionInvoker2< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(185, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_30, L_31, L_32);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:138>
 		return;
 	}
 
 IL_008b:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:140>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:140>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_33 = ___0_ctx;
 		RuntimeObject* L_34 = L_33.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_35 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -10119,12 +10119,12 @@ IL_008b:
 		RuntimeObject* L_44 = L_43.___backend;
 		NullCheck(L_44);
 		int32_t L_45;
-		L_45 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_44);
+		L_45 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_44);
 		NullCheck(L_34);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_46;
 		L_46 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_34, L_37, L_42, 0, L_45);
 		V_2 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_46, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:141>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:141>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_47 = V_2;
 		NullCheck(L_47);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_48;
@@ -10138,13 +10138,13 @@ IL_008b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:142>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:142>
 		return;
 	}
 
 IL_00d8:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:143>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:143>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_50 = V_0;
 		NullCheck(L_50);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_51;
@@ -10158,30 +10158,30 @@ IL_00d8:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:144>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:144>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_53 = ___0_ctx;
 		RuntimeObject* L_54 = L_53.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_55 = V_2;
 		NullCheck(L_54);
-		InterfaceActionInvoker2< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, float >::Invoke(181, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_54, L_55, (-std::numeric_limits<float>::infinity()));
+		InterfaceActionInvoker2< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, float >::Invoke(183, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_54, L_55, (-std::numeric_limits<float>::infinity()));
 		return;
 	}
 
 IL_00fb:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:146>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:146>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_56 = ___0_ctx;
 		RuntimeObject* L_57 = L_56.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_58 = V_0;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_59 = V_2;
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_60 = V_1;
 		NullCheck(L_57);
-		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(130, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_57, L_58, L_59, L_60);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:147>
+		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(132, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_57, L_58, L_59, L_60);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:147>
 		return;
 	}
 }
-// Method Definition Index: 31302
+// Method Definition Index: 31394
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceLogSumExp__ctor_m3F382817DB359E1D08401A131B0D73C475327EA2 (ReduceLogSumExp_t8ACE493B26A3E321A9A6581E7FA67432BE8ED662* __this, bool ___0_keepdims, bool ___1_noopWithEmptyAxes, const RuntimeMethod* method) 
 {
 	{
@@ -10193,7 +10193,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceLogSumExp__ctor_m3F382817DB359E1D0
 		return;
 	}
 }
-// Method Definition Index: 31303
+// Method Definition Index: 31395
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceLogSumExp_InferPartial_mB753AC0AA1935FBF7042FB91828FB6B8D0B16176 (ReduceLogSumExp_t8ACE493B26A3E321A9A6581E7FA67432BE8ED662* __this, PartialInferenceContext_t87A97CDA80604F25B18FC9A140939F6DFB2F92AE* ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10240,7 +10240,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceLogSumExp_InferPartial_mB753AC0AA1
 		return;
 	}
 }
-// Method Definition Index: 31304
+// Method Definition Index: 31396
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ReduceLogSumExp_GetInputNames_m2462D88E26D163C7F1F149621F9CADB91F534198 (ReduceLogSumExp_t8ACE493B26A3E321A9A6581E7FA67432BE8ED662* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10255,7 +10255,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31305
+// Method Definition Index: 31397
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceLogSumExp_t8ACE493B26A3E321A9A6581E7FA67432BE8ED662* ReduceLogSumExp_SetInputs_mB84C35B965F1D507D6D1374A9EDB1448D5BEE9F2 (ReduceLogSumExp_t8ACE493B26A3E321A9A6581E7FA67432BE8ED662* __this, int32_t ___0_data, int32_t ___1_axes, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10279,7 +10279,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceLogSumExp_t8ACE493B26A3E321A9A6581E7FA6
 		return __this;
 	}
 }
-// Method Definition Index: 31306
+// Method Definition Index: 31398
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReduceLogSumExp_IsInputCPURead_mD3B38F3B8A9601F5E204FCCFD7C6241B764DFDFC (ReduceLogSumExp_t8ACE493B26A3E321A9A6581E7FA67432BE8ED662* __this, int32_t ___0_i, const RuntimeMethod* method) 
 {
 	{
@@ -10287,7 +10287,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReduceLogSumExp_IsInputCPURead_mD3B38F3B
 		return (bool)((((int32_t)L_0) == ((int32_t)1))? 1 : 0);
 	}
 }
-// Method Definition Index: 31307
+// Method Definition Index: 31399
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ReduceLogSumExp_GetOutputNames_mAB3F508A1BB7CB9F367A4E3BB50515F4223FAC97 (ReduceLogSumExp_t8ACE493B26A3E321A9A6581E7FA67432BE8ED662* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10302,7 +10302,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31308
+// Method Definition Index: 31400
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceLogSumExp_t8ACE493B26A3E321A9A6581E7FA67432BE8ED662* ReduceLogSumExp_SetOutputs_mF997DE47DDB38F078ED6DD8F0547948019906778 (ReduceLogSumExp_t8ACE493B26A3E321A9A6581E7FA67432BE8ED662* __this, int32_t ___0_output, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10322,7 +10322,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceLogSumExp_t8ACE493B26A3E321A9A6581E7FA6
 		return __this;
 	}
 }
-// Method Definition Index: 31309
+// Method Definition Index: 31401
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceLogSumExp_get_opName_mBDFFF2154771C52C76961BAC23FBA3F2BD84F4EB (ReduceLogSumExp_t8ACE493B26A3E321A9A6581E7FA67432BE8ED662* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10335,7 +10335,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceLogSumExp_get_opName_mBDFFF21
 		return _stringLiteralD45E05C37BA189AC50B75A8E4B5C3C966C6AB212;
 	}
 }
-// Method Definition Index: 31310
+// Method Definition Index: 31402
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceLogSumExp_get_category_m4B9CAFB3D84D4A409D341F76E33C8127CA091755 (ReduceLogSumExp_t8ACE493B26A3E321A9A6581E7FA67432BE8ED662* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10348,7 +10348,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceLogSumExp_get_category_m4B9CA
 		return _stringLiteral95F0D1884364F10823E01ABFCD9D2EA3C0D9F389;
 	}
 }
-// Method Definition Index: 31311
+// Method Definition Index: 31403
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ReduceLogSumExp_get_profilerMarker_m15ED9C4444AFE4DF85631DB45BED8FB95D64F922 (ReduceLogSumExp_t8ACE493B26A3E321A9A6581E7FA67432BE8ED662* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10363,7 +10363,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C
 		return L_0;
 	}
 }
-// Method Definition Index: 31312
+// Method Definition Index: 31404
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceLogSumExp_ToString_m355CB0101C0B66362E27617D682375BDC379F27C (ReduceLogSumExp_t8ACE493B26A3E321A9A6581E7FA67432BE8ED662* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10416,7 +10416,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceLogSumExp_ToString_m355CB0101
 		return L_17;
 	}
 }
-// Method Definition Index: 31313
+// Method Definition Index: 31405
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceLogSumExp_SerializeFields_m9A06EF8E60113CC7FAF99B769C25CA06BCEE78A1 (ReduceLogSumExp_t8ACE493B26A3E321A9A6581E7FA67432BE8ED662* __this, FlatBufferBuilder_t72116669EC849BCB6543BD426C0F6A9E825BB2FB* ___0_builder, List_1_tAFC4DAF15C03810FE08B8E9742E14A65E4EF9D70* ___1_values, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10451,7 +10451,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceLogSumExp_SerializeFields_m9A06EF8
 		return;
 	}
 }
-// Method Definition Index: 31314
+// Method Definition Index: 31406
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039* ReduceLogSumExp_DeserializeLayer_m7ABA543ADBE6109284AF668AC212EF737841D2DE (Chain_tA7420781D03CE0268AA17EB04D33ED70711681D9 ___0_chain, ExecutionPlan_tDB179066AB651AA7AE8CF463F21CDFA7E06B6A36 ___1_executionPlan, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10530,7 +10530,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C0
 		return L_17;
 	}
 }
-// Method Definition Index: 31315
+// Method Definition Index: 31407
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceLogSumExp__cctor_mDCEF27AF7C0B508837C57BE4ACF57173674ED16B (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10575,11 +10575,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceLogSumExp__cctor_mDCEF27AF7C0B5088
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31316
+// Method Definition Index: 31408
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ReduceMax_InferPartial_m93D7F3E9F115EA08DE5E9DBDFB4AC0F81912CCAA (PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___0_data, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___1_axes, bool ___2_keepdims, bool ___3_noopWithEmptyAxes, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:162>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:162>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_0 = ___0_data;
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_1 = ___1_axes;
 		bool L_2 = ___2_keepdims;
@@ -10589,7 +10589,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		return L_4;
 	}
 }
-// Method Definition Index: 31317
+// Method Definition Index: 31409
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMax_Execute_m0F18ACF706282FD72A23A322F07103EB94A8E8D8 (ReduceMax_t89666578E1346040503F7F952A731C2012AA86D5* __this, ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10612,7 +10612,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMax_Execute_m0F18ACF706282FD72A23A
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_4;
 	memset((&V_4), 0, sizeof(V_4));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:167>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:167>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_0 = ___0_ctx;
 		RuntimeObject* L_1 = L_0.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -10623,7 +10623,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMax_Execute_m0F18ACF706282FD72A23A
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_5;
 		L_5 = InterfaceFuncInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t >::Invoke(2, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_1, L_4);
 		V_0 = L_5;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:168>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:168>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_6 = ___0_ctx;
 		RuntimeObject* L_7 = L_6.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_8 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -10636,7 +10636,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMax_Execute_m0F18ACF706282FD72A23A
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_12;
 		L_12 = InterfaceFuncInvoker2< ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282, int32_t, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(7, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_7, L_10, L_11);
 		V_1 = L_12;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:169>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:169>
 		bool L_13 = __this->___noopWithEmptyAxes;
 		if (!L_13)
 		{
@@ -10665,7 +10665,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMax_Execute_m0F18ACF706282FD72A23A
 
 IL_004d:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:171>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:171>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_18 = ___0_ctx;
 		RuntimeObject* L_19 = L_18.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_20 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -10684,25 +10684,25 @@ IL_004d:
 		RuntimeObject* L_28 = L_27.___backend;
 		NullCheck(L_28);
 		int32_t L_29;
-		L_29 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_28);
+		L_29 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_28);
 		NullCheck(L_19);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_30;
 		L_30 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_19, L_22, L_24, L_26, L_29);
 		V_3 = L_30;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:172>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:172>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_31 = ___0_ctx;
 		RuntimeObject* L_32 = L_31.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_33 = V_0;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_34 = V_3;
 		NullCheck(L_32);
-		InterfaceActionInvoker2< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(183, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_32, L_33, L_34);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:173>
+		InterfaceActionInvoker2< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(185, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_32, L_33, L_34);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:173>
 		return;
 	}
 
 IL_0086:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:175>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:175>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_35 = ___0_ctx;
 		RuntimeObject* L_36 = L_35.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_37 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -10726,12 +10726,12 @@ IL_0086:
 		RuntimeObject* L_48 = L_47.___backend;
 		NullCheck(L_48);
 		int32_t L_49;
-		L_49 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_48);
+		L_49 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_48);
 		NullCheck(L_36);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_50;
 		L_50 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_36, L_39, L_44, L_46, L_49);
 		V_2 = L_50;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:176>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:176>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_51 = V_2;
 		NullCheck(L_51);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_52;
@@ -10745,13 +10745,13 @@ IL_0086:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:177>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:177>
 		return;
 	}
 
 IL_00d3:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:178>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:178>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_54 = V_0;
 		if (!((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_54, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)))
 		{
@@ -10759,7 +10759,7 @@ IL_00d3:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:180>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:180>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_55 = V_0;
 		NullCheck(L_55);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_56;
@@ -10773,31 +10773,31 @@ IL_00d3:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:181>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:181>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_58 = ___0_ctx;
 		RuntimeObject* L_59 = L_58.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_60 = V_2;
 		NullCheck(L_59);
-		InterfaceActionInvoker2< Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, int32_t >::Invoke(182, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_59, ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_60, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), ((int32_t)-2147483648LL));
+		InterfaceActionInvoker2< Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, int32_t >::Invoke(184, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_59, ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_60, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), ((int32_t)-2147483648LL));
 		return;
 	}
 
 IL_0103:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:183>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:183>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_61 = ___0_ctx;
 		RuntimeObject* L_62 = L_61.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_63 = V_0;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_64 = V_2;
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_65 = V_1;
 		NullCheck(L_62);
-		InterfaceActionInvoker3< Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(116, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_62, ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_63, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_64, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), L_65);
+		InterfaceActionInvoker3< Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(118, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_62, ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_63, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_64, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), L_65);
 		return;
 	}
 
 IL_011c:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:187>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:187>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_66 = V_0;
 		NullCheck(L_66);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_67;
@@ -10811,30 +10811,30 @@ IL_011c:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:188>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:188>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_69 = ___0_ctx;
 		RuntimeObject* L_70 = L_69.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_71 = V_2;
 		NullCheck(L_70);
-		InterfaceActionInvoker2< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, float >::Invoke(181, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_70, ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_71, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), (-std::numeric_limits<float>::infinity()));
+		InterfaceActionInvoker2< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, float >::Invoke(183, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_70, ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_71, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), (-std::numeric_limits<float>::infinity()));
 		return;
 	}
 
 IL_0144:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:190>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:190>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_72 = ___0_ctx;
 		RuntimeObject* L_73 = L_72.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_74 = V_0;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_75 = V_2;
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_76 = V_1;
 		NullCheck(L_73);
-		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(115, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_73, ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_74, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_75, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), L_76);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:192>
+		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(117, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_73, ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_74, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_75, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), L_76);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:192>
 		return;
 	}
 }
-// Method Definition Index: 31318
+// Method Definition Index: 31410
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMax__ctor_mA537E00CCBFC84AF60D35A7F3F1D087E51D63E94 (ReduceMax_t89666578E1346040503F7F952A731C2012AA86D5* __this, bool ___0_keepdims, bool ___1_noopWithEmptyAxes, const RuntimeMethod* method) 
 {
 	{
@@ -10846,7 +10846,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMax__ctor_mA537E00CCBFC84AF60D35A7
 		return;
 	}
 }
-// Method Definition Index: 31319
+// Method Definition Index: 31411
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMax_InferPartial_mBED98B65ACCD556ABAE1E4A323365DA7EACAE17F (ReduceMax_t89666578E1346040503F7F952A731C2012AA86D5* __this, PartialInferenceContext_t87A97CDA80604F25B18FC9A140939F6DFB2F92AE* ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10893,7 +10893,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMax_InferPartial_mBED98B65ACCD556A
 		return;
 	}
 }
-// Method Definition Index: 31320
+// Method Definition Index: 31412
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ReduceMax_GetInputNames_mF8B04AAAF8D18DC3CDFF68EB13D4B69EC0AF6032 (ReduceMax_t89666578E1346040503F7F952A731C2012AA86D5* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10908,7 +10908,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31321
+// Method Definition Index: 31413
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceMax_t89666578E1346040503F7F952A731C2012AA86D5* ReduceMax_SetInputs_mA23650F29901A08DEF0F293FB02B9C22ADEE07E0 (ReduceMax_t89666578E1346040503F7F952A731C2012AA86D5* __this, int32_t ___0_data, int32_t ___1_axes, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10932,7 +10932,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceMax_t89666578E1346040503F7F952A731C2012
 		return __this;
 	}
 }
-// Method Definition Index: 31322
+// Method Definition Index: 31414
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReduceMax_IsInputCPURead_mCEF0BD116E27E291B8A1C1C4C54B775F0E8D2E25 (ReduceMax_t89666578E1346040503F7F952A731C2012AA86D5* __this, int32_t ___0_i, const RuntimeMethod* method) 
 {
 	{
@@ -10940,7 +10940,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReduceMax_IsInputCPURead_mCEF0BD116E27E2
 		return (bool)((((int32_t)L_0) == ((int32_t)1))? 1 : 0);
 	}
 }
-// Method Definition Index: 31323
+// Method Definition Index: 31415
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ReduceMax_GetOutputNames_mDEA340BCFE079A8DD3259EA762F2F9457C39B196 (ReduceMax_t89666578E1346040503F7F952A731C2012AA86D5* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10955,7 +10955,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31324
+// Method Definition Index: 31416
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceMax_t89666578E1346040503F7F952A731C2012AA86D5* ReduceMax_SetOutputs_m6161C38C0A905600BC4E9EC6E4BB5BDECA31AA0F (ReduceMax_t89666578E1346040503F7F952A731C2012AA86D5* __this, int32_t ___0_output, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10975,7 +10975,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceMax_t89666578E1346040503F7F952A731C2012
 		return __this;
 	}
 }
-// Method Definition Index: 31325
+// Method Definition Index: 31417
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceMax_get_opName_m71C7B981557EBC776412094B2B611A32560B9680 (ReduceMax_t89666578E1346040503F7F952A731C2012AA86D5* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10988,7 +10988,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceMax_get_opName_m71C7B981557EB
 		return _stringLiteral37ED270E1FF827036FC4ED4CCCFFEE21DDFF7687;
 	}
 }
-// Method Definition Index: 31326
+// Method Definition Index: 31418
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceMax_get_category_m9EE15745A77457216D1E191F42A9B014400C00AC (ReduceMax_t89666578E1346040503F7F952A731C2012AA86D5* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11001,7 +11001,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceMax_get_category_m9EE15745A77
 		return _stringLiteral95F0D1884364F10823E01ABFCD9D2EA3C0D9F389;
 	}
 }
-// Method Definition Index: 31327
+// Method Definition Index: 31419
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ReduceMax_get_profilerMarker_m70B5B29B2B1A33C3E6DD3D5FD1B90FB9B0FAF6BE (ReduceMax_t89666578E1346040503F7F952A731C2012AA86D5* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11016,7 +11016,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C
 		return L_0;
 	}
 }
-// Method Definition Index: 31328
+// Method Definition Index: 31420
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceMax_ToString_mF405C7A2BC28FDF11B4EC1725EF3429E8C0004C0 (ReduceMax_t89666578E1346040503F7F952A731C2012AA86D5* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11069,7 +11069,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceMax_ToString_mF405C7A2BC28FDF
 		return L_17;
 	}
 }
-// Method Definition Index: 31329
+// Method Definition Index: 31421
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMax_SerializeFields_m4AA00DADD9A6390E3C4A5D042F591B6DECFCF358 (ReduceMax_t89666578E1346040503F7F952A731C2012AA86D5* __this, FlatBufferBuilder_t72116669EC849BCB6543BD426C0F6A9E825BB2FB* ___0_builder, List_1_tAFC4DAF15C03810FE08B8E9742E14A65E4EF9D70* ___1_values, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11104,7 +11104,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMax_SerializeFields_m4AA00DADD9A63
 		return;
 	}
 }
-// Method Definition Index: 31330
+// Method Definition Index: 31422
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039* ReduceMax_DeserializeLayer_mC29A839DFAB9D98650E2FC88DC35CB2BCB65C443 (Chain_tA7420781D03CE0268AA17EB04D33ED70711681D9 ___0_chain, ExecutionPlan_tDB179066AB651AA7AE8CF463F21CDFA7E06B6A36 ___1_executionPlan, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11183,7 +11183,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C0
 		return L_17;
 	}
 }
-// Method Definition Index: 31331
+// Method Definition Index: 31423
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMax__cctor_mD8AFBEDF47A5AD89E40AE595C5684395F461C1B1 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11228,11 +11228,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMax__cctor_mD8AFBEDF47A5AD89E40AE5
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31332
+// Method Definition Index: 31424
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ReduceMean_InferPartial_m1F9674D7018B4810A58B8634BF5A1CC7552368FA (PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___0_data, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___1_axes, bool ___2_keepdims, bool ___3_noopWithEmptyAxes, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:207>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:207>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_0 = ___0_data;
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_1 = ___1_axes;
 		bool L_2 = ___2_keepdims;
@@ -11242,7 +11242,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		return L_4;
 	}
 }
-// Method Definition Index: 31333
+// Method Definition Index: 31425
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMean_Execute_m20B697585B8BE1FCAC72ACBDAC47A0818EB15BDB (ReduceMean_t03C783DF355F2490E3DAB4BC614B73EDD0A500DB* __this, ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11264,7 +11264,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMean_Execute_m20B697585B8BE1FCAC72
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_4;
 	memset((&V_4), 0, sizeof(V_4));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:212>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:212>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_0 = ___0_ctx;
 		RuntimeObject* L_1 = L_0.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -11275,7 +11275,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMean_Execute_m20B697585B8BE1FCAC72
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_5;
 		L_5 = InterfaceFuncInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t >::Invoke(2, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_1, L_4);
 		V_0 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_5, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:213>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:213>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_6 = ___0_ctx;
 		RuntimeObject* L_7 = L_6.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_8 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -11288,7 +11288,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMean_Execute_m20B697585B8BE1FCAC72
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_12;
 		L_12 = InterfaceFuncInvoker2< ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282, int32_t, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(7, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_7, L_10, L_11);
 		V_1 = L_12;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:214>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:214>
 		bool L_13 = __this->___noopWithEmptyAxes;
 		if (!L_13)
 		{
@@ -11317,7 +11317,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMean_Execute_m20B697585B8BE1FCAC72
 
 IL_0052:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:216>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:216>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_18 = ___0_ctx;
 		RuntimeObject* L_19 = L_18.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_20 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -11332,25 +11332,25 @@ IL_0052:
 		RuntimeObject* L_26 = L_25.___backend;
 		NullCheck(L_26);
 		int32_t L_27;
-		L_27 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_26);
+		L_27 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_26);
 		NullCheck(L_19);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_28;
 		L_28 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_19, L_22, L_24, 0, L_27);
 		V_3 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_28, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:217>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:217>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_29 = ___0_ctx;
 		RuntimeObject* L_30 = L_29.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_31 = V_0;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_32 = V_3;
 		NullCheck(L_30);
-		InterfaceActionInvoker2< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(183, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_30, L_31, L_32);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:218>
+		InterfaceActionInvoker2< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(185, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_30, L_31, L_32);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:218>
 		return;
 	}
 
 IL_008b:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:220>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:220>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_33 = ___0_ctx;
 		RuntimeObject* L_34 = L_33.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_35 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -11370,12 +11370,12 @@ IL_008b:
 		RuntimeObject* L_44 = L_43.___backend;
 		NullCheck(L_44);
 		int32_t L_45;
-		L_45 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_44);
+		L_45 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_44);
 		NullCheck(L_34);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_46;
 		L_46 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_34, L_37, L_42, 0, L_45);
 		V_2 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_46, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:221>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:221>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_47 = V_2;
 		NullCheck(L_47);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_48;
@@ -11389,13 +11389,13 @@ IL_008b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:222>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:222>
 		return;
 	}
 
 IL_00d8:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:223>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:223>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_50 = V_0;
 		NullCheck(L_50);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_51;
@@ -11409,30 +11409,30 @@ IL_00d8:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:224>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:224>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_53 = ___0_ctx;
 		RuntimeObject* L_54 = L_53.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_55 = V_2;
 		NullCheck(L_54);
-		InterfaceActionInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(180, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_54, L_55);
+		InterfaceActionInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(182, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_54, L_55);
 		return;
 	}
 
 IL_00f6:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:226>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:226>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_56 = ___0_ctx;
 		RuntimeObject* L_57 = L_56.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_58 = V_0;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_59 = V_2;
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_60 = V_1;
 		NullCheck(L_57);
-		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(117, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_57, L_58, L_59, L_60);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:227>
+		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(119, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_57, L_58, L_59, L_60);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:227>
 		return;
 	}
 }
-// Method Definition Index: 31334
+// Method Definition Index: 31426
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMean__ctor_m2A2B2091911D8F62E82CAE309EA184B015787867 (ReduceMean_t03C783DF355F2490E3DAB4BC614B73EDD0A500DB* __this, bool ___0_keepdims, bool ___1_noopWithEmptyAxes, const RuntimeMethod* method) 
 {
 	{
@@ -11444,7 +11444,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMean__ctor_m2A2B2091911D8F62E82CAE
 		return;
 	}
 }
-// Method Definition Index: 31335
+// Method Definition Index: 31427
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMean_InferPartial_mE634C124D3E93E2185EB06A90C704E74CA09FAB5 (ReduceMean_t03C783DF355F2490E3DAB4BC614B73EDD0A500DB* __this, PartialInferenceContext_t87A97CDA80604F25B18FC9A140939F6DFB2F92AE* ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11491,7 +11491,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMean_InferPartial_mE634C124D3E93E2
 		return;
 	}
 }
-// Method Definition Index: 31336
+// Method Definition Index: 31428
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ReduceMean_GetInputNames_mB7C5AB0813E4A6DF4DD7941CF4DC2631A7A53B03 (ReduceMean_t03C783DF355F2490E3DAB4BC614B73EDD0A500DB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11506,7 +11506,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31337
+// Method Definition Index: 31429
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceMean_t03C783DF355F2490E3DAB4BC614B73EDD0A500DB* ReduceMean_SetInputs_m3B41D49859CE67AD1938D0E1DF86095C9ACE9081 (ReduceMean_t03C783DF355F2490E3DAB4BC614B73EDD0A500DB* __this, int32_t ___0_data, int32_t ___1_axes, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11530,7 +11530,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceMean_t03C783DF355F2490E3DAB4BC614B73EDD
 		return __this;
 	}
 }
-// Method Definition Index: 31338
+// Method Definition Index: 31430
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReduceMean_IsInputCPURead_m97DEF7ED41DA49837C77F70867457AE6E6C145A4 (ReduceMean_t03C783DF355F2490E3DAB4BC614B73EDD0A500DB* __this, int32_t ___0_i, const RuntimeMethod* method) 
 {
 	{
@@ -11538,7 +11538,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReduceMean_IsInputCPURead_m97DEF7ED41DA4
 		return (bool)((((int32_t)L_0) == ((int32_t)1))? 1 : 0);
 	}
 }
-// Method Definition Index: 31339
+// Method Definition Index: 31431
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ReduceMean_GetOutputNames_m28FBBDD380711F6F5EB98B04CA5E2B1442C723A1 (ReduceMean_t03C783DF355F2490E3DAB4BC614B73EDD0A500DB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11553,7 +11553,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31340
+// Method Definition Index: 31432
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceMean_t03C783DF355F2490E3DAB4BC614B73EDD0A500DB* ReduceMean_SetOutputs_m112CCE911AB51B08702FA80C26FFD97A99351E92 (ReduceMean_t03C783DF355F2490E3DAB4BC614B73EDD0A500DB* __this, int32_t ___0_output, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11573,7 +11573,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceMean_t03C783DF355F2490E3DAB4BC614B73EDD
 		return __this;
 	}
 }
-// Method Definition Index: 31341
+// Method Definition Index: 31433
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceMean_get_opName_m78AEDDEDCA8B31744EF6392E864B967E69C0E6CA (ReduceMean_t03C783DF355F2490E3DAB4BC614B73EDD0A500DB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11586,7 +11586,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceMean_get_opName_m78AEDDEDCA8B
 		return _stringLiteral13F95238307E03CCEBDBFC69E3D3045DC8751A6C;
 	}
 }
-// Method Definition Index: 31342
+// Method Definition Index: 31434
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceMean_get_category_mD3F5F779D8E5F3DCCAEC504C6E079944A40B91E8 (ReduceMean_t03C783DF355F2490E3DAB4BC614B73EDD0A500DB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11599,7 +11599,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceMean_get_category_mD3F5F779D8
 		return _stringLiteral95F0D1884364F10823E01ABFCD9D2EA3C0D9F389;
 	}
 }
-// Method Definition Index: 31343
+// Method Definition Index: 31435
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ReduceMean_get_profilerMarker_m2D0BB8DD8AD3080EFAFD26C0DE1FD6F48E058B67 (ReduceMean_t03C783DF355F2490E3DAB4BC614B73EDD0A500DB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11614,7 +11614,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C
 		return L_0;
 	}
 }
-// Method Definition Index: 31344
+// Method Definition Index: 31436
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceMean_ToString_m369F81E0EDB5A2506BCA2B373BF1462C3A6C3330 (ReduceMean_t03C783DF355F2490E3DAB4BC614B73EDD0A500DB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11667,7 +11667,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceMean_ToString_m369F81E0EDB5A2
 		return L_17;
 	}
 }
-// Method Definition Index: 31345
+// Method Definition Index: 31437
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMean_SerializeFields_m5C6242C6995AE1AD203303065249BE8002459B24 (ReduceMean_t03C783DF355F2490E3DAB4BC614B73EDD0A500DB* __this, FlatBufferBuilder_t72116669EC849BCB6543BD426C0F6A9E825BB2FB* ___0_builder, List_1_tAFC4DAF15C03810FE08B8E9742E14A65E4EF9D70* ___1_values, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11702,7 +11702,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMean_SerializeFields_m5C6242C6995A
 		return;
 	}
 }
-// Method Definition Index: 31346
+// Method Definition Index: 31438
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039* ReduceMean_DeserializeLayer_m9A57C9EC93BC00D34F054891744C3AA847DD387C (Chain_tA7420781D03CE0268AA17EB04D33ED70711681D9 ___0_chain, ExecutionPlan_tDB179066AB651AA7AE8CF463F21CDFA7E06B6A36 ___1_executionPlan, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11781,7 +11781,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C0
 		return L_17;
 	}
 }
-// Method Definition Index: 31347
+// Method Definition Index: 31439
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMean__cctor_m0DD9584AE2146411B330734E0F117EDFAB84AAB3 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11826,11 +11826,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMean__cctor_m0DD9584AE2146411B3307
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31348
+// Method Definition Index: 31440
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ReduceMin_InferPartial_mB1873640F177E72EFEC548C37512E11BDC14FF70 (PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___0_data, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___1_axes, bool ___2_keepdims, bool ___3_noopWithEmptyAxes, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:242>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:242>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_0 = ___0_data;
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_1 = ___1_axes;
 		bool L_2 = ___2_keepdims;
@@ -11840,7 +11840,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		return L_4;
 	}
 }
-// Method Definition Index: 31349
+// Method Definition Index: 31441
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMin_Execute_mDA960943D0FE65CEA0BEBF9F717FFCBE9AC65543 (ReduceMin_t5845E9D5DD1C1A21F5FD9B014EFF65AE465593FA* __this, ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11863,7 +11863,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMin_Execute_mDA960943D0FE65CEA0BEB
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_4;
 	memset((&V_4), 0, sizeof(V_4));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:247>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:247>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_0 = ___0_ctx;
 		RuntimeObject* L_1 = L_0.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -11874,7 +11874,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMin_Execute_mDA960943D0FE65CEA0BEB
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_5;
 		L_5 = InterfaceFuncInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t >::Invoke(2, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_1, L_4);
 		V_0 = L_5;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:248>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:248>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_6 = ___0_ctx;
 		RuntimeObject* L_7 = L_6.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_8 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -11887,7 +11887,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMin_Execute_mDA960943D0FE65CEA0BEB
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_12;
 		L_12 = InterfaceFuncInvoker2< ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282, int32_t, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(7, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_7, L_10, L_11);
 		V_1 = L_12;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:249>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:249>
 		bool L_13 = __this->___noopWithEmptyAxes;
 		if (!L_13)
 		{
@@ -11916,7 +11916,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMin_Execute_mDA960943D0FE65CEA0BEB
 
 IL_004d:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:251>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:251>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_18 = ___0_ctx;
 		RuntimeObject* L_19 = L_18.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_20 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -11935,25 +11935,25 @@ IL_004d:
 		RuntimeObject* L_28 = L_27.___backend;
 		NullCheck(L_28);
 		int32_t L_29;
-		L_29 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_28);
+		L_29 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_28);
 		NullCheck(L_19);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_30;
 		L_30 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_19, L_22, L_24, L_26, L_29);
 		V_3 = L_30;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:252>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:252>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_31 = ___0_ctx;
 		RuntimeObject* L_32 = L_31.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_33 = V_0;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_34 = V_3;
 		NullCheck(L_32);
-		InterfaceActionInvoker2< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(183, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_32, L_33, L_34);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:253>
+		InterfaceActionInvoker2< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(185, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_32, L_33, L_34);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:253>
 		return;
 	}
 
 IL_0086:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:255>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:255>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_35 = ___0_ctx;
 		RuntimeObject* L_36 = L_35.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_37 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -11977,12 +11977,12 @@ IL_0086:
 		RuntimeObject* L_48 = L_47.___backend;
 		NullCheck(L_48);
 		int32_t L_49;
-		L_49 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_48);
+		L_49 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_48);
 		NullCheck(L_36);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_50;
 		L_50 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_36, L_39, L_44, L_46, L_49);
 		V_2 = L_50;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:256>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:256>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_51 = V_2;
 		NullCheck(L_51);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_52;
@@ -11996,13 +11996,13 @@ IL_0086:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:257>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:257>
 		return;
 	}
 
 IL_00d3:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:258>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:258>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_54 = V_0;
 		if (!((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_54, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)))
 		{
@@ -12010,7 +12010,7 @@ IL_00d3:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:260>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:260>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_55 = V_0;
 		NullCheck(L_55);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_56;
@@ -12024,31 +12024,31 @@ IL_00d3:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:261>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:261>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_58 = ___0_ctx;
 		RuntimeObject* L_59 = L_58.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_60 = V_2;
 		NullCheck(L_59);
-		InterfaceActionInvoker2< Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, int32_t >::Invoke(182, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_59, ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_60, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), ((int32_t)2147483647LL));
+		InterfaceActionInvoker2< Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, int32_t >::Invoke(184, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_59, ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_60, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), ((int32_t)2147483647LL));
 		return;
 	}
 
 IL_0103:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:263>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:263>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_61 = ___0_ctx;
 		RuntimeObject* L_62 = L_61.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_63 = V_0;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_64 = V_2;
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_65 = V_1;
 		NullCheck(L_62);
-		InterfaceActionInvoker3< Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(119, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_62, ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_63, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_64, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), L_65);
+		InterfaceActionInvoker3< Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(121, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_62, ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_63, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_64, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), L_65);
 		return;
 	}
 
 IL_011c:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:267>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:267>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_66 = V_0;
 		NullCheck(L_66);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_67;
@@ -12062,30 +12062,30 @@ IL_011c:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:268>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:268>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_69 = ___0_ctx;
 		RuntimeObject* L_70 = L_69.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_71 = V_2;
 		NullCheck(L_70);
-		InterfaceActionInvoker2< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, float >::Invoke(181, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_70, ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_71, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), (std::numeric_limits<float>::infinity()));
+		InterfaceActionInvoker2< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, float >::Invoke(183, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_70, ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_71, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), (std::numeric_limits<float>::infinity()));
 		return;
 	}
 
 IL_0144:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:270>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:270>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_72 = ___0_ctx;
 		RuntimeObject* L_73 = L_72.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_74 = V_0;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_75 = V_2;
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_76 = V_1;
 		NullCheck(L_73);
-		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(118, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_73, ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_74, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_75, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), L_76);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:272>
+		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(120, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_73, ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_74, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_75, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), L_76);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:272>
 		return;
 	}
 }
-// Method Definition Index: 31350
+// Method Definition Index: 31442
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMin__ctor_m2330230DE3C013434F79191884BE6A3218EAD229 (ReduceMin_t5845E9D5DD1C1A21F5FD9B014EFF65AE465593FA* __this, bool ___0_keepdims, bool ___1_noopWithEmptyAxes, const RuntimeMethod* method) 
 {
 	{
@@ -12097,7 +12097,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMin__ctor_m2330230DE3C013434F79191
 		return;
 	}
 }
-// Method Definition Index: 31351
+// Method Definition Index: 31443
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMin_InferPartial_m783C9412D4210CAE7167C382809E02738C22A77E (ReduceMin_t5845E9D5DD1C1A21F5FD9B014EFF65AE465593FA* __this, PartialInferenceContext_t87A97CDA80604F25B18FC9A140939F6DFB2F92AE* ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12144,7 +12144,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMin_InferPartial_m783C9412D4210CAE
 		return;
 	}
 }
-// Method Definition Index: 31352
+// Method Definition Index: 31444
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ReduceMin_GetInputNames_mFBA75AB4BFAE18AC25E6011C9B601A39B1B35E89 (ReduceMin_t5845E9D5DD1C1A21F5FD9B014EFF65AE465593FA* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12159,7 +12159,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31353
+// Method Definition Index: 31445
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceMin_t5845E9D5DD1C1A21F5FD9B014EFF65AE465593FA* ReduceMin_SetInputs_mA05DAE75D04BE43357A6DD9B68BB7D4C3E0F0E01 (ReduceMin_t5845E9D5DD1C1A21F5FD9B014EFF65AE465593FA* __this, int32_t ___0_data, int32_t ___1_axes, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12183,7 +12183,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceMin_t5845E9D5DD1C1A21F5FD9B014EFF65AE46
 		return __this;
 	}
 }
-// Method Definition Index: 31354
+// Method Definition Index: 31446
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReduceMin_IsInputCPURead_mFE19413A736C79EE9DE4AF3D26962DE80AF7837C (ReduceMin_t5845E9D5DD1C1A21F5FD9B014EFF65AE465593FA* __this, int32_t ___0_i, const RuntimeMethod* method) 
 {
 	{
@@ -12191,7 +12191,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReduceMin_IsInputCPURead_mFE19413A736C79
 		return (bool)((((int32_t)L_0) == ((int32_t)1))? 1 : 0);
 	}
 }
-// Method Definition Index: 31355
+// Method Definition Index: 31447
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ReduceMin_GetOutputNames_mFBF260F8D7177E23A34BC0000381D972B56A63D3 (ReduceMin_t5845E9D5DD1C1A21F5FD9B014EFF65AE465593FA* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12206,7 +12206,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31356
+// Method Definition Index: 31448
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceMin_t5845E9D5DD1C1A21F5FD9B014EFF65AE465593FA* ReduceMin_SetOutputs_m87B6F958DA6C5E172B2C1940D04068EFAB9B27D9 (ReduceMin_t5845E9D5DD1C1A21F5FD9B014EFF65AE465593FA* __this, int32_t ___0_output, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12226,7 +12226,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceMin_t5845E9D5DD1C1A21F5FD9B014EFF65AE46
 		return __this;
 	}
 }
-// Method Definition Index: 31357
+// Method Definition Index: 31449
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceMin_get_opName_mB02F63836C43534F0B6E8E7684C49858A3D586F0 (ReduceMin_t5845E9D5DD1C1A21F5FD9B014EFF65AE465593FA* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12239,7 +12239,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceMin_get_opName_mB02F63836C435
 		return _stringLiteral9B1719C92B8E72C97AF16DDD2EDA44C6F08CB543;
 	}
 }
-// Method Definition Index: 31358
+// Method Definition Index: 31450
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceMin_get_category_m45A635316D44C5231EE85834C6CF5120B580DE78 (ReduceMin_t5845E9D5DD1C1A21F5FD9B014EFF65AE465593FA* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12252,7 +12252,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceMin_get_category_m45A635316D4
 		return _stringLiteral95F0D1884364F10823E01ABFCD9D2EA3C0D9F389;
 	}
 }
-// Method Definition Index: 31359
+// Method Definition Index: 31451
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ReduceMin_get_profilerMarker_m8B7F0693B0B3C1BF5B099A21AABA39675045ABF9 (ReduceMin_t5845E9D5DD1C1A21F5FD9B014EFF65AE465593FA* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12267,7 +12267,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C
 		return L_0;
 	}
 }
-// Method Definition Index: 31360
+// Method Definition Index: 31452
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceMin_ToString_m6E5D7771048CDA779C7507BF317557EA663A1DB7 (ReduceMin_t5845E9D5DD1C1A21F5FD9B014EFF65AE465593FA* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12320,7 +12320,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceMin_ToString_m6E5D7771048CDA7
 		return L_17;
 	}
 }
-// Method Definition Index: 31361
+// Method Definition Index: 31453
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMin_SerializeFields_m203782AB1FF2A8C4F1F802310109C972BF49333E (ReduceMin_t5845E9D5DD1C1A21F5FD9B014EFF65AE465593FA* __this, FlatBufferBuilder_t72116669EC849BCB6543BD426C0F6A9E825BB2FB* ___0_builder, List_1_tAFC4DAF15C03810FE08B8E9742E14A65E4EF9D70* ___1_values, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12355,7 +12355,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMin_SerializeFields_m203782AB1FF2A
 		return;
 	}
 }
-// Method Definition Index: 31362
+// Method Definition Index: 31454
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039* ReduceMin_DeserializeLayer_m5481BAD129BB5034419634C20AF43A6CA4A19278 (Chain_tA7420781D03CE0268AA17EB04D33ED70711681D9 ___0_chain, ExecutionPlan_tDB179066AB651AA7AE8CF463F21CDFA7E06B6A36 ___1_executionPlan, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12434,7 +12434,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C0
 		return L_17;
 	}
 }
-// Method Definition Index: 31363
+// Method Definition Index: 31455
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMin__cctor_m349F5DD596EBF095E16AD1B5177C225C23128C1F (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12479,11 +12479,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceMin__cctor_m349F5DD596EBF095E16AD1
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31364
+// Method Definition Index: 31456
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ReduceProd_InferPartial_m10FAA3BAD854700C08E1A9D944B7198D4069166F (PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___0_data, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___1_axes, bool ___2_keepdims, bool ___3_noopWithEmptyAxes, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:287>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:287>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_0 = ___0_data;
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_1 = ___1_axes;
 		bool L_2 = ___2_keepdims;
@@ -12493,7 +12493,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		return L_4;
 	}
 }
-// Method Definition Index: 31365
+// Method Definition Index: 31457
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceProd_Execute_mF57FE8E28339E246600B586843D55A5D72326570 (ReduceProd_t597E6F974B3A07846CFA6520504EF866B0232644* __this, ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12516,7 +12516,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceProd_Execute_mF57FE8E28339E246600B
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_4;
 	memset((&V_4), 0, sizeof(V_4));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:292>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:292>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_0 = ___0_ctx;
 		RuntimeObject* L_1 = L_0.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -12527,7 +12527,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceProd_Execute_mF57FE8E28339E246600B
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_5;
 		L_5 = InterfaceFuncInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t >::Invoke(2, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_1, L_4);
 		V_0 = L_5;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:293>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:293>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_6 = ___0_ctx;
 		RuntimeObject* L_7 = L_6.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_8 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -12540,7 +12540,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceProd_Execute_mF57FE8E28339E246600B
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_12;
 		L_12 = InterfaceFuncInvoker2< ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282, int32_t, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(7, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_7, L_10, L_11);
 		V_1 = L_12;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:294>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:294>
 		bool L_13 = __this->___noopWithEmptyAxes;
 		if (!L_13)
 		{
@@ -12569,7 +12569,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceProd_Execute_mF57FE8E28339E246600B
 
 IL_004d:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:296>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:296>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_18 = ___0_ctx;
 		RuntimeObject* L_19 = L_18.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_20 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -12588,25 +12588,25 @@ IL_004d:
 		RuntimeObject* L_28 = L_27.___backend;
 		NullCheck(L_28);
 		int32_t L_29;
-		L_29 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_28);
+		L_29 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_28);
 		NullCheck(L_19);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_30;
 		L_30 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_19, L_22, L_24, L_26, L_29);
 		V_3 = L_30;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:297>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:297>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_31 = ___0_ctx;
 		RuntimeObject* L_32 = L_31.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_33 = V_0;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_34 = V_3;
 		NullCheck(L_32);
-		InterfaceActionInvoker2< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(183, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_32, L_33, L_34);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:298>
+		InterfaceActionInvoker2< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(185, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_32, L_33, L_34);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:298>
 		return;
 	}
 
 IL_0086:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:300>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:300>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_35 = ___0_ctx;
 		RuntimeObject* L_36 = L_35.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_37 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -12630,12 +12630,12 @@ IL_0086:
 		RuntimeObject* L_48 = L_47.___backend;
 		NullCheck(L_48);
 		int32_t L_49;
-		L_49 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_48);
+		L_49 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_48);
 		NullCheck(L_36);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_50;
 		L_50 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_36, L_39, L_44, L_46, L_49);
 		V_2 = L_50;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:301>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:301>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_51 = V_2;
 		NullCheck(L_51);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_52;
@@ -12649,13 +12649,13 @@ IL_0086:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:302>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:302>
 		return;
 	}
 
 IL_00d3:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:303>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:303>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_54 = V_0;
 		if (!((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_54, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)))
 		{
@@ -12663,7 +12663,7 @@ IL_00d3:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:305>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:305>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_55 = V_0;
 		NullCheck(L_55);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_56;
@@ -12677,31 +12677,31 @@ IL_00d3:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:306>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:306>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_58 = ___0_ctx;
 		RuntimeObject* L_59 = L_58.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_60 = V_2;
 		NullCheck(L_59);
-		InterfaceActionInvoker2< Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, int32_t >::Invoke(182, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_59, ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_60, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), 1);
+		InterfaceActionInvoker2< Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, int32_t >::Invoke(184, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_59, ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_60, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), 1);
 		return;
 	}
 
 IL_00ff:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:308>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:308>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_61 = ___0_ctx;
 		RuntimeObject* L_62 = L_61.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_63 = V_0;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_64 = V_2;
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_65 = V_1;
 		NullCheck(L_62);
-		InterfaceActionInvoker3< Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(121, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_62, ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_63, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_64, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), L_65);
+		InterfaceActionInvoker3< Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(123, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_62, ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_63, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_64, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), L_65);
 		return;
 	}
 
 IL_0118:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:312>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:312>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_66 = V_0;
 		NullCheck(L_66);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_67;
@@ -12715,30 +12715,30 @@ IL_0118:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:313>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:313>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_69 = ___0_ctx;
 		RuntimeObject* L_70 = L_69.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_71 = V_2;
 		NullCheck(L_70);
-		InterfaceActionInvoker2< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, float >::Invoke(181, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_70, ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_71, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), (1.0f));
+		InterfaceActionInvoker2< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, float >::Invoke(183, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_70, ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_71, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), (1.0f));
 		return;
 	}
 
 IL_0140:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:315>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:315>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_72 = ___0_ctx;
 		RuntimeObject* L_73 = L_72.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_74 = V_0;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_75 = V_2;
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_76 = V_1;
 		NullCheck(L_73);
-		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(120, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_73, ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_74, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_75, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), L_76);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:317>
+		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(122, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_73, ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_74, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_75, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), L_76);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:317>
 		return;
 	}
 }
-// Method Definition Index: 31366
+// Method Definition Index: 31458
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceProd__ctor_m9A3760E471F01B157F7B6F825BB41C5CD0F58747 (ReduceProd_t597E6F974B3A07846CFA6520504EF866B0232644* __this, bool ___0_keepdims, bool ___1_noopWithEmptyAxes, const RuntimeMethod* method) 
 {
 	{
@@ -12750,7 +12750,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceProd__ctor_m9A3760E471F01B157F7B6F
 		return;
 	}
 }
-// Method Definition Index: 31367
+// Method Definition Index: 31459
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceProd_InferPartial_m8FD65A332F89358A6513C1230B7339711B4D47CA (ReduceProd_t597E6F974B3A07846CFA6520504EF866B0232644* __this, PartialInferenceContext_t87A97CDA80604F25B18FC9A140939F6DFB2F92AE* ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12797,7 +12797,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceProd_InferPartial_m8FD65A332F89358
 		return;
 	}
 }
-// Method Definition Index: 31368
+// Method Definition Index: 31460
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ReduceProd_GetInputNames_m3533566CDA28EDC462D6A0F182E34F29D976CEF7 (ReduceProd_t597E6F974B3A07846CFA6520504EF866B0232644* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12812,7 +12812,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31369
+// Method Definition Index: 31461
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceProd_t597E6F974B3A07846CFA6520504EF866B0232644* ReduceProd_SetInputs_mF9D4442268D3C43B0FAE57BB65BAD2BF5EA75761 (ReduceProd_t597E6F974B3A07846CFA6520504EF866B0232644* __this, int32_t ___0_data, int32_t ___1_axes, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12836,7 +12836,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceProd_t597E6F974B3A07846CFA6520504EF866B
 		return __this;
 	}
 }
-// Method Definition Index: 31370
+// Method Definition Index: 31462
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReduceProd_IsInputCPURead_m069DF1F52872ED2CCDBDA52549D4A79D57AFFE47 (ReduceProd_t597E6F974B3A07846CFA6520504EF866B0232644* __this, int32_t ___0_i, const RuntimeMethod* method) 
 {
 	{
@@ -12844,7 +12844,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReduceProd_IsInputCPURead_m069DF1F52872E
 		return (bool)((((int32_t)L_0) == ((int32_t)1))? 1 : 0);
 	}
 }
-// Method Definition Index: 31371
+// Method Definition Index: 31463
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ReduceProd_GetOutputNames_m54D9E5348E937A58F7664AA4F3891ECE609E6669 (ReduceProd_t597E6F974B3A07846CFA6520504EF866B0232644* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12859,7 +12859,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31372
+// Method Definition Index: 31464
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceProd_t597E6F974B3A07846CFA6520504EF866B0232644* ReduceProd_SetOutputs_m32D272D33F84F1D306254AEE9B70B5D6B0E7E063 (ReduceProd_t597E6F974B3A07846CFA6520504EF866B0232644* __this, int32_t ___0_output, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12879,7 +12879,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceProd_t597E6F974B3A07846CFA6520504EF866B
 		return __this;
 	}
 }
-// Method Definition Index: 31373
+// Method Definition Index: 31465
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceProd_get_opName_mF77310CE823B41ABE04C3FDB1224B6AEF939A92E (ReduceProd_t597E6F974B3A07846CFA6520504EF866B0232644* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12892,7 +12892,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceProd_get_opName_mF77310CE823B
 		return _stringLiteral99989A68F2D24E319941255F0E32C7B077DC7F0A;
 	}
 }
-// Method Definition Index: 31374
+// Method Definition Index: 31466
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceProd_get_category_m3AB290777743EF89D3B22AE0F524AE56BE6F8200 (ReduceProd_t597E6F974B3A07846CFA6520504EF866B0232644* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12905,7 +12905,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceProd_get_category_m3AB2907777
 		return _stringLiteral95F0D1884364F10823E01ABFCD9D2EA3C0D9F389;
 	}
 }
-// Method Definition Index: 31375
+// Method Definition Index: 31467
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ReduceProd_get_profilerMarker_mD07A519A0B2977FF86FE4BF13DB37B7BF0F7A36E (ReduceProd_t597E6F974B3A07846CFA6520504EF866B0232644* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12920,7 +12920,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C
 		return L_0;
 	}
 }
-// Method Definition Index: 31376
+// Method Definition Index: 31468
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceProd_ToString_m4E866F70AE84070D529FFD923CCC989821C1BFA8 (ReduceProd_t597E6F974B3A07846CFA6520504EF866B0232644* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12973,7 +12973,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceProd_ToString_m4E866F70AE8407
 		return L_17;
 	}
 }
-// Method Definition Index: 31377
+// Method Definition Index: 31469
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceProd_SerializeFields_m4320131EF1B28C3476C81B7B8D86C14C4BA94A67 (ReduceProd_t597E6F974B3A07846CFA6520504EF866B0232644* __this, FlatBufferBuilder_t72116669EC849BCB6543BD426C0F6A9E825BB2FB* ___0_builder, List_1_tAFC4DAF15C03810FE08B8E9742E14A65E4EF9D70* ___1_values, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13008,7 +13008,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceProd_SerializeFields_m4320131EF1B2
 		return;
 	}
 }
-// Method Definition Index: 31378
+// Method Definition Index: 31470
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039* ReduceProd_DeserializeLayer_m055459F76C073CF53E3548D45DF0C94461911FAB (Chain_tA7420781D03CE0268AA17EB04D33ED70711681D9 ___0_chain, ExecutionPlan_tDB179066AB651AA7AE8CF463F21CDFA7E06B6A36 ___1_executionPlan, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13087,7 +13087,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C0
 		return L_17;
 	}
 }
-// Method Definition Index: 31379
+// Method Definition Index: 31471
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceProd__cctor_m0F19F7CF254E50826F814590984344382FF6718A (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13132,11 +13132,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceProd__cctor_m0F19F7CF254E50826F814
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31380
+// Method Definition Index: 31472
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ReduceSum_InferPartial_m6BD99B4F085A616DC12565C6844EC71277572CBD (PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___0_data, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___1_axes, bool ___2_keepdims, bool ___3_noopWithEmptyAxes, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:332>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:332>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_0 = ___0_data;
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_1 = ___1_axes;
 		bool L_2 = ___2_keepdims;
@@ -13146,7 +13146,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		return L_4;
 	}
 }
-// Method Definition Index: 31381
+// Method Definition Index: 31473
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceSum_Execute_mBC381672CFD3CC1590BF5F3E0A5F04F29BEDF32C (ReduceSum_t3364CCCF47874212BEA21AACFDA08544BFCDD066* __this, ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13169,7 +13169,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceSum_Execute_mBC381672CFD3CC1590BF5
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_4;
 	memset((&V_4), 0, sizeof(V_4));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:337>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:337>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_0 = ___0_ctx;
 		RuntimeObject* L_1 = L_0.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -13180,7 +13180,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceSum_Execute_mBC381672CFD3CC1590BF5
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_5;
 		L_5 = InterfaceFuncInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t >::Invoke(2, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_1, L_4);
 		V_0 = L_5;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:338>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:338>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_6 = ___0_ctx;
 		RuntimeObject* L_7 = L_6.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_8 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -13193,7 +13193,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceSum_Execute_mBC381672CFD3CC1590BF5
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_12;
 		L_12 = InterfaceFuncInvoker2< ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282, int32_t, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(7, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_7, L_10, L_11);
 		V_1 = L_12;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:339>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:339>
 		bool L_13 = __this->___noopWithEmptyAxes;
 		if (!L_13)
 		{
@@ -13222,7 +13222,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceSum_Execute_mBC381672CFD3CC1590BF5
 
 IL_004d:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:341>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:341>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_18 = ___0_ctx;
 		RuntimeObject* L_19 = L_18.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_20 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -13241,25 +13241,25 @@ IL_004d:
 		RuntimeObject* L_28 = L_27.___backend;
 		NullCheck(L_28);
 		int32_t L_29;
-		L_29 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_28);
+		L_29 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_28);
 		NullCheck(L_19);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_30;
 		L_30 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_19, L_22, L_24, L_26, L_29);
 		V_3 = L_30;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:342>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:342>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_31 = ___0_ctx;
 		RuntimeObject* L_32 = L_31.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_33 = V_0;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_34 = V_3;
 		NullCheck(L_32);
-		InterfaceActionInvoker2< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(183, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_32, L_33, L_34);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:343>
+		InterfaceActionInvoker2< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(185, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_32, L_33, L_34);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:343>
 		return;
 	}
 
 IL_0086:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:345>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:345>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_35 = ___0_ctx;
 		RuntimeObject* L_36 = L_35.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_37 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -13283,12 +13283,12 @@ IL_0086:
 		RuntimeObject* L_48 = L_47.___backend;
 		NullCheck(L_48);
 		int32_t L_49;
-		L_49 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_48);
+		L_49 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_48);
 		NullCheck(L_36);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_50;
 		L_50 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_36, L_39, L_44, L_46, L_49);
 		V_2 = L_50;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:346>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:346>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_51 = V_2;
 		NullCheck(L_51);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_52;
@@ -13302,13 +13302,13 @@ IL_0086:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:347>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:347>
 		return;
 	}
 
 IL_00d3:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:348>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:348>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_54 = V_0;
 		NullCheck(L_54);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_55;
@@ -13322,19 +13322,19 @@ IL_00d3:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:350>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:350>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_57 = ___0_ctx;
 		RuntimeObject* L_58 = L_57.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_59 = V_2;
 		NullCheck(L_58);
-		InterfaceActionInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(180, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_58, L_59);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:351>
+		InterfaceActionInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(182, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_58, L_59);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:351>
 		return;
 	}
 
 IL_00f1:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:353>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:353>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_60 = V_0;
 		if (!((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_60, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)))
 		{
@@ -13342,32 +13342,32 @@ IL_00f1:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:354>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:354>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_61 = ___0_ctx;
 		RuntimeObject* L_62 = L_61.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_63 = V_0;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_64 = V_2;
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_65 = V_1;
 		NullCheck(L_62);
-		InterfaceActionInvoker3< Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(123, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_62, ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_63, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_64, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), L_65);
+		InterfaceActionInvoker3< Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(125, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_62, ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_63, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_64, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), L_65);
 		return;
 	}
 
 IL_0112:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:356>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:356>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_66 = ___0_ctx;
 		RuntimeObject* L_67 = L_66.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_68 = V_0;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_69 = V_2;
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_70 = V_1;
 		NullCheck(L_67);
-		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(122, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_67, ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_68, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_69, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), L_70);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:357>
+		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(124, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_67, ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_68, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_69, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), L_70);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:357>
 		return;
 	}
 }
-// Method Definition Index: 31382
+// Method Definition Index: 31474
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceSum__ctor_m54196296F8D6300108FCF3310BDD8D1464FD6759 (ReduceSum_t3364CCCF47874212BEA21AACFDA08544BFCDD066* __this, bool ___0_keepdims, bool ___1_noopWithEmptyAxes, const RuntimeMethod* method) 
 {
 	{
@@ -13379,7 +13379,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceSum__ctor_m54196296F8D6300108FCF33
 		return;
 	}
 }
-// Method Definition Index: 31383
+// Method Definition Index: 31475
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceSum_InferPartial_mEE61B21C9BACC741F13997E731AC107F8C18DF76 (ReduceSum_t3364CCCF47874212BEA21AACFDA08544BFCDD066* __this, PartialInferenceContext_t87A97CDA80604F25B18FC9A140939F6DFB2F92AE* ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13426,7 +13426,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceSum_InferPartial_mEE61B21C9BACC741
 		return;
 	}
 }
-// Method Definition Index: 31384
+// Method Definition Index: 31476
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ReduceSum_GetInputNames_m4B03815112A2678846BA6DE042747D3D9467E75C (ReduceSum_t3364CCCF47874212BEA21AACFDA08544BFCDD066* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13441,7 +13441,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31385
+// Method Definition Index: 31477
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceSum_t3364CCCF47874212BEA21AACFDA08544BFCDD066* ReduceSum_SetInputs_m7FE65A6C1B8BD26D10256E885B4ED5D646531852 (ReduceSum_t3364CCCF47874212BEA21AACFDA08544BFCDD066* __this, int32_t ___0_data, int32_t ___1_axes, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13465,7 +13465,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceSum_t3364CCCF47874212BEA21AACFDA08544BF
 		return __this;
 	}
 }
-// Method Definition Index: 31386
+// Method Definition Index: 31478
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReduceSum_IsInputCPURead_m26C9006965364C1F8CB9A667D3DC32E0C98EE5CC (ReduceSum_t3364CCCF47874212BEA21AACFDA08544BFCDD066* __this, int32_t ___0_i, const RuntimeMethod* method) 
 {
 	{
@@ -13473,7 +13473,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReduceSum_IsInputCPURead_m26C9006965364C
 		return (bool)((((int32_t)L_0) == ((int32_t)1))? 1 : 0);
 	}
 }
-// Method Definition Index: 31387
+// Method Definition Index: 31479
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ReduceSum_GetOutputNames_mDCEFD5381369D29D518BAB7EE22CB6661C45536B (ReduceSum_t3364CCCF47874212BEA21AACFDA08544BFCDD066* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13488,7 +13488,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31388
+// Method Definition Index: 31480
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceSum_t3364CCCF47874212BEA21AACFDA08544BFCDD066* ReduceSum_SetOutputs_mED94D13AD4B05A88EF3B14F4D0847A6CD3ED2725 (ReduceSum_t3364CCCF47874212BEA21AACFDA08544BFCDD066* __this, int32_t ___0_output, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13508,7 +13508,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceSum_t3364CCCF47874212BEA21AACFDA08544BF
 		return __this;
 	}
 }
-// Method Definition Index: 31389
+// Method Definition Index: 31481
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceSum_get_opName_mBB1FE4EF316C2EA6F8104598004BDBB51795ACB4 (ReduceSum_t3364CCCF47874212BEA21AACFDA08544BFCDD066* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13521,7 +13521,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceSum_get_opName_mBB1FE4EF316C2
 		return _stringLiteral0E2AA2D9EE4BF2949483C77523AF74691A04EDD1;
 	}
 }
-// Method Definition Index: 31390
+// Method Definition Index: 31482
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceSum_get_category_m5692179F4FE7F5E464563D8D251237E436643B3D (ReduceSum_t3364CCCF47874212BEA21AACFDA08544BFCDD066* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13534,7 +13534,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceSum_get_category_m5692179F4FE
 		return _stringLiteral95F0D1884364F10823E01ABFCD9D2EA3C0D9F389;
 	}
 }
-// Method Definition Index: 31391
+// Method Definition Index: 31483
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ReduceSum_get_profilerMarker_m4D397D1218EF1BE701199496EA0CAF1A37F8A9D6 (ReduceSum_t3364CCCF47874212BEA21AACFDA08544BFCDD066* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13549,7 +13549,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C
 		return L_0;
 	}
 }
-// Method Definition Index: 31392
+// Method Definition Index: 31484
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceSum_ToString_mDC6EF439FE62528A226A8FFE8C383AC5FEF68ABA (ReduceSum_t3364CCCF47874212BEA21AACFDA08544BFCDD066* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13602,7 +13602,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceSum_ToString_mDC6EF439FE62528
 		return L_17;
 	}
 }
-// Method Definition Index: 31393
+// Method Definition Index: 31485
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceSum_SerializeFields_m5CD15722D388052CBB1E719455A87A66BED466C8 (ReduceSum_t3364CCCF47874212BEA21AACFDA08544BFCDD066* __this, FlatBufferBuilder_t72116669EC849BCB6543BD426C0F6A9E825BB2FB* ___0_builder, List_1_tAFC4DAF15C03810FE08B8E9742E14A65E4EF9D70* ___1_values, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13637,7 +13637,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceSum_SerializeFields_m5CD15722D3880
 		return;
 	}
 }
-// Method Definition Index: 31394
+// Method Definition Index: 31486
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039* ReduceSum_DeserializeLayer_m62AC77E5827CEEEC29644648B297FB07B4F54431 (Chain_tA7420781D03CE0268AA17EB04D33ED70711681D9 ___0_chain, ExecutionPlan_tDB179066AB651AA7AE8CF463F21CDFA7E06B6A36 ___1_executionPlan, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13716,7 +13716,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C0
 		return L_17;
 	}
 }
-// Method Definition Index: 31395
+// Method Definition Index: 31487
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceSum__cctor_m45EE3CBC5BE3EADC19B994FD0B98E8D84B09E451 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13761,11 +13761,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceSum__cctor_m45EE3CBC5BE3EADC19B994
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31396
+// Method Definition Index: 31488
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ReduceSumSquare_InferPartial_m5FCF23603871DF9F30DA23186ADEF2A7EB504088 (PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___0_data, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___1_axes, bool ___2_keepdims, bool ___3_noopWithEmptyAxes, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:372>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:372>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_0 = ___0_data;
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_1 = ___1_axes;
 		bool L_2 = ___2_keepdims;
@@ -13775,7 +13775,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		return L_4;
 	}
 }
-// Method Definition Index: 31397
+// Method Definition Index: 31489
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceSumSquare_Execute_mDA9BA78F893A23A4C7811CE0FA0B30A304F98D83 (ReduceSumSquare_t69D52625F271FBEA7CD1C228232CF325115D03CF* __this, ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13798,7 +13798,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceSumSquare_Execute_mDA9BA78F893A23A
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_4;
 	memset((&V_4), 0, sizeof(V_4));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:377>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:377>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_0 = ___0_ctx;
 		RuntimeObject* L_1 = L_0.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -13809,7 +13809,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceSumSquare_Execute_mDA9BA78F893A23A
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_5;
 		L_5 = InterfaceFuncInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t >::Invoke(2, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_1, L_4);
 		V_0 = L_5;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:378>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:378>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_6 = ___0_ctx;
 		RuntimeObject* L_7 = L_6.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_8 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -13822,7 +13822,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceSumSquare_Execute_mDA9BA78F893A23A
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_12;
 		L_12 = InterfaceFuncInvoker2< ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282, int32_t, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(7, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_7, L_10, L_11);
 		V_1 = L_12;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:379>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:379>
 		bool L_13 = __this->___noopWithEmptyAxes;
 		if (!L_13)
 		{
@@ -13851,7 +13851,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceSumSquare_Execute_mDA9BA78F893A23A
 
 IL_004d:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:381>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:381>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_18 = ___0_ctx;
 		RuntimeObject* L_19 = L_18.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_20 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -13870,25 +13870,25 @@ IL_004d:
 		RuntimeObject* L_28 = L_27.___backend;
 		NullCheck(L_28);
 		int32_t L_29;
-		L_29 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_28);
+		L_29 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_28);
 		NullCheck(L_19);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_30;
 		L_30 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_19, L_22, L_24, L_26, L_29);
 		V_3 = L_30;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:382>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:382>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_31 = ___0_ctx;
 		RuntimeObject* L_32 = L_31.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_33 = V_0;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_34 = V_3;
 		NullCheck(L_32);
-		InterfaceActionInvoker2< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(183, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_32, L_33, L_34);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:383>
+		InterfaceActionInvoker2< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(185, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_32, L_33, L_34);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:383>
 		return;
 	}
 
 IL_0086:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:385>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:385>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_35 = ___0_ctx;
 		RuntimeObject* L_36 = L_35.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_37 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -13912,12 +13912,12 @@ IL_0086:
 		RuntimeObject* L_48 = L_47.___backend;
 		NullCheck(L_48);
 		int32_t L_49;
-		L_49 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_48);
+		L_49 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_48);
 		NullCheck(L_36);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_50;
 		L_50 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_36, L_39, L_44, L_46, L_49);
 		V_2 = L_50;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:386>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:386>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_51 = V_2;
 		NullCheck(L_51);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_52;
@@ -13931,13 +13931,13 @@ IL_0086:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:387>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:387>
 		return;
 	}
 
 IL_00d3:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:388>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:388>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_54 = V_0;
 		NullCheck(L_54);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_55;
@@ -13951,19 +13951,19 @@ IL_00d3:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:390>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:390>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_57 = ___0_ctx;
 		RuntimeObject* L_58 = L_57.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_59 = V_2;
 		NullCheck(L_58);
-		InterfaceActionInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(180, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_58, L_59);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:391>
+		InterfaceActionInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(182, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_58, L_59);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:391>
 		return;
 	}
 
 IL_00f1:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:393>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:393>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_60 = V_0;
 		if (!((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_60, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)))
 		{
@@ -13971,32 +13971,32 @@ IL_00f1:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:394>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:394>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_61 = ___0_ctx;
 		RuntimeObject* L_62 = L_61.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_63 = V_0;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_64 = V_2;
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_65 = V_1;
 		NullCheck(L_62);
-		InterfaceActionInvoker3< Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(125, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_62, ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_63, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_64, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), L_65);
+		InterfaceActionInvoker3< Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(127, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_62, ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_63, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_64, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), L_65);
 		return;
 	}
 
 IL_0112:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:396>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:396>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_66 = ___0_ctx;
 		RuntimeObject* L_67 = L_66.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_68 = V_0;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_69 = V_2;
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_70 = V_1;
 		NullCheck(L_67);
-		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(124, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_67, ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_68, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_69, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), L_70);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:397>
+		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(126, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_67, ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_68, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_69, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), L_70);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:397>
 		return;
 	}
 }
-// Method Definition Index: 31398
+// Method Definition Index: 31490
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceSumSquare__ctor_m186C849217338CFE52FDE50F6ADBE31175DCDAEB (ReduceSumSquare_t69D52625F271FBEA7CD1C228232CF325115D03CF* __this, bool ___0_keepdims, bool ___1_noopWithEmptyAxes, const RuntimeMethod* method) 
 {
 	{
@@ -14008,7 +14008,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceSumSquare__ctor_m186C849217338CFE5
 		return;
 	}
 }
-// Method Definition Index: 31399
+// Method Definition Index: 31491
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceSumSquare_InferPartial_mAD2E3544FC45F0FB36F4CA6E1110B7347E767501 (ReduceSumSquare_t69D52625F271FBEA7CD1C228232CF325115D03CF* __this, PartialInferenceContext_t87A97CDA80604F25B18FC9A140939F6DFB2F92AE* ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14055,7 +14055,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceSumSquare_InferPartial_mAD2E3544FC
 		return;
 	}
 }
-// Method Definition Index: 31400
+// Method Definition Index: 31492
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ReduceSumSquare_GetInputNames_m307A8F291D1F723C5EC8C146DCC1D19A17A5166E (ReduceSumSquare_t69D52625F271FBEA7CD1C228232CF325115D03CF* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14070,7 +14070,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31401
+// Method Definition Index: 31493
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceSumSquare_t69D52625F271FBEA7CD1C228232CF325115D03CF* ReduceSumSquare_SetInputs_m963C66A2C5CE99651BF2E539D3F8E3EB2A738200 (ReduceSumSquare_t69D52625F271FBEA7CD1C228232CF325115D03CF* __this, int32_t ___0_data, int32_t ___1_axes, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14094,7 +14094,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceSumSquare_t69D52625F271FBEA7CD1C228232C
 		return __this;
 	}
 }
-// Method Definition Index: 31402
+// Method Definition Index: 31494
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReduceSumSquare_IsInputCPURead_m5D55955A056531CFEF06759F4BD47906C451D914 (ReduceSumSquare_t69D52625F271FBEA7CD1C228232CF325115D03CF* __this, int32_t ___0_i, const RuntimeMethod* method) 
 {
 	{
@@ -14102,7 +14102,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReduceSumSquare_IsInputCPURead_m5D55955A
 		return (bool)((((int32_t)L_0) == ((int32_t)1))? 1 : 0);
 	}
 }
-// Method Definition Index: 31403
+// Method Definition Index: 31495
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ReduceSumSquare_GetOutputNames_mDE5F138F08BAB685DA29AB9084846A2AC6766AD1 (ReduceSumSquare_t69D52625F271FBEA7CD1C228232CF325115D03CF* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14117,7 +14117,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31404
+// Method Definition Index: 31496
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceSumSquare_t69D52625F271FBEA7CD1C228232CF325115D03CF* ReduceSumSquare_SetOutputs_mB4CD2FEA04BF147DD13824F79B00BBAF2BB138B5 (ReduceSumSquare_t69D52625F271FBEA7CD1C228232CF325115D03CF* __this, int32_t ___0_output, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14137,7 +14137,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceSumSquare_t69D52625F271FBEA7CD1C228232C
 		return __this;
 	}
 }
-// Method Definition Index: 31405
+// Method Definition Index: 31497
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceSumSquare_get_opName_mF71AD2E9D96584F2E16DAD38462E537949CF5363 (ReduceSumSquare_t69D52625F271FBEA7CD1C228232CF325115D03CF* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14150,7 +14150,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceSumSquare_get_opName_mF71AD2E
 		return _stringLiteral91C7FFE25AC20371547BF8C32A2E21BC3B2B5F85;
 	}
 }
-// Method Definition Index: 31406
+// Method Definition Index: 31498
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceSumSquare_get_category_m1CDC94FB0D66AAFC46CA6C4B4DF3F934CBC56F0E (ReduceSumSquare_t69D52625F271FBEA7CD1C228232CF325115D03CF* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14163,7 +14163,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceSumSquare_get_category_m1CDC9
 		return _stringLiteral95F0D1884364F10823E01ABFCD9D2EA3C0D9F389;
 	}
 }
-// Method Definition Index: 31407
+// Method Definition Index: 31499
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ReduceSumSquare_get_profilerMarker_m76DC68CD44A0BB97017802B665A56E7E38390075 (ReduceSumSquare_t69D52625F271FBEA7CD1C228232CF325115D03CF* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14178,7 +14178,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C
 		return L_0;
 	}
 }
-// Method Definition Index: 31408
+// Method Definition Index: 31500
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceSumSquare_ToString_mEE6D11DB6E1DAAA72ED515502EC21107788C3444 (ReduceSumSquare_t69D52625F271FBEA7CD1C228232CF325115D03CF* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14231,7 +14231,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceSumSquare_ToString_mEE6D11DB6
 		return L_17;
 	}
 }
-// Method Definition Index: 31409
+// Method Definition Index: 31501
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceSumSquare_SerializeFields_m7ED9393D5BFF559C84F740885BBE5C9F2AD78487 (ReduceSumSquare_t69D52625F271FBEA7CD1C228232CF325115D03CF* __this, FlatBufferBuilder_t72116669EC849BCB6543BD426C0F6A9E825BB2FB* ___0_builder, List_1_tAFC4DAF15C03810FE08B8E9742E14A65E4EF9D70* ___1_values, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14266,7 +14266,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceSumSquare_SerializeFields_m7ED9393
 		return;
 	}
 }
-// Method Definition Index: 31410
+// Method Definition Index: 31502
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039* ReduceSumSquare_DeserializeLayer_mC4C47F591E0DC98A0F29E7FD7FA768F4E429EB70 (Chain_tA7420781D03CE0268AA17EB04D33ED70711681D9 ___0_chain, ExecutionPlan_tDB179066AB651AA7AE8CF463F21CDFA7E06B6A36 ___1_executionPlan, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14345,7 +14345,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C0
 		return L_17;
 	}
 }
-// Method Definition Index: 31411
+// Method Definition Index: 31503
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceSumSquare__cctor_mF5F2168BC64916FC9328F00BE4421A2ADE503D0B (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14390,11 +14390,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceSumSquare__cctor_mF5F2168BC64916FC
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31412
+// Method Definition Index: 31504
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ReduceVariance_InferPartial_mCEC8EF98D684A9D334B6DFA7D9ACCA1DF66909CA (PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___0_data, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___1_axes, bool ___2_keepdims, bool ___3_noopWithEmptyAxes, float ___4_correction, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:413>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:413>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_0 = ___0_data;
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_1 = ___1_axes;
 		bool L_2 = ___2_keepdims;
@@ -14404,7 +14404,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		return L_4;
 	}
 }
-// Method Definition Index: 31413
+// Method Definition Index: 31505
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceVariance_Execute_m05908AB9977F0060BFA43A668A2E3832799ED4C8 (ReduceVariance_tF8899466CC291B3376CF5B137E5BE0DB59428489* __this, ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14430,7 +14430,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceVariance_Execute_m05908AB9977F0060
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_8;
 	memset((&V_8), 0, sizeof(V_8));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:418>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:418>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_0 = ___0_ctx;
 		RuntimeObject* L_1 = L_0.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -14441,7 +14441,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceVariance_Execute_m05908AB9977F0060
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_5;
 		L_5 = InterfaceFuncInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t >::Invoke(2, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_1, L_4);
 		V_0 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_5, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:419>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:419>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_6 = ___0_ctx;
 		RuntimeObject* L_7 = L_6.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_8 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -14454,7 +14454,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceVariance_Execute_m05908AB9977F0060
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_12;
 		L_12 = InterfaceFuncInvoker2< ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282, int32_t, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(7, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_7, L_10, L_11);
 		V_1 = L_12;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:420>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:420>
 		bool L_13 = __this->___noopWithEmptyAxes;
 		if (!L_13)
 		{
@@ -14483,7 +14483,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceVariance_Execute_m05908AB9977F0060
 
 IL_0052:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:422>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:422>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_18 = ___0_ctx;
 		RuntimeObject* L_19 = L_18.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_20 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -14498,25 +14498,25 @@ IL_0052:
 		RuntimeObject* L_26 = L_25.___backend;
 		NullCheck(L_26);
 		int32_t L_27;
-		L_27 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_26);
+		L_27 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_26);
 		NullCheck(L_19);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_28;
 		L_28 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_19, L_22, L_24, 0, L_27);
 		V_7 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_28, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:423>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:423>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_29 = ___0_ctx;
 		RuntimeObject* L_30 = L_29.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_31 = V_0;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_32 = V_7;
 		NullCheck(L_30);
-		InterfaceActionInvoker2< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(183, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_30, L_31, L_32);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:424>
+		InterfaceActionInvoker2< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(185, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_30, L_31, L_32);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:424>
 		return;
 	}
 
 IL_008d:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:427>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:427>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_33 = ___0_ctx;
 		RuntimeObject* L_34 = L_33.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_35 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -14536,12 +14536,12 @@ IL_008d:
 		RuntimeObject* L_44 = L_43.___backend;
 		NullCheck(L_44);
 		int32_t L_45;
-		L_45 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_44);
+		L_45 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_44);
 		NullCheck(L_34);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_46;
 		L_46 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_34, L_37, L_42, 0, L_45);
 		V_2 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_46, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:428>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:428>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_47 = V_2;
 		NullCheck(L_47);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_48;
@@ -14555,13 +14555,13 @@ IL_008d:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:429>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:429>
 		return;
 	}
 
 IL_00da:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:431>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:431>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_50 = V_0;
 		NullCheck(L_50);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_51;
@@ -14576,10 +14576,10 @@ IL_00da:
 		V_8 = L_54;
 		int32_t L_55;
 		L_55 = TensorShape_get_length_mA31654DBE59EC0DA686DE063200A6907704B99CD((&V_8), NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:432>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:432>
 		float L_56 = __this->___correction;
 		V_3 = ((float)il2cpp_codegen_subtract(((float)((int32_t)(L_52/L_55))), L_56));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:433>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:433>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_57 = V_0;
 		NullCheck(L_57);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_58;
@@ -14602,19 +14602,19 @@ IL_00da:
 
 IL_011b:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:435>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:435>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_61 = ___0_ctx;
 		RuntimeObject* L_62 = L_61.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_63 = V_2;
 		NullCheck(L_62);
-		InterfaceActionInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(180, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_62, L_63);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:436>
+		InterfaceActionInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(182, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_62, L_63);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:436>
 		return;
 	}
 
 IL_0128:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:439>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:439>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_64 = ___0_ctx;
 		RuntimeObject* L_65 = L_64.___storage;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_66 = V_0;
@@ -14629,12 +14629,12 @@ IL_0128:
 		RuntimeObject* L_71 = L_70.___backend;
 		NullCheck(L_71);
 		int32_t L_72;
-		L_72 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_71);
+		L_72 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_71);
 		NullCheck(L_65);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_73;
 		L_73 = InterfaceFuncInvoker3< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(10, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_65, L_69, 0, L_72);
 		V_4 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_73, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:440>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:440>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_74 = ___0_ctx;
 		RuntimeObject* L_75 = L_74.___storage;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_76 = V_0;
@@ -14645,12 +14645,12 @@ IL_0128:
 		RuntimeObject* L_79 = L_78.___backend;
 		NullCheck(L_79);
 		int32_t L_80;
-		L_80 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_79);
+		L_80 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_79);
 		NullCheck(L_75);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_81;
 		L_81 = InterfaceFuncInvoker3< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(10, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_75, L_77, 0, L_80);
 		V_5 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_81, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:441>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:441>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_82 = ___0_ctx;
 		RuntimeObject* L_83 = L_82.___storage;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_84 = V_2;
@@ -14661,66 +14661,66 @@ IL_0128:
 		RuntimeObject* L_87 = L_86.___backend;
 		NullCheck(L_87);
 		int32_t L_88;
-		L_88 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_87);
+		L_88 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_87);
 		NullCheck(L_83);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_89;
 		L_89 = InterfaceFuncInvoker3< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(10, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_83, L_85, 0, L_88);
 		V_6 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_89, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:443>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:443>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_90 = ___0_ctx;
 		RuntimeObject* L_91 = L_90.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_92 = V_0;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_93 = V_4;
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_94 = V_1;
 		NullCheck(L_91);
-		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(117, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_91, L_92, L_93, L_94);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:444>
+		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(119, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_91, L_92, L_93, L_94);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:444>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_95 = ___0_ctx;
 		RuntimeObject* L_96 = L_95.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_97 = V_0;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_98 = V_4;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_99 = V_5;
 		NullCheck(L_96);
-		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* >::Invoke(94, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_96, L_97, L_98, L_99);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:445>
+		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* >::Invoke(96, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_96, L_97, L_98, L_99);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:445>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_100 = ___0_ctx;
 		RuntimeObject* L_101 = L_100.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_102 = V_5;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_103 = V_6;
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_104 = V_1;
 		NullCheck(L_101);
-		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(124, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_101, L_102, L_103, L_104);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:446>
+		InterfaceActionInvoker3< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(126, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_101, L_102, L_103, L_104);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:446>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_105 = ___0_ctx;
 		RuntimeObject* L_106 = L_105.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_107 = V_6;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_108 = V_2;
 		float L_109 = V_3;
 		NullCheck(L_106);
-		InterfaceActionInvoker4< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, float, float >::Invoke(49, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_106, L_107, L_108, ((float)((1.0f)/L_109)), (0.0f));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:448>
+		InterfaceActionInvoker4< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, float, float >::Invoke(50, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_106, L_107, L_108, ((float)((1.0f)/L_109)), (0.0f));
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:448>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_110 = ___0_ctx;
 		RuntimeObject* L_111 = L_110.___storage;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_112 = V_4;
 		NullCheck(L_111);
 		InterfaceActionInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(13, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_111, L_112);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:449>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:449>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_113 = ___0_ctx;
 		RuntimeObject* L_114 = L_113.___storage;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_115 = V_5;
 		NullCheck(L_114);
 		InterfaceActionInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(13, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_114, L_115);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:450>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:450>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_116 = ___0_ctx;
 		RuntimeObject* L_117 = L_116.___storage;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_118 = V_6;
 		NullCheck(L_117);
 		InterfaceActionInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(13, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_117, L_118);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Reduction.cs:451>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Reduction.cs:451>
 		return;
 	}
 }
-// Method Definition Index: 31414
+// Method Definition Index: 31506
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceVariance__ctor_m5A6213CD697ADAA04EF805FE2E25E9428BC2129D (ReduceVariance_tF8899466CC291B3376CF5B137E5BE0DB59428489* __this, bool ___0_keepdims, bool ___1_noopWithEmptyAxes, float ___2_correction, const RuntimeMethod* method) 
 {
 	{
@@ -14734,7 +14734,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceVariance__ctor_m5A6213CD697ADAA04E
 		return;
 	}
 }
-// Method Definition Index: 31415
+// Method Definition Index: 31507
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceVariance_InferPartial_m294A12A2D06718FE3F43B318EFAA2EDB477E3E2F (ReduceVariance_tF8899466CC291B3376CF5B137E5BE0DB59428489* __this, PartialInferenceContext_t87A97CDA80604F25B18FC9A140939F6DFB2F92AE* ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14782,7 +14782,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceVariance_InferPartial_m294A12A2D06
 		return;
 	}
 }
-// Method Definition Index: 31416
+// Method Definition Index: 31508
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ReduceVariance_GetInputNames_m31960DCC1C0A9A3C5689E7266EB6A16023EAF95E (ReduceVariance_tF8899466CC291B3376CF5B137E5BE0DB59428489* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14797,7 +14797,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31417
+// Method Definition Index: 31509
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceVariance_tF8899466CC291B3376CF5B137E5BE0DB59428489* ReduceVariance_SetInputs_mBAD7454BDFE062D6863CC076EEF7ED4204E91F06 (ReduceVariance_tF8899466CC291B3376CF5B137E5BE0DB59428489* __this, int32_t ___0_data, int32_t ___1_axes, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14821,7 +14821,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceVariance_tF8899466CC291B3376CF5B137E5BE
 		return __this;
 	}
 }
-// Method Definition Index: 31418
+// Method Definition Index: 31510
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReduceVariance_IsInputCPURead_mB553FCC99EF130FB0BE220E9D6357E177CFF03D0 (ReduceVariance_tF8899466CC291B3376CF5B137E5BE0DB59428489* __this, int32_t ___0_i, const RuntimeMethod* method) 
 {
 	{
@@ -14829,7 +14829,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReduceVariance_IsInputCPURead_mB553FCC99
 		return (bool)((((int32_t)L_0) == ((int32_t)1))? 1 : 0);
 	}
 }
-// Method Definition Index: 31419
+// Method Definition Index: 31511
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ReduceVariance_GetOutputNames_mAF253862B71C4CC2E5C4EC29104A7AEC309CE834 (ReduceVariance_tF8899466CC291B3376CF5B137E5BE0DB59428489* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14844,7 +14844,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31420
+// Method Definition Index: 31512
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceVariance_tF8899466CC291B3376CF5B137E5BE0DB59428489* ReduceVariance_SetOutputs_m192701D7C5061C5AACFA38D5F011DFAE58F07AE6 (ReduceVariance_tF8899466CC291B3376CF5B137E5BE0DB59428489* __this, int32_t ___0_output, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14864,7 +14864,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReduceVariance_tF8899466CC291B3376CF5B137E5BE
 		return __this;
 	}
 }
-// Method Definition Index: 31421
+// Method Definition Index: 31513
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceVariance_get_opName_mF423A118B8DAF11A773A513CD0358A86788CE804 (ReduceVariance_tF8899466CC291B3376CF5B137E5BE0DB59428489* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14877,7 +14877,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceVariance_get_opName_mF423A118
 		return _stringLiteral2DA0C1E7070707FE166263ABFE7437B50076E904;
 	}
 }
-// Method Definition Index: 31422
+// Method Definition Index: 31514
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceVariance_get_category_m3A58624269E91691EEB561CDA893B1F6FDA36F24 (ReduceVariance_tF8899466CC291B3376CF5B137E5BE0DB59428489* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14890,7 +14890,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceVariance_get_category_m3A5862
 		return _stringLiteral95F0D1884364F10823E01ABFCD9D2EA3C0D9F389;
 	}
 }
-// Method Definition Index: 31423
+// Method Definition Index: 31515
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ReduceVariance_get_profilerMarker_m645FA8641E3519CD387C9E779C33C874459782FB (ReduceVariance_tF8899466CC291B3376CF5B137E5BE0DB59428489* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14905,7 +14905,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C
 		return L_0;
 	}
 }
-// Method Definition Index: 31424
+// Method Definition Index: 31516
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceVariance_ToString_m1950434C8B65B1F3A423811A7E1F153ECF8A8FF7 (ReduceVariance_tF8899466CC291B3376CF5B137E5BE0DB59428489* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14965,7 +14965,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ReduceVariance_ToString_m1950434C8B
 		return L_21;
 	}
 }
-// Method Definition Index: 31425
+// Method Definition Index: 31517
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceVariance_SerializeFields_m09211B0EB5CA281751D5B5AEECD39AB0A4360087 (ReduceVariance_tF8899466CC291B3376CF5B137E5BE0DB59428489* __this, FlatBufferBuilder_t72116669EC849BCB6543BD426C0F6A9E825BB2FB* ___0_builder, List_1_tAFC4DAF15C03810FE08B8E9742E14A65E4EF9D70* ___1_values, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15011,7 +15011,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceVariance_SerializeFields_m09211B0E
 		return;
 	}
 }
-// Method Definition Index: 31426
+// Method Definition Index: 31518
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039* ReduceVariance_DeserializeLayer_mC0FE0E471729BF3964D54B58B56AEB43CDE0DAF6 (Chain_tA7420781D03CE0268AA17EB04D33ED70711681D9 ___0_chain, ExecutionPlan_tDB179066AB651AA7AE8CF463F21CDFA7E06B6A36 ___1_executionPlan, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15108,7 +15108,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C0
 		return L_23;
 	}
 }
-// Method Definition Index: 31427
+// Method Definition Index: 31519
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceVariance__cctor_m438A1ECEAD6D2200F7C6E8BE4B0F7F3CD8D02A11 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15153,7 +15153,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReduceVariance__cctor_m438A1ECEAD6D2200F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31428
+// Method Definition Index: 31520
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* BlackmanWindow_InferPartial_mCFED09E0C64B17471B41F7C4146C7F9EEE515F83 (PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___0_size, bool ___1_periodic, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15165,11 +15165,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 	DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:13>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:13>
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_0;
 		L_0 = DynamicTensorShape_DynamicOfRank_m9EF98445B87E7D07654AAC35757168D4B88B7F8B(1, NULL);
 		V_0 = L_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:14>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:14>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_1 = ___0_size;
 		NullCheck(L_1);
 		bool L_2;
@@ -15180,7 +15180,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:15>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:15>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_3 = ___0_size;
 		NullCheck(L_3);
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_4;
@@ -15192,14 +15192,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 
 IL_0023:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:16>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:16>
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_6 = V_0;
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_7;
 		L_7 = PartialTensor_Create_mD56C31D07B0CA17E00CDA1C167DBB6B4824D88F1(0, L_6, NULL);
 		return L_7;
 	}
 }
-// Method Definition Index: 31429
+// Method Definition Index: 31521
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BlackmanWindow_Execute_m75CCE2F097AB7CCFE8185EBD2C5884C6835212DE (BlackmanWindow_tC728C8E1F3DED13F4C5473250DA980EBF22D4889* __this, ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15215,14 +15215,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BlackmanWindow_Execute_m75CCE2F097AB7CCF
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_2;
 	memset((&V_2), 0, sizeof(V_2));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:21>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:21>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_0 = ___0_ctx;
 		RuntimeObject* L_1 = L_0.___storage;
 		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = InterfaceFuncInvoker2< int32_t, int32_t, int32_t >::Invoke(5, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_1, 0, 0);
 		V_0 = L_2;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:22>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:22>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_3 = ___0_ctx;
 		RuntimeObject* L_4 = L_3.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_5 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -15237,12 +15237,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BlackmanWindow_Execute_m75CCE2F097AB7CCF
 		RuntimeObject* L_11 = L_10.___backend;
 		NullCheck(L_11);
 		int32_t L_12;
-		L_12 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_11);
+		L_12 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_11);
 		NullCheck(L_4);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_13;
 		L_13 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_4, L_7, L_9, 0, L_12);
 		V_1 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_13, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:23>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:23>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_14 = V_1;
 		NullCheck(L_14);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_15;
@@ -15256,24 +15256,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BlackmanWindow_Execute_m75CCE2F097AB7CCF
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:24>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:24>
 		return;
 	}
 
 IL_004a:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:25>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:25>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_17 = ___0_ctx;
 		RuntimeObject* L_18 = L_17.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_19 = V_1;
 		bool L_20 = __this->___periodic;
 		NullCheck(L_18);
-		InterfaceActionInvoker2< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, bool >::Invoke(192, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_18, L_19, L_20);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:26>
+		InterfaceActionInvoker2< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, bool >::Invoke(194, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_18, L_19, L_20);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:26>
 		return;
 	}
 }
-// Method Definition Index: 31430
+// Method Definition Index: 31522
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BlackmanWindow__ctor_m8526BF4AC9FEECE3A13439C7C327D7A745A115F7 (BlackmanWindow_tC728C8E1F3DED13F4C5473250DA980EBF22D4889* __this, bool ___0_periodic, const RuntimeMethod* method) 
 {
 	{
@@ -15283,7 +15283,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BlackmanWindow__ctor_m8526BF4AC9FEECE3A1
 		return;
 	}
 }
-// Method Definition Index: 31431
+// Method Definition Index: 31523
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BlackmanWindow_InferPartial_m9F85DFC43EBCDA05CC9FDAD5195C37A3438FE84A (BlackmanWindow_tC728C8E1F3DED13F4C5473250DA980EBF22D4889* __this, PartialInferenceContext_t87A97CDA80604F25B18FC9A140939F6DFB2F92AE* ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15318,7 +15318,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BlackmanWindow_InferPartial_m9F85DFC43EB
 		return;
 	}
 }
-// Method Definition Index: 31432
+// Method Definition Index: 31524
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* BlackmanWindow_GetInputNames_mD9C4168BB4419FF7CC54F9A24962D533503379C2 (BlackmanWindow_tC728C8E1F3DED13F4C5473250DA980EBF22D4889* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15333,7 +15333,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31433
+// Method Definition Index: 31525
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BlackmanWindow_tC728C8E1F3DED13F4C5473250DA980EBF22D4889* BlackmanWindow_SetInputs_m35AC07363A56103C266F4DEA8FFABCE5FB112927 (BlackmanWindow_tC728C8E1F3DED13F4C5473250DA980EBF22D4889* __this, int32_t ___0_size, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15353,7 +15353,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BlackmanWindow_tC728C8E1F3DED13F4C5473250DA98
 		return __this;
 	}
 }
-// Method Definition Index: 31434
+// Method Definition Index: 31526
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BlackmanWindow_IsInputCPURead_mA6F6ED2C37D4E7071E5AA83C5CBA9BE02552EF5A (BlackmanWindow_tC728C8E1F3DED13F4C5473250DA980EBF22D4889* __this, int32_t ___0_i, const RuntimeMethod* method) 
 {
 	{
@@ -15361,7 +15361,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BlackmanWindow_IsInputCPURead_mA6F6ED2C3
 		return (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
 	}
 }
-// Method Definition Index: 31435
+// Method Definition Index: 31527
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* BlackmanWindow_GetOutputNames_m59B7BEACB8E5DA488752B535F9BFA55F4171B61C (BlackmanWindow_tC728C8E1F3DED13F4C5473250DA980EBF22D4889* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15376,7 +15376,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31436
+// Method Definition Index: 31528
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BlackmanWindow_tC728C8E1F3DED13F4C5473250DA980EBF22D4889* BlackmanWindow_SetOutputs_m4F523CDAF5353A63122629A8E4B3949C25A3D92C (BlackmanWindow_tC728C8E1F3DED13F4C5473250DA980EBF22D4889* __this, int32_t ___0_output, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15396,7 +15396,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BlackmanWindow_tC728C8E1F3DED13F4C5473250DA98
 		return __this;
 	}
 }
-// Method Definition Index: 31437
+// Method Definition Index: 31529
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* BlackmanWindow_get_opName_m4A0D2E87231203C76A2C1B6782DE67AB90C1BD32 (BlackmanWindow_tC728C8E1F3DED13F4C5473250DA980EBF22D4889* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15409,7 +15409,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* BlackmanWindow_get_opName_m4A0D2E87
 		return _stringLiteral7EBB6B5CFA1FF1324D6F75B57A6B6B4D600D8E9A;
 	}
 }
-// Method Definition Index: 31438
+// Method Definition Index: 31530
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* BlackmanWindow_get_category_m15625C7A132DA6421154A2B35DABB838492D2C40 (BlackmanWindow_tC728C8E1F3DED13F4C5473250DA980EBF22D4889* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15422,7 +15422,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* BlackmanWindow_get_category_m15625C
 		return _stringLiteralABB4E22450144CC59E9E4746C312C49A50BAF5D8;
 	}
 }
-// Method Definition Index: 31439
+// Method Definition Index: 31531
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD BlackmanWindow_get_profilerMarker_m0FDA2EB2519D2D9B37958F3D8E88241090ADC457 (BlackmanWindow_tC728C8E1F3DED13F4C5473250DA980EBF22D4889* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15437,7 +15437,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C
 		return L_0;
 	}
 }
-// Method Definition Index: 31440
+// Method Definition Index: 31532
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* BlackmanWindow_ToString_mDA75BEE62C44009BB884705C6CE3FB49EE19402C (BlackmanWindow_tC728C8E1F3DED13F4C5473250DA980EBF22D4889* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15483,7 +15483,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* BlackmanWindow_ToString_mDA75BEE62C
 		return L_13;
 	}
 }
-// Method Definition Index: 31441
+// Method Definition Index: 31533
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BlackmanWindow_SerializeFields_mBBC600E59AAE9CC5BDEE04B121FF7B8A6356D5E7 (BlackmanWindow_tC728C8E1F3DED13F4C5473250DA980EBF22D4889* __this, FlatBufferBuilder_t72116669EC849BCB6543BD426C0F6A9E825BB2FB* ___0_builder, List_1_tAFC4DAF15C03810FE08B8E9742E14A65E4EF9D70* ___1_values, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15507,7 +15507,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BlackmanWindow_SerializeFields_mBBC600E5
 		return;
 	}
 }
-// Method Definition Index: 31442
+// Method Definition Index: 31534
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039* BlackmanWindow_DeserializeLayer_mA47B2FF9AAE3BEEC1E942E904421483B669C5994 (Chain_tA7420781D03CE0268AA17EB04D33ED70711681D9 ___0_chain, ExecutionPlan_tDB179066AB651AA7AE8CF463F21CDFA7E06B6A36 ___1_executionPlan, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15570,7 +15570,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C0
 		return L_11;
 	}
 }
-// Method Definition Index: 31443
+// Method Definition Index: 31535
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BlackmanWindow__cctor_mEC12DD539AFF6CA602EC4725126226097C88D025 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15611,7 +15611,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BlackmanWindow__cctor_mEC12DD539AFF6CA60
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31444
+// Method Definition Index: 31536
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* DFT_InferPartial_mD8B634FAC77468A66BAF3B0AC152A270539916EF (PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___0_input, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___1_dftLength, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___2_axis, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___3_dftMatrix, bool ___4_inverse, bool ___5_onesided, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15663,14 +15663,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 	DynamicTensorDim_t004A3B1D3635966B50480F2366C3665C29269023 G_B27_0;
 	memset((&G_B27_0), 0, sizeof(G_B27_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:38>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:38>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_0 = ___2_axis;
 		V_0 = ((PartialTensor_1_t3459D8F922E47F0180ADDAE3CE3F28730C0439EA*)IsInstClass((RuntimeObject*)L_0, PartialTensor_1_t3459D8F922E47F0180ADDAE3CE3F28730C0439EA_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:39>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:39>
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_1;
 		L_1 = PartialTensorElement_1_get_Unknown_m97307A800C9A28B775D29CEE20C20168AB65A16C(PartialTensorElement_1_get_Unknown_m97307A800C9A28B775D29CEE20C20168AB65A16C_RuntimeMethod_var);
 		V_1 = L_1;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:40>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:40>
 		PartialTensor_1_t3459D8F922E47F0180ADDAE3CE3F28730C0439EA* L_2 = V_0;
 		if (!L_2)
 		{
@@ -15678,7 +15678,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:41>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:41>
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_3 = V_1;
 		PartialTensor_1_t3459D8F922E47F0180ADDAE3CE3F28730C0439EA* L_4 = V_0;
 		NullCheck(L_4);
@@ -15692,7 +15692,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 
 IL_0020:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:43>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:43>
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_7;
 		L_7 = PartialTensorElement_1_Value_m0B7FFF058551B11971965537B153FC662852CC5E(((int32_t)-2), PartialTensorElement_1_Value_m0B7FFF058551B11971965537B153FC662852CC5E_RuntimeMethod_var);
 		V_1 = L_7;
@@ -15700,7 +15700,7 @@ IL_0020:
 
 IL_0028:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:45>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:45>
 		bool L_8;
 		L_8 = PartialTensorElement_1_get_isValue_mC0D1B6FD224961865FE254D7E6A3A6FB0599531E((&V_1), PartialTensorElement_1_get_isValue_mC0D1B6FD224961865FE254D7E6A3A6FB0599531E_RuntimeMethod_var);
 		if (!L_8)
@@ -15762,18 +15762,18 @@ IL_005b:
 IL_0076:
 	{
 		V_2 = G_B8_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:47>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:47>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_21 = ___3_dftMatrix;
 		V_3 = ((PartialTensor_1_t55E6F010A18DC42EA062373BD5AC0FB3F3835A42*)IsInstClass((RuntimeObject*)L_21, PartialTensor_1_t55E6F010A18DC42EA062373BD5AC0FB3F3835A42_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:48>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:48>
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_22;
 		L_22 = PartialTensorElement_1_get_Unknown_m97307A800C9A28B775D29CEE20C20168AB65A16C(PartialTensorElement_1_get_Unknown_m97307A800C9A28B775D29CEE20C20168AB65A16C_RuntimeMethod_var);
 		V_4 = L_22;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:49>
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_23;
 		L_23 = PartialTensorElement_1_get_Unknown_m97307A800C9A28B775D29CEE20C20168AB65A16C(PartialTensorElement_1_get_Unknown_m97307A800C9A28B775D29CEE20C20168AB65A16C_RuntimeMethod_var);
 		V_5 = L_23;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:50>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:50>
 		PartialTensor_1_t55E6F010A18DC42EA062373BD5AC0FB3F3835A42* L_24 = V_3;
 		if (!L_24)
 		{
@@ -15781,7 +15781,7 @@ IL_0076:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:52>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:52>
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_25 = V_4;
 		PartialTensor_1_t55E6F010A18DC42EA062373BD5AC0FB3F3835A42* L_26 = V_3;
 		NullCheck(L_26);
@@ -15795,7 +15795,7 @@ IL_0076:
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_30;
 		L_30 = PartialTensorElement_1_MaxDefinedElement_mF5569DC38EA6984CE093B49E0F527AEE7B270FD2(L_25, L_29, PartialTensorElement_1_MaxDefinedElement_mF5569DC38EA6984CE093B49E0F527AEE7B270FD2_RuntimeMethod_var);
 		V_4 = L_30;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:53>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:53>
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_31 = V_5;
 		PartialTensor_1_t55E6F010A18DC42EA062373BD5AC0FB3F3835A42* L_32 = V_3;
 		NullCheck(L_32);
@@ -15813,14 +15813,14 @@ IL_0076:
 
 IL_00cb:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:56>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_37 = ___1_dftLength;
 		V_6 = ((PartialTensor_1_t3459D8F922E47F0180ADDAE3CE3F28730C0439EA*)IsInstClass((RuntimeObject*)L_37, PartialTensor_1_t3459D8F922E47F0180ADDAE3CE3F28730C0439EA_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:57>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:57>
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_38;
 		L_38 = PartialTensorElement_1_get_Unknown_m97307A800C9A28B775D29CEE20C20168AB65A16C(PartialTensorElement_1_get_Unknown_m97307A800C9A28B775D29CEE20C20168AB65A16C_RuntimeMethod_var);
 		V_7 = L_38;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:58>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:58>
 		PartialTensor_1_t3459D8F922E47F0180ADDAE3CE3F28730C0439EA* L_39 = V_6;
 		if (!L_39)
 		{
@@ -15828,7 +15828,7 @@ IL_00cb:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:59>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:59>
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_40 = V_7;
 		PartialTensor_1_t3459D8F922E47F0180ADDAE3CE3F28730C0439EA* L_41 = V_6;
 		NullCheck(L_41);
@@ -15842,14 +15842,14 @@ IL_00cb:
 
 IL_00f1:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:61>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:61>
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_44 = V_2;
 		V_7 = L_44;
 	}
 
 IL_00f4:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:63>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_45 = ___0_input;
 		NullCheck(L_45);
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_46;
@@ -15857,11 +15857,11 @@ IL_00f4:
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_47;
 		L_47 = DynamicTensorShape_DynamicOfRankLike_m022631BB660182721C8CD30E71ED7DA1E70059E0(L_46, NULL);
 		V_8 = L_47;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:66>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:66>
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_48;
 		L_48 = PartialTensorElement_1_get_Unknown_m97307A800C9A28B775D29CEE20C20168AB65A16C(PartialTensorElement_1_get_Unknown_m97307A800C9A28B775D29CEE20C20168AB65A16C_RuntimeMethod_var);
 		V_9 = L_48;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:67>
 		bool L_49 = ___5_onesided;
 		if (L_49)
 		{
@@ -15892,7 +15892,7 @@ IL_0110:
 IL_012d:
 	{
 		V_10 = G_B16_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:68>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:68>
 		bool L_56;
 		L_56 = PartialTensorElement_1_get_isValue_mC0D1B6FD224961865FE254D7E6A3A6FB0599531E((&V_1), PartialTensorElement_1_get_isValue_mC0D1B6FD224961865FE254D7E6A3A6FB0599531E_RuntimeMethod_var);
 		if (!L_56)
@@ -15901,20 +15901,20 @@ IL_012d:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:70>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:70>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_57 = ___0_input;
 		NullCheck(L_57);
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_58;
 		L_58 = PartialTensor_get_shape_m49066131BB4F93BFB14B8A2BF39D4809C188A758_inline(L_57, NULL);
 		V_8 = L_58;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:71>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:71>
 		int32_t L_59;
 		L_59 = PartialTensorElement_1_get_value_m858F61247030501E65500B53D67355CA62BAD5C0_inline((&V_1), PartialTensorElement_1_get_value_m858F61247030501E65500B53D67355CA62BAD5C0_RuntimeMethod_var);
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_60 = V_10;
 		DynamicTensorDim_t004A3B1D3635966B50480F2366C3665C29269023 L_61;
 		L_61 = DynamicTensorDim_op_Explicit_m6AF75E2DD1A42C561906A1F6B10DF24A4A093F8A(L_60, NULL);
 		DynamicTensorShape_set_Item_mF33039B5CFB8387C708D159805116AFD2B70B709((&V_8), L_59, L_61, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:72>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:72>
 		bool L_62;
 		L_62 = PartialTensorElement_1_get_isValue_mC0D1B6FD224961865FE254D7E6A3A6FB0599531E((&V_2), PartialTensorElement_1_get_isValue_mC0D1B6FD224961865FE254D7E6A3A6FB0599531E_RuntimeMethod_var);
 		if (!L_62)
@@ -15931,7 +15931,7 @@ IL_012d:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:73>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:73>
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_64 = V_2;
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_65 = V_7;
 		bool L_66;
@@ -15960,11 +15960,11 @@ IL_0176:
 
 IL_0178:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:75>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:75>
 		DynamicTensorDim_t004A3B1D3635966B50480F2366C3665C29269023 L_69;
 		L_69 = DynamicTensorDim_Int_m8D0D1FB9A0FF5DC58BC5A5DF755D3E08DDFE7FF7(2, NULL);
 		DynamicTensorShape_set_Item_mF33039B5CFB8387C708D159805116AFD2B70B709((&V_8), (-1), L_69, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:77>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:77>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_70 = ___0_input;
 		NullCheck(L_70);
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_71;
@@ -16014,7 +16014,7 @@ IL_01b0:
 IL_01c0:
 	{
 		V_11 = G_B27_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:78>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:78>
 		bool L_80;
 		L_80 = DynamicTensorDim_get_isValue_m012693C8E5922412211FCA74AE185900893AAD8D((&V_11), NULL);
 		if (!L_80)
@@ -16023,7 +16023,7 @@ IL_01c0:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:80>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:80>
 		DynamicTensorDim_t004A3B1D3635966B50480F2366C3665C29269023 L_81 = V_11;
 		bool L_82;
 		L_82 = DynamicTensorDim_op_Equality_mAEC85CBB3BF6DC723CC5C4042D86322E441AFE75(L_81, 1, NULL);
@@ -16033,7 +16033,7 @@ IL_01c0:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:83>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:83>
 		bool L_83;
 		L_83 = PartialTensorElement_1_get_isValue_mC0D1B6FD224961865FE254D7E6A3A6FB0599531E((&V_4), PartialTensorElement_1_get_isValue_mC0D1B6FD224961865FE254D7E6A3A6FB0599531E_RuntimeMethod_var);
 		if (!L_83)
@@ -16048,7 +16048,7 @@ IL_01c0:
 
 IL_01e6:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:86>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:86>
 		bool L_85;
 		L_85 = PartialTensorElement_1_get_isValue_mC0D1B6FD224961865FE254D7E6A3A6FB0599531E((&V_5), PartialTensorElement_1_get_isValue_mC0D1B6FD224961865FE254D7E6A3A6FB0599531E_RuntimeMethod_var);
 		if (!L_85)
@@ -16070,7 +16070,7 @@ IL_01e6:
 
 IL_01fa:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:89>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:89>
 		DynamicTensorDim_t004A3B1D3635966B50480F2366C3665C29269023 L_87 = V_11;
 		bool L_88;
 		L_88 = DynamicTensorDim_op_Equality_mAEC85CBB3BF6DC723CC5C4042D86322E441AFE75(L_87, 2, NULL);
@@ -16080,7 +16080,7 @@ IL_01fa:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:92>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:92>
 		bool L_89;
 		L_89 = PartialTensorElement_1_get_isValue_mC0D1B6FD224961865FE254D7E6A3A6FB0599531E((&V_4), PartialTensorElement_1_get_isValue_mC0D1B6FD224961865FE254D7E6A3A6FB0599531E_RuntimeMethod_var);
 		if (!L_89)
@@ -16095,7 +16095,7 @@ IL_01fa:
 
 IL_0215:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:95>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:95>
 		bool L_91;
 		L_91 = PartialTensorElement_1_get_isValue_mC0D1B6FD224961865FE254D7E6A3A6FB0599531E((&V_5), PartialTensorElement_1_get_isValue_mC0D1B6FD224961865FE254D7E6A3A6FB0599531E_RuntimeMethod_var);
 		if (!L_91)
@@ -16110,14 +16110,14 @@ IL_0215:
 
 IL_0226:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:102>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:102>
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_93 = V_8;
 		PartialTensor_1_t55E6F010A18DC42EA062373BD5AC0FB3F3835A42* L_94 = (PartialTensor_1_t55E6F010A18DC42EA062373BD5AC0FB3F3835A42*)il2cpp_codegen_object_new(PartialTensor_1_t55E6F010A18DC42EA062373BD5AC0FB3F3835A42_il2cpp_TypeInfo_var);
 		PartialTensor_1__ctor_m5847012FD9720D1F6F5212457F7BE335EDB22CD6(L_94, L_93, PartialTensor_1__ctor_m5847012FD9720D1F6F5212457F7BE335EDB22CD6_RuntimeMethod_var);
 		return L_94;
 	}
 }
-// Method Definition Index: 31445
+// Method Definition Index: 31537
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DFT_Execute_m14C6D33A12623A06B5DD899F776159AE2CD2302C (DFT_tC92EBD4296ABE7A41E7131D80DE86EC7C3532184* __this, ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16151,7 +16151,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DFT_Execute_m14C6D33A12623A06B5DD899F776
 	int32_t G_B14_0 = 0;
 	int32_t G_B18_0 = 0;
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:107>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:107>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_0 = ___0_ctx;
 		RuntimeObject* L_1 = L_0.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -16162,7 +16162,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DFT_Execute_m14C6D33A12623A06B5DD899F776
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_5;
 		L_5 = InterfaceFuncInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t >::Invoke(2, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_1, L_4);
 		V_0 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_5, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:108>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:108>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_6 = ___0_ctx;
 		RuntimeObject* L_7 = L_6.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_8 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -16179,7 +16179,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DFT_Execute_m14C6D33A12623A06B5DD899F776
 		L_13 = il2cpp_span_get_item((int32_t*)((Il2CppByReference*)&(((&V_9))->____pointer))->value, (0), ((&V_9))->____length);
 		int32_t L_14 = *((int32_t*)L_13);
 		V_1 = L_14;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:109>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:109>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_15 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
 		NullCheck(L_15);
 		int32_t L_16 = 1;
@@ -16225,7 +16225,7 @@ IL_005f:
 IL_0087:
 	{
 		V_2 = G_B3_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:110>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:110>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_31 = ___0_ctx;
 		RuntimeObject* L_32 = L_31.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_33 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -16236,7 +16236,7 @@ IL_0087:
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_36;
 		L_36 = InterfaceFuncInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t >::Invoke(2, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_32, L_35);
 		V_3 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_36, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:111>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:111>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_37 = V_0;
 		NullCheck(L_37);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_38;
@@ -16245,7 +16245,7 @@ IL_0087:
 		int32_t L_39;
 		L_39 = TensorShape_get_Item_mD17EFD4FCDCD98DD577A13E3291DA1F4AF48E5C1((&V_10), (-1), NULL);
 		V_4 = (bool)((((int32_t)L_39) == ((int32_t)1))? 1 : 0);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:113>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:113>
 		int32_t L_40 = V_2;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_41 = V_0;
 		NullCheck(L_41);
@@ -16259,7 +16259,7 @@ IL_0087:
 		int32_t L_45;
 		L_45 = Math_Min_m53C488772A34D53917BCA2A491E79A0A5356ED52(L_40, L_44, NULL);
 		V_5 = L_45;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:114>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:114>
 		bool L_46 = __this->___onesided;
 		if (L_46)
 		{
@@ -16281,7 +16281,7 @@ IL_00d9:
 IL_00de:
 	{
 		V_6 = G_B6_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:118>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:118>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_49 = V_3;
 		if (!L_49)
 		{
@@ -16289,7 +16289,7 @@ IL_00de:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:121>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:121>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_50 = V_3;
 		NullCheck(L_50);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_51;
@@ -16303,7 +16303,7 @@ IL_00de:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:123>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:123>
 		bool L_53 = V_4;
 		if (L_53)
 		{
@@ -16339,7 +16339,7 @@ IL_0112:
 IL_0128:
 	{
 		V_11 = (bool)G_B11_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:124>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:124>
 		bool L_62 = V_4;
 		if (L_62)
 		{
@@ -16380,7 +16380,7 @@ IL_015a:
 
 IL_015e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:129>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:129>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_71 = V_3;
 		NullCheck(L_71);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_72;
@@ -16418,19 +16418,19 @@ IL_018b:
 
 IL_018c:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:135>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:135>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_79 = V_0;
 		NullCheck(L_79);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_80;
 		L_80 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline(L_79, NULL);
 		TensorShape__ctor_m0E86F0A6E21468F4410C96D430DFC697942A03A1((&V_7), L_80, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:136>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:136>
 		int32_t L_81 = V_1;
 		int32_t L_82 = V_6;
 		TensorShape_set_Item_mD53057413E486D12A2E5E45F017BC1F96BD88580((&V_7), L_81, L_82, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:137>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:137>
 		TensorShape_set_Item_mD53057413E486D12A2E5E45F017BC1F96BD88580((&V_7), (-1), 2, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:139>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:139>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_83 = ___0_ctx;
 		RuntimeObject* L_84 = L_83.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_85 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -16442,12 +16442,12 @@ IL_018c:
 		RuntimeObject* L_90 = L_89.___backend;
 		NullCheck(L_90);
 		int32_t L_91;
-		L_91 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_90);
+		L_91 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_90);
 		NullCheck(L_84);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_92;
 		L_92 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_84, L_87, L_88, 0, L_91);
 		V_8 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_92, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:140>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:140>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_93 = V_8;
 		NullCheck(L_93);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_94;
@@ -16461,13 +16461,13 @@ IL_018c:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:141>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:141>
 		return;
 	}
 
 IL_01e7:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:143>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:143>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_96 = ___0_ctx;
 		RuntimeObject* L_97 = L_96.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_98 = V_0;
@@ -16478,12 +16478,12 @@ IL_01e7:
 		bool L_103 = __this->___inverse;
 		bool L_104 = __this->___onesided;
 		NullCheck(L_97);
-		InterfaceActionInvoker7< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, int32_t, int32_t, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, bool, bool >::Invoke(191, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_97, L_98, L_99, L_100, L_101, L_102, L_103, L_104);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:144>
+		InterfaceActionInvoker7< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, int32_t, int32_t, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, bool, bool >::Invoke(193, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_97, L_98, L_99, L_100, L_101, L_102, L_103, L_104);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:144>
 		return;
 	}
 }
-// Method Definition Index: 31446
+// Method Definition Index: 31538
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DFT__ctor_m65052BF6E90841AE93A4B109B1BA943C2727AE2E (DFT_tC92EBD4296ABE7A41E7131D80DE86EC7C3532184* __this, bool ___0_inverse, bool ___1_onesided, const RuntimeMethod* method) 
 {
 	{
@@ -16495,7 +16495,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DFT__ctor_m65052BF6E90841AE93A4B109B1BA9
 		return;
 	}
 }
-// Method Definition Index: 31447
+// Method Definition Index: 31539
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DFT_InferPartial_m7D2493B71D86F024060CC55A4A229E207B9A5FCB (DFT_tC92EBD4296ABE7A41E7131D80DE86EC7C3532184* __this, PartialInferenceContext_t87A97CDA80604F25B18FC9A140939F6DFB2F92AE* ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16564,7 +16564,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DFT_InferPartial_m7D2493B71D86F024060CC5
 		return;
 	}
 }
-// Method Definition Index: 31448
+// Method Definition Index: 31540
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* DFT_GetInputNames_m3F222C2B769343FD16D0B482E75B87C278900D22 (DFT_tC92EBD4296ABE7A41E7131D80DE86EC7C3532184* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16579,7 +16579,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31449
+// Method Definition Index: 31541
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DFT_tC92EBD4296ABE7A41E7131D80DE86EC7C3532184* DFT_SetInputs_m56F429202D83C2072B5DDCE77B34F7F00F0CAFA3 (DFT_tC92EBD4296ABE7A41E7131D80DE86EC7C3532184* __this, int32_t ___0_input, int32_t ___1_dftLength, int32_t ___2_axis, int32_t ___3_dftMatrix, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16611,7 +16611,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DFT_tC92EBD4296ABE7A41E7131D80DE86EC7C3532184
 		return __this;
 	}
 }
-// Method Definition Index: 31450
+// Method Definition Index: 31542
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DFT_IsInputCPURead_mB8E6DB2BA0BEEF0E89B88693C02AD8C298303DA5 (DFT_tC92EBD4296ABE7A41E7131D80DE86EC7C3532184* __this, int32_t ___0_i, const RuntimeMethod* method) 
 {
 	{
@@ -16631,7 +16631,7 @@ IL_0009:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 31451
+// Method Definition Index: 31543
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* DFT_GetOutputNames_m7D638EE1D0CB00FA712000FFF710E6ABF77745E3 (DFT_tC92EBD4296ABE7A41E7131D80DE86EC7C3532184* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16646,7 +16646,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31452
+// Method Definition Index: 31544
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DFT_tC92EBD4296ABE7A41E7131D80DE86EC7C3532184* DFT_SetOutputs_m334B5AE33B57138515BA63406EB9F2509C6A1918 (DFT_tC92EBD4296ABE7A41E7131D80DE86EC7C3532184* __this, int32_t ___0_output, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16666,7 +16666,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DFT_tC92EBD4296ABE7A41E7131D80DE86EC7C3532184
 		return __this;
 	}
 }
-// Method Definition Index: 31453
+// Method Definition Index: 31545
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DFT_get_opName_m02BB70DEC958318ED4D7558AFE685FB6E60A214A (DFT_tC92EBD4296ABE7A41E7131D80DE86EC7C3532184* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16679,7 +16679,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DFT_get_opName_m02BB70DEC958318ED4D
 		return _stringLiteral7FFC6596068BBD47368C168B979B66E21BCD5164;
 	}
 }
-// Method Definition Index: 31454
+// Method Definition Index: 31546
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DFT_get_category_m1ACF80A57A1651B5DB9432FC9248509911625931 (DFT_tC92EBD4296ABE7A41E7131D80DE86EC7C3532184* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16692,7 +16692,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DFT_get_category_m1ACF80A57A1651B5D
 		return _stringLiteralABB4E22450144CC59E9E4746C312C49A50BAF5D8;
 	}
 }
-// Method Definition Index: 31455
+// Method Definition Index: 31547
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD DFT_get_profilerMarker_m892DDB6D4D0151E0DF2BFA2E15E49FE0B850F409 (DFT_tC92EBD4296ABE7A41E7131D80DE86EC7C3532184* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16707,7 +16707,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C
 		return L_0;
 	}
 }
-// Method Definition Index: 31456
+// Method Definition Index: 31548
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DFT_ToString_mF2820B3E0F21D5AB55D131F870799DEBACB408B9 (DFT_tC92EBD4296ABE7A41E7131D80DE86EC7C3532184* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16760,7 +16760,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DFT_ToString_mF2820B3E0F21D5AB55D13
 		return L_17;
 	}
 }
-// Method Definition Index: 31457
+// Method Definition Index: 31549
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DFT_SerializeFields_m81DD79E088E3385E2E8C3EFEA82C4EBC10622098 (DFT_tC92EBD4296ABE7A41E7131D80DE86EC7C3532184* __this, FlatBufferBuilder_t72116669EC849BCB6543BD426C0F6A9E825BB2FB* ___0_builder, List_1_tAFC4DAF15C03810FE08B8E9742E14A65E4EF9D70* ___1_values, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16795,7 +16795,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DFT_SerializeFields_m81DD79E088E3385E2E8
 		return;
 	}
 }
-// Method Definition Index: 31458
+// Method Definition Index: 31550
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039* DFT_DeserializeLayer_m7574CB3122269DBCFE21120C6A73BC81B3FCD7A8 (Chain_tA7420781D03CE0268AA17EB04D33ED70711681D9 ___0_chain, ExecutionPlan_tDB179066AB651AA7AE8CF463F21CDFA7E06B6A36 ___1_executionPlan, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16874,7 +16874,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C0
 		return L_17;
 	}
 }
-// Method Definition Index: 31459
+// Method Definition Index: 31551
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DFT__cctor_m220877B2B91CFA44607D85130C9E8A84938D4387 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16927,7 +16927,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DFT__cctor_m220877B2B91CFA44607D85130C9E
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31460
+// Method Definition Index: 31552
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* HammingWindow_InferPartial_m98EC013592DB862B3330257AB95D74775AD03412 (PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___0_size, bool ___1_periodic, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16939,11 +16939,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 	DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:155>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:155>
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_0;
 		L_0 = DynamicTensorShape_DynamicOfRank_m9EF98445B87E7D07654AAC35757168D4B88B7F8B(1, NULL);
 		V_0 = L_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:156>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:156>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_1 = ___0_size;
 		NullCheck(L_1);
 		bool L_2;
@@ -16954,7 +16954,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:157>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:157>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_3 = ___0_size;
 		NullCheck(L_3);
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_4;
@@ -16966,14 +16966,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 
 IL_0023:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:158>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:158>
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_6 = V_0;
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_7;
 		L_7 = PartialTensor_Create_mD56C31D07B0CA17E00CDA1C167DBB6B4824D88F1(0, L_6, NULL);
 		return L_7;
 	}
 }
-// Method Definition Index: 31461
+// Method Definition Index: 31553
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HammingWindow_Execute_m3D4CE613F85615A0EF9543256CC3D221FF681987 (HammingWindow_t0B1024B15978A00C82547D681CEF3258A3B25FD2* __this, ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16989,14 +16989,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HammingWindow_Execute_m3D4CE613F85615A0E
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_2;
 	memset((&V_2), 0, sizeof(V_2));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:163>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:163>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_0 = ___0_ctx;
 		RuntimeObject* L_1 = L_0.___storage;
 		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = InterfaceFuncInvoker2< int32_t, int32_t, int32_t >::Invoke(5, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_1, 0, 0);
 		V_0 = L_2;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:164>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:164>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_3 = ___0_ctx;
 		RuntimeObject* L_4 = L_3.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_5 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -17011,12 +17011,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HammingWindow_Execute_m3D4CE613F85615A0E
 		RuntimeObject* L_11 = L_10.___backend;
 		NullCheck(L_11);
 		int32_t L_12;
-		L_12 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_11);
+		L_12 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_11);
 		NullCheck(L_4);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_13;
 		L_13 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_4, L_7, L_9, 0, L_12);
 		V_1 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_13, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:165>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:165>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_14 = V_1;
 		NullCheck(L_14);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_15;
@@ -17030,24 +17030,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HammingWindow_Execute_m3D4CE613F85615A0E
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:166>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:166>
 		return;
 	}
 
 IL_004a:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:167>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:167>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_17 = ___0_ctx;
 		RuntimeObject* L_18 = L_17.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_19 = V_1;
 		bool L_20 = __this->___periodic;
 		NullCheck(L_18);
-		InterfaceActionInvoker2< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, bool >::Invoke(193, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_18, L_19, L_20);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:168>
+		InterfaceActionInvoker2< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, bool >::Invoke(195, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_18, L_19, L_20);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:168>
 		return;
 	}
 }
-// Method Definition Index: 31462
+// Method Definition Index: 31554
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HammingWindow__ctor_m7C055ECF2D714C034A381D96BFD29D590E015C48 (HammingWindow_t0B1024B15978A00C82547D681CEF3258A3B25FD2* __this, bool ___0_periodic, const RuntimeMethod* method) 
 {
 	{
@@ -17057,7 +17057,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HammingWindow__ctor_m7C055ECF2D714C034A3
 		return;
 	}
 }
-// Method Definition Index: 31463
+// Method Definition Index: 31555
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HammingWindow_InferPartial_mF2336E029AC2238AD6227FB02524BFF3AF17AC5C (HammingWindow_t0B1024B15978A00C82547D681CEF3258A3B25FD2* __this, PartialInferenceContext_t87A97CDA80604F25B18FC9A140939F6DFB2F92AE* ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17092,7 +17092,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HammingWindow_InferPartial_mF2336E029AC2
 		return;
 	}
 }
-// Method Definition Index: 31464
+// Method Definition Index: 31556
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* HammingWindow_GetInputNames_mE1E323BD70AA94706DB6467AEBB568FA73E648BC (HammingWindow_t0B1024B15978A00C82547D681CEF3258A3B25FD2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17107,7 +17107,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31465
+// Method Definition Index: 31557
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HammingWindow_t0B1024B15978A00C82547D681CEF3258A3B25FD2* HammingWindow_SetInputs_m5D0BF314C4FA3E2F65C740113E333401771B8585 (HammingWindow_t0B1024B15978A00C82547D681CEF3258A3B25FD2* __this, int32_t ___0_size, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17127,7 +17127,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HammingWindow_t0B1024B15978A00C82547D681CEF32
 		return __this;
 	}
 }
-// Method Definition Index: 31466
+// Method Definition Index: 31558
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HammingWindow_IsInputCPURead_m6BFF8B7689A9A90DAF7877C2C6211A236BFB2813 (HammingWindow_t0B1024B15978A00C82547D681CEF3258A3B25FD2* __this, int32_t ___0_i, const RuntimeMethod* method) 
 {
 	{
@@ -17135,7 +17135,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HammingWindow_IsInputCPURead_m6BFF8B7689
 		return (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
 	}
 }
-// Method Definition Index: 31467
+// Method Definition Index: 31559
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* HammingWindow_GetOutputNames_m14082FF668EC78622F9E3DF1935CCE14FAB49893 (HammingWindow_t0B1024B15978A00C82547D681CEF3258A3B25FD2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17150,7 +17150,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31468
+// Method Definition Index: 31560
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HammingWindow_t0B1024B15978A00C82547D681CEF3258A3B25FD2* HammingWindow_SetOutputs_mC132444692CA9B36203CDD5E3A3D85937A1B5E8D (HammingWindow_t0B1024B15978A00C82547D681CEF3258A3B25FD2* __this, int32_t ___0_output, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17170,7 +17170,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HammingWindow_t0B1024B15978A00C82547D681CEF32
 		return __this;
 	}
 }
-// Method Definition Index: 31469
+// Method Definition Index: 31561
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HammingWindow_get_opName_mDA1867C83BA7224CF56043B885E35ED1ACB9FE0B (HammingWindow_t0B1024B15978A00C82547D681CEF3258A3B25FD2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17183,7 +17183,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HammingWindow_get_opName_mDA1867C83
 		return _stringLiteral7B8E921D807B79F84BBF8B3F3A135677DD0F627F;
 	}
 }
-// Method Definition Index: 31470
+// Method Definition Index: 31562
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HammingWindow_get_category_m46A118FBBB2872D31854410F2B4E8275DFE8FAF3 (HammingWindow_t0B1024B15978A00C82547D681CEF3258A3B25FD2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17196,7 +17196,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HammingWindow_get_category_m46A118F
 		return _stringLiteralABB4E22450144CC59E9E4746C312C49A50BAF5D8;
 	}
 }
-// Method Definition Index: 31471
+// Method Definition Index: 31563
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD HammingWindow_get_profilerMarker_m3679FF7097392BDB544D8A4B9A9AB8B13A1D991D (HammingWindow_t0B1024B15978A00C82547D681CEF3258A3B25FD2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17211,7 +17211,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C
 		return L_0;
 	}
 }
-// Method Definition Index: 31472
+// Method Definition Index: 31564
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HammingWindow_ToString_mB5A24CFEE8AD599A1865B5525EC6F965EEF93856 (HammingWindow_t0B1024B15978A00C82547D681CEF3258A3B25FD2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17257,7 +17257,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HammingWindow_ToString_mB5A24CFEE8A
 		return L_13;
 	}
 }
-// Method Definition Index: 31473
+// Method Definition Index: 31565
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HammingWindow_SerializeFields_m4E1CC191F0EAED75FB22DBEBE08406EBB67B89AF (HammingWindow_t0B1024B15978A00C82547D681CEF3258A3B25FD2* __this, FlatBufferBuilder_t72116669EC849BCB6543BD426C0F6A9E825BB2FB* ___0_builder, List_1_tAFC4DAF15C03810FE08B8E9742E14A65E4EF9D70* ___1_values, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17281,7 +17281,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HammingWindow_SerializeFields_m4E1CC191F
 		return;
 	}
 }
-// Method Definition Index: 31474
+// Method Definition Index: 31566
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039* HammingWindow_DeserializeLayer_mA9C26AD48A7A818D2DA263D5B84A73D47845D4C2 (Chain_tA7420781D03CE0268AA17EB04D33ED70711681D9 ___0_chain, ExecutionPlan_tDB179066AB651AA7AE8CF463F21CDFA7E06B6A36 ___1_executionPlan, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17344,7 +17344,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C0
 		return L_11;
 	}
 }
-// Method Definition Index: 31475
+// Method Definition Index: 31567
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HammingWindow__cctor_mEFBAF40D59F494740C9F34C9D93DC6CFD08AA07F (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17385,7 +17385,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HammingWindow__cctor_mEFBAF40D59F494740C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31476
+// Method Definition Index: 31568
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* HannWindow_InferPartial_mD23DD0D92FD5757A82727E77A80F2E5954BF6112 (PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___0_size, bool ___1_periodic, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17397,11 +17397,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 	DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:179>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:179>
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_0;
 		L_0 = DynamicTensorShape_DynamicOfRank_m9EF98445B87E7D07654AAC35757168D4B88B7F8B(1, NULL);
 		V_0 = L_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:180>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:180>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_1 = ___0_size;
 		NullCheck(L_1);
 		bool L_2;
@@ -17412,7 +17412,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:181>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:181>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_3 = ___0_size;
 		NullCheck(L_3);
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_4;
@@ -17424,14 +17424,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 
 IL_0023:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:182>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:182>
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_6 = V_0;
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_7;
 		L_7 = PartialTensor_Create_mD56C31D07B0CA17E00CDA1C167DBB6B4824D88F1(0, L_6, NULL);
 		return L_7;
 	}
 }
-// Method Definition Index: 31477
+// Method Definition Index: 31569
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HannWindow_Execute_mA0596B0A51891CAE0A5A37BAFB8F1D46AC1143B9 (HannWindow_t820D9562B651D195EA983639C4F503B4F34252F3* __this, ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17447,14 +17447,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HannWindow_Execute_mA0596B0A51891CAE0A5A
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_2;
 	memset((&V_2), 0, sizeof(V_2));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:187>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:187>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_0 = ___0_ctx;
 		RuntimeObject* L_1 = L_0.___storage;
 		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = InterfaceFuncInvoker2< int32_t, int32_t, int32_t >::Invoke(5, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_1, 0, 0);
 		V_0 = L_2;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:188>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:188>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_3 = ___0_ctx;
 		RuntimeObject* L_4 = L_3.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_5 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -17469,12 +17469,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HannWindow_Execute_mA0596B0A51891CAE0A5A
 		RuntimeObject* L_11 = L_10.___backend;
 		NullCheck(L_11);
 		int32_t L_12;
-		L_12 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_11);
+		L_12 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_11);
 		NullCheck(L_4);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_13;
 		L_13 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_4, L_7, L_9, 0, L_12);
 		V_1 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_13, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:189>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:189>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_14 = V_1;
 		NullCheck(L_14);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_15;
@@ -17488,24 +17488,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HannWindow_Execute_mA0596B0A51891CAE0A5A
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:190>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:190>
 		return;
 	}
 
 IL_004a:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:191>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:191>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_17 = ___0_ctx;
 		RuntimeObject* L_18 = L_17.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_19 = V_1;
 		bool L_20 = __this->___periodic;
 		NullCheck(L_18);
-		InterfaceActionInvoker2< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, bool >::Invoke(194, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_18, L_19, L_20);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:192>
+		InterfaceActionInvoker2< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, bool >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_18, L_19, L_20);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:192>
 		return;
 	}
 }
-// Method Definition Index: 31478
+// Method Definition Index: 31570
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HannWindow__ctor_mD7903C0922BF06D7D4F32A9759043622407AABCA (HannWindow_t820D9562B651D195EA983639C4F503B4F34252F3* __this, bool ___0_periodic, const RuntimeMethod* method) 
 {
 	{
@@ -17515,7 +17515,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HannWindow__ctor_mD7903C0922BF06D7D4F32A
 		return;
 	}
 }
-// Method Definition Index: 31479
+// Method Definition Index: 31571
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HannWindow_InferPartial_mABFEB72E9B4B03C7DB53FB2318FB580AB18DD75D (HannWindow_t820D9562B651D195EA983639C4F503B4F34252F3* __this, PartialInferenceContext_t87A97CDA80604F25B18FC9A140939F6DFB2F92AE* ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17550,7 +17550,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HannWindow_InferPartial_mABFEB72E9B4B03C
 		return;
 	}
 }
-// Method Definition Index: 31480
+// Method Definition Index: 31572
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* HannWindow_GetInputNames_m60D94AAD59000EE5F013CA87B9366A42CA35DB0D (HannWindow_t820D9562B651D195EA983639C4F503B4F34252F3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17565,7 +17565,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31481
+// Method Definition Index: 31573
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HannWindow_t820D9562B651D195EA983639C4F503B4F34252F3* HannWindow_SetInputs_m9ABB7D7DCAE570193B45ED36F493ECA32F9058D8 (HannWindow_t820D9562B651D195EA983639C4F503B4F34252F3* __this, int32_t ___0_size, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17585,7 +17585,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HannWindow_t820D9562B651D195EA983639C4F503B4F
 		return __this;
 	}
 }
-// Method Definition Index: 31482
+// Method Definition Index: 31574
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HannWindow_IsInputCPURead_m1CC54CB8F76D889F5C50B08E85A1E24D546D4853 (HannWindow_t820D9562B651D195EA983639C4F503B4F34252F3* __this, int32_t ___0_i, const RuntimeMethod* method) 
 {
 	{
@@ -17593,7 +17593,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HannWindow_IsInputCPURead_m1CC54CB8F76D8
 		return (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
 	}
 }
-// Method Definition Index: 31483
+// Method Definition Index: 31575
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* HannWindow_GetOutputNames_mE0D81FD92DEA4DAF27EFCE4470202B8372AD522F (HannWindow_t820D9562B651D195EA983639C4F503B4F34252F3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17608,7 +17608,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31484
+// Method Definition Index: 31576
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HannWindow_t820D9562B651D195EA983639C4F503B4F34252F3* HannWindow_SetOutputs_mD635494E71FA5B900AD8F19D34183D63AB8F749B (HannWindow_t820D9562B651D195EA983639C4F503B4F34252F3* __this, int32_t ___0_output, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17628,7 +17628,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HannWindow_t820D9562B651D195EA983639C4F503B4F
 		return __this;
 	}
 }
-// Method Definition Index: 31485
+// Method Definition Index: 31577
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HannWindow_get_opName_m60326A54690DF78FB3F6AA3068D5E2F12B03038A (HannWindow_t820D9562B651D195EA983639C4F503B4F34252F3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17641,7 +17641,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HannWindow_get_opName_m60326A54690D
 		return _stringLiteral9CA2C058100FFEAF15B7F59FAAD88C1EE1CBC859;
 	}
 }
-// Method Definition Index: 31486
+// Method Definition Index: 31578
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HannWindow_get_category_m973030A8CE37752C952F7D53B846ACBC79A5E2A0 (HannWindow_t820D9562B651D195EA983639C4F503B4F34252F3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17654,7 +17654,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HannWindow_get_category_m973030A8CE
 		return _stringLiteralABB4E22450144CC59E9E4746C312C49A50BAF5D8;
 	}
 }
-// Method Definition Index: 31487
+// Method Definition Index: 31579
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD HannWindow_get_profilerMarker_mCFDED46513261797EA3332C5236A5761DBD3C3E9 (HannWindow_t820D9562B651D195EA983639C4F503B4F34252F3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17669,7 +17669,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C
 		return L_0;
 	}
 }
-// Method Definition Index: 31488
+// Method Definition Index: 31580
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HannWindow_ToString_m18C07412B249F43EECA0944AD7BE2F92E4981626 (HannWindow_t820D9562B651D195EA983639C4F503B4F34252F3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17715,7 +17715,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HannWindow_ToString_m18C07412B249F4
 		return L_13;
 	}
 }
-// Method Definition Index: 31489
+// Method Definition Index: 31581
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HannWindow_SerializeFields_mCDBE3AD73E68D591208AF147B9952AF44D38AA42 (HannWindow_t820D9562B651D195EA983639C4F503B4F34252F3* __this, FlatBufferBuilder_t72116669EC849BCB6543BD426C0F6A9E825BB2FB* ___0_builder, List_1_tAFC4DAF15C03810FE08B8E9742E14A65E4EF9D70* ___1_values, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17739,7 +17739,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HannWindow_SerializeFields_mCDBE3AD73E68
 		return;
 	}
 }
-// Method Definition Index: 31490
+// Method Definition Index: 31582
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039* HannWindow_DeserializeLayer_m8F684981896A828605C66753403B61867F7CF79D (Chain_tA7420781D03CE0268AA17EB04D33ED70711681D9 ___0_chain, ExecutionPlan_tDB179066AB651AA7AE8CF463F21CDFA7E06B6A36 ___1_executionPlan, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17802,7 +17802,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C0
 		return L_11;
 	}
 }
-// Method Definition Index: 31491
+// Method Definition Index: 31583
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HannWindow__cctor_m2860EE800B5A396E82B762C9A5D8C251E4119E72 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17843,7 +17843,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HannWindow__cctor_m2860EE800B5A396E82B76
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31492
+// Method Definition Index: 31584
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* MelWeightMatrix_InferPartial_mB118EC047962E0D74A1C20AA02C884B127A1875A (PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___0_numMelBins, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___1_dftLength, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___2_sampleRate, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___3_lowerEdgeHertz, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___4_upperEdgeHertz, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17857,11 +17857,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 	DynamicTensorDim_t004A3B1D3635966B50480F2366C3665C29269023 V_1;
 	memset((&V_1), 0, sizeof(V_1));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:201>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:201>
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_0;
 		L_0 = DynamicTensorShape_DynamicOfRank_m9EF98445B87E7D07654AAC35757168D4B88B7F8B(2, NULL);
 		V_0 = L_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:202>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:202>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_1 = ___1_dftLength;
 		NullCheck(L_1);
 		bool L_2;
@@ -17872,7 +17872,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:203>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:203>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_3 = ___1_dftLength;
 		NullCheck(L_3);
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_4;
@@ -17889,7 +17889,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 
 IL_0033:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:204>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:204>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_8 = ___0_numMelBins;
 		NullCheck(L_8);
 		bool L_9;
@@ -17900,7 +17900,7 @@ IL_0033:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:205>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:205>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_10 = ___0_numMelBins;
 		NullCheck(L_10);
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_11;
@@ -17912,14 +17912,14 @@ IL_0033:
 
 IL_004f:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:206>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:206>
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_13 = V_0;
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_14;
 		L_14 = PartialTensor_Create_mD56C31D07B0CA17E00CDA1C167DBB6B4824D88F1(0, L_13, NULL);
 		return L_14;
 	}
 }
-// Method Definition Index: 31493
+// Method Definition Index: 31585
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MelWeightMatrix_Execute_mC5BE45C8540DE7990CECA72C4BE7A7B54CAE424E (MelWeightMatrix_tFB10077D48356ED7944E228AB0E87F152BB25429* __this, ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17939,42 +17939,42 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MelWeightMatrix_Execute_mC5BE45C8540DE79
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_6;
 	memset((&V_6), 0, sizeof(V_6));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:211>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:211>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_0 = ___0_ctx;
 		RuntimeObject* L_1 = L_0.___storage;
 		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = InterfaceFuncInvoker2< int32_t, int32_t, int32_t >::Invoke(5, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_1, 0, 0);
 		V_0 = L_2;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:212>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:212>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_3 = ___0_ctx;
 		RuntimeObject* L_4 = L_3.___storage;
 		NullCheck(L_4);
 		int32_t L_5;
 		L_5 = InterfaceFuncInvoker2< int32_t, int32_t, int32_t >::Invoke(5, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_4, 1, 0);
 		V_1 = L_5;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:213>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:213>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_6 = ___0_ctx;
 		RuntimeObject* L_7 = L_6.___storage;
 		NullCheck(L_7);
 		int32_t L_8;
 		L_8 = InterfaceFuncInvoker2< int32_t, int32_t, int32_t >::Invoke(5, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_7, 2, 0);
 		V_2 = L_8;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:214>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:214>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_9 = ___0_ctx;
 		RuntimeObject* L_10 = L_9.___storage;
 		NullCheck(L_10);
 		float L_11;
 		L_11 = InterfaceFuncInvoker2< float, int32_t, float >::Invoke(6, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_10, 3, (0.0f));
 		V_3 = L_11;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:215>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:215>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_12 = ___0_ctx;
 		RuntimeObject* L_13 = L_12.___storage;
 		NullCheck(L_13);
 		float L_14;
 		L_14 = InterfaceFuncInvoker2< float, int32_t, float >::Invoke(6, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_13, 4, (0.0f));
 		V_4 = L_14;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:216>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:216>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_15 = ___0_ctx;
 		RuntimeObject* L_16 = L_15.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_17 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -17990,12 +17990,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MelWeightMatrix_Execute_mC5BE45C8540DE79
 		RuntimeObject* L_24 = L_23.___backend;
 		NullCheck(L_24);
 		int32_t L_25;
-		L_25 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_24);
+		L_25 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_24);
 		NullCheck(L_16);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_26;
 		L_26 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_16, L_19, L_22, 0, L_25);
 		V_5 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_26, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:217>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:217>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_27 = V_5;
 		NullCheck(L_27);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_28;
@@ -18009,13 +18009,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MelWeightMatrix_Execute_mC5BE45C8540DE79
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:218>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:218>
 		return;
 	}
 
 IL_0093:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:219>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:219>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_30 = ___0_ctx;
 		RuntimeObject* L_31 = L_30.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_32 = V_5;
@@ -18024,12 +18024,12 @@ IL_0093:
 		float L_35 = V_3;
 		float L_36 = V_4;
 		NullCheck(L_31);
-		InterfaceActionInvoker5< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, int32_t, int32_t, float, float >::Invoke(195, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_31, L_32, L_33, L_34, L_35, L_36);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:220>
+		InterfaceActionInvoker5< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, int32_t, int32_t, float, float >::Invoke(197, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_31, L_32, L_33, L_34, L_35, L_36);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:220>
 		return;
 	}
 }
-// Method Definition Index: 31494
+// Method Definition Index: 31586
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MelWeightMatrix__ctor_m5CCEDECF886866C4C875EEEE0BE9616E70F90DFD (MelWeightMatrix_tFB10077D48356ED7944E228AB0E87F152BB25429* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18037,7 +18037,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MelWeightMatrix__ctor_m5CCEDECF886866C4C
 		return;
 	}
 }
-// Method Definition Index: 31495
+// Method Definition Index: 31587
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MelWeightMatrix_InferPartial_mF21CC27E5F85B2403CE4A723BDE1130B8DBF6C3E (MelWeightMatrix_tFB10077D48356ED7944E228AB0E87F152BB25429* __this, PartialInferenceContext_t87A97CDA80604F25B18FC9A140939F6DFB2F92AE* ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18115,7 +18115,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MelWeightMatrix_InferPartial_mF21CC27E5F
 		return;
 	}
 }
-// Method Definition Index: 31496
+// Method Definition Index: 31588
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* MelWeightMatrix_GetInputNames_m6EE18B3598C231FC74F955FB23C77436D8E7D1B6 (MelWeightMatrix_tFB10077D48356ED7944E228AB0E87F152BB25429* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18130,7 +18130,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31497
+// Method Definition Index: 31589
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MelWeightMatrix_tFB10077D48356ED7944E228AB0E87F152BB25429* MelWeightMatrix_SetInputs_m94FFB83F57705140E2E04D31A2BBF332F75EA84B (MelWeightMatrix_tFB10077D48356ED7944E228AB0E87F152BB25429* __this, int32_t ___0_numMelBins, int32_t ___1_dftLength, int32_t ___2_sampleRate, int32_t ___3_lowerEdgeHertz, int32_t ___4_upperEdgeHertz, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18166,7 +18166,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MelWeightMatrix_tFB10077D48356ED7944E228AB0E8
 		return __this;
 	}
 }
-// Method Definition Index: 31498
+// Method Definition Index: 31590
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MelWeightMatrix_IsInputCPURead_m9E50AD0E383A318F2FE12A6BE81D184DBF100D55 (MelWeightMatrix_tFB10077D48356ED7944E228AB0E87F152BB25429* __this, int32_t ___0_i, const RuntimeMethod* method) 
 {
 	{
@@ -18207,7 +18207,7 @@ IL_0014:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 31499
+// Method Definition Index: 31591
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* MelWeightMatrix_GetOutputNames_mF5CED138B999215429C8ABEDDCD1F1B324F01860 (MelWeightMatrix_tFB10077D48356ED7944E228AB0E87F152BB25429* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18222,7 +18222,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31500
+// Method Definition Index: 31592
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MelWeightMatrix_tFB10077D48356ED7944E228AB0E87F152BB25429* MelWeightMatrix_SetOutputs_mAD8C365E0E3833D52196FAF468A5BAD48B6DA113 (MelWeightMatrix_tFB10077D48356ED7944E228AB0E87F152BB25429* __this, int32_t ___0_output, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18242,7 +18242,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MelWeightMatrix_tFB10077D48356ED7944E228AB0E8
 		return __this;
 	}
 }
-// Method Definition Index: 31501
+// Method Definition Index: 31593
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MelWeightMatrix_get_opName_m18C32777FE6BFE9D2F00FC8FFD5E4D588A1C452B (MelWeightMatrix_tFB10077D48356ED7944E228AB0E87F152BB25429* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18255,7 +18255,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MelWeightMatrix_get_opName_m18C3277
 		return _stringLiteral6A3A2E00A2CBAC04D34649542D5AEC64ED7E3EA3;
 	}
 }
-// Method Definition Index: 31502
+// Method Definition Index: 31594
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MelWeightMatrix_get_category_mD139C8A0780BF7E25232CF09B0547141285AD525 (MelWeightMatrix_tFB10077D48356ED7944E228AB0E87F152BB25429* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18268,7 +18268,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MelWeightMatrix_get_category_mD139C
 		return _stringLiteralABB4E22450144CC59E9E4746C312C49A50BAF5D8;
 	}
 }
-// Method Definition Index: 31503
+// Method Definition Index: 31595
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD MelWeightMatrix_get_profilerMarker_mB251B472DCBB7DDCD870747B0BEEED4E5F7B7CE7 (MelWeightMatrix_tFB10077D48356ED7944E228AB0E87F152BB25429* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18283,7 +18283,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C
 		return L_0;
 	}
 }
-// Method Definition Index: 31504
+// Method Definition Index: 31596
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MelWeightMatrix_ToString_mCCDDFB95B212CAF19204A39DBC3D2201929F30B3 (MelWeightMatrix_tFB10077D48356ED7944E228AB0E87F152BB25429* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18330,14 +18330,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MelWeightMatrix_ToString_mCCDDFB95B
 		return L_12;
 	}
 }
-// Method Definition Index: 31505
+// Method Definition Index: 31597
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MelWeightMatrix_SerializeFields_m117CB4D5C28B372719A0D05E5ACEEC946874AE11 (MelWeightMatrix_tFB10077D48356ED7944E228AB0E87F152BB25429* __this, FlatBufferBuilder_t72116669EC849BCB6543BD426C0F6A9E825BB2FB* ___0_builder, List_1_tAFC4DAF15C03810FE08B8E9742E14A65E4EF9D70* ___1_values, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 31506
+// Method Definition Index: 31598
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039* MelWeightMatrix_DeserializeLayer_m003283AA6533C13347958C6328305426A258680F (Chain_tA7420781D03CE0268AA17EB04D33ED70711681D9 ___0_chain, ExecutionPlan_tDB179066AB651AA7AE8CF463F21CDFA7E06B6A36 ___1_executionPlan, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18377,7 +18377,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C0
 		return L_6;
 	}
 }
-// Method Definition Index: 31507
+// Method Definition Index: 31599
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MelWeightMatrix__cctor_m0DD6136C025F7584A66693219C47C05574C9A2CC (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18434,7 +18434,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MelWeightMatrix__cctor_m0DD6136C025F7584
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31508
+// Method Definition Index: 31600
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* STFT_InferPartial_mE58A24B30970468C5793FE9DE3102C74107FD09D (PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___0_signal, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___1_frameStep, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___2_window, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___3_frameLength, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___4_windowedDFTMatrix, bool ___5_onesided, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18501,14 +18501,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 	int32_t G_B21_1 = 0;
 	DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E* G_B21_2 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:231>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:231>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_0 = ___1_frameStep;
 		V_0 = ((PartialTensor_1_t3459D8F922E47F0180ADDAE3CE3F28730C0439EA*)IsInstClass((RuntimeObject*)L_0, PartialTensor_1_t3459D8F922E47F0180ADDAE3CE3F28730C0439EA_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:232>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:232>
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_1;
 		L_1 = PartialTensorElement_1_get_Unknown_m97307A800C9A28B775D29CEE20C20168AB65A16C(PartialTensorElement_1_get_Unknown_m97307A800C9A28B775D29CEE20C20168AB65A16C_RuntimeMethod_var);
 		V_1 = L_1;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:233>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:233>
 		PartialTensor_1_t3459D8F922E47F0180ADDAE3CE3F28730C0439EA* L_2 = V_0;
 		if (!L_2)
 		{
@@ -18516,7 +18516,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:234>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:234>
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_3 = V_1;
 		PartialTensor_1_t3459D8F922E47F0180ADDAE3CE3F28730C0439EA* L_4 = V_0;
 		NullCheck(L_4);
@@ -18529,32 +18529,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 
 IL_001e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:236>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:236>
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_7;
 		L_7 = PartialTensorElement_1_get_Unknown_m97307A800C9A28B775D29CEE20C20168AB65A16C(PartialTensorElement_1_get_Unknown_m97307A800C9A28B775D29CEE20C20168AB65A16C_RuntimeMethod_var);
 		V_2 = L_7;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:237>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:237>
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_8;
 		L_8 = PartialTensorElement_1_get_Unknown_m97307A800C9A28B775D29CEE20C20168AB65A16C(PartialTensorElement_1_get_Unknown_m97307A800C9A28B775D29CEE20C20168AB65A16C_RuntimeMethod_var);
 		V_3 = L_8;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:238>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:238>
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_9;
 		L_9 = PartialTensorElement_1_get_Unknown_m97307A800C9A28B775D29CEE20C20168AB65A16C(PartialTensorElement_1_get_Unknown_m97307A800C9A28B775D29CEE20C20168AB65A16C_RuntimeMethod_var);
 		V_4 = L_9;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:239>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:239>
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_10;
 		L_10 = PartialTensorElement_1_get_Unknown_m97307A800C9A28B775D29CEE20C20168AB65A16C(PartialTensorElement_1_get_Unknown_m97307A800C9A28B775D29CEE20C20168AB65A16C_RuntimeMethod_var);
 		V_5 = L_10;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:241>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:241>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_11 = ___2_window;
 		V_6 = ((PartialTensor_1_t55E6F010A18DC42EA062373BD5AC0FB3F3835A42*)IsInstClass((RuntimeObject*)L_11, PartialTensor_1_t55E6F010A18DC42EA062373BD5AC0FB3F3835A42_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:242>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:242>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_12 = ___4_windowedDFTMatrix;
 		V_7 = ((PartialTensor_1_t55E6F010A18DC42EA062373BD5AC0FB3F3835A42*)IsInstClass((RuntimeObject*)L_12, PartialTensor_1_t55E6F010A18DC42EA062373BD5AC0FB3F3835A42_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:244>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:244>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_13 = ___3_frameLength;
 		V_8 = ((PartialTensor_1_t3459D8F922E47F0180ADDAE3CE3F28730C0439EA*)IsInstClass((RuntimeObject*)L_13, PartialTensor_1_t3459D8F922E47F0180ADDAE3CE3F28730C0439EA_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:245>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:245>
 		PartialTensor_1_t55E6F010A18DC42EA062373BD5AC0FB3F3835A42* L_14 = V_6;
 		if (!L_14)
 		{
@@ -18562,7 +18562,7 @@ IL_001e:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:246>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:246>
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_15 = V_3;
 		PartialTensor_1_t55E6F010A18DC42EA062373BD5AC0FB3F3835A42* L_16 = V_6;
 		NullCheck(L_16);
@@ -18580,7 +18580,7 @@ IL_001e:
 
 IL_0072:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:247>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:247>
 		PartialTensor_1_t3459D8F922E47F0180ADDAE3CE3F28730C0439EA* L_21 = V_8;
 		if (!L_21)
 		{
@@ -18588,7 +18588,7 @@ IL_0072:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:248>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:248>
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_22 = V_2;
 		PartialTensor_1_t3459D8F922E47F0180ADDAE3CE3F28730C0439EA* L_23 = V_8;
 		NullCheck(L_23);
@@ -18601,7 +18601,7 @@ IL_0072:
 
 IL_0085:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:249>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:249>
 		PartialTensor_1_t55E6F010A18DC42EA062373BD5AC0FB3F3835A42* L_26 = V_7;
 		if (!L_26)
 		{
@@ -18609,7 +18609,7 @@ IL_0085:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:251>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:251>
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_27 = V_4;
 		PartialTensor_1_t55E6F010A18DC42EA062373BD5AC0FB3F3835A42* L_28 = V_7;
 		NullCheck(L_28);
@@ -18623,7 +18623,7 @@ IL_0085:
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_32;
 		L_32 = PartialTensorElement_1_MaxDefinedElement_mF5569DC38EA6984CE093B49E0F527AEE7B270FD2(L_27, L_31, PartialTensorElement_1_MaxDefinedElement_mF5569DC38EA6984CE093B49E0F527AEE7B270FD2_RuntimeMethod_var);
 		V_4 = L_32;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:252>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:252>
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_33 = V_5;
 		PartialTensor_1_t55E6F010A18DC42EA062373BD5AC0FB3F3835A42* L_34 = V_7;
 		NullCheck(L_34);
@@ -18641,7 +18641,7 @@ IL_0085:
 
 IL_00c7:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:255>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:255>
 		bool L_39;
 		L_39 = PartialTensorElement_1_get_isValue_mC0D1B6FD224961865FE254D7E6A3A6FB0599531E((&V_2), PartialTensorElement_1_get_isValue_mC0D1B6FD224961865FE254D7E6A3A6FB0599531E_RuntimeMethod_var);
 		if (!L_39)
@@ -18656,17 +18656,17 @@ IL_00c7:
 
 IL_00d8:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:258>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:258>
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_41 = V_2;
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_42 = V_3;
 		PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1 L_43;
 		L_43 = PartialTensorElement_1_MaxDefinedElement_mF5569DC38EA6984CE093B49E0F527AEE7B270FD2(L_41, L_42, PartialTensorElement_1_MaxDefinedElement_mF5569DC38EA6984CE093B49E0F527AEE7B270FD2_RuntimeMethod_var);
 		V_2 = L_43;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:260>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:260>
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_44;
 		L_44 = DynamicTensorShape_DynamicOfRank_m9EF98445B87E7D07654AAC35757168D4B88B7F8B(4, NULL);
 		V_9 = L_44;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:261>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:261>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_45 = ___0_signal;
 		NullCheck(L_45);
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_46;
@@ -18728,7 +18728,7 @@ IL_0115:
 IL_0125:
 	{
 		DynamicTensorShape_set_Item_mF33039B5CFB8387C708D159805116AFD2B70B709(G_B14_2, G_B14_1, G_B14_0, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:262>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:262>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_55 = ___0_signal;
 		NullCheck(L_55);
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_56;
@@ -18803,7 +18803,7 @@ IL_0157:
 IL_0183:
 	{
 		DynamicTensorShape_set_Item_mF33039B5CFB8387C708D159805116AFD2B70B709(G_B18_2, G_B18_1, G_B18_0, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:263>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:263>
 		bool L_73 = ___5_onesided;
 		if (L_73)
 		{
@@ -18842,11 +18842,11 @@ IL_0197:
 IL_01ae:
 	{
 		DynamicTensorShape_set_Item_mF33039B5CFB8387C708D159805116AFD2B70B709(G_B21_2, G_B21_1, G_B21_0, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:264>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:264>
 		DynamicTensorDim_t004A3B1D3635966B50480F2366C3665C29269023 L_80;
 		L_80 = DynamicTensorDim_Int_m8D0D1FB9A0FF5DC58BC5A5DF755D3E08DDFE7FF7(2, NULL);
 		DynamicTensorShape_set_Item_mF33039B5CFB8387C708D159805116AFD2B70B709((&V_9), 3, L_80, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:266>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:266>
 		bool L_81;
 		L_81 = PartialTensorElement_1_get_isValue_mC0D1B6FD224961865FE254D7E6A3A6FB0599531E((&V_2), PartialTensorElement_1_get_isValue_mC0D1B6FD224961865FE254D7E6A3A6FB0599531E_RuntimeMethod_var);
 		if (!L_81)
@@ -18876,7 +18876,7 @@ IL_01ae:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:269>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:269>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_86 = ___0_signal;
 		NullCheck(L_86);
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_87;
@@ -18922,7 +18922,7 @@ IL_01ae:
 
 IL_022d:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:273>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:273>
 		bool L_97;
 		L_97 = PartialTensorElement_1_get_isValue_mC0D1B6FD224961865FE254D7E6A3A6FB0599531E((&V_5), PartialTensorElement_1_get_isValue_mC0D1B6FD224961865FE254D7E6A3A6FB0599531E_RuntimeMethod_var);
 		if (!L_97)
@@ -18936,7 +18936,7 @@ IL_022d:
 
 IL_0238:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:276>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:276>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_98 = ___0_signal;
 		NullCheck(L_98);
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_99;
@@ -18967,21 +18967,21 @@ IL_0238:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:280>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:280>
 		bool L_106;
 		L_106 = PartialTensorElement_1_get_isValue_mC0D1B6FD224961865FE254D7E6A3A6FB0599531E((&V_5), PartialTensorElement_1_get_isValue_mC0D1B6FD224961865FE254D7E6A3A6FB0599531E_RuntimeMethod_var);
 	}
 
 IL_026f:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:285>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:285>
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_107 = V_9;
 		PartialTensor_1_t55E6F010A18DC42EA062373BD5AC0FB3F3835A42* L_108 = (PartialTensor_1_t55E6F010A18DC42EA062373BD5AC0FB3F3835A42*)il2cpp_codegen_object_new(PartialTensor_1_t55E6F010A18DC42EA062373BD5AC0FB3F3835A42_il2cpp_TypeInfo_var);
 		PartialTensor_1__ctor_m5847012FD9720D1F6F5212457F7BE335EDB22CD6(L_108, L_107, PartialTensor_1__ctor_m5847012FD9720D1F6F5212457F7BE335EDB22CD6_RuntimeMethod_var);
 		return L_108;
 	}
 }
-// Method Definition Index: 31509
+// Method Definition Index: 31601
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void STFT_Execute_mFF3C8F732EB7BA1FCD4D086BAA34B35FF6C5D986 (STFT_t65EF4CFF141E264A3F357AB8FB1B5B1B3E880347* __this, ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19024,7 +19024,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void STFT_Execute_mFF3C8F732EB7BA1FCD4D086BAA
 	int32_t G_B21_2 = 0;
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34* G_B21_3 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:290>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:290>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_0 = ___0_ctx;
 		RuntimeObject* L_1 = L_0.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -19035,13 +19035,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void STFT_Execute_mFF3C8F732EB7BA1FCD4D086BAA
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_5;
 		L_5 = InterfaceFuncInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t >::Invoke(2, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_1, L_4);
 		V_0 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_5, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:291>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:291>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_6 = V_0;
 		NullCheck(L_6);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_7;
 		L_7 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline(L_6, NULL);
 		V_1 = L_7;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:292>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:292>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_8 = V_0;
 		NullCheck(L_8);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_9;
@@ -19055,7 +19055,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void STFT_Execute_mFF3C8F732EB7BA1FCD4D086BAA
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:293>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:293>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_11 = V_0;
 		int32_t L_12;
 		L_12 = TensorShape_get_Item_mD17EFD4FCDCD98DD577A13E3291DA1F4AF48E5C1((&V_1), 0, NULL);
@@ -19070,7 +19070,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void STFT_Execute_mFF3C8F732EB7BA1FCD4D086BAA
 
 IL_004e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:294>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:294>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_15 = V_0;
 		NullCheck(L_15);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_16;
@@ -19079,7 +19079,7 @@ IL_004e:
 		int32_t L_17;
 		L_17 = TensorShape_get_Item_mD17EFD4FCDCD98DD577A13E3291DA1F4AF48E5C1((&V_9), 2, NULL);
 		V_2 = (bool)((((int32_t)L_17) == ((int32_t)1))? 1 : 0);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:295>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:295>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_18 = ___0_ctx;
 		RuntimeObject* L_19 = L_18.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_20 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -19096,7 +19096,7 @@ IL_004e:
 		L_25 = il2cpp_span_get_item((int32_t*)((Il2CppByReference*)&(((&V_10))->____pointer))->value, (0), ((&V_10))->____length);
 		int32_t L_26 = *((int32_t*)L_25);
 		V_3 = L_26;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:296>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:296>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_27 = ___0_ctx;
 		RuntimeObject* L_28 = L_27.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_29 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -19107,7 +19107,7 @@ IL_004e:
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_32;
 		L_32 = InterfaceFuncInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t >::Invoke(2, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_28, L_31);
 		V_4 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_32, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:297>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:297>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_33 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
 		NullCheck(L_33);
 		int32_t L_34 = 3;
@@ -19152,7 +19152,7 @@ IL_00c3:
 IL_00eb:
 	{
 		V_5 = G_B5_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:298>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:298>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_48 = ___0_ctx;
 		RuntimeObject* L_49 = L_48.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_50 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -19163,9 +19163,9 @@ IL_00eb:
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_53;
 		L_53 = InterfaceFuncInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t >::Invoke(2, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_49, L_52);
 		V_6 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_53, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:302>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:302>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_54 = V_4;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:305>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:305>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_55 = V_6;
 		if (!L_55)
 		{
@@ -19173,7 +19173,7 @@ IL_00eb:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:308>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:308>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_56 = V_6;
 		NullCheck(L_56);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_57;
@@ -19187,7 +19187,7 @@ IL_00eb:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:310>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:310>
 		bool L_59 = V_2;
 		if (L_59)
 		{
@@ -19223,7 +19223,7 @@ IL_013e:
 IL_0155:
 	{
 		V_11 = (bool)G_B10_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:311>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:311>
 		bool L_68 = V_2;
 		if (L_68)
 		{
@@ -19264,7 +19264,7 @@ IL_0188:
 
 IL_018c:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:316>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:316>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_77 = V_6;
 		NullCheck(L_77);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_78;
@@ -19302,7 +19302,7 @@ IL_01bb:
 
 IL_01bc:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:321>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:321>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_85 = V_0;
 		NullCheck(L_85);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_86;
@@ -19353,7 +19353,7 @@ IL_01f1:
 IL_01f7:
 	{
 		TensorShape__ctor_mE6529014F06216A487E96933BFBA155C1FAF4FEE(G_B21_3, G_B21_2, G_B21_1, G_B21_0, 2, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:322>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:322>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_97 = ___0_ctx;
 		RuntimeObject* L_98 = L_97.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_99 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -19365,12 +19365,12 @@ IL_01f7:
 		RuntimeObject* L_104 = L_103.___backend;
 		NullCheck(L_104);
 		int32_t L_105;
-		L_105 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_104);
+		L_105 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_104);
 		NullCheck(L_98);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_106;
 		L_106 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_98, L_101, L_102, 0, L_105);
 		V_8 = ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_106, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:323>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:323>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_107 = V_8;
 		NullCheck(L_107);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_108;
@@ -19384,7 +19384,7 @@ IL_01f7:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:324>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:324>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_110 = ___0_ctx;
 		RuntimeObject* L_111 = L_110.___backend;
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_112 = V_0;
@@ -19395,21 +19395,21 @@ IL_01f7:
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_117 = V_6;
 		bool L_118 = __this->___onesided;
 		NullCheck(L_111);
-		InterfaceActionInvoker7< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, int32_t, int32_t, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, bool >::Invoke(190, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_111, L_112, L_113, L_114, L_115, L_116, L_117, L_118);
+		InterfaceActionInvoker7< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, int32_t, int32_t, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, bool >::Invoke(192, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_111, L_112, L_113, L_114, L_115, L_116, L_117, L_118);
 	}
 
 IL_0252:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:326>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:326>
 		Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* L_119 = V_0;
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_120 = V_1;
 		NullCheck(L_119);
 		Tensor_set_shape_mB67E6ED353B5D6ABE9531B832D4048700A313056_inline(L_119, L_120, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Spectral.cs:327>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Spectral.cs:327>
 		return;
 	}
 }
-// Method Definition Index: 31510
+// Method Definition Index: 31602
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void STFT__ctor_m4D5A677F4442210197767D5C4C22FD17C1A84634 (STFT_t65EF4CFF141E264A3F357AB8FB1B5B1B3E880347* __this, bool ___0_onesided, const RuntimeMethod* method) 
 {
 	{
@@ -19419,7 +19419,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void STFT__ctor_m4D5A677F4442210197767D5C4C22
 		return;
 	}
 }
-// Method Definition Index: 31511
+// Method Definition Index: 31603
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void STFT_InferPartial_m0B718E8A97DB78863FCC144BCEE860A49898D288 (STFT_t65EF4CFF141E264A3F357AB8FB1B5B1B3E880347* __this, PartialInferenceContext_t87A97CDA80604F25B18FC9A140939F6DFB2F92AE* ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19498,7 +19498,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void STFT_InferPartial_m0B718E8A97DB78863FCC1
 		return;
 	}
 }
-// Method Definition Index: 31512
+// Method Definition Index: 31604
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* STFT_GetInputNames_m3D89FFB01765CFD729D20922C8B0DB44C0B4DB69 (STFT_t65EF4CFF141E264A3F357AB8FB1B5B1B3E880347* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19513,7 +19513,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31513
+// Method Definition Index: 31605
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR STFT_t65EF4CFF141E264A3F357AB8FB1B5B1B3E880347* STFT_SetInputs_m3061943D82C606321CF9497E903EF506FD3F0DA0 (STFT_t65EF4CFF141E264A3F357AB8FB1B5B1B3E880347* __this, int32_t ___0_signal, int32_t ___1_frameStep, int32_t ___2_window, int32_t ___3_frameLength, int32_t ___4_windowedDFTMatrix, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19549,7 +19549,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR STFT_t65EF4CFF141E264A3F357AB8FB1B5B1B3E88034
 		return __this;
 	}
 }
-// Method Definition Index: 31514
+// Method Definition Index: 31606
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool STFT_IsInputCPURead_m04FE6A4D075DA555533B6AA5478592F4BD728929 (STFT_t65EF4CFF141E264A3F357AB8FB1B5B1B3E880347* __this, int32_t ___0_i, const RuntimeMethod* method) 
 {
 	{
@@ -19569,7 +19569,7 @@ IL_0009:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 31515
+// Method Definition Index: 31607
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* STFT_GetOutputNames_m51AECCB8D9ED2A308746FAED7C35690FB98C50AA (STFT_t65EF4CFF141E264A3F357AB8FB1B5B1B3E880347* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19584,7 +19584,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31516
+// Method Definition Index: 31608
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR STFT_t65EF4CFF141E264A3F357AB8FB1B5B1B3E880347* STFT_SetOutputs_m1CAD013B2123741CCC6E848904102DEF745DC74E (STFT_t65EF4CFF141E264A3F357AB8FB1B5B1B3E880347* __this, int32_t ___0_output, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19604,7 +19604,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR STFT_t65EF4CFF141E264A3F357AB8FB1B5B1B3E88034
 		return __this;
 	}
 }
-// Method Definition Index: 31517
+// Method Definition Index: 31609
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* STFT_get_opName_m53C5AA80D02D785CA0D64DF8CA9DC81EDF319F39 (STFT_t65EF4CFF141E264A3F357AB8FB1B5B1B3E880347* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19617,7 +19617,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* STFT_get_opName_m53C5AA80D02D785CA0
 		return _stringLiteral6DDDB19D478FDECA9E8C51DC995B3D36CBFC4AAE;
 	}
 }
-// Method Definition Index: 31518
+// Method Definition Index: 31610
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* STFT_get_category_mF2AA20BB228FEC77C6EE865B7226902B16B9AE69 (STFT_t65EF4CFF141E264A3F357AB8FB1B5B1B3E880347* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19630,7 +19630,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* STFT_get_category_mF2AA20BB228FEC77
 		return _stringLiteralABB4E22450144CC59E9E4746C312C49A50BAF5D8;
 	}
 }
-// Method Definition Index: 31519
+// Method Definition Index: 31611
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD STFT_get_profilerMarker_m16EC94CE7B912E1B06F1EB1D7EC65D1E93ED0609 (STFT_t65EF4CFF141E264A3F357AB8FB1B5B1B3E880347* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19645,7 +19645,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C
 		return L_0;
 	}
 }
-// Method Definition Index: 31520
+// Method Definition Index: 31612
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* STFT_ToString_m9BE3CCF9A3229806754E6EE819B6EA49A0B5246B (STFT_t65EF4CFF141E264A3F357AB8FB1B5B1B3E880347* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19691,7 +19691,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* STFT_ToString_m9BE3CCF9A3229806754E
 		return L_13;
 	}
 }
-// Method Definition Index: 31521
+// Method Definition Index: 31613
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void STFT_SerializeFields_mEEC1B56BAAF8B12B6135384CEDABD5824578B98E (STFT_t65EF4CFF141E264A3F357AB8FB1B5B1B3E880347* __this, FlatBufferBuilder_t72116669EC849BCB6543BD426C0F6A9E825BB2FB* ___0_builder, List_1_tAFC4DAF15C03810FE08B8E9742E14A65E4EF9D70* ___1_values, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19715,7 +19715,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void STFT_SerializeFields_mEEC1B56BAAF8B12B61
 		return;
 	}
 }
-// Method Definition Index: 31522
+// Method Definition Index: 31614
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039* STFT_DeserializeLayer_mF8019A4118A92092581A96D40AFE6ADC53B35BD0 (Chain_tA7420781D03CE0268AA17EB04D33ED70711681D9 ___0_chain, ExecutionPlan_tDB179066AB651AA7AE8CF463F21CDFA7E06B6A36 ___1_executionPlan, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19778,7 +19778,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C0
 		return L_11;
 	}
 }
-// Method Definition Index: 31523
+// Method Definition Index: 31615
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void STFT__cctor_m43511F25A56B652559151ACB3006F65DAC96E865 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19899,7 +19899,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void STFT__cctor_m43511F25A56B652559151ACB300
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31524
+// Method Definition Index: 31616
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* AsStrided_InferPartial_m8FB3A828E04DB5A2647AAE4F6FF8DD04FA3D6724 (PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___0_input, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___1_shape, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___2_strides, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___3_offset, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19912,7 +19912,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 	memset((&V_0), 0, sizeof(V_0));
 	int32_t V_1 = 0;
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:172>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:172>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_0 = ___1_shape;
 		NullCheck(L_0);
 		bool L_1;
@@ -19923,7 +19923,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:173>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:173>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_2 = ___0_input;
 		NullCheck(L_2);
 		int32_t L_3;
@@ -19937,7 +19937,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 
 IL_0019:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:174>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:174>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_6 = ___1_shape;
 		NullCheck(L_6);
 		int32_t L_7;
@@ -19945,14 +19945,14 @@ IL_0019:
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_8;
 		L_8 = DynamicTensorShape_DynamicOfRank_m9EF98445B87E7D07654AAC35757168D4B88B7F8B(L_7, NULL);
 		V_0 = L_8;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:175>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:175>
 		V_1 = 0;
 		goto IL_0041;
 	}
 
 IL_0029:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:176>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:176>
 		int32_t L_9 = V_1;
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_10 = ___1_shape;
 		int32_t L_11 = V_1;
@@ -19962,14 +19962,14 @@ IL_0029:
 		DynamicTensorDim_t004A3B1D3635966B50480F2366C3665C29269023 L_13;
 		L_13 = DynamicTensorDim_op_Explicit_m6AF75E2DD1A42C561906A1F6B10DF24A4A093F8A(L_12, NULL);
 		DynamicTensorShape_set_Item_mF33039B5CFB8387C708D159805116AFD2B70B709((&V_0), L_9, L_13, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:175>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:175>
 		int32_t L_14 = V_1;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_14, 1));
 	}
 
 IL_0041:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:175>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:175>
 		int32_t L_15 = V_1;
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_16 = ___1_shape;
 		NullCheck(L_16);
@@ -19981,7 +19981,7 @@ IL_0041:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:177>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:177>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_18 = ___0_input;
 		NullCheck(L_18);
 		int32_t L_19;
@@ -19992,7 +19992,7 @@ IL_0041:
 		return L_21;
 	}
 }
-// Method Definition Index: 31525
+// Method Definition Index: 31617
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsStrided_Execute_mCD10D2AE414AAB78DE7271CA6C52E3D028E5883D (AsStrided_t1E099661DC5E597ACD1810B960F1E7EB30B99417* __this, ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20014,7 +20014,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsStrided_Execute_mCD10D2AE414AAB78DE727
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_6;
 	memset((&V_6), 0, sizeof(V_6));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:182>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:182>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_0 = ___0_ctx;
 		RuntimeObject* L_1 = L_0.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -20025,7 +20025,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsStrided_Execute_mCD10D2AE414AAB78DE727
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_5;
 		L_5 = InterfaceFuncInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t >::Invoke(2, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_1, L_4);
 		V_0 = L_5;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:183>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:183>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_6 = ___0_ctx;
 		RuntimeObject* L_7 = L_6.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_8 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -20038,7 +20038,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsStrided_Execute_mCD10D2AE414AAB78DE727
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_12;
 		L_12 = InterfaceFuncInvoker2< ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282, int32_t, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(7, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_7, L_10, L_11);
 		V_1 = L_12;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:184>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:184>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_13 = ___0_ctx;
 		RuntimeObject* L_14 = L_13.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_15 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -20051,7 +20051,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsStrided_Execute_mCD10D2AE414AAB78DE727
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_19;
 		L_19 = InterfaceFuncInvoker2< ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282, int32_t, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 >::Invoke(7, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_14, L_17, L_18);
 		V_2 = L_19;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:185>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:185>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_20 = ___0_ctx;
 		RuntimeObject* L_21 = L_20.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_22 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -20062,7 +20062,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsStrided_Execute_mCD10D2AE414AAB78DE727
 		int32_t L_25;
 		L_25 = InterfaceFuncInvoker2< int32_t, int32_t, int32_t >::Invoke(5, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_21, L_24, 0);
 		V_3 = L_25;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:186>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:186>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_26 = ___0_ctx;
 		RuntimeObject* L_27 = L_26.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_28 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -20081,12 +20081,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsStrided_Execute_mCD10D2AE414AAB78DE727
 		RuntimeObject* L_36 = L_35.___backend;
 		NullCheck(L_36);
 		int32_t L_37;
-		L_37 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_36);
+		L_37 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_36);
 		NullCheck(L_27);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_38;
 		L_38 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_27, L_30, L_32, L_34, L_37);
 		V_4 = L_38;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:187>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:187>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_39 = V_4;
 		NullCheck(L_39);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_40;
@@ -20100,13 +20100,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsStrided_Execute_mCD10D2AE414AAB78DE727
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:188>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:188>
 		return;
 	}
 
 IL_00a4:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:189>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:189>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_42 = ___0_ctx;
 		RuntimeObject* L_43 = L_42.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_44 = V_0;
@@ -20114,12 +20114,12 @@ IL_00a4:
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_46 = V_2;
 		int32_t L_47 = V_3;
 		NullCheck(L_43);
-		InterfaceActionInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282, int32_t >::Invoke(168, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_43, L_44, L_45, L_46, L_47);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:190>
+		InterfaceActionInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282, int32_t >::Invoke(170, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_43, L_44, L_45, L_46, L_47);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:190>
 		return;
 	}
 }
-// Method Definition Index: 31526
+// Method Definition Index: 31618
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsStrided__ctor_m602ABB30DAF33CEC5CC9AA5692B237C421906736 (AsStrided_t1E099661DC5E597ACD1810B960F1E7EB30B99417* __this, const RuntimeMethod* method) 
 {
 	{
@@ -20127,7 +20127,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsStrided__ctor_m602ABB30DAF33CEC5CC9AA5
 		return;
 	}
 }
-// Method Definition Index: 31527
+// Method Definition Index: 31619
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsStrided_InferPartial_m8B1BB2B416EF23BD2D029080AFEA136E8E5A02BF (AsStrided_t1E099661DC5E597ACD1810B960F1E7EB30B99417* __this, PartialInferenceContext_t87A97CDA80604F25B18FC9A140939F6DFB2F92AE* ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20194,7 +20194,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsStrided_InferPartial_m8B1BB2B416EF23BD
 		return;
 	}
 }
-// Method Definition Index: 31528
+// Method Definition Index: 31620
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* AsStrided_GetInputNames_m20EB43041FE95FB60365FDC8FC6C72A39FF547C3 (AsStrided_t1E099661DC5E597ACD1810B960F1E7EB30B99417* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20209,7 +20209,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31529
+// Method Definition Index: 31621
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AsStrided_t1E099661DC5E597ACD1810B960F1E7EB30B99417* AsStrided_SetInputs_mB8B76F85AA1D594C5FF37BE4E0D8057D399ED841 (AsStrided_t1E099661DC5E597ACD1810B960F1E7EB30B99417* __this, int32_t ___0_input, int32_t ___1_shape, int32_t ___2_strides, int32_t ___3_offset, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20241,7 +20241,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AsStrided_t1E099661DC5E597ACD1810B960F1E7EB30
 		return __this;
 	}
 }
-// Method Definition Index: 31530
+// Method Definition Index: 31622
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AsStrided_IsInputCPURead_m61EF9AAB1C5999EE205F477BB78054332A6DD561 (AsStrided_t1E099661DC5E597ACD1810B960F1E7EB30B99417* __this, int32_t ___0_i, const RuntimeMethod* method) 
 {
 	{
@@ -20268,7 +20268,7 @@ IL_000d:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 31531
+// Method Definition Index: 31623
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* AsStrided_GetOutputNames_m1621DA3F0A9CA469D31A9A68CA748E7735971FAA (AsStrided_t1E099661DC5E597ACD1810B960F1E7EB30B99417* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20283,7 +20283,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31532
+// Method Definition Index: 31624
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AsStrided_t1E099661DC5E597ACD1810B960F1E7EB30B99417* AsStrided_SetOutputs_m541BA8ED6037454EAFFE97E06ABD26C1E7415288 (AsStrided_t1E099661DC5E597ACD1810B960F1E7EB30B99417* __this, int32_t ___0_output, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20303,7 +20303,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AsStrided_t1E099661DC5E597ACD1810B960F1E7EB30
 		return __this;
 	}
 }
-// Method Definition Index: 31533
+// Method Definition Index: 31625
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AsStrided_get_opName_m958B45FB1FD528E4385A826F3BE2F0549FFA27B4 (AsStrided_t1E099661DC5E597ACD1810B960F1E7EB30B99417* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20316,7 +20316,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AsStrided_get_opName_m958B45FB1FD52
 		return _stringLiteral4F32832EA08930A4598802C2D59617CBC882651A;
 	}
 }
-// Method Definition Index: 31534
+// Method Definition Index: 31626
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AsStrided_get_category_mB61096487646541E86EDE0C933287A03FF97A919 (AsStrided_t1E099661DC5E597ACD1810B960F1E7EB30B99417* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20329,7 +20329,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AsStrided_get_category_mB6109648764
 		return _stringLiteralED90F7468E873AF5FB9AEB9453EE628D501F12DE;
 	}
 }
-// Method Definition Index: 31535
+// Method Definition Index: 31627
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD AsStrided_get_profilerMarker_m78B69F83029FCCDD388BD469B4A2EDFABACBA211 (AsStrided_t1E099661DC5E597ACD1810B960F1E7EB30B99417* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20344,7 +20344,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C
 		return L_0;
 	}
 }
-// Method Definition Index: 31536
+// Method Definition Index: 31628
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AsStrided_ToString_mD2391355A6185319977212D2483399F4DF29A2E9 (AsStrided_t1E099661DC5E597ACD1810B960F1E7EB30B99417* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20391,14 +20391,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AsStrided_ToString_mD2391355A618531
 		return L_12;
 	}
 }
-// Method Definition Index: 31537
+// Method Definition Index: 31629
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsStrided_SerializeFields_m2E24BE741AF6819D87B2ACD5ABD387B5E1BA890B (AsStrided_t1E099661DC5E597ACD1810B960F1E7EB30B99417* __this, FlatBufferBuilder_t72116669EC849BCB6543BD426C0F6A9E825BB2FB* ___0_builder, List_1_tAFC4DAF15C03810FE08B8E9742E14A65E4EF9D70* ___1_values, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 31538
+// Method Definition Index: 31630
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039* AsStrided_DeserializeLayer_mA4BE5AAF66E33B9C38BC828230581DD073308E8E (Chain_tA7420781D03CE0268AA17EB04D33ED70711681D9 ___0_chain, ExecutionPlan_tDB179066AB651AA7AE8CF463F21CDFA7E06B6A36 ___1_executionPlan, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20438,7 +20438,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C0
 		return L_6;
 	}
 }
-// Method Definition Index: 31539
+// Method Definition Index: 31631
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsStrided__cctor_m2E90A5C1FAC32E1AA725610DE7B131EFBD139220 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20491,7 +20491,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsStrided__cctor_m2E90A5C1FAC32E1AA72561
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31540
+// Method Definition Index: 31632
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* Cast_InferPartial_m89A2379E2E041AB379EF9E12C4B5551A806D9DCC (PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___0_input, int32_t ___1_toType, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20502,7 +20502,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:203>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:203>
 		int32_t L_0 = ___1_toType;
 		if (L_0)
 		{
@@ -20510,7 +20510,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:204>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:204>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_1 = ___0_input;
 		NullCheck(L_1);
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_2;
@@ -20520,7 +20520,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 
 IL_000a:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:205>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:205>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_3 = ___0_input;
 		NullCheck(L_3);
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_4;
@@ -20528,7 +20528,7 @@ IL_000a:
 		return L_4;
 	}
 }
-// Method Definition Index: 31541
+// Method Definition Index: 31633
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Cast_Execute_m588D749DBFA60F3C7A861D7C24B6C98B0665EAB0 (Cast_t053286EAB0AD22A3E734B0B2FDDEBB5806610D35* __this, ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20546,7 +20546,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Cast_Execute_m588D749DBFA60F3C7A861D7C24
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_2;
 	memset((&V_2), 0, sizeof(V_2));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:210>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:210>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_0 = ___0_ctx;
 		RuntimeObject* L_1 = L_0.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -20557,7 +20557,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Cast_Execute_m588D749DBFA60F3C7A861D7C24
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_5;
 		L_5 = InterfaceFuncInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t >::Invoke(2, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_1, L_4);
 		V_0 = L_5;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:211>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:211>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_6 = ___0_ctx;
 		RuntimeObject* L_7 = L_6.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_8 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -20573,12 +20573,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Cast_Execute_m588D749DBFA60F3C7A861D7C24
 		RuntimeObject* L_15 = L_14.___backend;
 		NullCheck(L_15);
 		int32_t L_16;
-		L_16 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_15);
+		L_16 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_15);
 		NullCheck(L_7);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_17;
 		L_17 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_7, L_10, L_12, L_13, L_16);
 		V_1 = L_17;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:212>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:212>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_18 = V_1;
 		NullCheck(L_18);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_19;
@@ -20592,13 +20592,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Cast_Execute_m588D749DBFA60F3C7A861D7C24
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:213>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:213>
 		return;
 	}
 
 IL_0050:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:215>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:215>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_21 = V_0;
 		NullCheck(L_21);
 		int32_t L_22;
@@ -20613,19 +20613,19 @@ IL_0050:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:216>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:216>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_25 = ___0_ctx;
 		RuntimeObject* L_26 = L_25.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_27 = V_0;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_28 = V_1;
 		NullCheck(L_26);
-		InterfaceActionInvoker2< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(183, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_26, L_27, L_28);
+		InterfaceActionInvoker2< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(185, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_26, L_27, L_28);
 		return;
 	}
 
 IL_006c:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:217>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:217>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_29 = V_0;
 		NullCheck(L_29);
 		int32_t L_30;
@@ -20646,19 +20646,19 @@ IL_006c:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:218>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:218>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_33 = ___0_ctx;
 		RuntimeObject* L_34 = L_33.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_35 = V_0;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_36 = V_1;
 		NullCheck(L_34);
-		InterfaceActionInvoker2< Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* >::Invoke(185, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_34, ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_35, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_36, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)));
+		InterfaceActionInvoker2< Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* >::Invoke(187, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_34, ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_35, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_36, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)));
 		return;
 	}
 
 IL_0095:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:219>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:219>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_37 = V_0;
 		NullCheck(L_37);
 		int32_t L_38;
@@ -20679,19 +20679,19 @@ IL_0095:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:220>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:220>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_41 = ___0_ctx;
 		RuntimeObject* L_42 = L_41.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_43 = V_0;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_44 = V_1;
 		NullCheck(L_42);
-		InterfaceActionInvoker2< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* >::Invoke(186, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_42, ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_43, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_44, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)));
+		InterfaceActionInvoker2< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* >::Invoke(188, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_42, ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_43, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_44, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)));
 		return;
 	}
 
 IL_00be:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:221>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:221>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_45 = V_0;
 		NullCheck(L_45);
 		int32_t L_46;
@@ -20712,25 +20712,25 @@ IL_00be:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:222>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:222>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_49 = ___0_ctx;
 		RuntimeObject* L_50 = L_49.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_51 = V_0;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_52 = V_1;
 		NullCheck(L_50);
-		InterfaceActionInvoker2< Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* >::Invoke(187, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_50, ((Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C*)IsInstClass((RuntimeObject*)L_51, Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C_il2cpp_TypeInfo_var)), ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_52, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)));
+		InterfaceActionInvoker2< Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* >::Invoke(189, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_50, ((Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C*)IsInstClass((RuntimeObject*)L_51, Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C_il2cpp_TypeInfo_var)), ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_52, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)));
 		return;
 	}
 
 IL_00e7:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:224>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:224>
 		NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8* L_53 = (NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8_il2cpp_TypeInfo_var)));
 		NotImplementedException__ctor_mDAB47BC6BD0E342E8F2171E5CABE3E67EA049F1C(L_53, NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_53, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Cast_Execute_m588D749DBFA60F3C7A861D7C24B6C98B0665EAB0_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 31542
+// Method Definition Index: 31634
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Cast__ctor_m061E204EC5251BC4AB865BD2E2253D0A39B2F699 (Cast_t053286EAB0AD22A3E734B0B2FDDEBB5806610D35* __this, int32_t ___0_toType, const RuntimeMethod* method) 
 {
 	{
@@ -20740,7 +20740,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Cast__ctor_m061E204EC5251BC4AB865BD2E225
 		return;
 	}
 }
-// Method Definition Index: 31543
+// Method Definition Index: 31635
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Cast_InferPartial_m2A46F1E76D64AD44F9AEE807F2300943EBFCF771 (Cast_t053286EAB0AD22A3E734B0B2FDDEBB5806610D35* __this, PartialInferenceContext_t87A97CDA80604F25B18FC9A140939F6DFB2F92AE* ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20775,7 +20775,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Cast_InferPartial_m2A46F1E76D64AD44F9AEE
 		return;
 	}
 }
-// Method Definition Index: 31544
+// Method Definition Index: 31636
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* Cast_GetInputNames_mEDD2FDFDCF05A12CA37208452E826AEC45278F89 (Cast_t053286EAB0AD22A3E734B0B2FDDEBB5806610D35* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20790,7 +20790,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31545
+// Method Definition Index: 31637
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Cast_t053286EAB0AD22A3E734B0B2FDDEBB5806610D35* Cast_SetInputs_m32B27AB504E96C7B635038635FAF748E40368AE3 (Cast_t053286EAB0AD22A3E734B0B2FDDEBB5806610D35* __this, int32_t ___0_input, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20810,7 +20810,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Cast_t053286EAB0AD22A3E734B0B2FDDEBB5806610D3
 		return __this;
 	}
 }
-// Method Definition Index: 31546
+// Method Definition Index: 31638
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* Cast_GetOutputNames_m2A1C3D906BC0B32DA450DC0679D0BA24E4CA9A61 (Cast_t053286EAB0AD22A3E734B0B2FDDEBB5806610D35* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20825,7 +20825,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31547
+// Method Definition Index: 31639
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Cast_t053286EAB0AD22A3E734B0B2FDDEBB5806610D35* Cast_SetOutputs_m9050F1C48856E0E873CDA79170B8F2FA4772B3A7 (Cast_t053286EAB0AD22A3E734B0B2FDDEBB5806610D35* __this, int32_t ___0_output, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20845,7 +20845,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Cast_t053286EAB0AD22A3E734B0B2FDDEBB5806610D3
 		return __this;
 	}
 }
-// Method Definition Index: 31548
+// Method Definition Index: 31640
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Cast_get_opName_mB66464916DE398D900076957D109AAF681DE7455 (Cast_t053286EAB0AD22A3E734B0B2FDDEBB5806610D35* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20858,7 +20858,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Cast_get_opName_mB66464916DE398D900
 		return _stringLiteral2E1EB6DFBBD00E8148E038016D4CF889AED0E1E2;
 	}
 }
-// Method Definition Index: 31549
+// Method Definition Index: 31641
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Cast_get_category_m0B0BB37E071A9C2F5F8B87D759568960E5FC74A8 (Cast_t053286EAB0AD22A3E734B0B2FDDEBB5806610D35* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20871,7 +20871,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Cast_get_category_m0B0BB37E071A9C2F
 		return _stringLiteralED90F7468E873AF5FB9AEB9453EE628D501F12DE;
 	}
 }
-// Method Definition Index: 31550
+// Method Definition Index: 31642
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD Cast_get_profilerMarker_mC6D645B917F5C7AE3FEB27AB2C46B1A671582730 (Cast_t053286EAB0AD22A3E734B0B2FDDEBB5806610D35* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20886,7 +20886,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C
 		return L_0;
 	}
 }
-// Method Definition Index: 31551
+// Method Definition Index: 31643
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Cast_ToString_mA81B76A1AF4C5526FAECD90DF233094C0E693BA9 (Cast_t053286EAB0AD22A3E734B0B2FDDEBB5806610D35* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20933,7 +20933,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Cast_ToString_mA81B76A1AF4C5526FAEC
 		return L_13;
 	}
 }
-// Method Definition Index: 31552
+// Method Definition Index: 31644
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Cast_SerializeFields_mD8BC72E172FA96A3ABF6B1C071C788B161FF3C9B (Cast_t053286EAB0AD22A3E734B0B2FDDEBB5806610D35* __this, FlatBufferBuilder_t72116669EC849BCB6543BD426C0F6A9E825BB2FB* ___0_builder, List_1_tAFC4DAF15C03810FE08B8E9742E14A65E4EF9D70* ___1_values, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20957,7 +20957,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Cast_SerializeFields_mD8BC72E172FA96A3AB
 		return;
 	}
 }
-// Method Definition Index: 31553
+// Method Definition Index: 31645
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039* Cast_DeserializeLayer_m67A28855722066EC396D9136074492AB01E09E03 (Chain_tA7420781D03CE0268AA17EB04D33ED70711681D9 ___0_chain, ExecutionPlan_tDB179066AB651AA7AE8CF463F21CDFA7E06B6A36 ___1_executionPlan, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21020,7 +21020,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C0
 		return L_11;
 	}
 }
-// Method Definition Index: 31554
+// Method Definition Index: 31646
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Cast__cctor_mB4C50A28942F42403ED7C7D4ED235E0DECD95515 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21061,11 +21061,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Cast__cctor_mB4C50A28942F42403ED7C7D4ED2
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31555
+// Method Definition Index: 31647
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* CastLike_InferPartial_mF9DF40CC9C745D368E711476B5210F6C058C5156 (PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___0_input, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* ___1_targetType, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:237>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:237>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_0 = ___1_targetType;
 		NullCheck(L_0);
 		int32_t L_1;
@@ -21079,7 +21079,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		return L_4;
 	}
 }
-// Method Definition Index: 31556
+// Method Definition Index: 31648
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CastLike_Execute_mE20E53A9893007CA5A92207EB1E9530A35115DA0 (CastLike_tE7099DB6B70B72A343A29C674480DDBA83E555F1* __this, ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21098,7 +21098,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CastLike_Execute_mE20E53A9893007CA5A9220
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_3;
 	memset((&V_3), 0, sizeof(V_3));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:242>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:242>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_0 = ___0_ctx;
 		RuntimeObject* L_1 = L_0.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -21109,7 +21109,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CastLike_Execute_mE20E53A9893007CA5A9220
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_5;
 		L_5 = InterfaceFuncInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t >::Invoke(2, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_1, L_4);
 		V_0 = L_5;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:243>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:243>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_6 = ___0_ctx;
 		RuntimeObject* L_7 = L_6.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_8 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -21120,7 +21120,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CastLike_Execute_mE20E53A9893007CA5A9220
 		int32_t L_11;
 		L_11 = InterfaceFuncInvoker1< int32_t, int32_t >::Invoke(4, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_7, L_10);
 		V_1 = L_11;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:244>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:244>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_12 = ___0_ctx;
 		RuntimeObject* L_13 = L_12.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_14 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -21136,12 +21136,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CastLike_Execute_mE20E53A9893007CA5A9220
 		RuntimeObject* L_21 = L_20.___backend;
 		NullCheck(L_21);
 		int32_t L_22;
-		L_22 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_21);
+		L_22 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_21);
 		NullCheck(L_13);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_23;
 		L_23 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_13, L_16, L_18, L_19, L_22);
 		V_2 = L_23;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:245>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:245>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_24 = V_2;
 		NullCheck(L_24);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_25;
@@ -21155,13 +21155,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CastLike_Execute_mE20E53A9893007CA5A9220
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:246>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:246>
 		return;
 	}
 
 IL_005f:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:248>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:248>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_27 = V_0;
 		NullCheck(L_27);
 		int32_t L_28;
@@ -21173,19 +21173,19 @@ IL_005f:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:249>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:249>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_30 = ___0_ctx;
 		RuntimeObject* L_31 = L_30.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_32 = V_0;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_33 = V_2;
 		NullCheck(L_31);
-		InterfaceActionInvoker2< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(183, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_31, L_32, L_33);
+		InterfaceActionInvoker2< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(185, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_31, L_32, L_33);
 		return;
 	}
 
 IL_0076:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:250>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:250>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_34 = V_0;
 		NullCheck(L_34);
 		int32_t L_35;
@@ -21203,19 +21203,19 @@ IL_0076:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:251>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:251>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_37 = ___0_ctx;
 		RuntimeObject* L_38 = L_37.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_39 = V_0;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_40 = V_2;
 		NullCheck(L_38);
-		InterfaceActionInvoker2< Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* >::Invoke(185, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_38, ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_39, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_40, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)));
+		InterfaceActionInvoker2< Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* >::Invoke(187, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_38, ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_39, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)), ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_40, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)));
 		return;
 	}
 
 IL_009a:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:252>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:252>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_41 = V_0;
 		NullCheck(L_41);
 		int32_t L_42;
@@ -21233,19 +21233,19 @@ IL_009a:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:253>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:253>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_44 = ___0_ctx;
 		RuntimeObject* L_45 = L_44.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_46 = V_0;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_47 = V_2;
 		NullCheck(L_45);
-		InterfaceActionInvoker2< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* >::Invoke(186, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_45, ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_46, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_47, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)));
+		InterfaceActionInvoker2< Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* >::Invoke(188, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_45, ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_46, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)), ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_47, Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379_il2cpp_TypeInfo_var)));
 		return;
 	}
 
 IL_00be:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:254>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:254>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_48 = V_0;
 		NullCheck(L_48);
 		int32_t L_49;
@@ -21263,25 +21263,25 @@ IL_00be:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:255>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:255>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_51 = ___0_ctx;
 		RuntimeObject* L_52 = L_51.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_53 = V_0;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_54 = V_2;
 		NullCheck(L_52);
-		InterfaceActionInvoker2< Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* >::Invoke(187, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_52, ((Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C*)IsInstClass((RuntimeObject*)L_53, Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C_il2cpp_TypeInfo_var)), ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_54, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)));
+		InterfaceActionInvoker2< Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C*, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* >::Invoke(189, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_52, ((Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C*)IsInstClass((RuntimeObject*)L_53, Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C_il2cpp_TypeInfo_var)), ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_54, Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4_il2cpp_TypeInfo_var)));
 		return;
 	}
 
 IL_00e2:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:257>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:257>
 		NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8* L_55 = (NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8_il2cpp_TypeInfo_var)));
 		NotImplementedException__ctor_mDAB47BC6BD0E342E8F2171E5CABE3E67EA049F1C(L_55, NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_55, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&CastLike_Execute_mE20E53A9893007CA5A92207EB1E9530A35115DA0_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 31557
+// Method Definition Index: 31649
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CastLike__ctor_m6D346E0EA3E837EB58B641AFF2748A06D5E742F6 (CastLike_tE7099DB6B70B72A343A29C674480DDBA83E555F1* __this, const RuntimeMethod* method) 
 {
 	{
@@ -21289,7 +21289,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CastLike__ctor_m6D346E0EA3E837EB58B641AF
 		return;
 	}
 }
-// Method Definition Index: 31558
+// Method Definition Index: 31650
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CastLike_InferPartial_mC428B87F3477DF511C020DD131C82C5710C08BB9 (CastLike_tE7099DB6B70B72A343A29C674480DDBA83E555F1* __this, PartialInferenceContext_t87A97CDA80604F25B18FC9A140939F6DFB2F92AE* ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21334,7 +21334,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CastLike_InferPartial_mC428B87F3477DF511
 		return;
 	}
 }
-// Method Definition Index: 31559
+// Method Definition Index: 31651
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* CastLike_GetInputNames_m35050FBA2C1E2E65A51912C3F273EE5900B8E0EF (CastLike_tE7099DB6B70B72A343A29C674480DDBA83E555F1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21349,7 +21349,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31560
+// Method Definition Index: 31652
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CastLike_tE7099DB6B70B72A343A29C674480DDBA83E555F1* CastLike_SetInputs_m4D7C5025801C900CBF6C2EFF6E09FA416538B1F9 (CastLike_tE7099DB6B70B72A343A29C674480DDBA83E555F1* __this, int32_t ___0_input, int32_t ___1_targetType, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21373,7 +21373,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CastLike_tE7099DB6B70B72A343A29C674480DDBA83E
 		return __this;
 	}
 }
-// Method Definition Index: 31561
+// Method Definition Index: 31653
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CastLike_IsInputNoDataDependency_m00DBA9786121D422CD15950798593571D431A77E (CastLike_tE7099DB6B70B72A343A29C674480DDBA83E555F1* __this, int32_t ___0_i, const RuntimeMethod* method) 
 {
 	{
@@ -21381,7 +21381,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CastLike_IsInputNoDataDependency_m00DBA9
 		return (bool)((((int32_t)L_0) == ((int32_t)1))? 1 : 0);
 	}
 }
-// Method Definition Index: 31562
+// Method Definition Index: 31654
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* CastLike_GetOutputNames_mBB85E50068CB3DF501BD4B0887782CB24D6E5FBB (CastLike_tE7099DB6B70B72A343A29C674480DDBA83E555F1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21396,7 +21396,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31563
+// Method Definition Index: 31655
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CastLike_tE7099DB6B70B72A343A29C674480DDBA83E555F1* CastLike_SetOutputs_mA0AEB1A51791221CE7B3765B4C19A0492D76D94F (CastLike_tE7099DB6B70B72A343A29C674480DDBA83E555F1* __this, int32_t ___0_output, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21416,7 +21416,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CastLike_tE7099DB6B70B72A343A29C674480DDBA83E
 		return __this;
 	}
 }
-// Method Definition Index: 31564
+// Method Definition Index: 31656
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CastLike_get_opName_mE90F33CE0E30226D53934A3E06A92209666094AD (CastLike_tE7099DB6B70B72A343A29C674480DDBA83E555F1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21429,7 +21429,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CastLike_get_opName_mE90F33CE0E3022
 		return _stringLiteral711DDB8FC38776251CE9D252966A4F83E55B12B8;
 	}
 }
-// Method Definition Index: 31565
+// Method Definition Index: 31657
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CastLike_get_category_m9CEA3598450558236DCF24F3FDD1B51874DA293B (CastLike_tE7099DB6B70B72A343A29C674480DDBA83E555F1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21442,7 +21442,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CastLike_get_category_m9CEA35984505
 		return _stringLiteralED90F7468E873AF5FB9AEB9453EE628D501F12DE;
 	}
 }
-// Method Definition Index: 31566
+// Method Definition Index: 31658
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD CastLike_get_profilerMarker_mA65B3C4644CD627389D44A2F0C7ACC162A55E2DE (CastLike_tE7099DB6B70B72A343A29C674480DDBA83E555F1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21457,7 +21457,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C
 		return L_0;
 	}
 }
-// Method Definition Index: 31567
+// Method Definition Index: 31659
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CastLike_ToString_mC80DA3E5B795EC14D5A0B1B85EFE15C71378C9EB (CastLike_tE7099DB6B70B72A343A29C674480DDBA83E555F1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21504,14 +21504,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CastLike_ToString_mC80DA3E5B795EC14
 		return L_12;
 	}
 }
-// Method Definition Index: 31568
+// Method Definition Index: 31660
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CastLike_SerializeFields_m1081241BE60BA566E4321BBF818757F4C76B937A (CastLike_tE7099DB6B70B72A343A29C674480DDBA83E555F1* __this, FlatBufferBuilder_t72116669EC849BCB6543BD426C0F6A9E825BB2FB* ___0_builder, List_1_tAFC4DAF15C03810FE08B8E9742E14A65E4EF9D70* ___1_values, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 31569
+// Method Definition Index: 31661
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039* CastLike_DeserializeLayer_m0EB9D19C8F10170CD43BC035D67ADBCF63FC54D9 (Chain_tA7420781D03CE0268AA17EB04D33ED70711681D9 ___0_chain, ExecutionPlan_tDB179066AB651AA7AE8CF463F21CDFA7E06B6A36 ___1_executionPlan, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21551,7 +21551,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C0
 		return L_6;
 	}
 }
-// Method Definition Index: 31570
+// Method Definition Index: 31662
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CastLike__cctor_m59E790B6934EA7E7C4952F5DB792F1B0900CCE95 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21596,7 +21596,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CastLike__cctor_m59E790B6934EA7E7C4952F5
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31571
+// Method Definition Index: 31663
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* Concat_InferPartial_m4ACACC81BC34CC04759EB50DF745EEF23815926E (PartialTensorU5BU5D_tC9020CC8ECFB9556EDF76D87B07CEE5BA06580FA* ___0_inputTensors, int32_t ___1_axis, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -21620,7 +21620,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 	PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* V_15 = NULL;
 	int32_t V_16 = 0;
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:274>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:274>
 		PartialTensorU5BU5D_tC9020CC8ECFB9556EDF76D87B07CEE5BA06580FA* L_0 = ___0_inputTensors;
 		NullCheck(L_0);
 		int32_t L_1 = 0;
@@ -21629,11 +21629,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 		int32_t L_3;
 		L_3 = PartialTensor_get_dataType_mAEFDFD8C9EF2835DACA5320EA27A96E9EB205895_inline(L_2, NULL);
 		V_0 = L_3;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:276>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:276>
 		DynamicTensorDim_t004A3B1D3635966B50480F2366C3665C29269023 L_4;
 		L_4 = DynamicTensorDim_get_Unknown_m038F63A4BD24C5AD356329087D7D6B7ACD3335C7(NULL);
 		V_1 = L_4;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:277>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:277>
 		PartialTensorU5BU5D_tC9020CC8ECFB9556EDF76D87B07CEE5BA06580FA* L_5 = ___0_inputTensors;
 		V_6 = L_5;
 		V_7 = 0;
@@ -21642,14 +21642,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PartialTensor_t6E971891A0465DA5A53927F6347414
 
 IL_0017:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:277>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:277>
 		PartialTensorU5BU5D_tC9020CC8ECFB9556EDF76D87B07CEE5BA06580FA* L_6 = V_6;
 		int32_t L_7 = V_7;
 		NullCheck(L_6);
 		int32_t L_8 = L_7;
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_9 = (L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_8));
 		V_8 = L_9;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:279>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:279>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_10 = V_8;
 		NullCheck(L_10);
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_11;
@@ -21663,7 +21663,7 @@ IL_0017:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:280>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:280>
 		DynamicTensorDim_t004A3B1D3635966B50480F2366C3665C29269023 L_13 = V_1;
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_14 = V_8;
 		NullCheck(L_14);
@@ -21687,7 +21687,7 @@ IL_004c:
 
 IL_0052:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:277>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:277>
 		int32_t L_20 = V_7;
 		PartialTensorU5BU5D_tC9020CC8ECFB9556EDF76D87B07CEE5BA06580FA* L_21 = V_6;
 		NullCheck(L_21);
@@ -21697,7 +21697,7 @@ IL_0052:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:283>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:283>
 		bool L_22;
 		L_22 = DynamicTensorDim_get_isUnknown_mCA231982134E9614FF61489DA87C65C01D895D1B((&V_1), NULL);
 		if (!L_22)
@@ -21706,7 +21706,7 @@ IL_0052:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:284>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:284>
 		int32_t L_23 = V_0;
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_24;
 		L_24 = DynamicTensorShape_get_DynamicRank_m8F1FD8E6DEF8096A8C7AF1798A039EB0DFF1A658(NULL);
@@ -21717,7 +21717,7 @@ IL_0052:
 
 IL_006f:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:286>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:286>
 		PartialTensorU5BU5D_tC9020CC8ECFB9556EDF76D87B07CEE5BA06580FA* L_26 = ___0_inputTensors;
 		V_6 = L_26;
 		V_7 = 0;
@@ -21726,13 +21726,13 @@ IL_006f:
 
 IL_0077:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:286>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:286>
 		PartialTensorU5BU5D_tC9020CC8ECFB9556EDF76D87B07CEE5BA06580FA* L_27 = V_6;
 		int32_t L_28 = V_7;
 		NullCheck(L_27);
 		int32_t L_29 = L_28;
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_30 = (L_27)->GetAt(static_cast<il2cpp_array_size_t>(L_29));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:287>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:287>
 		NullCheck(L_30);
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_31;
 		L_31 = PartialTensor_get_shape_m49066131BB4F93BFB14B8A2BF39D4809C188A758_inline(L_30, NULL);
@@ -21746,7 +21746,7 @@ IL_0077:
 
 IL_0097:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:286>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:286>
 		int32_t L_34 = V_7;
 		PartialTensorU5BU5D_tC9020CC8ECFB9556EDF76D87B07CEE5BA06580FA* L_35 = V_6;
 		NullCheck(L_35);
@@ -21756,25 +21756,25 @@ IL_0097:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:289>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:289>
 		int32_t L_36;
 		L_36 = DynamicTensorDim_get_value_mA936C2C62375821AE77E3EFDE2B699530DF2ECB0_inline((&V_1), NULL);
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_37;
 		L_37 = DynamicTensorShape_DynamicOfRank_m9EF98445B87E7D07654AAC35757168D4B88B7F8B(L_36, NULL);
 		V_2 = L_37;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:290>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:290>
 		int32_t L_38 = ___1_axis;
 		int32_t L_39;
 		L_39 = DynamicTensorShape_Axis_mD0CFDB3BF2364B8DAF70B07D15D17B4CD9A25A8A((&V_2), L_38, NULL);
 		V_3 = L_39;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:292>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:292>
 		V_10 = 0;
 		goto IL_017a;
 	}
 
 IL_00bd:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:294>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:294>
 		int32_t L_40 = V_10;
 		int32_t L_41 = V_3;
 		if ((!(((uint32_t)L_40) == ((uint32_t)L_41))))
@@ -21783,12 +21783,12 @@ IL_00bd:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:296>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:296>
 		int32_t L_42 = V_10;
 		DynamicTensorDim_t004A3B1D3635966B50480F2366C3665C29269023 L_43;
 		L_43 = DynamicTensorDim_get_Zero_m8B8FCFE745FDD4A1162541452B446EF6997743BB(NULL);
 		DynamicTensorShape_set_Item_mF33039B5CFB8387C708D159805116AFD2B70B709((&V_2), L_42, L_43, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:297>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:297>
 		PartialTensorU5BU5D_tC9020CC8ECFB9556EDF76D87B07CEE5BA06580FA* L_44 = ___0_inputTensors;
 		V_6 = L_44;
 		V_7 = 0;
@@ -21797,14 +21797,14 @@ IL_00bd:
 
 IL_00d8:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:297>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:297>
 		PartialTensorU5BU5D_tC9020CC8ECFB9556EDF76D87B07CEE5BA06580FA* L_45 = V_6;
 		int32_t L_46 = V_7;
 		NullCheck(L_45);
 		int32_t L_47 = L_46;
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_48 = (L_45)->GetAt(static_cast<il2cpp_array_size_t>(L_47));
 		V_11 = L_48;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:299>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:299>
 		V_12 = (&V_2);
 		int32_t L_49 = V_10;
 		V_13 = L_49;
@@ -21831,7 +21831,7 @@ IL_00d8:
 
 IL_0116:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:297>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:297>
 		int32_t L_61 = V_7;
 		PartialTensorU5BU5D_tC9020CC8ECFB9556EDF76D87B07CEE5BA06580FA* L_62 = V_6;
 		NullCheck(L_62);
@@ -21846,12 +21846,12 @@ IL_0116:
 
 IL_0120:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:304>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:304>
 		int32_t L_63 = V_10;
 		DynamicTensorDim_t004A3B1D3635966B50480F2366C3665C29269023 L_64;
 		L_64 = DynamicTensorDim_get_Unknown_m038F63A4BD24C5AD356329087D7D6B7ACD3335C7(NULL);
 		DynamicTensorShape_set_Item_mF33039B5CFB8387C708D159805116AFD2B70B709((&V_2), L_63, L_64, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:305>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:305>
 		PartialTensorU5BU5D_tC9020CC8ECFB9556EDF76D87B07CEE5BA06580FA* L_65 = ___0_inputTensors;
 		V_6 = L_65;
 		V_7 = 0;
@@ -21860,14 +21860,14 @@ IL_0120:
 
 IL_0136:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:305>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:305>
 		PartialTensorU5BU5D_tC9020CC8ECFB9556EDF76D87B07CEE5BA06580FA* L_66 = V_6;
 		int32_t L_67 = V_7;
 		NullCheck(L_66);
 		int32_t L_68 = L_67;
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_69 = (L_66)->GetAt(static_cast<il2cpp_array_size_t>(L_68));
 		V_14 = L_69;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:307>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:307>
 		int32_t L_70 = V_10;
 		int32_t L_71 = V_10;
 		DynamicTensorDim_t004A3B1D3635966B50480F2366C3665C29269023 L_72;
@@ -21889,7 +21889,7 @@ IL_0136:
 
 IL_016c:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:305>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:305>
 		int32_t L_79 = V_7;
 		PartialTensorU5BU5D_tC9020CC8ECFB9556EDF76D87B07CEE5BA06580FA* L_80 = V_6;
 		NullCheck(L_80);
@@ -21901,14 +21901,14 @@ IL_016c:
 
 IL_0174:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:292>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:292>
 		int32_t L_81 = V_10;
 		V_10 = ((int32_t)il2cpp_codegen_add(L_81, 1));
 	}
 
 IL_017a:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:292>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:292>
 		int32_t L_82 = V_10;
 		int32_t L_83;
 		L_83 = DynamicTensorShape_get_rank_m285A20972E42742DEAC01AB061F210568C2271EB_inline((&V_2), NULL);
@@ -21918,13 +21918,13 @@ IL_017a:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:312>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:312>
 		int32_t L_84 = V_0;
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_85 = V_2;
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_86;
 		L_86 = PartialTensor_Create_mD56C31D07B0CA17E00CDA1C167DBB6B4824D88F1(L_84, L_85, NULL);
 		V_4 = L_86;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:314>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:314>
 		int32_t L_87;
 		L_87 = DynamicTensorShape_get_rank_m285A20972E42742DEAC01AB061F210568C2271EB_inline((&V_2), NULL);
 		if ((!(((uint32_t)L_87) == ((uint32_t)1))))
@@ -21945,16 +21945,16 @@ IL_017a:
 
 IL_01a4:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:315>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:315>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_90 = V_4;
 		return L_90;
 	}
 
 IL_01a7:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:317>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:317>
 		V_5 = 0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:318>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:318>
 		PartialTensorU5BU5D_tC9020CC8ECFB9556EDF76D87B07CEE5BA06580FA* L_91 = ___0_inputTensors;
 		V_6 = L_91;
 		V_7 = 0;
@@ -21963,21 +21963,21 @@ IL_01a7:
 
 IL_01b2:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:318>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:318>
 		PartialTensorU5BU5D_tC9020CC8ECFB9556EDF76D87B07CEE5BA06580FA* L_92 = V_6;
 		int32_t L_93 = V_7;
 		NullCheck(L_92);
 		int32_t L_94 = L_93;
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_95 = (L_92)->GetAt(static_cast<il2cpp_array_size_t>(L_94));
 		V_15 = L_95;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:320>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:320>
 		V_16 = 0;
 		goto IL_01d6;
 	}
 
 IL_01be:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:322>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:322>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_96 = V_4;
 		int32_t L_97 = V_5;
 		int32_t L_98 = L_97;
@@ -21986,14 +21986,14 @@ IL_01be:
 		int32_t L_100 = V_16;
 		NullCheck(L_96);
 		VirtualActionInvoker3< int32_t, PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F*, int32_t >::Invoke(13, L_96, L_98, L_99, L_100);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:320>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:320>
 		int32_t L_101 = V_16;
 		V_16 = ((int32_t)il2cpp_codegen_add(L_101, 1));
 	}
 
 IL_01d6:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:320>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:320>
 		int32_t L_102 = V_16;
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_103 = V_15;
 		NullCheck(L_103);
@@ -22011,7 +22011,7 @@ IL_01d6:
 
 IL_01e7:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:318>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:318>
 		int32_t L_106 = V_7;
 		PartialTensorU5BU5D_tC9020CC8ECFB9556EDF76D87B07CEE5BA06580FA* L_107 = V_6;
 		NullCheck(L_107);
@@ -22021,12 +22021,12 @@ IL_01e7:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:326>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:326>
 		PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* L_108 = V_4;
 		return L_108;
 	}
 }
-// Method Definition Index: 31572
+// Method Definition Index: 31664
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Concat_Execute_m3ADBDC48D5DFD36E3213AE1276599ECF14FE7145 (Concat_tA560A68E200D1D94FD491AFE54419A13138C42D0* __this, ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22049,7 +22049,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Concat_Execute_m3ADBDC48D5DFD36E3213AE12
 	Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* V_7 = NULL;
 	int32_t V_8 = 0;
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:331>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:331>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_0 = ___0_ctx;
 		RuntimeObject* L_1 = L_0.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -22060,14 +22060,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Concat_Execute_m3ADBDC48D5DFD36E3213AE12
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_5;
 		L_5 = InterfaceFuncInvoker1< TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t >::Invoke(3, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_1, L_4);
 		V_0 = L_5;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:332>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:332>
 		V_3 = 1;
 		goto IL_0041;
 	}
 
 IL_0018:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:334>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:334>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_6 = ___0_ctx;
 		RuntimeObject* L_7 = L_6.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_8 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -22079,20 +22079,20 @@ IL_0018:
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_12;
 		L_12 = InterfaceFuncInvoker1< TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t >::Invoke(3, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_7, L_11);
 		V_4 = L_12;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:335>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:335>
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_13 = V_4;
 		int32_t L_14 = __this->___axis;
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_15;
 		L_15 = TensorShape_Concat_mF4682575CFA67CAE42A6D96FCFD0203EE33A1C76((&V_0), L_13, L_14, NULL);
 		V_0 = L_15;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:332>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:332>
 		int32_t L_16 = V_3;
 		V_3 = ((int32_t)il2cpp_codegen_add(L_16, 1));
 	}
 
 IL_0041:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:332>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:332>
 		int32_t L_17 = V_3;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_18 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
 		NullCheck(L_18);
@@ -22102,7 +22102,7 @@ IL_0041:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:337>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:337>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_19 = ___0_ctx;
 		RuntimeObject* L_20 = L_19.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_21 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___outputs;
@@ -22123,12 +22123,12 @@ IL_0041:
 		RuntimeObject* L_32 = L_31.___backend;
 		NullCheck(L_32);
 		int32_t L_33;
-		L_33 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_32);
+		L_33 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_32);
 		NullCheck(L_20);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_34;
 		L_34 = InterfaceFuncInvoker4< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34, int32_t, int32_t >::Invoke(9, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_20, L_23, L_24, L_30, L_33);
 		V_1 = L_34;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:338>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:338>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_35 = V_1;
 		NullCheck(L_35);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_36;
@@ -22142,44 +22142,44 @@ IL_0041:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:339>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:339>
 		return;
 	}
 
 IL_0091:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:341>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:341>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_38 = ___0_ctx;
 		RuntimeObject* L_39 = L_38.___backend;
 		NullCheck(L_39);
 		int32_t L_40;
-		L_40 = InterfaceFuncInvoker0< int32_t >::Invoke(196, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_39);
+		L_40 = InterfaceFuncInvoker0< int32_t >::Invoke(198, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_39);
 		if ((!(((uint32_t)L_40) == ((uint32_t)((int32_t)257)))))
 		{
 			goto IL_00af;
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:342>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:342>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_41 = ___0_ctx;
 		RuntimeObject* L_42 = L_41.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_43 = V_1;
 		NullCheck(L_42);
-		InterfaceActionInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(180, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_42, L_43);
+		InterfaceActionInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* >::Invoke(182, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_42, L_43);
 	}
 
 IL_00af:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:343>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:343>
 		V_2 = 0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:344>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:344>
 		V_6 = 0;
 		goto IL_0109;
 	}
 
 IL_00b6:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:346>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:346>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_44 = ___0_ctx;
 		RuntimeObject* L_45 = L_44.___storage;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_46 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
@@ -22191,7 +22191,7 @@ IL_00b6:
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_50;
 		L_50 = InterfaceFuncInvoker1< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t >::Invoke(2, IModelStorage_t04CA0BF5F4A3FBA4122D5D80F67A0F89142B6F8D_il2cpp_TypeInfo_var, L_45, L_49);
 		V_7 = L_50;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:347>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:347>
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_51 = V_7;
 		NullCheck(L_51);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_52;
@@ -22201,7 +22201,7 @@ IL_00b6:
 		int32_t L_54;
 		L_54 = TensorShape_get_Item_mD17EFD4FCDCD98DD577A13E3291DA1F4AF48E5C1((&V_5), L_53, NULL);
 		V_8 = L_54;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:348>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:348>
 		int32_t L_55 = V_8;
 		if (!L_55)
 		{
@@ -22209,7 +22209,7 @@ IL_00b6:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:350>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:350>
 		ExecutionContext_t7D06B172E7C8AAAC6D5D4D2A88D0DA20C3273A48 L_56 = ___0_ctx;
 		RuntimeObject* L_57 = L_56.___backend;
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_58 = V_7;
@@ -22217,8 +22217,8 @@ IL_00b6:
 		int32_t L_60 = __this->___axis;
 		int32_t L_61 = V_2;
 		NullCheck(L_57);
-		InterfaceActionInvoker5< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, int32_t, int32_t >::Invoke(167, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_57, L_58, L_59, L_60, L_61, 1);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:351>
+		InterfaceActionInvoker5< Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*, int32_t, int32_t, int32_t >::Invoke(169, IBackend_tAB2E57F0EE0AFB952DCD973CB3D480E4B859EB6C_il2cpp_TypeInfo_var, L_57, L_58, L_59, L_60, L_61, 1);
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:351>
 		int32_t L_62 = V_2;
 		int32_t L_63 = V_8;
 		V_2 = ((int32_t)il2cpp_codegen_add(L_62, L_63));
@@ -22226,14 +22226,14 @@ IL_00b6:
 
 IL_0103:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:344>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:344>
 		int32_t L_64 = V_6;
 		V_6 = ((int32_t)il2cpp_codegen_add(L_64, 1));
 	}
 
 IL_0109:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:344>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:344>
 		int32_t L_65 = V_6;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_66 = ((Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039*)__this)->___inputs;
 		NullCheck(L_66);
@@ -22243,11 +22243,11 @@ IL_0109:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Layers/Layer.Transformation.cs:353>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Layers/Layer.Transformation.cs:353>
 		return;
 	}
 }
-// Method Definition Index: 31573
+// Method Definition Index: 31665
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Concat__ctor_mAB5733C0797E85506897B0A3BA3C666BED76A769 (Concat_tA560A68E200D1D94FD491AFE54419A13138C42D0* __this, int32_t ___0_axis, const RuntimeMethod* method) 
 {
 	{
@@ -22257,7 +22257,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Concat__ctor_mAB5733C0797E85506897B0A3BA
 		return;
 	}
 }
-// Method Definition Index: 31574
+// Method Definition Index: 31666
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Concat_InferPartial_m37162D9FA1EE44E5571BAC3592B72F705B2FF283 (Concat_tA560A68E200D1D94FD491AFE54419A13138C42D0* __this, PartialInferenceContext_t87A97CDA80604F25B18FC9A140939F6DFB2F92AE* ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22327,7 +22327,7 @@ IL_0027:
 		return;
 	}
 }
-// Method Definition Index: 31575
+// Method Definition Index: 31667
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* Concat_GetInputNames_m424C72096C3062D8B67990E1E3756039AB312C70 (Concat_tA560A68E200D1D94FD491AFE54419A13138C42D0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22378,7 +22378,7 @@ IL_0029:
 		return L_11;
 	}
 }
-// Method Definition Index: 31576
+// Method Definition Index: 31668
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Concat_tA560A68E200D1D94FD491AFE54419A13138C42D0* Concat_SetInputs_mB96640F2F865DA49068F2AD008CF80D842B68EF6 (Concat_tA560A68E200D1D94FD491AFE54419A13138C42D0* __this, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___0_inputs, const RuntimeMethod* method) 
 {
 	{
@@ -22388,7 +22388,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Concat_tA560A68E200D1D94FD491AFE54419A13138C4
 		return __this;
 	}
 }
-// Method Definition Index: 31577
+// Method Definition Index: 31669
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* Concat_GetOutputNames_m27C446DC00C364D918A1A63BBD175FD6D4BAD443 (Concat_tA560A68E200D1D94FD491AFE54419A13138C42D0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22403,7 +22403,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 		return L_0;
 	}
 }
-// Method Definition Index: 31578
+// Method Definition Index: 31670
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Concat_tA560A68E200D1D94FD491AFE54419A13138C42D0* Concat_SetOutputs_m1A888104F8DEC42B1136B6856201D0713F3E989F (Concat_tA560A68E200D1D94FD491AFE54419A13138C42D0* __this, int32_t ___0_output, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22423,7 +22423,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Concat_tA560A68E200D1D94FD491AFE54419A13138C4
 		return __this;
 	}
 }
-// Method Definition Index: 31579
+// Method Definition Index: 31671
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Concat_get_opName_mBEFA12EA745332F457526D729123BA6379CB67F8 (Concat_tA560A68E200D1D94FD491AFE54419A13138C42D0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22436,7 +22436,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Concat_get_opName_mBEFA12EA745332F4
 		return _stringLiteralCF7B410476BB3114604456D6176B795508DAD9F5;
 	}
 }
-// Method Definition Index: 31580
+// Method Definition Index: 31672
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Concat_get_category_m916B87E9E95E9F7792E642B005F1DEB7A80E3AC6 (Concat_tA560A68E200D1D94FD491AFE54419A13138C42D0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22449,7 +22449,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Concat_get_category_m916B87E9E95E9F
 		return _stringLiteralED90F7468E873AF5FB9AEB9453EE628D501F12DE;
 	}
 }
-// Method Definition Index: 31581
+// Method Definition Index: 31673
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD Concat_get_profilerMarker_m101ACADB57A813B7F88B45C20BECEFE54CAA7EDC (Concat_tA560A68E200D1D94FD491AFE54419A13138C42D0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22464,7 +22464,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C
 		return L_0;
 	}
 }
-// Method Definition Index: 31582
+// Method Definition Index: 31674
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Concat_ToString_mFE2A108F8DD7EC91C78CCC14F44D8AB9534FEE39 (Concat_tA560A68E200D1D94FD491AFE54419A13138C42D0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22510,7 +22510,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Concat_ToString_mFE2A108F8DD7EC91C7
 		return L_13;
 	}
 }
-// Method Definition Index: 31583
+// Method Definition Index: 31675
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Concat_SerializeFields_m634C6ABD253E0675B4CED0C47BB839E5FE9EDB22 (Concat_tA560A68E200D1D94FD491AFE54419A13138C42D0* __this, FlatBufferBuilder_t72116669EC849BCB6543BD426C0F6A9E825BB2FB* ___0_builder, List_1_tAFC4DAF15C03810FE08B8E9742E14A65E4EF9D70* ___1_values, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22534,7 +22534,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Concat_SerializeFields_m634C6ABD253E0675
 		return;
 	}
 }
-// Method Definition Index: 31584
+// Method Definition Index: 31676
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C039* Concat_DeserializeLayer_m446E90AAE8BAF5EFEF2B5665ED72AE3BD8C3B3D9 (Chain_tA7420781D03CE0268AA17EB04D33ED70711681D9 ___0_chain, ExecutionPlan_tDB179066AB651AA7AE8CF463F21CDFA7E06B6A36 ___1_executionPlan, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22597,7 +22597,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layer_tF12B2F87C397A2BE4A2F04768753EA2B6867C0
 		return L_11;
 	}
 }
-// Method Definition Index: 31585
+// Method Definition Index: 31677
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Concat__cctor_mF73BDADA92879F6D2990CA9181A8E7880549D384 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22626,25 +22626,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Concat__cctor_mF73BDADA92879F6D2990CA918
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 28680
+// Method Definition Index: 28773
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E PartialTensor_get_shape_m49066131BB4F93BFB14B8A2BF39D4809C188A758_inline (PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/ShapeInference/PartialTensor.cs:22>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/ShapeInference/PartialTensor.cs:22>
 		DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E L_0 = __this->___m_Shape;
 		return L_0;
 	}
 }
-// Method Definition Index: 28840
+// Method Definition Index: 28933
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline (Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Tensor.cs:57>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Tensor.cs:57>
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0 = __this->___m_Shape;
 		return L_0;
 	}
 }
-// Method Definition Index: 50560
+// Method Definition Index: 50652
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ProfilerMarker__ctor_mDD68B0A8B71E0301F592AF8891560150E55699C8_inline (ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD* __this, String_t* ___0_name, const RuntimeMethod* method) 
 {
 	{
@@ -22655,57 +22655,57 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ProfilerMarker__ctor_mDD68B0
 		return;
 	}
 }
-// Method Definition Index: 28837
+// Method Definition Index: 28930
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Tensor_get_dataType_m4AE09A3768B4E0825E240115E66AAE59E2249486_inline (Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Tensor.cs:41>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Tensor.cs:41>
 		int32_t L_0 = __this->___m_DataType;
 		return L_0;
 	}
 }
-// Method Definition Index: 28615
+// Method Definition Index: 28708
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t DynamicTensorShape_get_rank_m285A20972E42742DEAC01AB061F210568C2271EB_inline (DynamicTensorShape_t9059EB40BCBB9F8684F49C974C1F56D34E79038E* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/ShapeInference/DynamicTensorShape.cs:43>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/ShapeInference/DynamicTensorShape.cs:43>
 		int32_t L_0 = __this->___m_Rank;
 		return L_0;
 	}
 }
-// Method Definition Index: 28945
+// Method Definition Index: 29038
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t TensorShape_get_rank_m5BF21F8E0F87D7878AD1EB0D0542844A5269C60E_inline (TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorShape.cs:51>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorShape.cs:51>
 		int32_t L_0 = __this->___m_Rank;
 		return L_0;
 	}
 }
-// Method Definition Index: 28841
+// Method Definition Index: 28934
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Tensor_set_shape_mB67E6ED353B5D6ABE9531B832D4048700A313056_inline (Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* __this, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Tensor.cs:58>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Tensor.cs:58>
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0 = ___0_value;
 		__this->___m_Shape = L_0;
 		return;
 	}
 }
-// Method Definition Index: 28679
+// Method Definition Index: 28772
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t PartialTensor_get_dataType_mAEFDFD8C9EF2835DACA5320EA27A96E9EB205895_inline (PartialTensor_t6E971891A0465DA5A53927F6347414C94678959F* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/ShapeInference/PartialTensor.cs:17>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/ShapeInference/PartialTensor.cs:17>
 		int32_t L_0 = __this->___m_DataType;
 		return L_0;
 	}
 }
-// Method Definition Index: 28567
+// Method Definition Index: 28660
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t DynamicTensorDim_get_value_mA936C2C62375821AE77E3EFDE2B699530DF2ECB0_inline (DynamicTensorDim_t004A3B1D3635966B50480F2366C3665C29269023* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/ShapeInference/DynamicTensorDim.cs:117>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/ShapeInference/DynamicTensorDim.cs:117>
 		int32_t L_0 = __this->___m_Value;
 		return L_0;
 	}
@@ -22798,11 +22798,11 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t ReadOnlySpan_1_get_Length
 		return L_0;
 	}
 }
-// Method Definition Index: 28743
+// Method Definition Index: 28836
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t PartialTensorElement_1_get_value_m858F61247030501E65500B53D67355CA62BAD5C0_gshared_inline (PartialTensorElement_1_tF308668B53F6B5287F31C7DE523C0368FE72FAC1* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/ShapeInference/PartialTensorElement.cs:80>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/ShapeInference/PartialTensorElement.cs:80>
 		int32_t L_0 = __this->___m_Value;
 		return L_0;
 	}

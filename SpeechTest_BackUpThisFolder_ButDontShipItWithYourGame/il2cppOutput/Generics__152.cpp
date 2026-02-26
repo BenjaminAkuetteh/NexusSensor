@@ -2435,6 +2435,10 @@ struct Task_1_tE41CFF640EB7C045550D9D0D92BE67533B084C17_StaticFields
 {
 	TaskFactory_1_t4BEAD6CE2527DBE682C128CEAA0FF2A79483E96C* ___s_defaultFactory;
 };
+struct CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4_StaticFields
+{
+	int32_t ___s_MainThreadId;
+};
 struct Exception_t_StaticFields
 {
 	RuntimeObject* ___s_EDILock;
@@ -14316,7 +14320,7 @@ IL_00f8:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 60315
+// Method Definition Index: 60423
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TaskSocketAsyncEventArgs_1__ctor_mBDDC293E03F391AA6A73AD5F75511875CD4149DE_gshared (TaskSocketAsyncEventArgs_1_tBF4E736DC8FCB94FF74068992FE40D092F521E90* __this, const RuntimeMethod* method) 
 {
 	{
@@ -14324,7 +14328,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TaskSocketAsyncEventArgs_1__ctor_mBDDC29
 		return;
 	}
 }
-// Method Definition Index: 60316
+// Method Definition Index: 60424
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AsyncTaskMethodBuilder_1_tF0BDBC54D5EB433C1205550D0F9819F43C9D4019 TaskSocketAsyncEventArgs_1_GetCompletionResponsibility_m6567C4DB5B1FE07B600E6EA1FB6303666B5E97B5_gshared (TaskSocketAsyncEventArgs_1_tBF4E736DC8FCB94FF74068992FE40D092F521E90* __this, bool* ___0_responsibleForReturningToPool, const RuntimeMethod* method) 
 {
 	TaskSocketAsyncEventArgs_1_tBF4E736DC8FCB94FF74068992FE40D092F521E90* V_0 = NULL;
@@ -14395,7 +14399,7 @@ IL_003a:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 60315
+// Method Definition Index: 60423
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TaskSocketAsyncEventArgs_1__ctor_m291698E1FEC165A117C82B905423FDBAB81F1A80_gshared (TaskSocketAsyncEventArgs_1_t5EA3160C99B48ADC0C6D08D1B5E7FA33D47437DD* __this, const RuntimeMethod* method) 
 {
 	{
@@ -14403,7 +14407,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TaskSocketAsyncEventArgs_1__ctor_m291698
 		return;
 	}
 }
-// Method Definition Index: 60316
+// Method Definition Index: 60424
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0 TaskSocketAsyncEventArgs_1_GetCompletionResponsibility_m04A3D10F3CE36F31F3E167BEB81882456566E6BF_gshared (TaskSocketAsyncEventArgs_1_t5EA3160C99B48ADC0C6D08D1B5E7FA33D47437DD* __this, bool* ___0_responsibleForReturningToPool, const RuntimeMethod* method) 
 {
 	TaskSocketAsyncEventArgs_1_t5EA3160C99B48ADC0C6D08D1B5E7FA33D47437DD* V_0 = NULL;
@@ -14474,7 +14478,7 @@ IL_003a:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 60315
+// Method Definition Index: 60423
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TaskSocketAsyncEventArgs_1__ctor_mD523E66FB86F8916B7CC84E9BF26304AC2500C67_gshared (TaskSocketAsyncEventArgs_1_t469108EDA49471DE9AF3FB9110FA49DFAA12E3C1* __this, const RuntimeMethod* method) 
 {
 	{
@@ -14482,7 +14486,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TaskSocketAsyncEventArgs_1__ctor_mD523E6
 		return;
 	}
 }
-// Method Definition Index: 60316
+// Method Definition Index: 60424
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AsyncTaskMethodBuilder_1_t9A3ADCFF6503F4230FFD38F6C333EBCF1A034AF4 TaskSocketAsyncEventArgs_1_GetCompletionResponsibility_mDBBDA9DFC99BC113A36D91A508332E7BC9E9025E_gshared (TaskSocketAsyncEventArgs_1_t469108EDA49471DE9AF3FB9110FA49DFAA12E3C1* __this, bool* ___0_responsibleForReturningToPool, const RuntimeMethod* method) 
 {
 	TaskSocketAsyncEventArgs_1_t469108EDA49471DE9AF3FB9110FA49DFAA12E3C1* V_0 = NULL;
@@ -25268,12 +25272,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TempAllocator_1__cctor_mE3CBD9263F3121FE
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 27928
+// Method Definition Index: 28021
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TensorClassPool_1_AdoptFromPool_mD770C6F6F856FF40CF2873BB16E2171BFE905F4F_gshared (TensorClassPool_1_t914F1FF0EAA665E4DE157EB8C5E15031B3FF3583* __this, const RuntimeMethod* method) 
 {
 	RuntimeObject* V_0 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorClassPool.cs:23>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorClassPool.cs:23>
 		Queue_1_tE9EF546915795972C3BFD68FBB8FA859D3BAF3B5* L_0 = __this->___freeTensors;
 		NullCheck(L_0);
 		int32_t L_1;
@@ -25284,7 +25288,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TensorClassPool_1_AdoptFromPoo
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorClassPool.cs:24>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorClassPool.cs:24>
 		Queue_1_tE9EF546915795972C3BFD68FBB8FA859D3BAF3B5* L_2 = __this->___freeTensors;
 		NullCheck(L_2);
 		RuntimeObject* L_3;
@@ -25294,32 +25298,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TensorClassPool_1_AdoptFromPoo
 
 IL_001a:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorClassPool.cs:26>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorClassPool.cs:26>
 		il2cpp_codegen_initobj((&V_0), sizeof(RuntimeObject*));
 		RuntimeObject* L_4 = V_0;
 		return L_4;
 	}
 }
-// Method Definition Index: 27929
+// Method Definition Index: 28022
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TensorClassPool_1_ReleaseToPool_m299B6D972B29CD139D47618567E1DB3FCA7F947E_gshared (TensorClassPool_1_t914F1FF0EAA665E4DE157EB8C5E15031B3FF3583* __this, RuntimeObject* ___0_tensor, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorClassPool.cs:31>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorClassPool.cs:31>
 		Queue_1_tE9EF546915795972C3BFD68FBB8FA859D3BAF3B5* L_0 = __this->___freeTensors;
 		RuntimeObject* L_1 = ___0_tensor;
 		NullCheck(L_0);
 		Queue_1_Enqueue_m5CB8CF3906F1289F92036F0973EC5BE3450402EF(L_0, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorClassPool.cs:32>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorClassPool.cs:32>
 		return;
 	}
 }
-// Method Definition Index: 27930
+// Method Definition Index: 28023
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TensorClassPool_1_Dispose_mB028E18F0B19E8BAEBE43EE2E767FE2510FBD993_gshared (TensorClassPool_1_t914F1FF0EAA665E4DE157EB8C5E15031B3FF3583* __this, const RuntimeMethod* method) 
 {
 	Enumerator_t30E3290EE12437374037B3CF0EE4D614F96D030A V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorClassPool.cs:36>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorClassPool.cs:36>
 		Queue_1_tE9EF546915795972C3BFD68FBB8FA859D3BAF3B5* L_0 = __this->___freeTensors;
 		NullCheck(L_0);
 		Enumerator_t30E3290EE12437374037B3CF0EE4D614F96D030A L_1;
@@ -25344,17 +25348,17 @@ FINALLY_002a:
 
 IL_000e_1:
 			{
-				//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorClassPool.cs:36>
+				//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorClassPool.cs:36>
 				RuntimeObject* L_2;
 				L_2 = Enumerator_get_Current_m5F2338F4C35E898DB7231D7E30F30155498FA9D7((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 8));
-				//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorClassPool.cs:37>
+				//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorClassPool.cs:37>
 				NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)L_2);
 				Tensor_Dispose_mC721F698FDA8725FDF7895BB4A623F484136A74D((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)L_2, NULL);
 			}
 
 IL_001f_1:
 			{
-				//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorClassPool.cs:36>
+				//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorClassPool.cs:36>
 				bool L_3;
 				L_3 = Enumerator_MoveNext_mABD92CBE05B031E50E316375DDC8B2BDAD3F6F84((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 				if (L_3)
@@ -25374,19 +25378,19 @@ IL_001f_1:
 
 IL_0038:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorClassPool.cs:38>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorClassPool.cs:38>
 		Queue_1_tE9EF546915795972C3BFD68FBB8FA859D3BAF3B5* L_4 = __this->___freeTensors;
 		NullCheck(L_4);
 		Queue_1_Clear_m70861E24CF43ECFF3BC5C2AD4EE55963D54D8711(L_4, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorClassPool.cs:39>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorClassPool.cs:39>
 		return;
 	}
 }
-// Method Definition Index: 27931
+// Method Definition Index: 28024
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TensorClassPool_1__ctor_m69B5077AF52250B7BBA3E7983A86F8C47B36FE0A_gshared (TensorClassPool_1_t914F1FF0EAA665E4DE157EB8C5E15031B3FF3583* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorClassPool.cs:19>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorClassPool.cs:19>
 		Queue_1_tE9EF546915795972C3BFD68FBB8FA859D3BAF3B5* L_0 = (Queue_1_tE9EF546915795972C3BFD68FBB8FA859D3BAF3B5*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 1));
 		Queue_1__ctor_m6E2A5A8173E0CC524496D5155C737DF8FD10D0EB(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
 		__this->___freeTensors = L_0;
@@ -25403,11 +25407,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TensorClassPool_1__ctor_m69B5077AF52250B
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 27932
+// Method Definition Index: 28025
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t TensorDataPool_1_SzudzikPairing_m1BA7A3B879E2A839F2E513C09538640FDBADE9A7_gshared (TensorDataPool_1_t4CE36B7F5EAC0EEF939E9F0C9A85864F5BAAF10B* __this, int64_t ___0_a, int64_t ___1_b, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:42>
 		int64_t L_0 = ___0_a;
 		int64_t L_1 = ___1_b;
 		if ((((int64_t)L_0) >= ((int64_t)L_1)))
@@ -25431,7 +25435,7 @@ IL_000a:
 		return ((int64_t)il2cpp_codegen_add(((int64_t)il2cpp_codegen_add(((int64_t)il2cpp_codegen_multiply(L_5, L_6)), L_7)), L_8));
 	}
 }
-// Method Definition Index: 27933
+// Method Definition Index: 28026
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TensorDataPool_1_AdoptFromPool_mDF343991E70FA3CB92C111CF05248711987EBC0B_gshared (TensorDataPool_1_t4CE36B7F5EAC0EEF939E9F0C9A85864F5BAAF10B* __this, int32_t ___0_size, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25453,7 +25457,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TensorDataPool_1_AdoptFromPool
 	int32_t V_5 = 0;
 	int32_t V_6 = 0;
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:47>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:47>
 		NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213* L_0 = (NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213*)(&__this->___freeBufferSize);
 		int32_t L_1;
 		L_1 = NativeList_1_get_Length_m2327DF25C0CCD96DB5AB1F1500FBD411D60AC36B_inline(L_0, NativeList_1_get_Length_m2327DF25C0CCD96DB5AB1F1500FBD411D60AC36B_RuntimeMethod_var);
@@ -25463,7 +25467,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TensorDataPool_1_AdoptFromPool
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:48>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:48>
 		il2cpp_codegen_initobj((&V_4), sizeof(RuntimeObject*));
 		RuntimeObject* L_2 = V_4;
 		return L_2;
@@ -25471,13 +25475,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TensorDataPool_1_AdoptFromPool
 
 IL_0018:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:52>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:52>
 		NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213 L_3 = __this->___freeBufferSize;
 		int32_t L_4 = ___0_size;
 		int32_t L_5;
 		L_5 = NativeSortExtension_BinarySearch_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m8962F806B4F3959A2B71594C660E808835FD22CE(L_3, L_4, NativeSortExtension_BinarySearch_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m8962F806B4F3959A2B71594C660E808835FD22CE_RuntimeMethod_var);
 		V_0 = L_5;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:53>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:53>
 		int32_t L_6 = V_0;
 		if ((((int32_t)L_6) >= ((int32_t)0)))
 		{
@@ -25485,14 +25489,14 @@ IL_0018:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:54>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:54>
 		int32_t L_7 = V_0;
 		V_0 = ((~L_7));
 	}
 
 IL_002c:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:55>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:55>
 		int32_t L_8 = V_0;
 		NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213* L_9 = (NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213*)(&__this->___freeBufferSize);
 		int32_t L_10;
@@ -25503,7 +25507,7 @@ IL_002c:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:58>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:58>
 		il2cpp_codegen_initobj((&V_4), sizeof(RuntimeObject*));
 		RuntimeObject* L_11 = V_4;
 		return L_11;
@@ -25511,42 +25515,42 @@ IL_002c:
 
 IL_0045:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:61>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:61>
 		NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213* L_12 = (NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213*)(&__this->___freeBufferSize);
 		int32_t L_13 = V_0;
 		int32_t L_14;
 		L_14 = NativeList_1_get_Item_m963766393E6261D56BB3704947609551E7752A1C_inline(L_12, L_13, NativeList_1_get_Item_m963766393E6261D56BB3704947609551E7752A1C_RuntimeMethod_var);
 		V_1 = L_14;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:63>
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_15 = __this->___bufferSizeCount;
 		int32_t L_16 = V_1;
 		NullCheck(L_15);
 		int32_t L_17;
 		L_17 = Dictionary_2_get_Item_m8B87B804DF06D6420B1DCE028675738AA8F3310F(L_15, L_16, Dictionary_2_get_Item_m8B87B804DF06D6420B1DCE028675738AA8F3310F_RuntimeMethod_var);
 		V_2 = L_17;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:64>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:64>
 		int32_t L_18 = V_1;
 		int32_t L_19 = V_2;
 		int64_t L_20;
 		L_20 = TensorDataPool_1_SzudzikPairing_m1BA7A3B879E2A839F2E513C09538640FDBADE9A7(__this, ((int64_t)L_18), ((int64_t)L_19), il2cpp_rgctx_method(method->klass->rgctx_data, 2));
 		V_3 = L_20;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:67>
 		Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* L_21 = __this->___freeBuffers;
 		int64_t L_22 = V_3;
 		NullCheck(L_21);
 		RuntimeObject* L_23;
 		L_23 = Dictionary_2_get_Item_mAC70CA6E8EADDCD67AB1C6BA2417CC7CE49EAF0D(L_21, L_22, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:68>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:68>
 		Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* L_24 = __this->___freeBuffers;
 		int64_t L_25 = V_3;
 		NullCheck(L_24);
 		bool L_26;
 		L_26 = Dictionary_2_Remove_m7A61F563F380F740D8288007493B16BB0329146D(L_24, L_25, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:69>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:69>
 		NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213* L_27 = (NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213*)(&__this->___freeBufferSize);
 		int32_t L_28 = V_0;
 		NativeList_1_RemoveAt_m4FA4D72861272463B47F576F88C40BD65843981B(L_27, L_28, NativeList_1_RemoveAt_m4FA4D72861272463B47F576F88C40BD65843981B_RuntimeMethod_var);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:70>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:70>
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_29 = __this->___bufferSizeCount;
 		int32_t L_30 = V_1;
 		V_5 = L_30;
@@ -25560,11 +25564,11 @@ IL_0045:
 		int32_t L_35 = V_6;
 		NullCheck(L_31);
 		Dictionary_2_set_Item_m420CFC153320557E6823B06767710D1E636E5BDF(L_31, L_34, ((int32_t)il2cpp_codegen_subtract(L_35, 1)), Dictionary_2_set_Item_m420CFC153320557E6823B06767710D1E636E5BDF_RuntimeMethod_var);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:74>
 		return L_23;
 	}
 }
-// Method Definition Index: 27934
+// Method Definition Index: 28027
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TensorDataPool_1_ReleaseToPool_m99D6221672DC43351ADE163466151F3952CE32A7_gshared (TensorDataPool_1_t4CE36B7F5EAC0EEF939E9F0C9A85864F5BAAF10B* __this, RuntimeObject* ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25588,12 +25592,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TensorDataPool_1_ReleaseToPool_m99D62216
 	Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* V_3 = NULL;
 	int32_t V_4 = 0;
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:81>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:81>
 		NullCheck((RuntimeObject*)(___0_data));
 		int32_t L_0;
 		L_0 = InterfaceFuncInvoker0< int32_t >::Invoke(6, ITensorData_tC05D8C97C500A9F7A45E2DB029C9AE2CDAA1D1CF_il2cpp_TypeInfo_var, (RuntimeObject*)(___0_data));
 		V_0 = L_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:82>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:82>
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_1 = __this->___bufferSizeCount;
 		int32_t L_2 = V_0;
 		NullCheck(L_1);
@@ -25605,7 +25609,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TensorDataPool_1_ReleaseToPool_m99D62216
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:83>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:83>
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_4 = __this->___bufferSizeCount;
 		int32_t L_5 = V_0;
 		NullCheck(L_4);
@@ -25614,7 +25618,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TensorDataPool_1_ReleaseToPool_m99D62216
 
 IL_0029:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:85>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:85>
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_6 = __this->___bufferSizeCount;
 		V_3 = L_6;
 		int32_t L_7 = V_0;
@@ -25628,7 +25632,7 @@ IL_0029:
 		L_12 = Dictionary_2_get_Item_m8B87B804DF06D6420B1DCE028675738AA8F3310F(L_10, L_11, Dictionary_2_get_Item_m8B87B804DF06D6420B1DCE028675738AA8F3310F_RuntimeMethod_var);
 		NullCheck(L_8);
 		Dictionary_2_set_Item_m420CFC153320557E6823B06767710D1E636E5BDF(L_8, L_9, ((int32_t)il2cpp_codegen_add(L_12, 1)), Dictionary_2_set_Item_m420CFC153320557E6823B06767710D1E636E5BDF_RuntimeMethod_var);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:87>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:87>
 		int32_t L_13 = V_0;
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_14 = __this->___bufferSizeCount;
 		int32_t L_15 = V_0;
@@ -25638,19 +25642,19 @@ IL_0029:
 		int64_t L_17;
 		L_17 = TensorDataPool_1_SzudzikPairing_m1BA7A3B879E2A839F2E513C09538640FDBADE9A7(__this, ((int64_t)L_13), ((int64_t)L_16), il2cpp_rgctx_method(method->klass->rgctx_data, 2));
 		V_1 = L_17;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:89>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:89>
 		Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* L_18 = __this->___freeBuffers;
 		int64_t L_19 = V_1;
 		RuntimeObject* L_20 = ___0_data;
 		NullCheck(L_18);
 		Dictionary_2_set_Item_m23FE82FCBEFBE7F889697ABC4836C193993BCE70(L_18, L_19, L_20, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:91>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:91>
 		NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213 L_21 = __this->___freeBufferSize;
 		int32_t L_22 = V_0;
 		int32_t L_23;
 		L_23 = NativeSortExtension_BinarySearch_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m8962F806B4F3959A2B71594C660E808835FD22CE(L_21, L_22, NativeSortExtension_BinarySearch_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m8962F806B4F3959A2B71594C660E808835FD22CE_RuntimeMethod_var);
 		V_2 = L_23;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:92>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:92>
 		int32_t L_24 = V_2;
 		if ((((int32_t)L_24) >= ((int32_t)0)))
 		{
@@ -25658,14 +25662,14 @@ IL_0029:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:95>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:95>
 		int32_t L_25 = V_2;
 		V_2 = ((~L_25));
 	}
 
 IL_007c:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:96>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:96>
 		int32_t L_26 = V_2;
 		NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213* L_27 = (NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213*)(&__this->___freeBufferSize);
 		int32_t L_28;
@@ -25676,7 +25680,7 @@ IL_007c:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:97>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:97>
 		NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213* L_29 = (NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213*)(&__this->___freeBufferSize);
 		NativeList_1_Add_mD5F3F9AEDF81C4AE1F22A002348E5296010D0064(L_29, (&V_0), NativeList_1_Add_mD5F3F9AEDF81C4AE1F22A002348E5296010D0064_RuntimeMethod_var);
 		return;
@@ -25684,21 +25688,21 @@ IL_007c:
 
 IL_0098:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:100>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:100>
 		NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213* L_30 = (NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213*)(&__this->___freeBufferSize);
 		int32_t L_31 = V_2;
 		int32_t L_32 = V_2;
 		NativeList_1_InsertRangeWithBeginEnd_m32CD544E5A072403C1BBC9A6BFC2E5EDC7FEE0F4(L_30, L_31, ((int32_t)il2cpp_codegen_add(L_32, 1)), NativeList_1_InsertRangeWithBeginEnd_m32CD544E5A072403C1BBC9A6BFC2E5EDC7FEE0F4_RuntimeMethod_var);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:101>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:101>
 		NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213* L_33 = (NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213*)(&__this->___freeBufferSize);
 		int32_t L_34 = V_2;
 		int32_t L_35 = V_0;
 		NativeList_1_set_Item_mA471F77F2D730916D611ABCC0101077F2047CF05_inline(L_33, L_34, L_35, NativeList_1_set_Item_mA471F77F2D730916D611ABCC0101077F2047CF05_RuntimeMethod_var);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:105>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:105>
 		return;
 	}
 }
-// Method Definition Index: 27935
+// Method Definition Index: 28028
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TensorDataPool_1_Dispose_mECE38864D5AE522A5DCAEC5F73D270E86469694B_gshared (TensorDataPool_1_t4CE36B7F5EAC0EEF939E9F0C9A85864F5BAAF10B* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25713,7 +25717,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TensorDataPool_1_Dispose_mECE38864D5AE52
 	memset((&V_0), 0, sizeof(V_0));
 	RuntimeObject* V_1 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:109>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:109>
 		Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* L_0 = __this->___freeBuffers;
 		NullCheck(L_0);
 		ValueCollection_tE8095E528D5C491DA5BF2C8694B3FEF0733A8BEB* L_1;
@@ -25741,18 +25745,18 @@ FINALLY_0033:
 
 IL_0013_1:
 			{
-				//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:109>
+				//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:109>
 				RuntimeObject* L_3;
 				L_3 = Enumerator_get_Current_mE396DC57C362877713861B0AD2C88728648A8364_inline((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 12));
 				V_1 = L_3;
-				//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:110>
+				//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:110>
 				NullCheck((RuntimeObject*)(V_1));
 				InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, (RuntimeObject*)(V_1));
 			}
 
 IL_0028_1:
 			{
-				//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:109>
+				//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:109>
 				bool L_4;
 				L_4 = Enumerator_MoveNext_mCBADFB9B05D6004606931CA8EF7A85A4618D30A2((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 15));
 				if (L_4)
@@ -25772,22 +25776,22 @@ IL_0028_1:
 
 IL_0041:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:111>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:111>
 		Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* L_5 = __this->___freeBuffers;
 		NullCheck(L_5);
 		Dictionary_2_Clear_m0D4940D3E4F9E42DC6EB3C1A43CB78241A4EBABF(L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 17));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:112>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:112>
 		NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213* L_6 = (NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213*)(&__this->___freeBufferSize);
 		NativeList_1_Dispose_m84213D7E2FCB5934C5E1C073C68F55FBD0383E1E(L_6, NativeList_1_Dispose_m84213D7E2FCB5934C5E1C073C68F55FBD0383E1E_RuntimeMethod_var);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:113>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:113>
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_7 = __this->___bufferSizeCount;
 		NullCheck(L_7);
 		Dictionary_2_Clear_m9821889E928BB7EAEE9A7E81EDFC59651F7CBDD0(L_7, Dictionary_2_Clear_m9821889E928BB7EAEE9A7E81EDFC59651F7CBDD0_RuntimeMethod_var);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:114>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:114>
 		return;
 	}
 }
-// Method Definition Index: 27936
+// Method Definition Index: 28029
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TensorDataPool_1__ctor_m1EAA04242BF52DB774BBC6C019D25BF4944C9942_gshared (TensorDataPool_1_t4CE36B7F5EAC0EEF939E9F0C9A85864F5BAAF10B* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25799,19 +25803,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TensorDataPool_1__ctor_m1EAA04242BF52DB7
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:35>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:35>
 		AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148 L_0;
 		L_0 = AllocatorHandle_op_Implicit_mDCF4431F31BB4A09438AE644785C4273F86B2B8D((int32_t)4, NULL);
 		NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213 L_1;
 		memset((&L_1), 0, sizeof(L_1));
 		NativeList_1__ctor_m5697273576B6FA770C7C26B21495B790E0D88EFA((&L_1), 0, L_0, NativeList_1__ctor_m5697273576B6FA770C7C26B21495B790E0D88EFA_RuntimeMethod_var);
 		__this->___freeBufferSize = L_1;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:36>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:36>
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_2 = (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*)il2cpp_codegen_object_new(Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180_il2cpp_TypeInfo_var);
 		Dictionary_2__ctor_m712893C2C48C47CCAFAD85A865C702E8D3D2B71F(L_2, Dictionary_2__ctor_m712893C2C48C47CCAFAD85A865C702E8D3D2B71F_RuntimeMethod_var);
 		__this->___bufferSizeCount = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___bufferSizeCount), (void*)L_2);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:37>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:37>
 		Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* L_3 = (Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 3));
 		Dictionary_2__ctor_m6E4700E09E9816E4C0C88C90C5BB8FAF312B8481(L_3, il2cpp_rgctx_method(method->klass->rgctx_data, 18));
 		__this->___freeBuffers = L_3;
@@ -25828,11 +25832,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TensorDataPool_1__ctor_m1EAA04242BF52DB7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 27932
+// Method Definition Index: 28025
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t TensorDataPool_1_SzudzikPairing_m4BE25A09C572647C0E52CC7E134617E05582E57C_gshared (TensorDataPool_1_t135E77500B3FBD267601D706F8F145B7C70B14BC* __this, int64_t ___0_a, int64_t ___1_b, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:42>
 		int64_t L_0 = ___0_a;
 		int64_t L_1 = ___1_b;
 		if ((((int64_t)L_0) >= ((int64_t)L_1)))
@@ -25856,7 +25860,7 @@ IL_000a:
 		return ((int64_t)il2cpp_codegen_add(((int64_t)il2cpp_codegen_add(((int64_t)il2cpp_codegen_multiply(L_5, L_6)), L_7)), L_8));
 	}
 }
-// Method Definition Index: 27933
+// Method Definition Index: 28026
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TensorDataPool_1_AdoptFromPool_mC9ED0809A1A9970FFE85D5A8C924927F7D4818FB_gshared (TensorDataPool_1_t135E77500B3FBD267601D706F8F145B7C70B14BC* __this, int32_t ___0_size, Il2CppFullySharedGenericAny* il2cppRetVal, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25883,7 +25887,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TensorDataPool_1_AdoptFromPool_mC9ED0809
 	int32_t V_5 = 0;
 	int32_t V_6 = 0;
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:47>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:47>
 		NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213* L_0 = (NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213*)(&__this->___freeBufferSize);
 		int32_t L_1;
 		L_1 = NativeList_1_get_Length_m2327DF25C0CCD96DB5AB1F1500FBD411D60AC36B_inline(L_0, NativeList_1_get_Length_m2327DF25C0CCD96DB5AB1F1500FBD411D60AC36B_RuntimeMethod_var);
@@ -25893,7 +25897,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TensorDataPool_1_AdoptFromPool_mC9ED0809
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:48>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:48>
 		il2cpp_codegen_initobj((Il2CppFullySharedGenericAny*)V_4, SizeOf_T_t1CF068717D4B90D001411F6A4CD9AE35F9D6EF2E);
 		il2cpp_codegen_memcpy(L_2, V_4, SizeOf_T_t1CF068717D4B90D001411F6A4CD9AE35F9D6EF2E);
 		il2cpp_codegen_memcpy(il2cppRetVal, L_2, SizeOf_T_t1CF068717D4B90D001411F6A4CD9AE35F9D6EF2E);
@@ -25902,13 +25906,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TensorDataPool_1_AdoptFromPool_mC9ED0809
 
 IL_0018:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:52>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:52>
 		NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213 L_3 = __this->___freeBufferSize;
 		int32_t L_4 = ___0_size;
 		int32_t L_5;
 		L_5 = NativeSortExtension_BinarySearch_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m8962F806B4F3959A2B71594C660E808835FD22CE(L_3, L_4, NativeSortExtension_BinarySearch_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m8962F806B4F3959A2B71594C660E808835FD22CE_RuntimeMethod_var);
 		V_0 = L_5;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:53>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:53>
 		int32_t L_6 = V_0;
 		if ((((int32_t)L_6) >= ((int32_t)0)))
 		{
@@ -25916,14 +25920,14 @@ IL_0018:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:54>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:54>
 		int32_t L_7 = V_0;
 		V_0 = ((~L_7));
 	}
 
 IL_002c:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:55>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:55>
 		int32_t L_8 = V_0;
 		NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213* L_9 = (NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213*)(&__this->___freeBufferSize);
 		int32_t L_10;
@@ -25934,7 +25938,7 @@ IL_002c:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:58>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:58>
 		il2cpp_codegen_initobj((Il2CppFullySharedGenericAny*)V_4, SizeOf_T_t1CF068717D4B90D001411F6A4CD9AE35F9D6EF2E);
 		il2cpp_codegen_memcpy(L_11, V_4, SizeOf_T_t1CF068717D4B90D001411F6A4CD9AE35F9D6EF2E);
 		il2cpp_codegen_memcpy(il2cppRetVal, L_11, SizeOf_T_t1CF068717D4B90D001411F6A4CD9AE35F9D6EF2E);
@@ -25943,41 +25947,41 @@ IL_002c:
 
 IL_0045:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:61>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:61>
 		NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213* L_12 = (NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213*)(&__this->___freeBufferSize);
 		int32_t L_13 = V_0;
 		int32_t L_14;
 		L_14 = NativeList_1_get_Item_m963766393E6261D56BB3704947609551E7752A1C_inline(L_12, L_13, NativeList_1_get_Item_m963766393E6261D56BB3704947609551E7752A1C_RuntimeMethod_var);
 		V_1 = L_14;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:63>
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_15 = __this->___bufferSizeCount;
 		int32_t L_16 = V_1;
 		NullCheck(L_15);
 		int32_t L_17;
 		L_17 = Dictionary_2_get_Item_m8B87B804DF06D6420B1DCE028675738AA8F3310F(L_15, L_16, Dictionary_2_get_Item_m8B87B804DF06D6420B1DCE028675738AA8F3310F_RuntimeMethod_var);
 		V_2 = L_17;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:64>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:64>
 		int32_t L_18 = V_1;
 		int32_t L_19 = V_2;
 		int64_t L_20;
 		L_20 = ((  int64_t (*) (TensorDataPool_1_t135E77500B3FBD267601D706F8F145B7C70B14BC*, int64_t, int64_t, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 2)))(__this, ((int64_t)L_18), ((int64_t)L_19), il2cpp_rgctx_method(method->klass->rgctx_data, 2));
 		V_3 = L_20;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:67>
 		Dictionary_2_t0A395C4D0B33350E73AA1BC9ED33FB35A8EEC191* L_21 = __this->___freeBuffers;
 		int64_t L_22 = V_3;
 		NullCheck(L_21);
 		InvokerActionInvoker2< int64_t, Il2CppFullySharedGenericAny* >::Invoke(il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 4)), il2cpp_rgctx_method(method->klass->rgctx_data, 4), L_21, L_22, (Il2CppFullySharedGenericAny*)L_23);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:68>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:68>
 		Dictionary_2_t0A395C4D0B33350E73AA1BC9ED33FB35A8EEC191* L_24 = __this->___freeBuffers;
 		int64_t L_25 = V_3;
 		NullCheck(L_24);
 		bool L_26;
 		L_26 = InvokerFuncInvoker1< bool, int64_t >::Invoke(il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 5)), il2cpp_rgctx_method(method->klass->rgctx_data, 5), L_24, L_25);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:69>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:69>
 		NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213* L_27 = (NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213*)(&__this->___freeBufferSize);
 		int32_t L_28 = V_0;
 		NativeList_1_RemoveAt_m4FA4D72861272463B47F576F88C40BD65843981B(L_27, L_28, NativeList_1_RemoveAt_m4FA4D72861272463B47F576F88C40BD65843981B_RuntimeMethod_var);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:70>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:70>
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_29 = __this->___bufferSizeCount;
 		int32_t L_30 = V_1;
 		V_5 = L_30;
@@ -25991,12 +25995,12 @@ IL_0045:
 		int32_t L_35 = V_6;
 		NullCheck(L_31);
 		Dictionary_2_set_Item_m420CFC153320557E6823B06767710D1E636E5BDF(L_31, L_34, ((int32_t)il2cpp_codegen_subtract(L_35, 1)), Dictionary_2_set_Item_m420CFC153320557E6823B06767710D1E636E5BDF_RuntimeMethod_var);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:74>
 		il2cpp_codegen_memcpy(il2cppRetVal, L_23, SizeOf_T_t1CF068717D4B90D001411F6A4CD9AE35F9D6EF2E);
 		return;
 	}
 }
-// Method Definition Index: 27934
+// Method Definition Index: 28027
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TensorDataPool_1_ReleaseToPool_mC7D9389F083BAFC63E0CBCFF185DC35E45DAB938_gshared (TensorDataPool_1_t135E77500B3FBD267601D706F8F145B7C70B14BC* __this, Il2CppFullySharedGenericAny ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26022,11 +26026,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TensorDataPool_1_ReleaseToPool_mC7D9389F
 	Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* V_3 = NULL;
 	int32_t V_4 = 0;
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:81>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:81>
 		int32_t L_1;
 		L_1 = ConstrainedFuncInvoker0< int32_t >::Invoke(il2cpp_rgctx_data(method->klass->rgctx_data, 1), il2cpp_rgctx_method(method->klass->rgctx_data, 6), L_0, (void*)(Il2CppFullySharedGenericAny*)(il2cpp_codegen_class_is_value_type(il2cpp_rgctx_data_no_init(method->klass->rgctx_data, 1)) ? ___0_data : &___0_data));
 		V_0 = L_1;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:82>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:82>
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_2 = __this->___bufferSizeCount;
 		int32_t L_3 = V_0;
 		NullCheck(L_2);
@@ -26038,7 +26042,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TensorDataPool_1_ReleaseToPool_mC7D9389F
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:83>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:83>
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_5 = __this->___bufferSizeCount;
 		int32_t L_6 = V_0;
 		NullCheck(L_5);
@@ -26047,7 +26051,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TensorDataPool_1_ReleaseToPool_mC7D9389F
 
 IL_0029:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:85>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:85>
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_7 = __this->___bufferSizeCount;
 		V_3 = L_7;
 		int32_t L_8 = V_0;
@@ -26061,7 +26065,7 @@ IL_0029:
 		L_13 = Dictionary_2_get_Item_m8B87B804DF06D6420B1DCE028675738AA8F3310F(L_11, L_12, Dictionary_2_get_Item_m8B87B804DF06D6420B1DCE028675738AA8F3310F_RuntimeMethod_var);
 		NullCheck(L_9);
 		Dictionary_2_set_Item_m420CFC153320557E6823B06767710D1E636E5BDF(L_9, L_10, ((int32_t)il2cpp_codegen_add(L_13, 1)), Dictionary_2_set_Item_m420CFC153320557E6823B06767710D1E636E5BDF_RuntimeMethod_var);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:87>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:87>
 		int32_t L_14 = V_0;
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_15 = __this->___bufferSizeCount;
 		int32_t L_16 = V_0;
@@ -26071,19 +26075,19 @@ IL_0029:
 		int64_t L_18;
 		L_18 = ((  int64_t (*) (TensorDataPool_1_t135E77500B3FBD267601D706F8F145B7C70B14BC*, int64_t, int64_t, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 2)))(__this, ((int64_t)L_14), ((int64_t)L_17), il2cpp_rgctx_method(method->klass->rgctx_data, 2));
 		V_1 = L_18;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:89>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:89>
 		Dictionary_2_t0A395C4D0B33350E73AA1BC9ED33FB35A8EEC191* L_19 = __this->___freeBuffers;
 		int64_t L_20 = V_1;
 		il2cpp_codegen_memcpy(L_21, (il2cpp_codegen_class_is_value_type(il2cpp_rgctx_data_no_init(method->klass->rgctx_data, 1)) ? ___0_data : &___0_data), SizeOf_T_t1CF068717D4B90D001411F6A4CD9AE35F9D6EF2E);
 		NullCheck(L_19);
 		InvokerActionInvoker2< int64_t, Il2CppFullySharedGenericAny >::Invoke(il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 7)), il2cpp_rgctx_method(method->klass->rgctx_data, 7), L_19, L_20, (il2cpp_codegen_class_is_value_type(il2cpp_rgctx_data_no_init(method->klass->rgctx_data, 1)) ? L_21: *(void**)L_21));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:91>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:91>
 		NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213 L_22 = __this->___freeBufferSize;
 		int32_t L_23 = V_0;
 		int32_t L_24;
 		L_24 = NativeSortExtension_BinarySearch_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m8962F806B4F3959A2B71594C660E808835FD22CE(L_22, L_23, NativeSortExtension_BinarySearch_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m8962F806B4F3959A2B71594C660E808835FD22CE_RuntimeMethod_var);
 		V_2 = L_24;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:92>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:92>
 		int32_t L_25 = V_2;
 		if ((((int32_t)L_25) >= ((int32_t)0)))
 		{
@@ -26091,14 +26095,14 @@ IL_0029:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:95>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:95>
 		int32_t L_26 = V_2;
 		V_2 = ((~L_26));
 	}
 
 IL_007c:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:96>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:96>
 		int32_t L_27 = V_2;
 		NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213* L_28 = (NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213*)(&__this->___freeBufferSize);
 		int32_t L_29;
@@ -26109,7 +26113,7 @@ IL_007c:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:97>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:97>
 		NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213* L_30 = (NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213*)(&__this->___freeBufferSize);
 		NativeList_1_Add_mD5F3F9AEDF81C4AE1F22A002348E5296010D0064(L_30, (&V_0), NativeList_1_Add_mD5F3F9AEDF81C4AE1F22A002348E5296010D0064_RuntimeMethod_var);
 		return;
@@ -26117,21 +26121,21 @@ IL_007c:
 
 IL_0098:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:100>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:100>
 		NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213* L_31 = (NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213*)(&__this->___freeBufferSize);
 		int32_t L_32 = V_2;
 		int32_t L_33 = V_2;
 		NativeList_1_InsertRangeWithBeginEnd_m32CD544E5A072403C1BBC9A6BFC2E5EDC7FEE0F4(L_31, L_32, ((int32_t)il2cpp_codegen_add(L_33, 1)), NativeList_1_InsertRangeWithBeginEnd_m32CD544E5A072403C1BBC9A6BFC2E5EDC7FEE0F4_RuntimeMethod_var);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:101>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:101>
 		NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213* L_34 = (NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213*)(&__this->___freeBufferSize);
 		int32_t L_35 = V_2;
 		int32_t L_36 = V_0;
 		NativeList_1_set_Item_mA471F77F2D730916D611ABCC0101077F2047CF05_inline(L_34, L_35, L_36, NativeList_1_set_Item_mA471F77F2D730916D611ABCC0101077F2047CF05_RuntimeMethod_var);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:105>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:105>
 		return;
 	}
 }
-// Method Definition Index: 27935
+// Method Definition Index: 28028
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TensorDataPool_1_Dispose_mB527FBCFA849A2A440587C616B65CF82F5F9BA0A_gshared (TensorDataPool_1_t135E77500B3FBD267601D706F8F145B7C70B14BC* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26152,7 +26156,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TensorDataPool_1_Dispose_mB527FBCFA849A2
 	Il2CppFullySharedGenericAny V_1 = alloca(SizeOf_T_t1CF068717D4B90D001411F6A4CD9AE35F9D6EF2E);
 	memset(V_1, 0, SizeOf_T_t1CF068717D4B90D001411F6A4CD9AE35F9D6EF2E);
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:109>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:109>
 		Dictionary_2_t0A395C4D0B33350E73AA1BC9ED33FB35A8EEC191* L_0 = __this->___freeBuffers;
 		NullCheck(L_0);
 		ValueCollection_t99269FDE0A2BE0B7E751A7709CC39DE8C6BF2697* L_1;
@@ -26179,16 +26183,16 @@ FINALLY_0033:
 
 IL_0013_1:
 			{
-				//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:109>
+				//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:109>
 				InvokerActionInvoker1< Il2CppFullySharedGenericAny* >::Invoke(il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)), il2cpp_rgctx_method(method->klass->rgctx_data, 12), (Enumerator_t9BF50B59BE007545C1A68C4E214D7198DBBF418B*)V_0, (Il2CppFullySharedGenericAny*)L_4);
 				il2cpp_codegen_memcpy(V_1, L_4, SizeOf_T_t1CF068717D4B90D001411F6A4CD9AE35F9D6EF2E);
-				//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:110>
+				//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:110>
 				ConstrainedActionInvoker0::Invoke(il2cpp_rgctx_data(method->klass->rgctx_data, 1), il2cpp_rgctx_method(method->klass->rgctx_data, 14), L_5, (void*)(Il2CppFullySharedGenericAny*)V_1);
 			}
 
 IL_0028_1:
 			{
-				//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:109>
+				//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:109>
 				bool L_6;
 				L_6 = ((  bool (*) (Enumerator_t9BF50B59BE007545C1A68C4E214D7198DBBF418B*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 15)))((Enumerator_t9BF50B59BE007545C1A68C4E214D7198DBBF418B*)V_0, il2cpp_rgctx_method(method->klass->rgctx_data, 15));
 				if (L_6)
@@ -26208,22 +26212,22 @@ IL_0028_1:
 
 IL_0041:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:111>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:111>
 		Dictionary_2_t0A395C4D0B33350E73AA1BC9ED33FB35A8EEC191* L_7 = __this->___freeBuffers;
 		NullCheck(L_7);
 		((  void (*) (Dictionary_2_t0A395C4D0B33350E73AA1BC9ED33FB35A8EEC191*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 17)))(L_7, il2cpp_rgctx_method(method->klass->rgctx_data, 17));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:112>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:112>
 		NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213* L_8 = (NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213*)(&__this->___freeBufferSize);
 		NativeList_1_Dispose_m84213D7E2FCB5934C5E1C073C68F55FBD0383E1E(L_8, NativeList_1_Dispose_m84213D7E2FCB5934C5E1C073C68F55FBD0383E1E_RuntimeMethod_var);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:113>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:113>
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_9 = __this->___bufferSizeCount;
 		NullCheck(L_9);
 		Dictionary_2_Clear_m9821889E928BB7EAEE9A7E81EDFC59651F7CBDD0(L_9, Dictionary_2_Clear_m9821889E928BB7EAEE9A7E81EDFC59651F7CBDD0_RuntimeMethod_var);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:114>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:114>
 		return;
 	}
 }
-// Method Definition Index: 27936
+// Method Definition Index: 28029
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TensorDataPool_1__ctor_mFD014C586E7261ABEF97BFEC0CA72E2E5014CFC1_gshared (TensorDataPool_1_t135E77500B3FBD267601D706F8F145B7C70B14BC* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26235,19 +26239,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TensorDataPool_1__ctor_mFD014C586E7261AB
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:35>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:35>
 		AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148 L_0;
 		L_0 = AllocatorHandle_op_Implicit_mDCF4431F31BB4A09438AE644785C4273F86B2B8D((int32_t)4, NULL);
 		NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213 L_1;
 		memset((&L_1), 0, sizeof(L_1));
 		NativeList_1__ctor_m5697273576B6FA770C7C26B21495B790E0D88EFA((&L_1), 0, L_0, NativeList_1__ctor_m5697273576B6FA770C7C26B21495B790E0D88EFA_RuntimeMethod_var);
 		__this->___freeBufferSize = L_1;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:36>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:36>
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_2 = (Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180*)il2cpp_codegen_object_new(Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180_il2cpp_TypeInfo_var);
 		Dictionary_2__ctor_m712893C2C48C47CCAFAD85A865C702E8D3D2B71F(L_2, Dictionary_2__ctor_m712893C2C48C47CCAFAD85A865C702E8D3D2B71F_RuntimeMethod_var);
 		__this->___bufferSizeCount = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___bufferSizeCount), (void*)L_2);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/TensorDataPool.cs:37>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/TensorDataPool.cs:37>
 		Dictionary_2_t0A395C4D0B33350E73AA1BC9ED33FB35A8EEC191* L_3 = (Dictionary_2_t0A395C4D0B33350E73AA1BC9ED33FB35A8EEC191*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 3));
 		((  void (*) (Dictionary_2_t0A395C4D0B33350E73AA1BC9ED33FB35A8EEC191*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 18)))(L_3, il2cpp_rgctx_method(method->klass->rgctx_data, 18));
 		__this->___freeBuffers = L_3;
@@ -26264,7 +26268,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TensorDataPool_1__ctor_mFD014C586E7261AB
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 28873
+// Method Definition Index: 28966
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_mAD78C6473A79346E78EA2A02F0C7BA3C3D8F1482_gshared (Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* __this, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 ___0_shape, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___1_srcData, int32_t ___2_dataStartIndex, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26275,32 +26279,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_mAD78C6473A79346E78EA2A02
 	}
 	CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* V_0 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:19>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:19>
 		Tensor__ctor_m22C3462DE74B29FF31D85500407D9420A9DE72CC((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:21>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:21>
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0 = ___0_shape;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Shape = L_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:24>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:24>
 		int32_t L_1;
 		L_1 = TensorShape_get_length_mA31654DBE59EC0DA686DE063200A6907704B99CD((&___0_shape), NULL);
 		uint32_t L_2 = sizeof(uint8_t);
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Count = ((int32_t)(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_1, (int32_t)L_2)), 4)), 1))/4));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:27>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:27>
 		int32_t L_3;
 		L_3 = AllocatorUtils_ToDataType_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_mE87ABD88E054DC20D2E8F983C2F9900E810836BD(il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataType = L_3;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:29>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:29>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		int32_t L_4;
 		L_4 = Tensor_get_count_m1ECF506B233D46BEA8084389A0AF8B76DFFD0D47_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
 		CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* L_5 = (CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4*)il2cpp_codegen_object_new(CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4_il2cpp_TypeInfo_var);
 		CPUTensorData__ctor_mB66674975F92003C4CC022855BB5AD0AC75D0F5A(L_5, L_4, (bool)0, NULL);
 		V_0 = L_5;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:30>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:30>
 		CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* L_6 = V_0;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend = (RuntimeObject*)L_6;
 		Il2CppCodeGenWriteBarrier((void**)(&((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend), (void*)(RuntimeObject*)L_6);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:31>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:31>
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_7 = ___1_srcData;
 		int32_t L_8 = ___2_dataStartIndex;
 		CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* L_9 = V_0;
@@ -26311,11 +26315,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_mAD78C6473A79346E78EA2A02
 		NullCheck(L_11);
 		int32_t L_12 = ___2_dataStartIndex;
 		NativeTensorArray_Copy_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_mCC927AE71A0053927D32791B11B448C74BD9941C(L_7, L_8, L_10, 0, ((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_11)->max_length)), L_12)), il2cpp_rgctx_method(method->klass->rgctx_data, 3));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:32>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:32>
 		return;
 	}
 }
-// Method Definition Index: 28874
+// Method Definition Index: 28967
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_m5A054E0C20F2EE08E65688528502FCB5A9D4366F_gshared (Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* __this, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 ___0_shape, NativeArray_1_t81F55263465517B73C455D3400CF67B4BADD85CF ___1_srcData, int32_t ___2_dataStartIndex, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26326,32 +26330,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_m5A054E0C20F2EE08E6568852
 	}
 	CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* V_0 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:40>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:40>
 		Tensor__ctor_m22C3462DE74B29FF31D85500407D9420A9DE72CC((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:42>
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0 = ___0_shape;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Shape = L_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:45>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:45>
 		int32_t L_1;
 		L_1 = TensorShape_get_length_mA31654DBE59EC0DA686DE063200A6907704B99CD((&___0_shape), NULL);
 		uint32_t L_2 = sizeof(uint8_t);
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Count = ((int32_t)(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_1, (int32_t)L_2)), 4)), 1))/4));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:48>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:48>
 		int32_t L_3;
 		L_3 = AllocatorUtils_ToDataType_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_mE87ABD88E054DC20D2E8F983C2F9900E810836BD(il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataType = L_3;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:50>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:50>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		int32_t L_4;
 		L_4 = Tensor_get_count_m1ECF506B233D46BEA8084389A0AF8B76DFFD0D47_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
 		CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* L_5 = (CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4*)il2cpp_codegen_object_new(CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4_il2cpp_TypeInfo_var);
 		CPUTensorData__ctor_mB66674975F92003C4CC022855BB5AD0AC75D0F5A(L_5, L_4, (bool)0, NULL);
 		V_0 = L_5;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:51>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:51>
 		CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* L_6 = V_0;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend = (RuntimeObject*)L_6;
 		Il2CppCodeGenWriteBarrier((void**)(&((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend), (void*)(RuntimeObject*)L_6);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:52>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:52>
 		NativeArray_1_t81F55263465517B73C455D3400CF67B4BADD85CF L_7 = ___1_srcData;
 		int32_t L_8 = ___2_dataStartIndex;
 		CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* L_9 = V_0;
@@ -26362,39 +26366,39 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_m5A054E0C20F2EE08E6568852
 		L_11 = IL2CPP_NATIVEARRAY_GET_LENGTH(((&___1_srcData))->___m_Length);
 		int32_t L_12 = ___2_dataStartIndex;
 		NativeTensorArray_Copy_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_m5F717B578F388A6D628F28F5B66A6772F2C740DD(L_7, L_8, L_10, 0, ((int32_t)il2cpp_codegen_subtract(L_11, L_12)), il2cpp_rgctx_method(method->klass->rgctx_data, 7));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:53>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:53>
 		return;
 	}
 }
-// Method Definition Index: 28875
+// Method Definition Index: 28968
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_mEB206138961B5A6CDC870D45EBA413968447CE39_gshared (Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* __this, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 ___0_shape, RuntimeObject* ___1_data, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:60>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:60>
 		Tensor__ctor_m22C3462DE74B29FF31D85500407D9420A9DE72CC((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:62>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:62>
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0 = ___0_shape;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Shape = L_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:65>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:65>
 		int32_t L_1;
 		L_1 = TensorShape_get_length_mA31654DBE59EC0DA686DE063200A6907704B99CD((&___0_shape), NULL);
 		uint32_t L_2 = sizeof(uint8_t);
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Count = ((int32_t)(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_1, (int32_t)L_2)), 4)), 1))/4));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:67>
 		RuntimeObject* L_3 = ___1_data;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend), (void*)L_3);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:68>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:68>
 		int32_t L_4;
 		L_4 = AllocatorUtils_ToDataType_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_mE87ABD88E054DC20D2E8F983C2F9900E810836BD(il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataType = L_4;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:70>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:70>
 		RuntimeObject* L_5 = ((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:72>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:72>
 		return;
 	}
 }
-// Method Definition Index: 28876
+// Method Definition Index: 28969
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_m1F3C6D2E1953837A3D3145B6DE45197A5C64D0FD_gshared (Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* __this, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 ___0_shape, bool ___1_clearOnInit, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26404,17 +26408,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_m1F3C6D2E1953837A3D3145B6
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:79>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:79>
 		Tensor__ctor_m22C3462DE74B29FF31D85500407D9420A9DE72CC((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:81>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:81>
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0 = ___0_shape;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Shape = L_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:84>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:84>
 		int32_t L_1;
 		L_1 = TensorShape_get_length_mA31654DBE59EC0DA686DE063200A6907704B99CD((&___0_shape), NULL);
 		uint32_t L_2 = sizeof(uint8_t);
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Count = ((int32_t)(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_1, (int32_t)L_2)), 4)), 1))/4));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:86>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:86>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		int32_t L_3;
 		L_3 = Tensor_get_count_m1ECF506B233D46BEA8084389A0AF8B76DFFD0D47_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -26423,19 +26427,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_m1F3C6D2E1953837A3D3145B6
 		CPUTensorData__ctor_mB66674975F92003C4CC022855BB5AD0AC75D0F5A(L_5, L_3, L_4, NULL);
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend = (RuntimeObject*)L_5;
 		Il2CppCodeGenWriteBarrier((void**)(&((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend), (void*)(RuntimeObject*)L_5);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:87>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:87>
 		int32_t L_6;
 		L_6 = AllocatorUtils_ToDataType_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_mE87ABD88E054DC20D2E8F983C2F9900E810836BD(il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataType = L_6;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:88>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:88>
 		return;
 	}
 }
-// Method Definition Index: 28877
+// Method Definition Index: 28970
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_Reshape_mEDB54BD57D7FD0E228B31629D57F918A1959F071_gshared (Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* __this, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 ___0_shape, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:93>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:93>
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0 = ___0_shape;
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_1 = ((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Shape;
 		bool L_2;
@@ -26446,48 +26450,48 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_Reshape_mEDB54BD57D7FD0E228B316
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:94>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:94>
 		return;
 	}
 
 IL_000f:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:95>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:95>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		RuntimeObject* L_3;
 		L_3 = Tensor_get_dataOnBackend_m055C03D26247F524EEF5B0D10F2700FC68D60067_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:100>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:100>
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_4 = ___0_shape;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Shape = L_4;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:103>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:103>
 		int32_t L_5;
 		L_5 = TensorShape_get_length_mA31654DBE59EC0DA686DE063200A6907704B99CD((&___0_shape), NULL);
 		uint32_t L_6 = sizeof(uint8_t);
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Count = ((int32_t)(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_5, (int32_t)L_6)), 4)), 1))/4));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:105>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:105>
 		return;
 	}
 }
-// Method Definition Index: 28878
+// Method Definition Index: 28971
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_Upload_m35389301AD919F8CC5DF193E8E43D836C5F06B7A_gshared (Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_srcData, const RuntimeMethod* method) 
 {
 	uint8_t* V_0 = NULL;
 	NativeArray_1_t81F55263465517B73C455D3400CF67B4BADD85CF V_1;
 	memset((&V_1), 0, sizeof(V_1));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:114>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:114>
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___0_srcData;
 		NullCheck(L_0);
 		V_0 = ((L_0)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:115>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:115>
 		uint8_t* L_1 = V_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:117>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:117>
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_2 = ___0_srcData;
 		NullCheck(L_2);
 		NativeArray_1_t81F55263465517B73C455D3400CF67B4BADD85CF L_3;
 		L_3 = NativeArrayUnsafeUtility_ConvertExistingDataToNativeArray_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_m181D7F12EB826B7D6B73742BFD85A667D533BABA((void*)((uintptr_t)L_1), ((int32_t)(((RuntimeArray*)L_2)->max_length)), (int32_t)1, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 		V_1 = L_3;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:121>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:121>
 		RuntimeObject* L_4 = ((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend;
 		NativeArray_1_t81F55263465517B73C455D3400CF67B4BADD85CF L_5 = V_1;
 		int32_t L_6;
@@ -26495,30 +26499,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_Upload_m35389301AD919F8CC5DF193
 		NullCheck(L_4);
 		GenericInterfaceActionInvoker2< NativeArray_1_t81F55263465517B73C455D3400CF67B4BADD85CF, int32_t >::Invoke(il2cpp_rgctx_method(method->klass->rgctx_data, 9), L_4, L_5, L_6);
 		V_0 = (uint8_t*)((uintptr_t)0);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:124>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:124>
 		return;
 	}
 }
-// Method Definition Index: 28879
+// Method Definition Index: 28972
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_Upload_m9B9B95D1A04FE0292564E343EF998BCA9A1D4A38_gshared (Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* __this, NativeArray_1_t81F55263465517B73C455D3400CF67B4BADD85CF ___0_srcData, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:132>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:132>
 		RuntimeObject* L_0 = ((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend;
 		NativeArray_1_t81F55263465517B73C455D3400CF67B4BADD85CF L_1 = ___0_srcData;
 		int32_t L_2;
 		L_2 = IL2CPP_NATIVEARRAY_GET_LENGTH(((&___0_srcData))->___m_Length);
 		NullCheck(L_0);
 		GenericInterfaceActionInvoker2< NativeArray_1_t81F55263465517B73C455D3400CF67B4BADD85CF, int32_t >::Invoke(il2cpp_rgctx_method(method->klass->rgctx_data, 9), L_0, L_1, L_2);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:133>
 		return;
 	}
 }
-// Method Definition Index: 28880
+// Method Definition Index: 28973
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* Tensor_1_CloneEmpty_mC0F9AB68B57B64B37A1AF75AADC80D7B6C33CFE4_gshared (Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:137>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:137>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -26527,18 +26531,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41
 		return (Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)L_1;
 	}
 }
-// Method Definition Index: 28881
+// Method Definition Index: 28974
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* Tensor_1_ReadbackAndClone_mBF33A7BD3B6FE4CC07531003EC7881273AC9BB24_gshared (Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:146>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:146>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_0;
 		L_0 = Tensor_ReadbackAndClone_mDDE52106EB2E31FC019B31FCA1A28268B94FC2B8((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
 		return ((Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF*)IsInstClass((RuntimeObject*)L_0, il2cpp_rgctx_data(method->klass->rgctx_data, 11)));
 	}
 }
-// Method Definition Index: 28882
+// Method Definition Index: 28975
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Awaitable_1_tAA5A4A68C5584A7C94CA38030BCED2179F464481* Tensor_1_ReadbackAndCloneAsync_mF96DA84C95CAD50264FF871F15FDE4D9BA4B26AD_gshared (Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* __this, const RuntimeMethod* method) 
 {
 	U3CReadbackAndCloneAsyncU3Ed__9_t12D736F383B564D6DD85161F057E1B2C5D09713C V_0;
@@ -26562,13 +26566,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Awaitable_1_tAA5A4A68C5584A7C94CA38030BCED217
 		return L_3;
 	}
 }
-// Method Definition Index: 28883
+// Method Definition Index: 28976
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t Tensor_1_get_Item_mB78640F690FCAFA967990320FBE29A222E15A148_gshared (Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* __this, int32_t ___0_d7, int32_t ___1_d6, int32_t ___2_d5, int32_t ___3_d4, int32_t ___4_d3, int32_t ___5_d2, int32_t ___6_d1, int32_t ___7_d0, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:173>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:173>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -26588,13 +26592,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t Tensor_1_get_Item_mB78640F690FCAFA967
 		return L_10;
 	}
 }
-// Method Definition Index: 28884
+// Method Definition Index: 28977
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mAC42C77958AE896FA444D6CC1756828E9A1E2709_gshared (Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* __this, int32_t ___0_d7, int32_t ___1_d6, int32_t ___2_d5, int32_t ___3_d4, int32_t ___4_d3, int32_t ___5_d2, int32_t ___6_d1, int32_t ___7_d0, uint8_t ___8_value, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:174>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:174>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -26611,17 +26615,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mAC42C77958AE896FA444D
 		L_9 = TensorShape_RavelIndex_m98706840BE1616E033654B8B613904194000217D((&V_0), L_1, L_2, L_3, L_4, L_5, L_6, L_7, L_8, NULL);
 		uint8_t L_10 = ___8_value;
 		Tensor_1_set_Item_m6838C2540F12198BAB523AD8D033C36EF20B147F(__this, L_9, L_10, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:174>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:174>
 		return;
 	}
 }
-// Method Definition Index: 28885
+// Method Definition Index: 28978
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t Tensor_1_get_Item_mEEEEF819B1BCA9F727A3C6532A03222B587B0C72_gshared (Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* __this, int32_t ___0_d6, int32_t ___1_d5, int32_t ___2_d4, int32_t ___3_d3, int32_t ___4_d2, int32_t ___5_d1, int32_t ___6_d0, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:189>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:189>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -26640,13 +26644,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t Tensor_1_get_Item_mEEEEF819B1BCA9F727
 		return L_9;
 	}
 }
-// Method Definition Index: 28886
+// Method Definition Index: 28979
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mA802169A2A8DCA10C32CF66679CE7785285E0AC0_gshared (Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* __this, int32_t ___0_d6, int32_t ___1_d5, int32_t ___2_d4, int32_t ___3_d3, int32_t ___4_d2, int32_t ___5_d1, int32_t ___6_d0, uint8_t ___7_value, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:190>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:190>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -26662,17 +26666,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mA802169A2A8DCA10C32CF
 		L_8 = TensorShape_RavelIndex_mFBA31B9D7FF23526824698E33FF9376F6BC418A4((&V_0), L_1, L_2, L_3, L_4, L_5, L_6, L_7, NULL);
 		uint8_t L_9 = ___7_value;
 		Tensor_1_set_Item_m6838C2540F12198BAB523AD8D033C36EF20B147F(__this, L_8, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:190>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:190>
 		return;
 	}
 }
-// Method Definition Index: 28887
+// Method Definition Index: 28980
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t Tensor_1_get_Item_m32E90064961F12573BC5C567C3DCF59F102847E4_gshared (Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* __this, int32_t ___0_d5, int32_t ___1_d4, int32_t ___2_d3, int32_t ___3_d2, int32_t ___4_d1, int32_t ___5_d0, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:203>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:203>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -26690,13 +26694,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t Tensor_1_get_Item_m32E90064961F12573B
 		return L_8;
 	}
 }
-// Method Definition Index: 28888
+// Method Definition Index: 28981
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mD060859E84972E4853CA036715AAF7CC46FEC7E5_gshared (Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* __this, int32_t ___0_d5, int32_t ___1_d4, int32_t ___2_d3, int32_t ___3_d2, int32_t ___4_d1, int32_t ___5_d0, uint8_t ___6_value, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:204>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:204>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -26711,17 +26715,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mD060859E84972E4853CA0
 		L_7 = TensorShape_RavelIndex_mC307DFDB2ECA8E3D96905D236665C0066AE47E18((&V_0), L_1, L_2, L_3, L_4, L_5, L_6, NULL);
 		uint8_t L_8 = ___6_value;
 		Tensor_1_set_Item_m6838C2540F12198BAB523AD8D033C36EF20B147F(__this, L_7, L_8, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:204>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:204>
 		return;
 	}
 }
-// Method Definition Index: 28889
+// Method Definition Index: 28982
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t Tensor_1_get_Item_m3FC86A5EFF478272E56B73CBD8A98AED3855B3E2_gshared (Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* __this, int32_t ___0_d4, int32_t ___1_d3, int32_t ___2_d2, int32_t ___3_d1, int32_t ___4_d0, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:216>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:216>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -26738,13 +26742,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t Tensor_1_get_Item_m3FC86A5EFF478272E5
 		return L_7;
 	}
 }
-// Method Definition Index: 28890
+// Method Definition Index: 28983
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mC45B03D28E563E925C5FD60F7C6D974E84F71C62_gshared (Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* __this, int32_t ___0_d4, int32_t ___1_d3, int32_t ___2_d2, int32_t ___3_d1, int32_t ___4_d0, uint8_t ___5_value, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:217>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:217>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -26758,17 +26762,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mC45B03D28E563E925C5FD
 		L_6 = TensorShape_RavelIndex_m9689694ADF9A838C89200374C9F178B2ADF4DD17((&V_0), L_1, L_2, L_3, L_4, L_5, NULL);
 		uint8_t L_7 = ___5_value;
 		Tensor_1_set_Item_m6838C2540F12198BAB523AD8D033C36EF20B147F(__this, L_6, L_7, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:217>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:217>
 		return;
 	}
 }
-// Method Definition Index: 28891
+// Method Definition Index: 28984
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t Tensor_1_get_Item_m3F6E1FC9A99A036805880ACF9A3919B4F9B93A96_gshared (Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* __this, int32_t ___0_d3, int32_t ___1_d2, int32_t ___2_d1, int32_t ___3_d0, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:228>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:228>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -26784,13 +26788,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t Tensor_1_get_Item_m3F6E1FC9A99A036805
 		return L_6;
 	}
 }
-// Method Definition Index: 28892
+// Method Definition Index: 28985
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_m34E6E21C28C06D92E7CD730A29E383048A84ED0A_gshared (Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* __this, int32_t ___0_d3, int32_t ___1_d2, int32_t ___2_d1, int32_t ___3_d0, uint8_t ___4_value, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:229>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:229>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -26803,17 +26807,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_m34E6E21C28C06D92E7CD7
 		L_5 = TensorShape_RavelIndex_mEDEA25F53D29BE0A94591E7F0F993B7A66A70097((&V_0), L_1, L_2, L_3, L_4, NULL);
 		uint8_t L_6 = ___4_value;
 		Tensor_1_set_Item_m6838C2540F12198BAB523AD8D033C36EF20B147F(__this, L_5, L_6, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:229>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:229>
 		return;
 	}
 }
-// Method Definition Index: 28893
+// Method Definition Index: 28986
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t Tensor_1_get_Item_m56402D3EBAA234871AB6D8D8752E838F8CA65CE3_gshared (Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* __this, int32_t ___0_d2, int32_t ___1_d1, int32_t ___2_d0, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:239>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:239>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -26828,13 +26832,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t Tensor_1_get_Item_m56402D3EBAA234871A
 		return L_5;
 	}
 }
-// Method Definition Index: 28894
+// Method Definition Index: 28987
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_m504902C27D107738F25C04FFBC0C8D92668D1BBB_gshared (Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* __this, int32_t ___0_d2, int32_t ___1_d1, int32_t ___2_d0, uint8_t ___3_value, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:240>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:240>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -26846,17 +26850,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_m504902C27D107738F25C0
 		L_4 = TensorShape_RavelIndex_m10337224577B7EE7886C93E681F096F05DB3815A((&V_0), L_1, L_2, L_3, NULL);
 		uint8_t L_5 = ___3_value;
 		Tensor_1_set_Item_m6838C2540F12198BAB523AD8D033C36EF20B147F(__this, L_4, L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:240>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:240>
 		return;
 	}
 }
-// Method Definition Index: 28895
+// Method Definition Index: 28988
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t Tensor_1_get_Item_m908CA3D458B3A4863A4937F46B159F297402A147_gshared (Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* __this, int32_t ___0_d1, int32_t ___1_d0, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:249>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:249>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -26870,13 +26874,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t Tensor_1_get_Item_m908CA3D458B3A4863A
 		return L_4;
 	}
 }
-// Method Definition Index: 28896
+// Method Definition Index: 28989
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_m367CECC288AD4835039AFCD8D360FBD4A505DFAF_gshared (Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* __this, int32_t ___0_d1, int32_t ___1_d0, uint8_t ___2_value, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:250>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:250>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -26887,15 +26891,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_m367CECC288AD4835039AF
 		L_3 = TensorShape_RavelIndex_mE00ACD16131D5C2247B840A881803A9ED80C2EE2((&V_0), L_1, L_2, NULL);
 		uint8_t L_4 = ___2_value;
 		Tensor_1_set_Item_m6838C2540F12198BAB523AD8D033C36EF20B147F(__this, L_3, L_4, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:250>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:250>
 		return;
 	}
 }
-// Method Definition Index: 28897
+// Method Definition Index: 28990
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t Tensor_1_get_Item_mF93C92565D332DCDC73724920D15EFA3D7FF3296_gshared (Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* __this, int32_t ___0_d0, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:259>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:259>
 		int32_t L_0 = ___0_d0;
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		uint8_t L_1;
@@ -26903,20 +26907,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t Tensor_1_get_Item_mF93C92565D332DCDC7
 		return L_1;
 	}
 }
-// Method Definition Index: 28898
+// Method Definition Index: 28991
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_m6838C2540F12198BAB523AD8D033C36EF20B147F_gshared (Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* __this, int32_t ___0_d0, uint8_t ___1_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:260>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:260>
 		int32_t L_0 = ___0_d0;
 		uint8_t L_1 = ___1_value;
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		Tensor_SetItem_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_mEE26609A23ECF1C2CFC6EDA405DCFE042FDD7B79((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, L_0, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 24));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:260>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:260>
 		return;
 	}
 }
-// Method Definition Index: 28899
+// Method Definition Index: 28992
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* Tensor_1_DownloadToArray_m0620F29A991AC2E5F2858E133C198EB61AF81DEC_gshared (Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* __this, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
@@ -26924,7 +26928,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 	NativeArray_1_t81F55263465517B73C455D3400CF67B4BADD85CF V_1;
 	memset((&V_1), 0, sizeof(V_1));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:272>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:272>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		int32_t L_0;
 		L_0 = Tensor_get_count_m1ECF506B233D46BEA8084389A0AF8B76DFFD0D47_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -26934,7 +26938,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:273>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:273>
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1;
 		L_1 = Array_Empty_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_m6080CA526758F4FA182A066B2780D1761CD36ED5_inline(il2cpp_rgctx_method(method->klass->rgctx_data, 25));
 		return L_1;
@@ -26942,7 +26946,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 
 IL_000e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:274>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:274>
 		RuntimeObject* L_2 = ((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend;
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_3;
@@ -26959,13 +26963,13 @@ IL_000e:
 		return L_6;
 	}
 }
-// Method Definition Index: 28900
+// Method Definition Index: 28993
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NativeArray_1_t81F55263465517B73C455D3400CF67B4BADD85CF Tensor_1_DownloadToNativeArray_m556B89A47A3FCDA72A5525F57EE364EA7F404203_gshared (Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* __this, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:286>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:286>
 		RuntimeObject* L_0 = ((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend;
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_1;
@@ -26979,22 +26983,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NativeArray_1_t81F55263465517B73C455D3400CF67
 		return L_3;
 	}
 }
-// Method Definition Index: 28901
+// Method Definition Index: 28994
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReadOnly_t20A1D3C0A351842F6F4706F8195289BE46CD78DF Tensor_1_AsReadOnlyNativeArray_m1EF420D3F4EB7226FF8890AB311968E496876F8A_gshared (Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:295>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:295>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		ReadOnly_t20A1D3C0A351842F6F4706F8195289BE46CD78DF L_0;
 		L_0 = Tensor_AsReadOnlyNativeArray_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_m0BAA5A2B20542485655F711C6E7EE5429465BF30((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		return L_0;
 	}
 }
-// Method Definition Index: 28902
+// Method Definition Index: 28995
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReadOnlySpan_1_tA850A6C0E88ABBA37646A078ACBC24D6D5FD9B4D Tensor_1_AsReadOnlySpan_m46774E16CBFC5FC97BFF700332202E37E15C6F74_gshared (Tensor_1_t32474E941CB35672DFCB1269F4D78143D87621FF* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:304>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:304>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		ReadOnlySpan_1_tA850A6C0E88ABBA37646A078ACBC24D6D5FD9B4D L_0;
 		L_0 = Tensor_AsReadOnlySpan_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_mF779DF6FB69F676932472B0F00994F3BB0087AD8((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 30));
@@ -27009,7 +27013,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReadOnlySpan_1_tA850A6C0E88ABBA37646A078ACBC2
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 28873
+// Method Definition Index: 28966
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_m06A441C24DB6F409C8CA578A95206669DD4B4795_gshared (Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C* __this, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 ___0_shape, Int16U5BU5D_t8175CE8DD9C9F9FB0CF4F58E45BC570575B43CFB* ___1_srcData, int32_t ___2_dataStartIndex, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -27020,32 +27024,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_m06A441C24DB6F409C8CA578A
 	}
 	CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* V_0 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:19>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:19>
 		Tensor__ctor_m22C3462DE74B29FF31D85500407D9420A9DE72CC((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:21>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:21>
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0 = ___0_shape;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Shape = L_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:24>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:24>
 		int32_t L_1;
 		L_1 = TensorShape_get_length_mA31654DBE59EC0DA686DE063200A6907704B99CD((&___0_shape), NULL);
 		uint32_t L_2 = sizeof(int16_t);
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Count = ((int32_t)(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_1, (int32_t)L_2)), 4)), 1))/4));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:27>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:27>
 		int32_t L_3;
 		L_3 = AllocatorUtils_ToDataType_TisInt16_tB8EF286A9C33492FA6E6D6E67320BE93E794A175_mEFD86FE16E49498B8CCE16009652442C0B93DF46(il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataType = L_3;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:29>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:29>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		int32_t L_4;
 		L_4 = Tensor_get_count_m1ECF506B233D46BEA8084389A0AF8B76DFFD0D47_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
 		CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* L_5 = (CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4*)il2cpp_codegen_object_new(CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4_il2cpp_TypeInfo_var);
 		CPUTensorData__ctor_mB66674975F92003C4CC022855BB5AD0AC75D0F5A(L_5, L_4, (bool)0, NULL);
 		V_0 = L_5;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:30>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:30>
 		CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* L_6 = V_0;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend = (RuntimeObject*)L_6;
 		Il2CppCodeGenWriteBarrier((void**)(&((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend), (void*)(RuntimeObject*)L_6);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:31>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:31>
 		Int16U5BU5D_t8175CE8DD9C9F9FB0CF4F58E45BC570575B43CFB* L_7 = ___1_srcData;
 		int32_t L_8 = ___2_dataStartIndex;
 		CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* L_9 = V_0;
@@ -27056,11 +27060,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_m06A441C24DB6F409C8CA578A
 		NullCheck(L_11);
 		int32_t L_12 = ___2_dataStartIndex;
 		NativeTensorArray_Copy_TisInt16_tB8EF286A9C33492FA6E6D6E67320BE93E794A175_mAF8CD71283A2A68A667B3ADA9EF9BFD12CDF1347(L_7, L_8, L_10, 0, ((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_11)->max_length)), L_12)), il2cpp_rgctx_method(method->klass->rgctx_data, 3));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:32>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:32>
 		return;
 	}
 }
-// Method Definition Index: 28874
+// Method Definition Index: 28967
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_m635D61A874726AAA9E190BA0D39420B8F002BEC2_gshared (Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C* __this, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 ___0_shape, NativeArray_1_t1779DD80E20BBE47D98F52B8F789215FA99BC8C8 ___1_srcData, int32_t ___2_dataStartIndex, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -27071,32 +27075,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_m635D61A874726AAA9E190BA0
 	}
 	CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* V_0 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:40>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:40>
 		Tensor__ctor_m22C3462DE74B29FF31D85500407D9420A9DE72CC((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:42>
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0 = ___0_shape;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Shape = L_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:45>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:45>
 		int32_t L_1;
 		L_1 = TensorShape_get_length_mA31654DBE59EC0DA686DE063200A6907704B99CD((&___0_shape), NULL);
 		uint32_t L_2 = sizeof(int16_t);
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Count = ((int32_t)(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_1, (int32_t)L_2)), 4)), 1))/4));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:48>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:48>
 		int32_t L_3;
 		L_3 = AllocatorUtils_ToDataType_TisInt16_tB8EF286A9C33492FA6E6D6E67320BE93E794A175_mEFD86FE16E49498B8CCE16009652442C0B93DF46(il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataType = L_3;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:50>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:50>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		int32_t L_4;
 		L_4 = Tensor_get_count_m1ECF506B233D46BEA8084389A0AF8B76DFFD0D47_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
 		CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* L_5 = (CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4*)il2cpp_codegen_object_new(CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4_il2cpp_TypeInfo_var);
 		CPUTensorData__ctor_mB66674975F92003C4CC022855BB5AD0AC75D0F5A(L_5, L_4, (bool)0, NULL);
 		V_0 = L_5;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:51>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:51>
 		CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* L_6 = V_0;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend = (RuntimeObject*)L_6;
 		Il2CppCodeGenWriteBarrier((void**)(&((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend), (void*)(RuntimeObject*)L_6);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:52>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:52>
 		NativeArray_1_t1779DD80E20BBE47D98F52B8F789215FA99BC8C8 L_7 = ___1_srcData;
 		int32_t L_8 = ___2_dataStartIndex;
 		CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* L_9 = V_0;
@@ -27107,39 +27111,39 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_m635D61A874726AAA9E190BA0
 		L_11 = IL2CPP_NATIVEARRAY_GET_LENGTH(((&___1_srcData))->___m_Length);
 		int32_t L_12 = ___2_dataStartIndex;
 		NativeTensorArray_Copy_TisInt16_tB8EF286A9C33492FA6E6D6E67320BE93E794A175_mEB18C2EFDCF87FB17C3404EC099C526658CE24F6(L_7, L_8, L_10, 0, ((int32_t)il2cpp_codegen_subtract(L_11, L_12)), il2cpp_rgctx_method(method->klass->rgctx_data, 7));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:53>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:53>
 		return;
 	}
 }
-// Method Definition Index: 28875
+// Method Definition Index: 28968
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_m6942ED827AC37ADEF82EF791D8D8A8DDB900324D_gshared (Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C* __this, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 ___0_shape, RuntimeObject* ___1_data, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:60>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:60>
 		Tensor__ctor_m22C3462DE74B29FF31D85500407D9420A9DE72CC((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:62>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:62>
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0 = ___0_shape;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Shape = L_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:65>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:65>
 		int32_t L_1;
 		L_1 = TensorShape_get_length_mA31654DBE59EC0DA686DE063200A6907704B99CD((&___0_shape), NULL);
 		uint32_t L_2 = sizeof(int16_t);
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Count = ((int32_t)(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_1, (int32_t)L_2)), 4)), 1))/4));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:67>
 		RuntimeObject* L_3 = ___1_data;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend), (void*)L_3);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:68>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:68>
 		int32_t L_4;
 		L_4 = AllocatorUtils_ToDataType_TisInt16_tB8EF286A9C33492FA6E6D6E67320BE93E794A175_mEFD86FE16E49498B8CCE16009652442C0B93DF46(il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataType = L_4;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:70>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:70>
 		RuntimeObject* L_5 = ((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:72>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:72>
 		return;
 	}
 }
-// Method Definition Index: 28876
+// Method Definition Index: 28969
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_mB3721BC9CA09CA6744DA6DE5B4C9DBEFF8155E11_gshared (Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C* __this, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 ___0_shape, bool ___1_clearOnInit, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -27149,17 +27153,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_mB3721BC9CA09CA6744DA6DE5
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:79>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:79>
 		Tensor__ctor_m22C3462DE74B29FF31D85500407D9420A9DE72CC((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:81>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:81>
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0 = ___0_shape;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Shape = L_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:84>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:84>
 		int32_t L_1;
 		L_1 = TensorShape_get_length_mA31654DBE59EC0DA686DE063200A6907704B99CD((&___0_shape), NULL);
 		uint32_t L_2 = sizeof(int16_t);
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Count = ((int32_t)(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_1, (int32_t)L_2)), 4)), 1))/4));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:86>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:86>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		int32_t L_3;
 		L_3 = Tensor_get_count_m1ECF506B233D46BEA8084389A0AF8B76DFFD0D47_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -27168,19 +27172,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_mB3721BC9CA09CA6744DA6DE5
 		CPUTensorData__ctor_mB66674975F92003C4CC022855BB5AD0AC75D0F5A(L_5, L_3, L_4, NULL);
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend = (RuntimeObject*)L_5;
 		Il2CppCodeGenWriteBarrier((void**)(&((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend), (void*)(RuntimeObject*)L_5);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:87>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:87>
 		int32_t L_6;
 		L_6 = AllocatorUtils_ToDataType_TisInt16_tB8EF286A9C33492FA6E6D6E67320BE93E794A175_mEFD86FE16E49498B8CCE16009652442C0B93DF46(il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataType = L_6;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:88>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:88>
 		return;
 	}
 }
-// Method Definition Index: 28877
+// Method Definition Index: 28970
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_Reshape_m1C9639EC82E49009ABA077BAFCA5442FB69F0CA3_gshared (Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C* __this, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 ___0_shape, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:93>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:93>
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0 = ___0_shape;
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_1 = ((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Shape;
 		bool L_2;
@@ -27191,48 +27195,48 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_Reshape_m1C9639EC82E49009ABA077
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:94>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:94>
 		return;
 	}
 
 IL_000f:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:95>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:95>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		RuntimeObject* L_3;
 		L_3 = Tensor_get_dataOnBackend_m055C03D26247F524EEF5B0D10F2700FC68D60067_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:100>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:100>
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_4 = ___0_shape;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Shape = L_4;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:103>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:103>
 		int32_t L_5;
 		L_5 = TensorShape_get_length_mA31654DBE59EC0DA686DE063200A6907704B99CD((&___0_shape), NULL);
 		uint32_t L_6 = sizeof(int16_t);
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Count = ((int32_t)(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_5, (int32_t)L_6)), 4)), 1))/4));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:105>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:105>
 		return;
 	}
 }
-// Method Definition Index: 28878
+// Method Definition Index: 28971
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_Upload_m8DBA34EBEB3CFE15EB77ACC18ED6F0E22F44AA68_gshared (Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C* __this, Int16U5BU5D_t8175CE8DD9C9F9FB0CF4F58E45BC570575B43CFB* ___0_srcData, const RuntimeMethod* method) 
 {
 	int16_t* V_0 = NULL;
 	NativeArray_1_t1779DD80E20BBE47D98F52B8F789215FA99BC8C8 V_1;
 	memset((&V_1), 0, sizeof(V_1));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:114>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:114>
 		Int16U5BU5D_t8175CE8DD9C9F9FB0CF4F58E45BC570575B43CFB* L_0 = ___0_srcData;
 		NullCheck(L_0);
 		V_0 = ((L_0)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:115>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:115>
 		int16_t* L_1 = V_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:117>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:117>
 		Int16U5BU5D_t8175CE8DD9C9F9FB0CF4F58E45BC570575B43CFB* L_2 = ___0_srcData;
 		NullCheck(L_2);
 		NativeArray_1_t1779DD80E20BBE47D98F52B8F789215FA99BC8C8 L_3;
 		L_3 = NativeArrayUnsafeUtility_ConvertExistingDataToNativeArray_TisInt16_tB8EF286A9C33492FA6E6D6E67320BE93E794A175_mC4941734FE8EF73CA24C2646508E084FEF5BF3B8((void*)((uintptr_t)L_1), ((int32_t)(((RuntimeArray*)L_2)->max_length)), (int32_t)1, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 		V_1 = L_3;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:121>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:121>
 		RuntimeObject* L_4 = ((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend;
 		NativeArray_1_t1779DD80E20BBE47D98F52B8F789215FA99BC8C8 L_5 = V_1;
 		int32_t L_6;
@@ -27240,30 +27244,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_Upload_m8DBA34EBEB3CFE15EB77ACC
 		NullCheck(L_4);
 		GenericInterfaceActionInvoker2< NativeArray_1_t1779DD80E20BBE47D98F52B8F789215FA99BC8C8, int32_t >::Invoke(il2cpp_rgctx_method(method->klass->rgctx_data, 9), L_4, L_5, L_6);
 		V_0 = (int16_t*)((uintptr_t)0);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:124>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:124>
 		return;
 	}
 }
-// Method Definition Index: 28879
+// Method Definition Index: 28972
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_Upload_m007913BDDC0466750FF65D1A2F7C3F979C5072CA_gshared (Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C* __this, NativeArray_1_t1779DD80E20BBE47D98F52B8F789215FA99BC8C8 ___0_srcData, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:132>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:132>
 		RuntimeObject* L_0 = ((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend;
 		NativeArray_1_t1779DD80E20BBE47D98F52B8F789215FA99BC8C8 L_1 = ___0_srcData;
 		int32_t L_2;
 		L_2 = IL2CPP_NATIVEARRAY_GET_LENGTH(((&___0_srcData))->___m_Length);
 		NullCheck(L_0);
 		GenericInterfaceActionInvoker2< NativeArray_1_t1779DD80E20BBE47D98F52B8F789215FA99BC8C8, int32_t >::Invoke(il2cpp_rgctx_method(method->klass->rgctx_data, 9), L_0, L_1, L_2);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:133>
 		return;
 	}
 }
-// Method Definition Index: 28880
+// Method Definition Index: 28973
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* Tensor_1_CloneEmpty_mAFC9B85716FD9D2590CDA3A7DC12B21AF9573AA7_gshared (Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:137>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:137>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -27272,18 +27276,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41
 		return (Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)L_1;
 	}
 }
-// Method Definition Index: 28881
+// Method Definition Index: 28974
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C* Tensor_1_ReadbackAndClone_mD7F656A167E17DB6D4BBE5A3126649C9F204DBCB_gshared (Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:146>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:146>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_0;
 		L_0 = Tensor_ReadbackAndClone_mDDE52106EB2E31FC019B31FCA1A28268B94FC2B8((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
 		return ((Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C*)IsInstClass((RuntimeObject*)L_0, il2cpp_rgctx_data(method->klass->rgctx_data, 11)));
 	}
 }
-// Method Definition Index: 28882
+// Method Definition Index: 28975
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Awaitable_1_tB6992756E7153AF3803437A4849A77CC41C91B60* Tensor_1_ReadbackAndCloneAsync_mC6511A01EC16FF63932EA6BFCF034DF43AE3B26F_gshared (Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C* __this, const RuntimeMethod* method) 
 {
 	U3CReadbackAndCloneAsyncU3Ed__9_t393F260BB7879F4B2F4A019B1D6309A97B3D2625 V_0;
@@ -27307,13 +27311,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Awaitable_1_tB6992756E7153AF3803437A4849A77CC
 		return L_3;
 	}
 }
-// Method Definition Index: 28883
+// Method Definition Index: 28976
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int16_t Tensor_1_get_Item_mA6A0143E7C9B75EC3657BB18F309A19515F8D5AD_gshared (Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C* __this, int32_t ___0_d7, int32_t ___1_d6, int32_t ___2_d5, int32_t ___3_d4, int32_t ___4_d3, int32_t ___5_d2, int32_t ___6_d1, int32_t ___7_d0, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:173>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:173>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -27333,13 +27337,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int16_t Tensor_1_get_Item_mA6A0143E7C9B75EC36
 		return L_10;
 	}
 }
-// Method Definition Index: 28884
+// Method Definition Index: 28977
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_m6888C9E7285D7A33A9B5516779D9C600CA9D8936_gshared (Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C* __this, int32_t ___0_d7, int32_t ___1_d6, int32_t ___2_d5, int32_t ___3_d4, int32_t ___4_d3, int32_t ___5_d2, int32_t ___6_d1, int32_t ___7_d0, int16_t ___8_value, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:174>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:174>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -27356,17 +27360,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_m6888C9E7285D7A33A9B55
 		L_9 = TensorShape_RavelIndex_m98706840BE1616E033654B8B613904194000217D((&V_0), L_1, L_2, L_3, L_4, L_5, L_6, L_7, L_8, NULL);
 		int16_t L_10 = ___8_value;
 		Tensor_1_set_Item_m770075A85D992CE910EC5084A6F13EA1893D154B(__this, L_9, L_10, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:174>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:174>
 		return;
 	}
 }
-// Method Definition Index: 28885
+// Method Definition Index: 28978
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int16_t Tensor_1_get_Item_mEBBA669D2A18A80E28989B138D91B29A0A86D297_gshared (Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C* __this, int32_t ___0_d6, int32_t ___1_d5, int32_t ___2_d4, int32_t ___3_d3, int32_t ___4_d2, int32_t ___5_d1, int32_t ___6_d0, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:189>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:189>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -27385,13 +27389,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int16_t Tensor_1_get_Item_mEBBA669D2A18A80E28
 		return L_9;
 	}
 }
-// Method Definition Index: 28886
+// Method Definition Index: 28979
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_m9B379C899A19D8BCF202DBEC4D9B96B17C696BCE_gshared (Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C* __this, int32_t ___0_d6, int32_t ___1_d5, int32_t ___2_d4, int32_t ___3_d3, int32_t ___4_d2, int32_t ___5_d1, int32_t ___6_d0, int16_t ___7_value, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:190>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:190>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -27407,17 +27411,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_m9B379C899A19D8BCF202D
 		L_8 = TensorShape_RavelIndex_mFBA31B9D7FF23526824698E33FF9376F6BC418A4((&V_0), L_1, L_2, L_3, L_4, L_5, L_6, L_7, NULL);
 		int16_t L_9 = ___7_value;
 		Tensor_1_set_Item_m770075A85D992CE910EC5084A6F13EA1893D154B(__this, L_8, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:190>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:190>
 		return;
 	}
 }
-// Method Definition Index: 28887
+// Method Definition Index: 28980
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int16_t Tensor_1_get_Item_m57C2DA758974E085096C946E71F11C40D81BA1C2_gshared (Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C* __this, int32_t ___0_d5, int32_t ___1_d4, int32_t ___2_d3, int32_t ___3_d2, int32_t ___4_d1, int32_t ___5_d0, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:203>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:203>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -27435,13 +27439,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int16_t Tensor_1_get_Item_m57C2DA758974E08509
 		return L_8;
 	}
 }
-// Method Definition Index: 28888
+// Method Definition Index: 28981
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_m931AB33CF399B145E534D6F0238776AA7102F1D0_gshared (Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C* __this, int32_t ___0_d5, int32_t ___1_d4, int32_t ___2_d3, int32_t ___3_d2, int32_t ___4_d1, int32_t ___5_d0, int16_t ___6_value, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:204>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:204>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -27456,17 +27460,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_m931AB33CF399B145E534D
 		L_7 = TensorShape_RavelIndex_mC307DFDB2ECA8E3D96905D236665C0066AE47E18((&V_0), L_1, L_2, L_3, L_4, L_5, L_6, NULL);
 		int16_t L_8 = ___6_value;
 		Tensor_1_set_Item_m770075A85D992CE910EC5084A6F13EA1893D154B(__this, L_7, L_8, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:204>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:204>
 		return;
 	}
 }
-// Method Definition Index: 28889
+// Method Definition Index: 28982
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int16_t Tensor_1_get_Item_mED74B8BE68810E5EB981DC9584A28EDBC556637A_gshared (Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C* __this, int32_t ___0_d4, int32_t ___1_d3, int32_t ___2_d2, int32_t ___3_d1, int32_t ___4_d0, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:216>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:216>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -27483,13 +27487,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int16_t Tensor_1_get_Item_mED74B8BE68810E5EB9
 		return L_7;
 	}
 }
-// Method Definition Index: 28890
+// Method Definition Index: 28983
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mBC4BE4FD9F13BEFCACFC9FE121C4791E82A2A3AF_gshared (Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C* __this, int32_t ___0_d4, int32_t ___1_d3, int32_t ___2_d2, int32_t ___3_d1, int32_t ___4_d0, int16_t ___5_value, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:217>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:217>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -27503,17 +27507,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mBC4BE4FD9F13BEFCACFC9
 		L_6 = TensorShape_RavelIndex_m9689694ADF9A838C89200374C9F178B2ADF4DD17((&V_0), L_1, L_2, L_3, L_4, L_5, NULL);
 		int16_t L_7 = ___5_value;
 		Tensor_1_set_Item_m770075A85D992CE910EC5084A6F13EA1893D154B(__this, L_6, L_7, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:217>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:217>
 		return;
 	}
 }
-// Method Definition Index: 28891
+// Method Definition Index: 28984
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int16_t Tensor_1_get_Item_mBE8BEFC6BCEB41EE03CF550823A53629AB077DB8_gshared (Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C* __this, int32_t ___0_d3, int32_t ___1_d2, int32_t ___2_d1, int32_t ___3_d0, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:228>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:228>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -27529,13 +27533,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int16_t Tensor_1_get_Item_mBE8BEFC6BCEB41EE03
 		return L_6;
 	}
 }
-// Method Definition Index: 28892
+// Method Definition Index: 28985
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_m4C86ABB16C2DF2C74D05C49099387731C6006F2A_gshared (Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C* __this, int32_t ___0_d3, int32_t ___1_d2, int32_t ___2_d1, int32_t ___3_d0, int16_t ___4_value, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:229>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:229>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -27548,17 +27552,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_m4C86ABB16C2DF2C74D05C
 		L_5 = TensorShape_RavelIndex_mEDEA25F53D29BE0A94591E7F0F993B7A66A70097((&V_0), L_1, L_2, L_3, L_4, NULL);
 		int16_t L_6 = ___4_value;
 		Tensor_1_set_Item_m770075A85D992CE910EC5084A6F13EA1893D154B(__this, L_5, L_6, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:229>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:229>
 		return;
 	}
 }
-// Method Definition Index: 28893
+// Method Definition Index: 28986
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int16_t Tensor_1_get_Item_m432E03F328C051534B1BD4F837A44B923A46E819_gshared (Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C* __this, int32_t ___0_d2, int32_t ___1_d1, int32_t ___2_d0, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:239>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:239>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -27573,13 +27577,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int16_t Tensor_1_get_Item_m432E03F328C051534B
 		return L_5;
 	}
 }
-// Method Definition Index: 28894
+// Method Definition Index: 28987
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_m1908EE635228FAF7494AC79731EC63A8F0202450_gshared (Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C* __this, int32_t ___0_d2, int32_t ___1_d1, int32_t ___2_d0, int16_t ___3_value, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:240>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:240>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -27591,17 +27595,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_m1908EE635228FAF7494AC
 		L_4 = TensorShape_RavelIndex_m10337224577B7EE7886C93E681F096F05DB3815A((&V_0), L_1, L_2, L_3, NULL);
 		int16_t L_5 = ___3_value;
 		Tensor_1_set_Item_m770075A85D992CE910EC5084A6F13EA1893D154B(__this, L_4, L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:240>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:240>
 		return;
 	}
 }
-// Method Definition Index: 28895
+// Method Definition Index: 28988
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int16_t Tensor_1_get_Item_m2CA28FFEC274CAE53FDE3C48C437F201C82C1EE9_gshared (Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C* __this, int32_t ___0_d1, int32_t ___1_d0, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:249>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:249>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -27615,13 +27619,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int16_t Tensor_1_get_Item_m2CA28FFEC274CAE53F
 		return L_4;
 	}
 }
-// Method Definition Index: 28896
+// Method Definition Index: 28989
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mA07C674371625C5FC33C5949F856CA1006F85E96_gshared (Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C* __this, int32_t ___0_d1, int32_t ___1_d0, int16_t ___2_value, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:250>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:250>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -27632,15 +27636,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mA07C674371625C5FC33C5
 		L_3 = TensorShape_RavelIndex_mE00ACD16131D5C2247B840A881803A9ED80C2EE2((&V_0), L_1, L_2, NULL);
 		int16_t L_4 = ___2_value;
 		Tensor_1_set_Item_m770075A85D992CE910EC5084A6F13EA1893D154B(__this, L_3, L_4, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:250>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:250>
 		return;
 	}
 }
-// Method Definition Index: 28897
+// Method Definition Index: 28990
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int16_t Tensor_1_get_Item_m7C4C96316500378E0117E5FADD30A4814DB699F2_gshared (Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C* __this, int32_t ___0_d0, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:259>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:259>
 		int32_t L_0 = ___0_d0;
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		int16_t L_1;
@@ -27648,20 +27652,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int16_t Tensor_1_get_Item_m7C4C96316500378E01
 		return L_1;
 	}
 }
-// Method Definition Index: 28898
+// Method Definition Index: 28991
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_m770075A85D992CE910EC5084A6F13EA1893D154B_gshared (Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C* __this, int32_t ___0_d0, int16_t ___1_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:260>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:260>
 		int32_t L_0 = ___0_d0;
 		int16_t L_1 = ___1_value;
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		Tensor_SetItem_TisInt16_tB8EF286A9C33492FA6E6D6E67320BE93E794A175_m7C6E554E1F7AC176DCD09DCB216B8F498D4EDF13((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, L_0, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 24));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:260>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:260>
 		return;
 	}
 }
-// Method Definition Index: 28899
+// Method Definition Index: 28992
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int16U5BU5D_t8175CE8DD9C9F9FB0CF4F58E45BC570575B43CFB* Tensor_1_DownloadToArray_mCAFB70BFE0EA9B599964EFC81761702EC46B1E1C_gshared (Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C* __this, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
@@ -27669,7 +27673,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int16U5BU5D_t8175CE8DD9C9F9FB0CF4F58E45BC5705
 	NativeArray_1_t1779DD80E20BBE47D98F52B8F789215FA99BC8C8 V_1;
 	memset((&V_1), 0, sizeof(V_1));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:272>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:272>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		int32_t L_0;
 		L_0 = Tensor_get_count_m1ECF506B233D46BEA8084389A0AF8B76DFFD0D47_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -27679,7 +27683,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int16U5BU5D_t8175CE8DD9C9F9FB0CF4F58E45BC5705
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:273>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:273>
 		Int16U5BU5D_t8175CE8DD9C9F9FB0CF4F58E45BC570575B43CFB* L_1;
 		L_1 = Array_Empty_TisInt16_tB8EF286A9C33492FA6E6D6E67320BE93E794A175_m761A383758DAB252A3DBE0ACBA4259EBDF64D107_inline(il2cpp_rgctx_method(method->klass->rgctx_data, 25));
 		return L_1;
@@ -27687,7 +27691,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int16U5BU5D_t8175CE8DD9C9F9FB0CF4F58E45BC5705
 
 IL_000e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:274>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:274>
 		RuntimeObject* L_2 = ((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend;
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_3;
@@ -27704,13 +27708,13 @@ IL_000e:
 		return L_6;
 	}
 }
-// Method Definition Index: 28900
+// Method Definition Index: 28993
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NativeArray_1_t1779DD80E20BBE47D98F52B8F789215FA99BC8C8 Tensor_1_DownloadToNativeArray_m35340ACDDFE599E4D14B58D5C346CF6858C48B80_gshared (Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C* __this, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:286>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:286>
 		RuntimeObject* L_0 = ((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend;
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_1;
@@ -27724,22 +27728,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NativeArray_1_t1779DD80E20BBE47D98F52B8F78921
 		return L_3;
 	}
 }
-// Method Definition Index: 28901
+// Method Definition Index: 28994
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReadOnly_t6F75D90AAE163C098E901486F0FA1C2467C027B3 Tensor_1_AsReadOnlyNativeArray_m25CAD61BAD2395015314538D12DDE3CDE48AFEF7_gshared (Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:295>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:295>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		ReadOnly_t6F75D90AAE163C098E901486F0FA1C2467C027B3 L_0;
 		L_0 = Tensor_AsReadOnlyNativeArray_TisInt16_tB8EF286A9C33492FA6E6D6E67320BE93E794A175_m34EB00FC34839B904A3A25A34B37BF3B044ADAF1((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		return L_0;
 	}
 }
-// Method Definition Index: 28902
+// Method Definition Index: 28995
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReadOnlySpan_1_t43371A70E409718817933691123A1C2EEF874E71 Tensor_1_AsReadOnlySpan_mB6DEF96674DB871B2C3DE8A19FB6A676E673394D_gshared (Tensor_1_t0C31849F8BD32BA5F18DCDE3D00D25BADB38003C* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:304>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:304>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		ReadOnlySpan_1_t43371A70E409718817933691123A1C2EEF874E71 L_0;
 		L_0 = Tensor_AsReadOnlySpan_TisInt16_tB8EF286A9C33492FA6E6D6E67320BE93E794A175_mA101A41E76AE613487EF9EF504DAD9B4F486F0AE((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 30));
@@ -27754,7 +27758,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReadOnlySpan_1_t43371A70E409718817933691123A1
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 28873
+// Method Definition Index: 28966
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_mD6D1CDD15C1163DDE3EB938CB12EBE3898E28003_gshared (Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* __this, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 ___0_shape, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___1_srcData, int32_t ___2_dataStartIndex, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -27765,32 +27769,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_mD6D1CDD15C1163DDE3EB938C
 	}
 	CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* V_0 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:19>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:19>
 		Tensor__ctor_m22C3462DE74B29FF31D85500407D9420A9DE72CC((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:21>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:21>
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0 = ___0_shape;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Shape = L_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:24>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:24>
 		int32_t L_1;
 		L_1 = TensorShape_get_length_mA31654DBE59EC0DA686DE063200A6907704B99CD((&___0_shape), NULL);
 		uint32_t L_2 = sizeof(int32_t);
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Count = ((int32_t)(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_1, (int32_t)L_2)), 4)), 1))/4));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:27>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:27>
 		int32_t L_3;
 		L_3 = AllocatorUtils_ToDataType_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mB27289BBFD368204C674E7166683EA312575FF48(il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataType = L_3;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:29>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:29>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		int32_t L_4;
 		L_4 = Tensor_get_count_m1ECF506B233D46BEA8084389A0AF8B76DFFD0D47_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
 		CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* L_5 = (CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4*)il2cpp_codegen_object_new(CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4_il2cpp_TypeInfo_var);
 		CPUTensorData__ctor_mB66674975F92003C4CC022855BB5AD0AC75D0F5A(L_5, L_4, (bool)0, NULL);
 		V_0 = L_5;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:30>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:30>
 		CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* L_6 = V_0;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend = (RuntimeObject*)L_6;
 		Il2CppCodeGenWriteBarrier((void**)(&((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend), (void*)(RuntimeObject*)L_6);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:31>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:31>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_7 = ___1_srcData;
 		int32_t L_8 = ___2_dataStartIndex;
 		CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* L_9 = V_0;
@@ -27801,11 +27805,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_mD6D1CDD15C1163DDE3EB938C
 		NullCheck(L_11);
 		int32_t L_12 = ___2_dataStartIndex;
 		NativeTensorArray_Copy_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mC430E2CDE34E261E26A43DAE777FF2DC1FAB9FEE(L_7, L_8, L_10, 0, ((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_11)->max_length)), L_12)), il2cpp_rgctx_method(method->klass->rgctx_data, 3));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:32>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:32>
 		return;
 	}
 }
-// Method Definition Index: 28874
+// Method Definition Index: 28967
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_mE2EE3B48369FEAC96BC8E6F92700AFF0C5C19619_gshared (Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* __this, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 ___0_shape, NativeArray_1_tA833EB7E3E1C9AF82C37976AD964B8D4BAC38B2C ___1_srcData, int32_t ___2_dataStartIndex, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -27816,32 +27820,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_mE2EE3B48369FEAC96BC8E6F9
 	}
 	CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* V_0 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:40>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:40>
 		Tensor__ctor_m22C3462DE74B29FF31D85500407D9420A9DE72CC((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:42>
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0 = ___0_shape;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Shape = L_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:45>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:45>
 		int32_t L_1;
 		L_1 = TensorShape_get_length_mA31654DBE59EC0DA686DE063200A6907704B99CD((&___0_shape), NULL);
 		uint32_t L_2 = sizeof(int32_t);
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Count = ((int32_t)(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_1, (int32_t)L_2)), 4)), 1))/4));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:48>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:48>
 		int32_t L_3;
 		L_3 = AllocatorUtils_ToDataType_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mB27289BBFD368204C674E7166683EA312575FF48(il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataType = L_3;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:50>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:50>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		int32_t L_4;
 		L_4 = Tensor_get_count_m1ECF506B233D46BEA8084389A0AF8B76DFFD0D47_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
 		CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* L_5 = (CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4*)il2cpp_codegen_object_new(CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4_il2cpp_TypeInfo_var);
 		CPUTensorData__ctor_mB66674975F92003C4CC022855BB5AD0AC75D0F5A(L_5, L_4, (bool)0, NULL);
 		V_0 = L_5;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:51>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:51>
 		CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* L_6 = V_0;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend = (RuntimeObject*)L_6;
 		Il2CppCodeGenWriteBarrier((void**)(&((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend), (void*)(RuntimeObject*)L_6);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:52>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:52>
 		NativeArray_1_tA833EB7E3E1C9AF82C37976AD964B8D4BAC38B2C L_7 = ___1_srcData;
 		int32_t L_8 = ___2_dataStartIndex;
 		CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* L_9 = V_0;
@@ -27852,39 +27856,39 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_mE2EE3B48369FEAC96BC8E6F9
 		L_11 = IL2CPP_NATIVEARRAY_GET_LENGTH(((&___1_srcData))->___m_Length);
 		int32_t L_12 = ___2_dataStartIndex;
 		NativeTensorArray_Copy_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m83AF08BF7C38773001C0003E11AD84854492A84A(L_7, L_8, L_10, 0, ((int32_t)il2cpp_codegen_subtract(L_11, L_12)), il2cpp_rgctx_method(method->klass->rgctx_data, 7));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:53>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:53>
 		return;
 	}
 }
-// Method Definition Index: 28875
+// Method Definition Index: 28968
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_m597B3C9044A9536D9016C37654D88E872D28719D_gshared (Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* __this, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 ___0_shape, RuntimeObject* ___1_data, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:60>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:60>
 		Tensor__ctor_m22C3462DE74B29FF31D85500407D9420A9DE72CC((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:62>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:62>
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0 = ___0_shape;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Shape = L_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:65>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:65>
 		int32_t L_1;
 		L_1 = TensorShape_get_length_mA31654DBE59EC0DA686DE063200A6907704B99CD((&___0_shape), NULL);
 		uint32_t L_2 = sizeof(int32_t);
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Count = ((int32_t)(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_1, (int32_t)L_2)), 4)), 1))/4));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:67>
 		RuntimeObject* L_3 = ___1_data;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend), (void*)L_3);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:68>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:68>
 		int32_t L_4;
 		L_4 = AllocatorUtils_ToDataType_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mB27289BBFD368204C674E7166683EA312575FF48(il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataType = L_4;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:70>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:70>
 		RuntimeObject* L_5 = ((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:72>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:72>
 		return;
 	}
 }
-// Method Definition Index: 28876
+// Method Definition Index: 28969
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_m3D20D173A257EFBA422812EFE953D387A3ADF7A4_gshared (Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* __this, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 ___0_shape, bool ___1_clearOnInit, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -27894,17 +27898,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_m3D20D173A257EFBA422812EF
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:79>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:79>
 		Tensor__ctor_m22C3462DE74B29FF31D85500407D9420A9DE72CC((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:81>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:81>
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0 = ___0_shape;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Shape = L_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:84>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:84>
 		int32_t L_1;
 		L_1 = TensorShape_get_length_mA31654DBE59EC0DA686DE063200A6907704B99CD((&___0_shape), NULL);
 		uint32_t L_2 = sizeof(int32_t);
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Count = ((int32_t)(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_1, (int32_t)L_2)), 4)), 1))/4));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:86>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:86>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		int32_t L_3;
 		L_3 = Tensor_get_count_m1ECF506B233D46BEA8084389A0AF8B76DFFD0D47_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -27913,19 +27917,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_m3D20D173A257EFBA422812EF
 		CPUTensorData__ctor_mB66674975F92003C4CC022855BB5AD0AC75D0F5A(L_5, L_3, L_4, NULL);
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend = (RuntimeObject*)L_5;
 		Il2CppCodeGenWriteBarrier((void**)(&((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend), (void*)(RuntimeObject*)L_5);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:87>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:87>
 		int32_t L_6;
 		L_6 = AllocatorUtils_ToDataType_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mB27289BBFD368204C674E7166683EA312575FF48(il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataType = L_6;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:88>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:88>
 		return;
 	}
 }
-// Method Definition Index: 28877
+// Method Definition Index: 28970
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_Reshape_m9B9747CEAA03641F93102834872AC0E50A758AB1_gshared (Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* __this, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 ___0_shape, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:93>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:93>
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0 = ___0_shape;
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_1 = ((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Shape;
 		bool L_2;
@@ -27936,48 +27940,48 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_Reshape_m9B9747CEAA03641F931028
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:94>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:94>
 		return;
 	}
 
 IL_000f:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:95>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:95>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		RuntimeObject* L_3;
 		L_3 = Tensor_get_dataOnBackend_m055C03D26247F524EEF5B0D10F2700FC68D60067_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:100>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:100>
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_4 = ___0_shape;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Shape = L_4;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:103>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:103>
 		int32_t L_5;
 		L_5 = TensorShape_get_length_mA31654DBE59EC0DA686DE063200A6907704B99CD((&___0_shape), NULL);
 		uint32_t L_6 = sizeof(int32_t);
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Count = ((int32_t)(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_5, (int32_t)L_6)), 4)), 1))/4));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:105>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:105>
 		return;
 	}
 }
-// Method Definition Index: 28878
+// Method Definition Index: 28971
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_Upload_mA8D62F0BCA60AD3635ED9A7051D382900F9F2874_gshared (Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* __this, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___0_srcData, const RuntimeMethod* method) 
 {
 	int32_t* V_0 = NULL;
 	NativeArray_1_tA833EB7E3E1C9AF82C37976AD964B8D4BAC38B2C V_1;
 	memset((&V_1), 0, sizeof(V_1));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:114>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:114>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_0 = ___0_srcData;
 		NullCheck(L_0);
 		V_0 = ((L_0)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:115>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:115>
 		int32_t* L_1 = V_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:117>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:117>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = ___0_srcData;
 		NullCheck(L_2);
 		NativeArray_1_tA833EB7E3E1C9AF82C37976AD964B8D4BAC38B2C L_3;
 		L_3 = NativeArrayUnsafeUtility_ConvertExistingDataToNativeArray_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m5C4C6FA53CA05FE88CA7926E8B1C0DF717B63550((void*)((uintptr_t)L_1), ((int32_t)(((RuntimeArray*)L_2)->max_length)), (int32_t)1, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 		V_1 = L_3;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:121>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:121>
 		RuntimeObject* L_4 = ((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend;
 		NativeArray_1_tA833EB7E3E1C9AF82C37976AD964B8D4BAC38B2C L_5 = V_1;
 		int32_t L_6;
@@ -27985,30 +27989,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_Upload_mA8D62F0BCA60AD3635ED9A7
 		NullCheck(L_4);
 		GenericInterfaceActionInvoker2< NativeArray_1_tA833EB7E3E1C9AF82C37976AD964B8D4BAC38B2C, int32_t >::Invoke(il2cpp_rgctx_method(method->klass->rgctx_data, 9), L_4, L_5, L_6);
 		V_0 = (int32_t*)((uintptr_t)0);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:124>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:124>
 		return;
 	}
 }
-// Method Definition Index: 28879
+// Method Definition Index: 28972
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_Upload_m0F886317E7411253CB12FA8DB3A5E893714B2CE3_gshared (Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* __this, NativeArray_1_tA833EB7E3E1C9AF82C37976AD964B8D4BAC38B2C ___0_srcData, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:132>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:132>
 		RuntimeObject* L_0 = ((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend;
 		NativeArray_1_tA833EB7E3E1C9AF82C37976AD964B8D4BAC38B2C L_1 = ___0_srcData;
 		int32_t L_2;
 		L_2 = IL2CPP_NATIVEARRAY_GET_LENGTH(((&___0_srcData))->___m_Length);
 		NullCheck(L_0);
 		GenericInterfaceActionInvoker2< NativeArray_1_tA833EB7E3E1C9AF82C37976AD964B8D4BAC38B2C, int32_t >::Invoke(il2cpp_rgctx_method(method->klass->rgctx_data, 9), L_0, L_1, L_2);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:133>
 		return;
 	}
 }
-// Method Definition Index: 28880
+// Method Definition Index: 28973
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* Tensor_1_CloneEmpty_m75F9E684F57B281253CCDC329EFC54C78E89E0BF_gshared (Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:137>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:137>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -28017,18 +28021,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41
 		return (Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)L_1;
 	}
 }
-// Method Definition Index: 28881
+// Method Definition Index: 28974
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* Tensor_1_ReadbackAndClone_mE06244A2079413E36F40DCD6FEE72951389F7AB9_gshared (Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:146>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:146>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_0;
 		L_0 = Tensor_ReadbackAndClone_mDDE52106EB2E31FC019B31FCA1A28268B94FC2B8((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
 		return ((Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379*)IsInstClass((RuntimeObject*)L_0, il2cpp_rgctx_data(method->klass->rgctx_data, 11)));
 	}
 }
-// Method Definition Index: 28882
+// Method Definition Index: 28975
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Awaitable_1_tA8AECB71904D1970004E9ECDA46381EFCEC6DCE0* Tensor_1_ReadbackAndCloneAsync_mEBE909D43025FF7BA095DA6CFB126E70847505E1_gshared (Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* __this, const RuntimeMethod* method) 
 {
 	U3CReadbackAndCloneAsyncU3Ed__9_t351E58D45564E2F084C9B336B66D539C293D3135 V_0;
@@ -28052,13 +28056,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Awaitable_1_tA8AECB71904D1970004E9ECDA46381EF
 		return L_3;
 	}
 }
-// Method Definition Index: 28883
+// Method Definition Index: 28976
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Tensor_1_get_Item_m26977413D343268E674227891FDD203A20E2CBB7_gshared (Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* __this, int32_t ___0_d7, int32_t ___1_d6, int32_t ___2_d5, int32_t ___3_d4, int32_t ___4_d3, int32_t ___5_d2, int32_t ___6_d1, int32_t ___7_d0, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:173>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:173>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -28078,13 +28082,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Tensor_1_get_Item_m26977413D343268E67
 		return L_10;
 	}
 }
-// Method Definition Index: 28884
+// Method Definition Index: 28977
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mDF32D12FA71406858E3E70D655391E4F9C4147D2_gshared (Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* __this, int32_t ___0_d7, int32_t ___1_d6, int32_t ___2_d5, int32_t ___3_d4, int32_t ___4_d3, int32_t ___5_d2, int32_t ___6_d1, int32_t ___7_d0, int32_t ___8_value, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:174>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:174>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -28101,17 +28105,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mDF32D12FA71406858E3E7
 		L_9 = TensorShape_RavelIndex_m98706840BE1616E033654B8B613904194000217D((&V_0), L_1, L_2, L_3, L_4, L_5, L_6, L_7, L_8, NULL);
 		int32_t L_10 = ___8_value;
 		Tensor_1_set_Item_mCB3BA44AF906F4E58573500743958D3C4832186D(__this, L_9, L_10, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:174>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:174>
 		return;
 	}
 }
-// Method Definition Index: 28885
+// Method Definition Index: 28978
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Tensor_1_get_Item_m04201E0B0DBA991E0F627DAF92E8B742529482AA_gshared (Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* __this, int32_t ___0_d6, int32_t ___1_d5, int32_t ___2_d4, int32_t ___3_d3, int32_t ___4_d2, int32_t ___5_d1, int32_t ___6_d0, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:189>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:189>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -28130,13 +28134,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Tensor_1_get_Item_m04201E0B0DBA991E0F
 		return L_9;
 	}
 }
-// Method Definition Index: 28886
+// Method Definition Index: 28979
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mC85AB7F659233381847E198E52014042A1806AFA_gshared (Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* __this, int32_t ___0_d6, int32_t ___1_d5, int32_t ___2_d4, int32_t ___3_d3, int32_t ___4_d2, int32_t ___5_d1, int32_t ___6_d0, int32_t ___7_value, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:190>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:190>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -28152,17 +28156,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mC85AB7F659233381847E1
 		L_8 = TensorShape_RavelIndex_mFBA31B9D7FF23526824698E33FF9376F6BC418A4((&V_0), L_1, L_2, L_3, L_4, L_5, L_6, L_7, NULL);
 		int32_t L_9 = ___7_value;
 		Tensor_1_set_Item_mCB3BA44AF906F4E58573500743958D3C4832186D(__this, L_8, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:190>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:190>
 		return;
 	}
 }
-// Method Definition Index: 28887
+// Method Definition Index: 28980
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Tensor_1_get_Item_m8E7DA839D81013668C8DB8BE0CE9E42E47A98F7F_gshared (Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* __this, int32_t ___0_d5, int32_t ___1_d4, int32_t ___2_d3, int32_t ___3_d2, int32_t ___4_d1, int32_t ___5_d0, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:203>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:203>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -28180,13 +28184,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Tensor_1_get_Item_m8E7DA839D81013668C
 		return L_8;
 	}
 }
-// Method Definition Index: 28888
+// Method Definition Index: 28981
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mBFA01272A84CB461C723AFEF86152C863452E3E2_gshared (Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* __this, int32_t ___0_d5, int32_t ___1_d4, int32_t ___2_d3, int32_t ___3_d2, int32_t ___4_d1, int32_t ___5_d0, int32_t ___6_value, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:204>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:204>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -28201,17 +28205,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mBFA01272A84CB461C723A
 		L_7 = TensorShape_RavelIndex_mC307DFDB2ECA8E3D96905D236665C0066AE47E18((&V_0), L_1, L_2, L_3, L_4, L_5, L_6, NULL);
 		int32_t L_8 = ___6_value;
 		Tensor_1_set_Item_mCB3BA44AF906F4E58573500743958D3C4832186D(__this, L_7, L_8, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:204>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:204>
 		return;
 	}
 }
-// Method Definition Index: 28889
+// Method Definition Index: 28982
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Tensor_1_get_Item_m37D1B0EBDD76AB91BA63139109B4BDD5BA684AB3_gshared (Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* __this, int32_t ___0_d4, int32_t ___1_d3, int32_t ___2_d2, int32_t ___3_d1, int32_t ___4_d0, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:216>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:216>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -28228,13 +28232,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Tensor_1_get_Item_m37D1B0EBDD76AB91BA
 		return L_7;
 	}
 }
-// Method Definition Index: 28890
+// Method Definition Index: 28983
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_m1CDFB8957EC263C402DD8153FAE7780FE3FCFF35_gshared (Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* __this, int32_t ___0_d4, int32_t ___1_d3, int32_t ___2_d2, int32_t ___3_d1, int32_t ___4_d0, int32_t ___5_value, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:217>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:217>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -28248,17 +28252,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_m1CDFB8957EC263C402DD8
 		L_6 = TensorShape_RavelIndex_m9689694ADF9A838C89200374C9F178B2ADF4DD17((&V_0), L_1, L_2, L_3, L_4, L_5, NULL);
 		int32_t L_7 = ___5_value;
 		Tensor_1_set_Item_mCB3BA44AF906F4E58573500743958D3C4832186D(__this, L_6, L_7, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:217>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:217>
 		return;
 	}
 }
-// Method Definition Index: 28891
+// Method Definition Index: 28984
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Tensor_1_get_Item_mFBB419EA764E55946531C2A07C489001F48DEF5B_gshared (Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* __this, int32_t ___0_d3, int32_t ___1_d2, int32_t ___2_d1, int32_t ___3_d0, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:228>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:228>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -28274,13 +28278,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Tensor_1_get_Item_mFBB419EA764E559465
 		return L_6;
 	}
 }
-// Method Definition Index: 28892
+// Method Definition Index: 28985
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_m7A2EE80B15A4C20D95ACA5660960596F6A892B35_gshared (Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* __this, int32_t ___0_d3, int32_t ___1_d2, int32_t ___2_d1, int32_t ___3_d0, int32_t ___4_value, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:229>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:229>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -28293,17 +28297,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_m7A2EE80B15A4C20D95ACA
 		L_5 = TensorShape_RavelIndex_mEDEA25F53D29BE0A94591E7F0F993B7A66A70097((&V_0), L_1, L_2, L_3, L_4, NULL);
 		int32_t L_6 = ___4_value;
 		Tensor_1_set_Item_mCB3BA44AF906F4E58573500743958D3C4832186D(__this, L_5, L_6, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:229>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:229>
 		return;
 	}
 }
-// Method Definition Index: 28893
+// Method Definition Index: 28986
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Tensor_1_get_Item_mE24BBDF7BD41D8992707F852F1A133003DFD53C1_gshared (Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* __this, int32_t ___0_d2, int32_t ___1_d1, int32_t ___2_d0, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:239>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:239>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -28318,13 +28322,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Tensor_1_get_Item_mE24BBDF7BD41D89927
 		return L_5;
 	}
 }
-// Method Definition Index: 28894
+// Method Definition Index: 28987
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mAD59BDEC6DACAF3045E61EE6A5F36FA6A2FE517F_gshared (Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* __this, int32_t ___0_d2, int32_t ___1_d1, int32_t ___2_d0, int32_t ___3_value, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:240>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:240>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -28336,17 +28340,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mAD59BDEC6DACAF3045E61
 		L_4 = TensorShape_RavelIndex_m10337224577B7EE7886C93E681F096F05DB3815A((&V_0), L_1, L_2, L_3, NULL);
 		int32_t L_5 = ___3_value;
 		Tensor_1_set_Item_mCB3BA44AF906F4E58573500743958D3C4832186D(__this, L_4, L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:240>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:240>
 		return;
 	}
 }
-// Method Definition Index: 28895
+// Method Definition Index: 28988
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Tensor_1_get_Item_m58B2BA9498867EAE9FA553676153045496A4D8EC_gshared (Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* __this, int32_t ___0_d1, int32_t ___1_d0, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:249>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:249>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -28360,13 +28364,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Tensor_1_get_Item_m58B2BA9498867EAE9F
 		return L_4;
 	}
 }
-// Method Definition Index: 28896
+// Method Definition Index: 28989
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mE6D77C27BE10AE5C0AAEA86A3E2444D689182AD5_gshared (Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* __this, int32_t ___0_d1, int32_t ___1_d0, int32_t ___2_value, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:250>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:250>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -28377,15 +28381,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mE6D77C27BE10AE5C0AAEA
 		L_3 = TensorShape_RavelIndex_mE00ACD16131D5C2247B840A881803A9ED80C2EE2((&V_0), L_1, L_2, NULL);
 		int32_t L_4 = ___2_value;
 		Tensor_1_set_Item_mCB3BA44AF906F4E58573500743958D3C4832186D(__this, L_3, L_4, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:250>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:250>
 		return;
 	}
 }
-// Method Definition Index: 28897
+// Method Definition Index: 28990
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Tensor_1_get_Item_mA12180AF1AFA39D25AF6F47623574DDA87D245F7_gshared (Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* __this, int32_t ___0_d0, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:259>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:259>
 		int32_t L_0 = ___0_d0;
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		int32_t L_1;
@@ -28393,20 +28397,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Tensor_1_get_Item_mA12180AF1AFA39D25A
 		return L_1;
 	}
 }
-// Method Definition Index: 28898
+// Method Definition Index: 28991
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mCB3BA44AF906F4E58573500743958D3C4832186D_gshared (Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* __this, int32_t ___0_d0, int32_t ___1_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:260>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:260>
 		int32_t L_0 = ___0_d0;
 		int32_t L_1 = ___1_value;
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		Tensor_SetItem_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m34FD096AD0A6FCD882BA5976E95DE43C6B1DF59B((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, L_0, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 24));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:260>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:260>
 		return;
 	}
 }
-// Method Definition Index: 28899
+// Method Definition Index: 28992
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* Tensor_1_DownloadToArray_m53B6D55C10CFD565424D806F909FD40BEA2E640E_gshared (Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* __this, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
@@ -28414,7 +28418,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int32U5BU5D_t19C97395396A72ECAF310612F0760F16
 	NativeArray_1_tA833EB7E3E1C9AF82C37976AD964B8D4BAC38B2C V_1;
 	memset((&V_1), 0, sizeof(V_1));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:272>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:272>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		int32_t L_0;
 		L_0 = Tensor_get_count_m1ECF506B233D46BEA8084389A0AF8B76DFFD0D47_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -28424,7 +28428,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int32U5BU5D_t19C97395396A72ECAF310612F0760F16
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:273>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:273>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_1;
 		L_1 = Array_Empty_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m4D53E0E0F90F37AD5DBFD2DC75E52406F90C7ABC_inline(il2cpp_rgctx_method(method->klass->rgctx_data, 25));
 		return L_1;
@@ -28432,7 +28436,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int32U5BU5D_t19C97395396A72ECAF310612F0760F16
 
 IL_000e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:274>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:274>
 		RuntimeObject* L_2 = ((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend;
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_3;
@@ -28449,13 +28453,13 @@ IL_000e:
 		return L_6;
 	}
 }
-// Method Definition Index: 28900
+// Method Definition Index: 28993
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NativeArray_1_tA833EB7E3E1C9AF82C37976AD964B8D4BAC38B2C Tensor_1_DownloadToNativeArray_m1C7F14B1691C2B76CD33A02A5E9AC90BE2F8C2D8_gshared (Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* __this, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:286>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:286>
 		RuntimeObject* L_0 = ((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend;
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_1;
@@ -28469,22 +28473,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NativeArray_1_tA833EB7E3E1C9AF82C37976AD964B8
 		return L_3;
 	}
 }
-// Method Definition Index: 28901
+// Method Definition Index: 28994
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReadOnly_tE5BD616B34DA7C51EB808FBF52C839354E8B0E0B Tensor_1_AsReadOnlyNativeArray_m4FB4579819A3959CF90EE673E5C7EEE9F56CB198_gshared (Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:295>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:295>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		ReadOnly_tE5BD616B34DA7C51EB808FBF52C839354E8B0E0B L_0;
 		L_0 = Tensor_AsReadOnlyNativeArray_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m4ACB54990314C21E1501DA23B83BF633C0A5295D((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		return L_0;
 	}
 }
-// Method Definition Index: 28902
+// Method Definition Index: 28995
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 Tensor_1_AsReadOnlySpan_m04C5AFF2D09E01F57F94128D6B2FAD1BBE059F69_gshared (Tensor_1_t65B864E8272AE642C573473CC6901460AD6A3379* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:304>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:304>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282 L_0;
 		L_0 = Tensor_AsReadOnlySpan_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mFE43B3C8E34993F946FD2F86B22FAF0AF3F2B6EB((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 30));
@@ -28499,7 +28503,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB34
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 28873
+// Method Definition Index: 28966
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_m3939998527BC32D9233CBDF54948038625888C03_gshared (Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* __this, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 ___0_shape, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_srcData, int32_t ___2_dataStartIndex, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -28510,32 +28514,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_m3939998527BC32D9233CBDF5
 	}
 	CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* V_0 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:19>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:19>
 		Tensor__ctor_m22C3462DE74B29FF31D85500407D9420A9DE72CC((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:21>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:21>
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0 = ___0_shape;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Shape = L_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:24>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:24>
 		int32_t L_1;
 		L_1 = TensorShape_get_length_mA31654DBE59EC0DA686DE063200A6907704B99CD((&___0_shape), NULL);
 		uint32_t L_2 = sizeof(float);
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Count = ((int32_t)(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_1, (int32_t)L_2)), 4)), 1))/4));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:27>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:27>
 		int32_t L_3;
 		L_3 = AllocatorUtils_ToDataType_TisSingle_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_m63189A0C032D39E7BFA5A6AFC14212A052CB94CD(il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataType = L_3;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:29>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:29>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		int32_t L_4;
 		L_4 = Tensor_get_count_m1ECF506B233D46BEA8084389A0AF8B76DFFD0D47_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
 		CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* L_5 = (CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4*)il2cpp_codegen_object_new(CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4_il2cpp_TypeInfo_var);
 		CPUTensorData__ctor_mB66674975F92003C4CC022855BB5AD0AC75D0F5A(L_5, L_4, (bool)0, NULL);
 		V_0 = L_5;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:30>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:30>
 		CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* L_6 = V_0;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend = (RuntimeObject*)L_6;
 		Il2CppCodeGenWriteBarrier((void**)(&((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend), (void*)(RuntimeObject*)L_6);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:31>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:31>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_7 = ___1_srcData;
 		int32_t L_8 = ___2_dataStartIndex;
 		CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* L_9 = V_0;
@@ -28546,11 +28550,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_m3939998527BC32D9233CBDF5
 		NullCheck(L_11);
 		int32_t L_12 = ___2_dataStartIndex;
 		NativeTensorArray_Copy_TisSingle_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_m8F0793BBB6D827CF86CA3D82A034ACBC96252B26(L_7, L_8, L_10, 0, ((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_11)->max_length)), L_12)), il2cpp_rgctx_method(method->klass->rgctx_data, 3));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:32>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:32>
 		return;
 	}
 }
-// Method Definition Index: 28874
+// Method Definition Index: 28967
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_m3B07D4039476CB81A9E5C28666398BBA695D3AF2_gshared (Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* __this, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 ___0_shape, NativeArray_1_t3848EE4B6647317212A754634DE6DBC90B99FBEF ___1_srcData, int32_t ___2_dataStartIndex, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -28561,32 +28565,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_m3B07D4039476CB81A9E5C286
 	}
 	CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* V_0 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:40>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:40>
 		Tensor__ctor_m22C3462DE74B29FF31D85500407D9420A9DE72CC((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:42>
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0 = ___0_shape;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Shape = L_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:45>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:45>
 		int32_t L_1;
 		L_1 = TensorShape_get_length_mA31654DBE59EC0DA686DE063200A6907704B99CD((&___0_shape), NULL);
 		uint32_t L_2 = sizeof(float);
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Count = ((int32_t)(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_1, (int32_t)L_2)), 4)), 1))/4));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:48>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:48>
 		int32_t L_3;
 		L_3 = AllocatorUtils_ToDataType_TisSingle_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_m63189A0C032D39E7BFA5A6AFC14212A052CB94CD(il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataType = L_3;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:50>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:50>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		int32_t L_4;
 		L_4 = Tensor_get_count_m1ECF506B233D46BEA8084389A0AF8B76DFFD0D47_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
 		CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* L_5 = (CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4*)il2cpp_codegen_object_new(CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4_il2cpp_TypeInfo_var);
 		CPUTensorData__ctor_mB66674975F92003C4CC022855BB5AD0AC75D0F5A(L_5, L_4, (bool)0, NULL);
 		V_0 = L_5;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:51>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:51>
 		CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* L_6 = V_0;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend = (RuntimeObject*)L_6;
 		Il2CppCodeGenWriteBarrier((void**)(&((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend), (void*)(RuntimeObject*)L_6);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:52>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:52>
 		NativeArray_1_t3848EE4B6647317212A754634DE6DBC90B99FBEF L_7 = ___1_srcData;
 		int32_t L_8 = ___2_dataStartIndex;
 		CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* L_9 = V_0;
@@ -28597,39 +28601,39 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_m3B07D4039476CB81A9E5C286
 		L_11 = IL2CPP_NATIVEARRAY_GET_LENGTH(((&___1_srcData))->___m_Length);
 		int32_t L_12 = ___2_dataStartIndex;
 		NativeTensorArray_Copy_TisSingle_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_mCE64573801C59F61BDD5071301C859B39C5EB66A(L_7, L_8, L_10, 0, ((int32_t)il2cpp_codegen_subtract(L_11, L_12)), il2cpp_rgctx_method(method->klass->rgctx_data, 7));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:53>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:53>
 		return;
 	}
 }
-// Method Definition Index: 28875
+// Method Definition Index: 28968
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_m6A2A8FA6DE511EB34EDA88E5BBEDA25DB3274328_gshared (Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* __this, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 ___0_shape, RuntimeObject* ___1_data, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:60>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:60>
 		Tensor__ctor_m22C3462DE74B29FF31D85500407D9420A9DE72CC((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:62>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:62>
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0 = ___0_shape;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Shape = L_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:65>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:65>
 		int32_t L_1;
 		L_1 = TensorShape_get_length_mA31654DBE59EC0DA686DE063200A6907704B99CD((&___0_shape), NULL);
 		uint32_t L_2 = sizeof(float);
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Count = ((int32_t)(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_1, (int32_t)L_2)), 4)), 1))/4));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:67>
 		RuntimeObject* L_3 = ___1_data;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend), (void*)L_3);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:68>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:68>
 		int32_t L_4;
 		L_4 = AllocatorUtils_ToDataType_TisSingle_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_m63189A0C032D39E7BFA5A6AFC14212A052CB94CD(il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataType = L_4;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:70>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:70>
 		RuntimeObject* L_5 = ((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:72>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:72>
 		return;
 	}
 }
-// Method Definition Index: 28876
+// Method Definition Index: 28969
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_m43F3E259B9C1B9EF0A410E7C15B52692D88D8386_gshared (Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* __this, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 ___0_shape, bool ___1_clearOnInit, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -28639,17 +28643,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_m43F3E259B9C1B9EF0A410E7C
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:79>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:79>
 		Tensor__ctor_m22C3462DE74B29FF31D85500407D9420A9DE72CC((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:81>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:81>
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0 = ___0_shape;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Shape = L_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:84>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:84>
 		int32_t L_1;
 		L_1 = TensorShape_get_length_mA31654DBE59EC0DA686DE063200A6907704B99CD((&___0_shape), NULL);
 		uint32_t L_2 = sizeof(float);
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Count = ((int32_t)(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_1, (int32_t)L_2)), 4)), 1))/4));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:86>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:86>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		int32_t L_3;
 		L_3 = Tensor_get_count_m1ECF506B233D46BEA8084389A0AF8B76DFFD0D47_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -28658,19 +28662,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1__ctor_m43F3E259B9C1B9EF0A410E7C
 		CPUTensorData__ctor_mB66674975F92003C4CC022855BB5AD0AC75D0F5A(L_5, L_3, L_4, NULL);
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend = (RuntimeObject*)L_5;
 		Il2CppCodeGenWriteBarrier((void**)(&((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend), (void*)(RuntimeObject*)L_5);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:87>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:87>
 		int32_t L_6;
 		L_6 = AllocatorUtils_ToDataType_TisSingle_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_m63189A0C032D39E7BFA5A6AFC14212A052CB94CD(il2cpp_rgctx_method(method->klass->rgctx_data, 1));
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataType = L_6;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:88>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:88>
 		return;
 	}
 }
-// Method Definition Index: 28877
+// Method Definition Index: 28970
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_Reshape_m7920A4F70B4C74E883A5C1F8E666F0FDA4E34262_gshared (Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* __this, TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 ___0_shape, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:93>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:93>
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0 = ___0_shape;
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_1 = ((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Shape;
 		bool L_2;
@@ -28681,48 +28685,48 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_Reshape_m7920A4F70B4C74E883A5C1
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:94>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:94>
 		return;
 	}
 
 IL_000f:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:95>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:95>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		RuntimeObject* L_3;
 		L_3 = Tensor_get_dataOnBackend_m055C03D26247F524EEF5B0D10F2700FC68D60067_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:100>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:100>
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_4 = ___0_shape;
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Shape = L_4;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:103>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:103>
 		int32_t L_5;
 		L_5 = TensorShape_get_length_mA31654DBE59EC0DA686DE063200A6907704B99CD((&___0_shape), NULL);
 		uint32_t L_6 = sizeof(float);
 		((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_Count = ((int32_t)(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_5, (int32_t)L_6)), 4)), 1))/4));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:105>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:105>
 		return;
 	}
 }
-// Method Definition Index: 28878
+// Method Definition Index: 28971
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_Upload_m503D497EC87D8AF49397E01C829341C64C39BD81_gshared (Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___0_srcData, const RuntimeMethod* method) 
 {
 	float* V_0 = NULL;
 	NativeArray_1_t3848EE4B6647317212A754634DE6DBC90B99FBEF V_1;
 	memset((&V_1), 0, sizeof(V_1));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:114>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:114>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_0 = ___0_srcData;
 		NullCheck(L_0);
 		V_0 = ((L_0)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:115>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:115>
 		float* L_1 = V_0;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:117>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:117>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___0_srcData;
 		NullCheck(L_2);
 		NativeArray_1_t3848EE4B6647317212A754634DE6DBC90B99FBEF L_3;
 		L_3 = NativeArrayUnsafeUtility_ConvertExistingDataToNativeArray_TisSingle_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_m774F73A324062BD75AF0FA48903D9C9056F70577((void*)((uintptr_t)L_1), ((int32_t)(((RuntimeArray*)L_2)->max_length)), (int32_t)1, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 		V_1 = L_3;
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:121>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:121>
 		RuntimeObject* L_4 = ((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend;
 		NativeArray_1_t3848EE4B6647317212A754634DE6DBC90B99FBEF L_5 = V_1;
 		int32_t L_6;
@@ -28730,30 +28734,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_Upload_m503D497EC87D8AF49397E01
 		NullCheck(L_4);
 		GenericInterfaceActionInvoker2< NativeArray_1_t3848EE4B6647317212A754634DE6DBC90B99FBEF, int32_t >::Invoke(il2cpp_rgctx_method(method->klass->rgctx_data, 9), L_4, L_5, L_6);
 		V_0 = (float*)((uintptr_t)0);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:124>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:124>
 		return;
 	}
 }
-// Method Definition Index: 28879
+// Method Definition Index: 28972
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_Upload_m4AE9C2B920402EA3B6D8CAED98797C69053E054A_gshared (Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* __this, NativeArray_1_t3848EE4B6647317212A754634DE6DBC90B99FBEF ___0_srcData, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:132>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:132>
 		RuntimeObject* L_0 = ((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend;
 		NativeArray_1_t3848EE4B6647317212A754634DE6DBC90B99FBEF L_1 = ___0_srcData;
 		int32_t L_2;
 		L_2 = IL2CPP_NATIVEARRAY_GET_LENGTH(((&___0_srcData))->___m_Length);
 		NullCheck(L_0);
 		GenericInterfaceActionInvoker2< NativeArray_1_t3848EE4B6647317212A754634DE6DBC90B99FBEF, int32_t >::Invoke(il2cpp_rgctx_method(method->klass->rgctx_data, 9), L_0, L_1, L_2);
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:133>
 		return;
 	}
 }
-// Method Definition Index: 28880
+// Method Definition Index: 28973
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* Tensor_1_CloneEmpty_m3A9A039A7610EC9762FA5A0F605A2D895D16E872_gshared (Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:137>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:137>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -28762,18 +28766,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41
 		return (Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)L_1;
 	}
 }
-// Method Definition Index: 28881
+// Method Definition Index: 28974
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* Tensor_1_ReadbackAndClone_m94DDCE51E7C12C75F71D7E022BD3729968EC0120_gshared (Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:146>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:146>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* L_0;
 		L_0 = Tensor_ReadbackAndClone_mDDE52106EB2E31FC019B31FCA1A28268B94FC2B8((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
 		return ((Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4*)IsInstClass((RuntimeObject*)L_0, il2cpp_rgctx_data(method->klass->rgctx_data, 11)));
 	}
 }
-// Method Definition Index: 28882
+// Method Definition Index: 28975
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Awaitable_1_t5D5E4FD1EBF7341D3A06B0DD8B705E53E4B48DB6* Tensor_1_ReadbackAndCloneAsync_m040E688F43974D8EF4215457E71F8AD943E01045_gshared (Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* __this, const RuntimeMethod* method) 
 {
 	U3CReadbackAndCloneAsyncU3Ed__9_tF1001E4BD9DE32B6170CE3BC2C125FB6540E26CE V_0;
@@ -28797,13 +28801,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Awaitable_1_t5D5E4FD1EBF7341D3A06B0DD8B705E53
 		return L_3;
 	}
 }
-// Method Definition Index: 28883
+// Method Definition Index: 28976
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Tensor_1_get_Item_mCEA6EC5DD78F80D992FD2A06784B7DB3B230AB6A_gshared (Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* __this, int32_t ___0_d7, int32_t ___1_d6, int32_t ___2_d5, int32_t ___3_d4, int32_t ___4_d3, int32_t ___5_d2, int32_t ___6_d1, int32_t ___7_d0, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:173>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:173>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -28823,13 +28827,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Tensor_1_get_Item_mCEA6EC5DD78F80D992FD
 		return L_10;
 	}
 }
-// Method Definition Index: 28884
+// Method Definition Index: 28977
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mEF21B7B4374DC8F79DCEB1FF9C27464F9299450D_gshared (Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* __this, int32_t ___0_d7, int32_t ___1_d6, int32_t ___2_d5, int32_t ___3_d4, int32_t ___4_d3, int32_t ___5_d2, int32_t ___6_d1, int32_t ___7_d0, float ___8_value, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:174>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:174>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -28846,17 +28850,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mEF21B7B4374DC8F79DCEB
 		L_9 = TensorShape_RavelIndex_m98706840BE1616E033654B8B613904194000217D((&V_0), L_1, L_2, L_3, L_4, L_5, L_6, L_7, L_8, NULL);
 		float L_10 = ___8_value;
 		Tensor_1_set_Item_m0B51096FCC5CB37F902735D774156C1A65D4AB15(__this, L_9, L_10, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:174>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:174>
 		return;
 	}
 }
-// Method Definition Index: 28885
+// Method Definition Index: 28978
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Tensor_1_get_Item_m39F52269E978A3BFCDC176BCE086AE951687CB54_gshared (Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* __this, int32_t ___0_d6, int32_t ___1_d5, int32_t ___2_d4, int32_t ___3_d3, int32_t ___4_d2, int32_t ___5_d1, int32_t ___6_d0, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:189>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:189>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -28875,13 +28879,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Tensor_1_get_Item_m39F52269E978A3BFCDC1
 		return L_9;
 	}
 }
-// Method Definition Index: 28886
+// Method Definition Index: 28979
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mDFEC945335461EC9C6DDE9A3F51657E1B97AC313_gshared (Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* __this, int32_t ___0_d6, int32_t ___1_d5, int32_t ___2_d4, int32_t ___3_d3, int32_t ___4_d2, int32_t ___5_d1, int32_t ___6_d0, float ___7_value, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:190>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:190>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -28897,17 +28901,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mDFEC945335461EC9C6DDE
 		L_8 = TensorShape_RavelIndex_mFBA31B9D7FF23526824698E33FF9376F6BC418A4((&V_0), L_1, L_2, L_3, L_4, L_5, L_6, L_7, NULL);
 		float L_9 = ___7_value;
 		Tensor_1_set_Item_m0B51096FCC5CB37F902735D774156C1A65D4AB15(__this, L_8, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:190>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:190>
 		return;
 	}
 }
-// Method Definition Index: 28887
+// Method Definition Index: 28980
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Tensor_1_get_Item_m7B7F7D286EA4FB007200E33C5907FB174E9844EA_gshared (Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* __this, int32_t ___0_d5, int32_t ___1_d4, int32_t ___2_d3, int32_t ___3_d2, int32_t ___4_d1, int32_t ___5_d0, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:203>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:203>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -28925,13 +28929,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Tensor_1_get_Item_m7B7F7D286EA4FB007200
 		return L_8;
 	}
 }
-// Method Definition Index: 28888
+// Method Definition Index: 28981
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mD5E4543B4FF297936F4436CEF1EB4B5E42CA92B8_gshared (Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* __this, int32_t ___0_d5, int32_t ___1_d4, int32_t ___2_d3, int32_t ___3_d2, int32_t ___4_d1, int32_t ___5_d0, float ___6_value, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:204>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:204>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -28946,17 +28950,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mD5E4543B4FF297936F443
 		L_7 = TensorShape_RavelIndex_mC307DFDB2ECA8E3D96905D236665C0066AE47E18((&V_0), L_1, L_2, L_3, L_4, L_5, L_6, NULL);
 		float L_8 = ___6_value;
 		Tensor_1_set_Item_m0B51096FCC5CB37F902735D774156C1A65D4AB15(__this, L_7, L_8, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:204>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:204>
 		return;
 	}
 }
-// Method Definition Index: 28889
+// Method Definition Index: 28982
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Tensor_1_get_Item_m79E0F44F97A5BE09153C36412923D490D27CA603_gshared (Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* __this, int32_t ___0_d4, int32_t ___1_d3, int32_t ___2_d2, int32_t ___3_d1, int32_t ___4_d0, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:216>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:216>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -28973,13 +28977,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Tensor_1_get_Item_m79E0F44F97A5BE09153C
 		return L_7;
 	}
 }
-// Method Definition Index: 28890
+// Method Definition Index: 28983
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_m0E84BA4707F7055E68DBC05207F07C5C6F0749F5_gshared (Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* __this, int32_t ___0_d4, int32_t ___1_d3, int32_t ___2_d2, int32_t ___3_d1, int32_t ___4_d0, float ___5_value, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:217>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:217>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -28993,17 +28997,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_m0E84BA4707F7055E68DBC
 		L_6 = TensorShape_RavelIndex_m9689694ADF9A838C89200374C9F178B2ADF4DD17((&V_0), L_1, L_2, L_3, L_4, L_5, NULL);
 		float L_7 = ___5_value;
 		Tensor_1_set_Item_m0B51096FCC5CB37F902735D774156C1A65D4AB15(__this, L_6, L_7, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:217>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:217>
 		return;
 	}
 }
-// Method Definition Index: 28891
+// Method Definition Index: 28984
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Tensor_1_get_Item_m2F8F3C531FF3CDAA3714D4D49A613EB2EA0CEBC9_gshared (Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* __this, int32_t ___0_d3, int32_t ___1_d2, int32_t ___2_d1, int32_t ___3_d0, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:228>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:228>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -29019,13 +29023,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Tensor_1_get_Item_m2F8F3C531FF3CDAA3714
 		return L_6;
 	}
 }
-// Method Definition Index: 28892
+// Method Definition Index: 28985
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_m89618A0F5008F3C0A0F13DBC311A47642A753D73_gshared (Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* __this, int32_t ___0_d3, int32_t ___1_d2, int32_t ___2_d1, int32_t ___3_d0, float ___4_value, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:229>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:229>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -29038,17 +29042,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_m89618A0F5008F3C0A0F13
 		L_5 = TensorShape_RavelIndex_mEDEA25F53D29BE0A94591E7F0F993B7A66A70097((&V_0), L_1, L_2, L_3, L_4, NULL);
 		float L_6 = ___4_value;
 		Tensor_1_set_Item_m0B51096FCC5CB37F902735D774156C1A65D4AB15(__this, L_5, L_6, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:229>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:229>
 		return;
 	}
 }
-// Method Definition Index: 28893
+// Method Definition Index: 28986
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Tensor_1_get_Item_mACE4E0E3CFE1D2F576CA0558C694301849691076_gshared (Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* __this, int32_t ___0_d2, int32_t ___1_d1, int32_t ___2_d0, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:239>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:239>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -29063,13 +29067,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Tensor_1_get_Item_mACE4E0E3CFE1D2F576CA
 		return L_5;
 	}
 }
-// Method Definition Index: 28894
+// Method Definition Index: 28987
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mD4E088025C9A2E6513A2CD4589FEB31A6F7764B9_gshared (Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* __this, int32_t ___0_d2, int32_t ___1_d1, int32_t ___2_d0, float ___3_value, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:240>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:240>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -29081,17 +29085,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mD4E088025C9A2E6513A2C
 		L_4 = TensorShape_RavelIndex_m10337224577B7EE7886C93E681F096F05DB3815A((&V_0), L_1, L_2, L_3, NULL);
 		float L_5 = ___3_value;
 		Tensor_1_set_Item_m0B51096FCC5CB37F902735D774156C1A65D4AB15(__this, L_4, L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:240>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:240>
 		return;
 	}
 }
-// Method Definition Index: 28895
+// Method Definition Index: 28988
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Tensor_1_get_Item_m1F77E7DBF99955DAC7D9181B2904BA54D71798C1_gshared (Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* __this, int32_t ___0_d1, int32_t ___1_d0, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:249>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:249>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -29105,13 +29109,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Tensor_1_get_Item_m1F77E7DBF99955DAC7D9
 		return L_4;
 	}
 }
-// Method Definition Index: 28896
+// Method Definition Index: 28989
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mF4D393241FEA01CEA30303E9F736A1AFA772A34B_gshared (Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* __this, int32_t ___0_d1, int32_t ___1_d0, float ___2_value, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:250>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:250>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0;
 		L_0 = Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -29122,15 +29126,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_mF4D393241FEA01CEA3030
 		L_3 = TensorShape_RavelIndex_mE00ACD16131D5C2247B840A881803A9ED80C2EE2((&V_0), L_1, L_2, NULL);
 		float L_4 = ___2_value;
 		Tensor_1_set_Item_m0B51096FCC5CB37F902735D774156C1A65D4AB15(__this, L_3, L_4, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:250>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:250>
 		return;
 	}
 }
-// Method Definition Index: 28897
+// Method Definition Index: 28990
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Tensor_1_get_Item_m700936CC86513CDD2304FE46E9FF8DE31BC1E68D_gshared (Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* __this, int32_t ___0_d0, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:259>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:259>
 		int32_t L_0 = ___0_d0;
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		float L_1;
@@ -29138,20 +29142,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Tensor_1_get_Item_m700936CC86513CDD2304
 		return L_1;
 	}
 }
-// Method Definition Index: 28898
+// Method Definition Index: 28991
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tensor_1_set_Item_m0B51096FCC5CB37F902735D774156C1A65D4AB15_gshared (Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* __this, int32_t ___0_d0, float ___1_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:260>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:260>
 		int32_t L_0 = ___0_d0;
 		float L_1 = ___1_value;
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		Tensor_SetItem_TisSingle_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_m66B3B389EEF39063D1C4189BC60F9F4AAF0F8216((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, L_0, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 24));
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:260>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:260>
 		return;
 	}
 }
-// Method Definition Index: 28899
+// Method Definition Index: 28992
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* Tensor_1_DownloadToArray_mC94BC0CA3B84C752E40EC0EF2EE31A713DF0853D_gshared (Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* __this, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
@@ -29159,7 +29163,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52C
 	NativeArray_1_t3848EE4B6647317212A754634DE6DBC90B99FBEF V_1;
 	memset((&V_1), 0, sizeof(V_1));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:272>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:272>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		int32_t L_0;
 		L_0 = Tensor_get_count_m1ECF506B233D46BEA8084389A0AF8B76DFFD0D47_inline((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, NULL);
@@ -29169,7 +29173,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52C
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:273>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:273>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1;
 		L_1 = Array_Empty_TisSingle_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_m44F781E90531F7FCDB12BC4290CD4394A887FC06_inline(il2cpp_rgctx_method(method->klass->rgctx_data, 25));
 		return L_1;
@@ -29177,7 +29181,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52C
 
 IL_000e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:274>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:274>
 		RuntimeObject* L_2 = ((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend;
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_3;
@@ -29194,13 +29198,13 @@ IL_000e:
 		return L_6;
 	}
 }
-// Method Definition Index: 28900
+// Method Definition Index: 28993
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NativeArray_1_t3848EE4B6647317212A754634DE6DBC90B99FBEF Tensor_1_DownloadToNativeArray_m72610E898DE435958337663B51D1039C3622C748_gshared (Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* __this, const RuntimeMethod* method) 
 {
 	TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:286>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:286>
 		RuntimeObject* L_0 = ((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this)->___m_DataOnBackend;
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_1;
@@ -29214,22 +29218,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NativeArray_1_t3848EE4B6647317212A754634DE6DB
 		return L_3;
 	}
 }
-// Method Definition Index: 28901
+// Method Definition Index: 28994
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReadOnly_t6B38E9C5FCABBE8D6818DD3ADB3FC96BCD19E8F3 Tensor_1_AsReadOnlyNativeArray_m96D0CCFC280054084168FCCE31FE9017F70B75C2_gshared (Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:295>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:295>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		ReadOnly_t6B38E9C5FCABBE8D6818DD3ADB3FC96BCD19E8F3 L_0;
 		L_0 = Tensor_AsReadOnlyNativeArray_TisSingle_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_mA9430A649B0114ACCA2A586300B8131BBAE528BE((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 28));
 		return L_0;
 	}
 }
-// Method Definition Index: 28902
+// Method Definition Index: 28995
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReadOnlySpan_1_t9C2C8EDE84088EDC61AADD4CA3C2CDC72D135E3D Tensor_1_AsReadOnlySpan_mFA4D352417206DC9EA349E9107B9D598C9AFA6E3_gshared (Tensor_1_tF7D2A544E958ACBBDF69FBFE22DB56B8D49776E4* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/TensorGeneric.cs:304>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/TensorGeneric.cs:304>
 		NullCheck((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this);
 		ReadOnlySpan_1_t9C2C8EDE84088EDC61AADD4CA3C2CDC72D135E3D L_0;
 		L_0 = Tensor_AsReadOnlySpan_TisSingle_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_mC70CBC5EBC7BCBCD246953F11B2ABEBFDB505C87((Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 30));
@@ -29314,7 +29318,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Task_get_IsWaitNotificationE
 		return (bool)((((int32_t)((((int32_t)((int32_t)(L_0&((int32_t)285212672)))) == ((int32_t)((int32_t)16777216)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 }
-// Method Definition Index: 52806
+// Method Definition Index: 52898
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_Min_m888083F74FF5655778F0403BB5E9608BEFDEA8CB_inline (int32_t ___0_a, int32_t ___1_b, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -29351,38 +29355,38 @@ IL_000c:
 		return L_4;
 	}
 }
-// Method Definition Index: 28838
+// Method Definition Index: 28931
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Tensor_get_count_m1ECF506B233D46BEA8084389A0AF8B76DFFD0D47_inline (Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Tensor.cs:48>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Tensor.cs:48>
 		int32_t L_0 = __this->___m_Count;
 		return L_0;
 	}
 }
-// Method Definition Index: 26942
+// Method Definition Index: 27026
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NativeTensorArray_t26429BDF6C5130249000A811D88C022E788AE9AD* CPUTensorData_get_array_m29AD69D0754C1184F85C07ADDC37DF81BC3FE88F_inline (CPUTensorData_tD8197275CACD1ED111B08D9240C14B0209FCDFC4* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Backends/CPU/BurstTensorData.cs:65>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Backends/CPU/BurstTensorData.cs:65>
 		NativeTensorArray_t26429BDF6C5130249000A811D88C022E788AE9AD* L_0 = __this->___m_Array;
 		return L_0;
 	}
 }
-// Method Definition Index: 28842
+// Method Definition Index: 28935
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Tensor_get_dataOnBackend_m055C03D26247F524EEF5B0D10F2700FC68D60067_inline (Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Tensor.cs:66>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Tensor.cs:66>
 		RuntimeObject* L_0 = __this->___m_DataOnBackend;
 		return L_0;
 	}
 }
-// Method Definition Index: 28840
+// Method Definition Index: 28933
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 Tensor_get_shape_mE33F3E0B73328DA0639C90F9ABB72C263FD6EFE4_inline (Tensor_t605E6A43129BE2702B0B01D58A3AE82242D41B2C* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.ai.inference@587873fd5e1b/Runtime/Core/Tensor.cs:57>
+		//<source_info:./Library/PackageCache/com.unity.ai.inference@e760aa121ec7/Runtime/Core/Tensor.cs:57>
 		TensorShape_t262F74805ED00A4B71BBAE6C0766049D944ACE34 L_0 = __this->___m_Shape;
 		return L_0;
 	}
@@ -29955,7 +29959,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Queue_1_get_Count_m1768AD
 		return L_0;
 	}
 }
-// Method Definition Index: 82518
+// Method Definition Index: 82626
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t NativeList_1_get_Length_m2327DF25C0CCD96DB5AB1F1500FBD411D60AC36B_gshared_inline (NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213* __this, const RuntimeMethod* method) 
 {
 	{
@@ -29968,7 +29972,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t NativeList_1_get_Length_m
 		return L_2;
 	}
 }
-// Method Definition Index: 82515
+// Method Definition Index: 82623
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t NativeList_1_get_Item_m963766393E6261D56BB3704947609551E7752A1C_gshared_inline (NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213* __this, int32_t ___0_index, const RuntimeMethod* method) 
 {
 	{
@@ -29980,7 +29984,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t NativeList_1_get_Item_m96
 		return L_2;
 	}
 }
-// Method Definition Index: 82516
+// Method Definition Index: 82624
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void NativeList_1_set_Item_mA471F77F2D730916D611ABCC0101077F2047CF05_gshared_inline (NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213* __this, int32_t ___0_index, int32_t ___1_value, const RuntimeMethod* method) 
 {
 	{
@@ -30001,7 +30005,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Cur
 		return L_0;
 	}
 }
-// Method Definition Index: 53167
+// Method Definition Index: 53264
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AwaitableAsyncMethodBuilder_1_Start_TisU3CReadbackAndCloneAsyncU3Ed__9_t12D736F383B564D6DD85161F057E1B2C5D09713C_m1FEC345D0FA580A6007454CDD6AE2FEF6C372CF2_gshared_inline (AwaitableAsyncMethodBuilder_1_t00E7C6E1E5EA8C38B6D58E4844BDDEE65DDB1FBE* __this, U3CReadbackAndCloneAsyncU3Ed__9_t12D736F383B564D6DD85161F057E1B2C5D09713C* ___0_stateMachine, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -30077,7 +30081,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB
 		return L_0;
 	}
 }
-// Method Definition Index: 53167
+// Method Definition Index: 53264
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AwaitableAsyncMethodBuilder_1_Start_TisU3CReadbackAndCloneAsyncU3Ed__9_t393F260BB7879F4B2F4A019B1D6309A97B3D2625_mC02322F0F8F32B9A0E4F1726CD0D589828B907ED_gshared_inline (AwaitableAsyncMethodBuilder_1_t00E7C6E1E5EA8C38B6D58E4844BDDEE65DDB1FBE* __this, U3CReadbackAndCloneAsyncU3Ed__9_t393F260BB7879F4B2F4A019B1D6309A97B3D2625* ___0_stateMachine, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -30153,7 +30157,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Int16U5BU5D_t8175CE8DD9C9F9FB0CF4
 		return L_0;
 	}
 }
-// Method Definition Index: 53167
+// Method Definition Index: 53264
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AwaitableAsyncMethodBuilder_1_Start_TisU3CReadbackAndCloneAsyncU3Ed__9_t351E58D45564E2F084C9B336B66D539C293D3135_m46E95C5188E617C625CFBB0E55663B0CAA18E19B_gshared_inline (AwaitableAsyncMethodBuilder_1_t00E7C6E1E5EA8C38B6D58E4844BDDEE65DDB1FBE* __this, U3CReadbackAndCloneAsyncU3Ed__9_t351E58D45564E2F084C9B336B66D539C293D3135* ___0_stateMachine, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -30229,7 +30233,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Int32U5BU5D_t19C97395396A72ECAF31
 		return L_0;
 	}
 }
-// Method Definition Index: 53167
+// Method Definition Index: 53264
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AwaitableAsyncMethodBuilder_1_Start_TisU3CReadbackAndCloneAsyncU3Ed__9_tF1001E4BD9DE32B6170CE3BC2C125FB6540E26CE_m4B2023CC72EC658290A9535FEFF7EA94ED3047AE_gshared_inline (AwaitableAsyncMethodBuilder_1_t00E7C6E1E5EA8C38B6D58E4844BDDEE65DDB1FBE* __this, U3CReadbackAndCloneAsyncU3Ed__9_tF1001E4BD9DE32B6170CE3BC2C125FB6540E26CE* ___0_stateMachine, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -30305,7 +30309,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR SingleU5BU5D_t89DEFE97BCEDB585701
 		return L_0;
 	}
 }
-// Method Definition Index: 80911
+// Method Definition Index: 81019
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t CollectionHelper_AssumePositive_mD1EC1F05F50F605141D9BA5D70C4332AC902B4B1_inline (int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -30320,7 +30324,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_Invoke_m7126A54DACA72
 	typedef void (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
 	((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, reinterpret_cast<RuntimeMethod*>(__this->___method));
 }
-// Method Definition Index: 83566
+// Method Definition Index: 83674
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeList_1_get_Length_mEA927D1405F8410976953A49C12817C90D673A4B_gshared_inline (UnsafeList_1_t6C5E84D303190B625F3759C244502E1735453718* __this, const RuntimeMethod* method) 
 {
 	{
@@ -30331,7 +30335,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeList_1_get_Length_m
 		return L_1;
 	}
 }
-// Method Definition Index: 83570
+// Method Definition Index: 83678
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeList_1_get_Item_mBC4A2DE7600592D19C522E98636E3EBA5BD43195_gshared_inline (UnsafeList_1_t6C5E84D303190B625F3759C244502E1735453718* __this, int32_t ___0_index, const RuntimeMethod* method) 
 {
 	{
@@ -30345,7 +30349,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeList_1_get_Item_mBC
 		return L_4;
 	}
 }
-// Method Definition Index: 83571
+// Method Definition Index: 83679
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UnsafeList_1_set_Item_mC977C810FA45B1034C2E40F302183686DA163488_gshared_inline (UnsafeList_1_t6C5E84D303190B625F3759C244502E1735453718* __this, int32_t ___0_index, int32_t ___1_value, const RuntimeMethod* method) 
 {
 	{
@@ -30361,7 +30365,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UnsafeList_1_set_Item_mC977C
 		return;
 	}
 }
-// Method Definition Index: 53177
+// Method Definition Index: 53274
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void StateMachineBox_1_set_StateMachine_mB0BE2A71C724C8DEEFE7A38A373809E838C913B1_gshared_inline (StateMachineBox_1_tD3A78BD5D9BE22C0DE78E24DE6F52029055A877F* __this, U3CReadbackAndCloneAsyncU3Ed__9_t12D736F383B564D6DD85161F057E1B2C5D09713C ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -30380,7 +30384,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void StateMachineBox_1_set_StateM
 		return;
 	}
 }
-// Method Definition Index: 53178
+// Method Definition Index: 53275
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* StateMachineBox_1_get_MoveNext_m82EEB92B930B3EA531FFC0598C624077EACD6F85_gshared_inline (StateMachineBox_1_tD3A78BD5D9BE22C0DE78E24DE6F52029055A877F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -30388,7 +30392,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Action_tD00B0A84D7945E50C2DFFC28E
 		return L_0;
 	}
 }
-// Method Definition Index: 53177
+// Method Definition Index: 53274
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void StateMachineBox_1_set_StateMachine_mC324608000C45E08C770D588D181B7EEF6C12A77_gshared_inline (StateMachineBox_1_t55CF9B22A7D629C2AC176E3A3E7BBBDCBF8F1B75* __this, U3CReadbackAndCloneAsyncU3Ed__9_t393F260BB7879F4B2F4A019B1D6309A97B3D2625 ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -30407,7 +30411,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void StateMachineBox_1_set_StateM
 		return;
 	}
 }
-// Method Definition Index: 53178
+// Method Definition Index: 53275
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* StateMachineBox_1_get_MoveNext_m40DBF6BA98FEF7034F718B8B0F68B9E6F265A498_gshared_inline (StateMachineBox_1_t55CF9B22A7D629C2AC176E3A3E7BBBDCBF8F1B75* __this, const RuntimeMethod* method) 
 {
 	{
@@ -30415,7 +30419,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Action_tD00B0A84D7945E50C2DFFC28E
 		return L_0;
 	}
 }
-// Method Definition Index: 53177
+// Method Definition Index: 53274
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void StateMachineBox_1_set_StateMachine_m1540511AF655A7D1D8987950875E4645BB2389CE_gshared_inline (StateMachineBox_1_tB3A7C446BD804363EA8F1385C46041FBF7EAACA7* __this, U3CReadbackAndCloneAsyncU3Ed__9_t351E58D45564E2F084C9B336B66D539C293D3135 ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -30434,7 +30438,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void StateMachineBox_1_set_StateM
 		return;
 	}
 }
-// Method Definition Index: 53178
+// Method Definition Index: 53275
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* StateMachineBox_1_get_MoveNext_m6C52BD5B08F710DCF495148B10CC93390F82CB28_gshared_inline (StateMachineBox_1_tB3A7C446BD804363EA8F1385C46041FBF7EAACA7* __this, const RuntimeMethod* method) 
 {
 	{
@@ -30442,7 +30446,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Action_tD00B0A84D7945E50C2DFFC28E
 		return L_0;
 	}
 }
-// Method Definition Index: 53177
+// Method Definition Index: 53274
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void StateMachineBox_1_set_StateMachine_mB2C41B7F151B7310AF2E2281ABD8F7C4D22E5ECB_gshared_inline (StateMachineBox_1_t6ABB5BB80E7EBBB360EA94AE9D3E50727E2B3FAE* __this, U3CReadbackAndCloneAsyncU3Ed__9_tF1001E4BD9DE32B6170CE3BC2C125FB6540E26CE ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -30461,7 +30465,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void StateMachineBox_1_set_StateM
 		return;
 	}
 }
-// Method Definition Index: 53178
+// Method Definition Index: 53275
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* StateMachineBox_1_get_MoveNext_m753524C5D3DDF4F851CDBF85923C0AE14C1B2F88_gshared_inline (StateMachineBox_1_t6ABB5BB80E7EBBB360EA94AE9D3E50727E2B3FAE* __this, const RuntimeMethod* method) 
 {
 	{

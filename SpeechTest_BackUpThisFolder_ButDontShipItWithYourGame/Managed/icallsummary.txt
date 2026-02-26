@@ -319,6 +319,8 @@ UnityEngine.Application::set_targetFrameRate
 UnityEngine.Application::get_platform
 UnityEngine.Application::GetStackTraceLogType
 UnityEngine.AssetBundle::LoadAsset_Internal_Injected
+UnityEngine.AsyncOperation::InternalDestroy
+UnityEngine.AsyncOperation::InternalSetManagedObject
 UnityEngine.Audio.ScriptableProcessorBindings::CheckProcessorExistsInternal_Injected
 UnityEngine.AudioSettings::StartAudioOutput
 UnityEngine.AudioSettings::StopAudioOutput
@@ -471,6 +473,7 @@ UnityEngine.ComputeShader::Internal_SetGraphicsBuffer_Injected
 UnityEngine.ComputeShader::SetConstantComputeBuffer_Injected
 UnityEngine.ComputeShader::SetIntArray_Injected
 UnityEngine.ComputeShader::SetInt_Injected
+UnityEngine.ComputeShader::SetLocalKeyword_Injected
 UnityEngine.ComputeShader::SetShaderKeywords_Injected
 UnityEngine.ComputeShader::SetTexture_Injected
 UnityEngine.ComputeShader::SetVector_Injected
@@ -1112,7 +1115,6 @@ UnityEngine.Renderer::set_shadowCastingMode_Injected
 UnityEngine.Renderer::set_smallMeshCulling_Injected
 UnityEngine.Renderer::set_sortingLayerID_Injected
 UnityEngine.Renderer::set_sortingOrder_Injected
-UnityEngine.Rendering.AsyncGPUReadback::Request_Internal_ComputeBuffer_1_Injected
 UnityEngine.Rendering.AsyncGPUReadback::Request_Internal_ComputeBuffer_2_Injected
 UnityEngine.Rendering.AsyncGPUReadback::Request_Internal_GraphicsBuffer_1_Injected
 UnityEngine.Rendering.AsyncGPUReadback::Request_Internal_GraphicsBuffer_2_Injected
@@ -1447,7 +1449,10 @@ UnityEngine.ScalableBufferManager::get_heightScaleFactor
 UnityEngine.ScalableBufferManager::get_widthScaleFactor
 UnityEngine.ScalableBufferManager::ResizeBuffers
 UnityEngine.SceneManagement.Scene::GetGUIDInternal_Injected
+UnityEngine.SceneManagement.SceneManager::get_sceneCount
 UnityEngine.SceneManagement.SceneManager::GetActiveScene_Injected
+UnityEngine.SceneManagement.SceneManager::GetSceneAt_Injected
+UnityEngine.SceneManagement.SceneManagerAPIInternal::LoadSceneAsyncNameIndexInternal_Injected
 UnityEngine.Screen::get_fullScreen
 UnityEngine.Screen::GetMSAASamples
 UnityEngine.Screen::get_height
@@ -1813,6 +1818,7 @@ UnityEngine.VFX.VFXManager::IsCameraBufferNeeded_Injected
 UnityEngine.VFX.VFXSpawnerState::Internal_Destroy
 UnityEngine.VFX.VisualEffect::get_visualEffectAsset_Injected
 UnityEngine.WebCamTexture::get_isPlaying_Injected
+UnityEngine.WebCamTexture::get_videoRotationAngle_Injected
 UnityEngine.WebCamTexture::Internal_CreateWebCamTexture_Injected
 UnityEngine.WebCamTexture::Play_Injected
 UnityEngine.WebCamTexture::Stop_Injected

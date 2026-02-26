@@ -20,12 +20,19 @@ public class VisionPipeline : MonoBehaviour
     [SerializeField] private float iouThreshold = 0.45f;
 
     [Header("Editor Test Image")]
-    [SerializeField] private bool useTestImageInEditor = true;
+    [SerializeField] private bool useTestImageInEditor = false;
     [SerializeField] private Texture2D testTexture;
 
+    [Header("Overlay (VisionCamera scene)")]
+    [SerializeField] private DetectionOverlayUI overlayUI;
+    [SerializeField] private float overlayMinConf = 0.35f;
+    [SerializeField] private int overlayMaxShown = 5;
+
     [Header("Debug")]
-    [SerializeField] private bool logTopDetections = true;
+    [SerializeField] private bool logTopDetections = false;
     [SerializeField] private int logTopN = 3;
+    [SerializeField] private float logIntervalSec = 2f;
+    private float _nextLogTime = 0f;
 
     private IVisionSuggestionSink _sink;
     private AacSuggestionMapper _mapper;
@@ -45,11 +52,6 @@ public class VisionPipeline : MonoBehaviour
         _outputBuffer = new float[OutputLen];
     }
 
-    public void UseTestImageInEditor(bool enabled)
-{
-    useTestImageInEditor = enabled;
-}
-
     private void OnEnable()
     {
         CacheTensorMethods();
@@ -60,14 +62,18 @@ public class VisionPipeline : MonoBehaviour
     {
         StopAllCoroutines();
         _stability.Reset();
+
+        // Hide overlay when pipeline stops
+        overlayUI?.Render(null, 0f, 0); // safe no-op hide
     }
+
+    public void UseTestImageInEditor(bool enabled) => useTestImageInEditor = enabled;
 
     private void CacheTensorMethods()
     {
-        // Find DownloadToArray(float[]) if your version has it (non-alloc path)
-        // We do this once to avoid reflection costs per tick.
         var t = typeof(Tensor<float>);
         _miDownloadToArrayInto = t.GetMethod("DownloadToArray", new[] { typeof(float[]) });
+
         if (_miDownloadToArrayInto != null)
             Debug.Log("[Vision] Found non-alloc Tensor<float>.DownloadToArray(float[])");
         else
@@ -91,8 +97,6 @@ public class VisionPipeline : MonoBehaviour
 
             if (!runner.IsReady)
             {
-                if (logTopDetections)
-                    Debug.LogWarning("[Vision] YoloRunner not ready (worker null).");
                 yield return wait;
                 continue;
             }
@@ -128,11 +132,9 @@ public class VisionPipeline : MonoBehaviour
                 continue;
             }
 
-            // 4) Patch 1 (version-safe): download output into reusable buffer
+            // 4) Download output into reusable buffer
             if (!TryDownloadOutputToBuffer(output, _outputBuffer))
             {
-                if (logTopDetections)
-                    Debug.LogWarning("[YOLO] Could not download output tensor to buffer.");
                 yield return wait;
                 continue;
             }
@@ -140,8 +142,14 @@ public class VisionPipeline : MonoBehaviour
             // 5) Decode + NMS
             var dets = YoloDecoder.Decode(_outputBuffer, confThreshold, iouThreshold, maxDetections: 50);
 
-            if (logTopDetections && dets != null)
+            // ✅ NEW: draw boxes + labels on the camera feed (VisionCamera scene)
+            overlayUI?.Render(dets, overlayMinConf, overlayMaxShown);
+
+            // Throttled logging (no console spam)
+            if (logTopDetections && dets != null && Time.unscaledTime >= _nextLogTime)
             {
+                _nextLogTime = Time.unscaledTime + logIntervalSec;
+
                 for (int i = 0; i < Mathf.Min(logTopN, dets.Count); i++)
                 {
                     var d = dets[i];
@@ -199,7 +207,6 @@ public class VisionPipeline : MonoBehaviour
         }
 
         // Fallback path: allocates a new float[] each tick in this package version
-        // (This is why you saw the leak warning on GPUCompute.)
         var arr = output.DownloadToArray();
         if (arr == null || arr.Length != OutputLen) return false;
 
